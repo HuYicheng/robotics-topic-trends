@@ -13,6 +13,9 @@ import re
 
 import pandas as pd
 from statsmodels.stats.proportion import proportion_confint
+import sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import config  # noqa: E402
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 m = pd.read_csv(os.path.join(ROOT, "data", "topic_matrix_ta.csv"))
@@ -36,7 +39,7 @@ rows = []
 for name, ks in combos.items():
     hit = m[ks].all(axis=1)
     r = {"combination": name}
-    for y in (2024, 2025, 2026):
+    for y in config.YEARS:
         g = hit[m.year == y]; r[f"n_{y}"] = int(g.sum()); r[f"pct_{y}"] = round(100 * g.mean(), 2)
     rows.append(r)
 comb = pd.DataFrame(rows)
@@ -51,7 +54,7 @@ lift = pd.DataFrame(lift)
 mig = m[m[["M", "IL", "GS"]].all(axis=1)]
 with open(os.path.join(ROOT, "results", "combination_manip_il_vla_flow_gs.md"), "w") as f:
     f.write("# Co-occurrence of manipulation, imitation learning, VLA/VLM, diffusion/flow, Gaussian splatting\n\n")
-    f.write("Title + abstract measure; papers with abstracts; raw shares (2026 = ICRA, RSS, T-RO, IJRR, Science Robotics only).\n\n")
+    f.write("Title + abstract measure; papers with abstracts; raw shares (2026 = ICRA, RSS, T-RO, IJRR, Science Robotics only; years from scripts/config.py).\n\n")
     f.write(comb.to_markdown(index=False) + "\n\nPairwise lift in 2025 (all seven venues):\n\n" + lift.to_markdown(index=False) + "\n\n")
     f.write("Papers with manipulation + imitation learning + Gaussian splatting:\n\n")
     for u in mig.uid:
@@ -71,8 +74,8 @@ pd.DataFrame(vs).to_csv(os.path.join(ROOT, "results", "venue_series_ta.csv"), in
 # 3. standardisation check
 d = pd.read_csv(os.path.join(ROOT, "results", "shares_and_change_ta.csv"))
 s5 = m[m.venue.isin(["ICRA", "RSS", "T-RO", "IJRR", "SciRobotics"])]
-chk = d[["topic", "share_2024", "raw_2024", "share_2025", "raw_2025", "share_2026", "share_2026_lo", "share_2026_hi"]].copy()
-chk["raw5_2024"] = [100 * s5[s5.year == 2024][t].mean() for t in chk.topic]
+chk = d[["topic"] + [c for y in config.YEARS for c in (f"share_{y}", f"raw_{y}")] + ["share_2026_lo", "share_2026_hi"]].copy()
+chk["raw5_first"] = [100 * s5[s5.year == config.YEARS[0]][t].mean() for t in chk.topic]
 chk["raw5_2026"] = [100 * s5[s5.year == 2026][t].mean() for t in chk.topic]
 chk.round(2).to_csv(os.path.join(ROOT, "results", "standardisation_check.csv"), index=False)
 print("wrote combination, venue_series_ta, standardisation_check")

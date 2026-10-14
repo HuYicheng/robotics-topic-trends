@@ -1,0 +1,374 @@
+# Items removed by scripts/03b_research_articles.py (KEEP_REVIEWS=False): venue year | type | reason | title
+IJRR 2020 | non-research | title | ISER 2018 Editorial
+IJRR 2020 | non-research | title | Special Issue on the 2018 Robotics: Science and Systems Conference
+IJRR 2020 | review | title | Human motion trajectory prediction: a survey
+IJRR 2021 | non-research | title | Robotics: Science and Systems (RSS) 2020
+IJRR 2021 | non-research | title | Special Issue on the Thirteenth Workshop on the Algorithmic Foundations of Robotics (WAFR) 2018
+IJRR 2022 | review | title | Force sensing in robot-assisted keyhole endoscopy: A systematic survey
+IJRR 2023 | non-research | title | IJRR: A look back and a look forward
+IJRR 2023 | non-research | title | Selected papers from ISRR'2019
+IJRR 2023 | non-research | title | Selected papers from RSS2021
+IJRR 2023 | non-research | title | Selected papers from WAFR2020
+IJRR 2023 | review | title | Dynamic movement primitives in robotics: A tutorial survey
+IJRR 2023 | review | title | Survey of maps of dynamics for mobile robots
+IJRR 2024 | non-research | title | Selected papers from RSS2022
+IJRR 2024 | non-research | title | Selected papers from WAFR 2022
+IJRR 2024 | review | title | A survey on socially aware robot navigation: Taxonomy and future challenges
+IJRR 2025 | review | title | A review on flapping-wing robots: Recent progress and challenges
+IJRR 2025 | review | title | A survey of communicating robot learning during human-robot interaction
+IJRR 2025 | review | title | Decoding modular reconfigurable robots: A survey on mechanisms and design
+IJRR 2025 | review | title | Transfer learning in robotics: An upcoming breakthrough? A review of promises and challenges
+IJRR 2026 | non-research | title | Why we must trust ourselves
+IJRR 2026 | review | title | NeRFs in robotics: A survey
+IJRR 2026 | review | title | What foundation models can bring for robot learning in manipulation: A survey
+SciRobotics 2020 | non-research | PubMed abstract 13 words (teaser) | A bug's-eye view
+SciRobotics 2020 | non-research | PubMed abstract 12 words (teaser) | A more human prosthetic hand
+SciRobotics 2020 | non-research | PubMed abstract 14 words (teaser) | A stunt flying hawk-inspired drone
+SciRobotics 2020 | non-research | PubMed abstract 12 words (teaser) | A vision for future bioinspired and biohybrid robots
+SciRobotics 2020 | non-research | PubMed abstract 16 words (teaser) | Analog-digital computing let robots go through the motions
+SciRobotics 2020 | non-research | PubMed abstract 17 words (teaser) | Autonomous cars in science fiction
+SciRobotics 2020 | non-research | PubMed type Editorial | Combating COVID-19 - The role of robotics in managing public health and infectious diseases
+SciRobotics 2020 | non-research | PubMed abstract 13 words (teaser) | Counting penguins with drones
+SciRobotics 2020 | non-research | PubMed abstract 17 words (teaser) | Deep diving with Clio
+SciRobotics 2020 | non-research | PubMed abstract 13 words (teaser) | Drones against vector-borne diseases
+SciRobotics 2020 | non-research | PubMed abstract 20 words (teaser) | Enhancing insect flight research with a lab-on-cables
+SciRobotics 2020 | non-research | PubMed abstract 20 words (teaser) | Flapping wing drones show off their skills
+SciRobotics 2020 | non-research | PubMed abstract 18 words (teaser) | Forging global cooperation and collaboration
+SciRobotics 2020 | non-research | PubMed abstract 15 words (teaser) | Good vibrations for flapping-wing flyers
+SciRobotics 2020 | non-research | PubMed abstract 15 words (teaser) | Immune evasion by designer microrobots
+SciRobotics 2020 | non-research | PubMed abstract 18 words (teaser) | In the soft grip of nature
+SciRobotics 2020 | non-research | PubMed abstract 13 words (teaser) | Integrating chemical fuels and artificial muscles for untethered microrobots
+SciRobotics 2020 | non-research | PubMed abstract 12 words (teaser) | Magnetic movement under the spotlight
+SciRobotics 2020 | non-research | PubMed abstract 18 words (teaser) | Marine animal tracking with classical and emerging localization algorithms
+SciRobotics 2020 | non-research | PubMed abstract 21 words (teaser) | Metal or muscle? The future of biologically inspired robots
+SciRobotics 2020 | non-research | PubMed abstract 11 words (teaser) | Neuroengineering challenges of fusing robotics and neuroscience
+SciRobotics 2020 | non-research | PubMed abstract 20 words (teaser) | Preparing to adapt is key for Olympic curling robots
+SciRobotics 2020 | non-research | PubMed abstract 14 words (teaser) | Quadrupedal robots trot into the wild
+SciRobotics 2020 | non-research | PubMed abstract 14 words (teaser) | Reflections on the future of swarm robotics
+SciRobotics 2020 | non-research | PubMed abstract 10 words (teaser) | Repurposing factories with robotics in the face of COVID-19
+SciRobotics 2020 | non-research | PubMed abstract 12 words (teaser) | Roboticists should never look at their creations in the same way again
+SciRobotics 2020 | non-research | PubMed abstract 12 words (teaser) | Robots and pandemics in science fiction
+SciRobotics 2020 | non-research | PubMed type Editorial | Robots are not immune to bias and injustice
+SciRobotics 2020 | non-research | PubMed abstract 19 words (teaser) | Robots learn to identify objects by feeling
+SciRobotics 2020 | non-research | PubMed abstract 16 words (teaser) | Soft sensors that can feel it all
+SciRobotics 2020 | non-research | PubMed abstract 17 words (teaser) | Spinning artificial spiderwebs
+SciRobotics 2020 | non-research | PubMed abstract 15 words (teaser) | Spray-on magnetic skin for robotic actuation
+SciRobotics 2020 | non-research | PubMed abstract 13 words (teaser) | Structural batteries take a load off
+SciRobotics 2020 | non-research | PubMed abstract 13 words (teaser) | Tensegrity metamaterials for soft robotics
+SciRobotics 2020 | non-research | PubMed abstract 31 words (teaser) | The potential of socially assistive robots during infectious disease outbreaks
+SciRobotics 2020 | non-research | PubMed abstract 12 words (teaser) | Transforming platelets into microrobots
+SciRobotics 2020 | non-research | PubMed abstract 27 words (teaser) | Understanding robots
+SciRobotics 2020 | review | PubMed type Review | Electronic skins and machine learning for intelligent soft robots
+SciRobotics 2021 | non-research | PubMed type Comment | A 3D underwater robotic collective called Blueswarm
+SciRobotics 2021 | non-research | PubMed type Comment | A professional slackliner robot
+SciRobotics 2021 | non-research | PubMed type Comment | A sound approach to improving exoskeletons and exosuits
+SciRobotics 2021 | non-research | PubMed abstract 12 words (teaser) | Artificial microswimmers get smart
+SciRobotics 2021 | non-research | PubMed type Comment | Biorobotic insights into neuromechanical coordination of undulatory swimming
+SciRobotics 2021 | non-research | PubMed type Comment | Bringing the light inside the body to perform better surgery
+SciRobotics 2021 | non-research | PubMed type Comment | Burrowing soft robots break new ground
+SciRobotics 2021 | non-research | PubMed abstract 9 words (teaser) | By the time we build robots that care for us, will we be able to care for them?
+SciRobotics 2021 | non-research | PubMed type Comment | Climbing robots in a sticky situation
+SciRobotics 2021 | non-research | PubMed abstract 14 words (teaser) | Co-designing hardware and control for robot hands
+SciRobotics 2021 | non-research | PubMed type Comment | Collaborating robots sample the primary production in the ocean
+SciRobotics 2021 | non-research | PubMed type Comment | Danger! This robot may be trying to manipulate you
+SciRobotics 2021 | non-research | PubMed abstract 17 words (teaser) | Designing an effective graphic abstract
+SciRobotics 2021 | non-research | PubMed type Editorial | Effective and natural human-robot interaction requires multidisciplinary research
+SciRobotics 2021 | non-research | PubMed type Comment | Engineering and surgical advancements enable more cognitively integrated bionic arms
+SciRobotics 2021 | non-research | PubMed type Editorial | Five years of Science Robotics
+SciRobotics 2021 | non-research | PubMed type Editorial | From individual robots to robot societies
+SciRobotics 2021 | non-research | PubMed type Editorial | Getting a grip on reality
+SciRobotics 2021 | non-research | PubMed abstract 15 words (teaser) | Good reactions for low-power shape-memory microactuators
+SciRobotics 2021 | non-research | PubMed type Comment, Editorial | How could robotics help establish a new norm after COVID-19?
+SciRobotics 2021 | non-research | PubMed abstract 10 words (teaser) | NASA's Perseverance: Robot laboratory on Mars
+SciRobotics 2021 | non-research | PubMed type Comment | Neutrobots smuggle drugs across biological barriers
+SciRobotics 2021 | non-research | PubMed type Comment | Optogenetics gets the worm
+SciRobotics 2021 | non-research | PubMed abstract 14 words (teaser) | Planetary rovers in science fiction
+SciRobotics 2021 | non-research | PubMed type Comment | Pneumatic soft robots take a step toward autonomy
+SciRobotics 2021 | non-research | PubMed abstract 18 words (teaser) | R.U.R. versus Q.U.R
+SciRobotics 2021 | non-research | PubMed abstract 7 words (teaser) | Robot intelligence and applications are as varied as animal intelligence, so why not treat them the same way?
+SciRobotics 2021 | non-research | PubMed abstract 21 words (teaser) | Robot mothers in science fiction
+SciRobotics 2021 | non-research | PubMed abstract 19 words (teaser) | Robots have grasped and manipulated the imagination since 1839
+SciRobotics 2021 | non-research | PubMed abstract 13 words (teaser) | Robots, science fiction, and nuclear accidents
+SciRobotics 2021 | non-research | PubMed abstract 18 words (teaser) | Seeing through the forest and the trees with drones
+SciRobotics 2021 | non-research | PubMed type Comment | Self-propelled hydrogels that glide on water
+SciRobotics 2021 | non-research | PubMed type Editorial | Smarter materials for smarter robots
+SciRobotics 2021 | non-research | PubMed type Comment | Soft pumps for soft robots
+SciRobotics 2021 | non-research | PubMed type Comment | Spiking neural networks take control
+SciRobotics 2021 | non-research | PubMed type Comment | Squid-inspired robots perform swimmingly
+SciRobotics 2021 | non-research | PubMed type Comment | Stealthy tracking of deep ocean organisms with Mesobot
+SciRobotics 2021 | non-research | PubMed abstract 12 words (teaser) | Swarm robots in science fiction
+SciRobotics 2021 | non-research | PubMed abstract 8 words (teaser) | The jig is up for small soft machines
+SciRobotics 2021 | non-research | PubMed type Editorial | The robot explorers
+SciRobotics 2021 | non-research | PubMed type Comment | The strike of the dragonfly larvae
+SciRobotics 2021 | non-research | PubMed abstract 12 words (teaser) | The unstable queen: Uncertainty, mechanics, and tactile feedback
+SciRobotics 2021 | non-research | PubMed type Editorial, Introductory Journal Article | Tiny robots make big advances
+SciRobotics 2021 | non-research | PubMed type Comment | Unraveling DNA inspires artificial muscle
+SciRobotics 2021 | review | PubMed type Meta-Analysis | A meta-analysis on the effectiveness of anthropomorphism in human-robot interaction
+SciRobotics 2021 | review | PubMed type Review | Modeling, learning, perception, and control methods for deformable object manipulation
+SciRobotics 2021 | review | PubMed type Review | Progress in robotics for combating infectious diseases
+SciRobotics 2021 | review | PubMed type Review | Toward next-generation learned robot manipulation
+SciRobotics 2022 | non-research | PubMed abstract 51 words (teaser) | Advances and future outlooks in soft robotics for minimally invasive marine biology
+SciRobotics 2022 | non-research | PubMed type Comment | Answering the great automation question
+SciRobotics 2022 | non-research | PubMed type Comment | Autonomous robotic surgery makes light work of anastomosis
+SciRobotics 2022 | non-research | PubMed abstract 16 words (teaser) | Bot self-destruction memes are no laughing matter in science fiction
+SciRobotics 2022 | non-research | PubMed abstract 48 words (teaser) | CERBERUS in the DARPA Subterranean Challenge
+SciRobotics 2022 | non-research | PubMed type Comment | Clearing away barriers to oral drug delivery
+SciRobotics 2022 | non-research | not in PubMed; abstract 0 words | Co-bots get the good jobs while workers get a human-robot interaction nightmare
+SciRobotics 2022 | non-research | PubMed abstract 17 words (teaser) | Do robots reflect their creators?
+SciRobotics 2022 | non-research | PubMed type Comment | Do we really want AI to be human-like?
+SciRobotics 2022 | non-research | PubMed type Comment | Effective grasping enables successful robot-assisted dressing
+SciRobotics 2022 | non-research | PubMed type Comment | Electronics-free soft robot has a nice ring to it
+SciRobotics 2022 | non-research | PubMed type Comment | Harnessing the circular economy to develop sustainable soft robots
+SciRobotics 2022 | non-research | PubMed abstract 12 words (teaser) | Is it safe to hug a robot like Baymax?
+SciRobotics 2022 | non-research | PubMed type Comment | Quadruped robots venture into the wild with open eyes
+SciRobotics 2022 | non-research | PubMed type Editorial | Rethinking computing hardware for robots
+SciRobotics 2022 | non-research | PubMed abstract 17 words (teaser) | Robot therapy pets get a starring role in Lightyear and in real life
+SciRobotics 2022 | non-research | PubMed type Editorial | Robotic assistive technologies get more personal
+SciRobotics 2022 | non-research | PubMed type Editorial | Robots are taming the wild
+SciRobotics 2022 | non-research | PubMed abstract 21 words (teaser) | Robots at the Beijing 2022 Winter Olympics
+SciRobotics 2022 | non-research | PubMed type Editorial | Robots will open more doors than they close
+SciRobotics 2022 | non-research | PubMed type Comment | Running birds reveal secrets for legged robot design
+SciRobotics 2022 | non-research | PubMed type Editorial | Science Robotics : Helping build better robots for a better future
+SciRobotics 2022 | non-research | PubMed type Comment | Swarms of flying robots in unknown environments
+SciRobotics 2022 | non-research | PubMed type Editorial, Introductory Journal Article | Tactile sensors need a greater sense of purpose
+SciRobotics 2022 | non-research | PubMed abstract 18 words (teaser) | Testing the delivery of human organ transportation with drones in the real world
+SciRobotics 2022 | non-research | PubMed abstract 21 words (teaser) | The droids in The Mandalorian and The Book of Boba Fett are not wild enough for the real world
+SciRobotics 2022 | non-research | not in PubMed; abstract 20 words | The original "I, Robot" featured a murderous robot and the Frankenstein complex
+SciRobotics 2022 | non-research | PubMed type Comment | Using robots to advance clinical translation in neurorehabilitation
+SciRobotics 2022 | non-research | PubMed type Editorial | What we look for at Science Robotics
+SciRobotics 2022 | non-research | not in PubMed; abstract 21 words | Would you trust an intelligent robot?
+SciRobotics 2022 | review | PubMed type Review | Insect-inspired AI for autonomous robots
+SciRobotics 2022 | review | PubMed type Review | Neuro-inspired electronic skin for robots
+SciRobotics 2022 | review | PubMed type Review | Neuromorphic computing hardware and neural architectures for robotics
+SciRobotics 2022 | review | PubMed type Review | Robot Operating System 2: Design, architecture, and uses in the wild
+SciRobotics 2022 | review | PubMed type Review | Sensor-level computer vision with pixel processor arrays for agile robots
+SciRobotics 2023 | non-research | PubMed abstract 15 words (teaser) | "Robots for good": Ten defining questions
+SciRobotics 2023 | non-research | PubMed abstract 50 words (teaser) | A hierarchical sensorimotor control framework for human-in-the-loop robotic hands
+SciRobotics 2023 | non-research | PubMed abstract 15 words (teaser) | A powered prosthesis supports weight-bearing stand-to-sit transitions
+SciRobotics 2023 | non-research | PubMed abstract 17 words (teaser) | A retrospective of Isaac Asimov at 102 and his Three Laws
+SciRobotics 2023 | non-research | PubMed type Comment | Accessing the brain with soft deployable electrocorticography arrays
+SciRobotics 2023 | non-research | PubMed type Editorial | Assistive robotics should seamlessly integrate humans and robots
+SciRobotics 2023 | non-research | PubMed abstract 13 words (teaser) | Assistive robots would regret a robot uprising
+SciRobotics 2023 | non-research | PubMed abstract 15 words (teaser) | Autonomous agents for observing marine life
+SciRobotics 2023 | non-research | PubMed abstract 19 words (teaser) | Autonomous boat navigation in the real world
+SciRobotics 2023 | non-research | PubMed type Comment | Brief exosuit use improves post-stroke gait
+SciRobotics 2023 | non-research | PubMed abstract 17 words (teaser) | Bringing underserved communities life-saving aid through aerial logistics
+SciRobotics 2023 | non-research | PubMed abstract 18 words (teaser) | Culturally competent social robots target inclusion in Africa
+SciRobotics 2023 | non-research | PubMed abstract 20 words (teaser) | Designing a robot to recover a sunken submarine is hard
+SciRobotics 2023 | non-research | PubMed abstract 14 words (teaser) | Enhancing scientific exploration of the deep sea through shared autonomy in remote manipulation
+SciRobotics 2023 | non-research | PubMed abstract 19 words (teaser) | Enhancing social connectedness with companion robots using AI
+SciRobotics 2023 | non-research | PubMed abstract 16 words (teaser) | Harnessing AI and robotics in humanitarian assistance and disaster response
+SciRobotics 2023 | non-research | PubMed abstract 17 words (teaser) | Is "suicide by droid" satire or a real possibility?
+SciRobotics 2023 | non-research | PubMed abstract 15 words (teaser) | M3GAN : The real horror is the lack of ethics in robotics
+SciRobotics 2023 | non-research | PubMed abstract 21 words (teaser) | Mars robots meet bounded rationality
+SciRobotics 2023 | non-research | PubMed abstract 57 words (teaser) | Preventing antisocial robots: A pathway to artificial empathy
+SciRobotics 2023 | non-research | PubMed type Comment | Reconfigurable self-assembled DNA devices
+SciRobotics 2023 | non-research | PubMed abstract 12 words (teaser) | Reducing sprint time with exosuit assistance in the real world
+SciRobotics 2023 | non-research | PubMed type Comment | Robotic probes at the cell scale
+SciRobotics 2023 | non-research | PubMed abstract 16 words (teaser) | Robotic self-modulation enhances implantable long-acting drug delivery devices
+SciRobotics 2023 | non-research | PubMed type Editorial | Robotics and AI in the Global South
+SciRobotics 2023 | non-research | PubMed abstract 14 words (teaser) | Sci-fi imagines how good brain-machine interfaces will amplify bad choices
+SciRobotics 2023 | non-research | PubMed abstract 12 words (teaser) | Surgical robots in movies may not be science fiction
+SciRobotics 2023 | non-research | PubMed type Editorial | Taking inspiration from nature is a no-brainer
+SciRobotics 2023 | non-research | PubMed abstract 15 words (teaser) | Teaching a single-arm robot to fold towels
+SciRobotics 2023 | non-research | PubMed type Editorial | Technology matters, especially when deploying robots in the real world
+SciRobotics 2023 | non-research | PubMed abstract 20 words (teaser) | The AI Act Grand Challenge shows how autonomous robots will be regulated
+SciRobotics 2023 | non-research | PubMed type Comment | The beehive of the future is a robot socially interacting with honeybees
+SciRobotics 2023 | non-research | PubMed abstract 16 words (teaser) | The novel Player Piano started the familiar discordant tune on the rise of automation
+SciRobotics 2023 | non-research | PubMed abstract 14 words (teaser) | The role of collaborative robotics in assistive and rehabilitation applications
+SciRobotics 2023 | non-research | PubMed abstract 15 words (teaser) | Touching reality: Bridging the user-researcher divide in upper-limb prosthetics
+SciRobotics 2023 | non-research | PubMed abstract 15 words (teaser) | Toward self-contained bidirectional bionic limbs with high information throughput
+SciRobotics 2023 | non-research | PubMed abstract 13 words (teaser) | Toward stronger artificial muscles
+SciRobotics 2023 | non-research | PubMed abstract 16 words (teaser) | We cannot escape gendering robots
+SciRobotics 2023 | non-research | PubMed abstract 16 words (teaser) | Wild Tech: Exploring South Africa's unique robotics landscape
+SciRobotics 2023 | non-research | PubMed abstract 18 words (teaser) | Wildlife conservation using drones and artificial intelligence in Africa
+SciRobotics 2023 | non-research | PubMed abstract 18 words (teaser) | Would life be better as a robot?
+SciRobotics 2023 | review | PubMed type Review | The neuromechanics of animal locomotion: From biology to robotics and back
+SciRobotics 2023 | review | PubMed type Review | Understanding brain functional architecture through robotics
+SciRobotics 2024 | non-research | PubMed type Editorial | A call for diversity, equity, and inclusion in robotics
+SciRobotics 2024 | non-research | PubMed abstract 19 words (teaser) | A fictional history of robotics features forgotten real-world robots
+SciRobotics 2024 | non-research | PubMed abstract 14 words (teaser) | A guiding light for stimulating paralyzed muscles
+SciRobotics 2024 | non-research | PubMed abstract 13 words (teaser) | AI-driven aerial robots advance whale research
+SciRobotics 2024 | non-research | PubMed abstract 49 words (teaser) | Accelerating the pace of innovation in robotics by fostering diversity and inclusive leadership
+SciRobotics 2024 | non-research | PubMed abstract 10 words (teaser) | Advancing scientific discovery with the aid of robotics
+SciRobotics 2024 | non-research | PubMed abstract 15 words (teaser) | Augmented dexterity: How robots can enhance human surgical skills
+SciRobotics 2024 | non-research | PubMed abstract 15 words (teaser) | Avian eye-inspired artificial vision takes a step forward
+SciRobotics 2024 | non-research | PubMed abstract 20 words (teaser) | Bilingual speech neuroprosthesis
+SciRobotics 2024 | non-research | PubMed abstract 22 words (teaser) | Black in Robotics: Improving community and equity in the field of robotics
+SciRobotics 2024 | non-research | PubMed abstract 14 words (teaser) | Collection of microrobots for gentle cell manipulation
+SciRobotics 2024 | non-research | PubMed abstract 16 words (teaser) | Crucial hurdles to achieving human-robot harmony
+SciRobotics 2024 | non-research | PubMed abstract 16 words (teaser) | Cybernetic avatars: Teleoperation technologies from in-body monitoring to social interaction
+SciRobotics 2024 | non-research | PubMed abstract 18 words (teaser) | Early science fiction got microbots surprisingly right
+SciRobotics 2024 | non-research | PubMed abstract 17 words (teaser) | Even teleoperated robots are discriminated against in science fictions
+SciRobotics 2024 | non-research | PubMed abstract 17 words (teaser) | Float like a butterfly, swim like a biohybrid neuromuscular robot
+SciRobotics 2024 | non-research | PubMed abstract 17 words (teaser) | Grasping objects with the aid of haptics
+SciRobotics 2024 | non-research | PubMed abstract 17 words (teaser) | High-tech guardians: Robotics at the heart of the Future Circular Collider
+SciRobotics 2024 | non-research | PubMed abstract 17 words (teaser) | How much initiative should a service robot have?
+SciRobotics 2024 | non-research | PubMed abstract 17 words (teaser) | Ironies of social robotics
+SciRobotics 2024 | non-research | PubMed abstract 14 words (teaser) | Legged robots beyond bioinspiration
+SciRobotics 2024 | non-research | PubMed abstract 6 words (teaser) | Legged robots take a leap forward
+SciRobotics 2024 | non-research | PubMed abstract 17 words (teaser) | Machine learning, robots, and abuse of power
+SciRobotics 2024 | non-research | PubMed abstract 0 words (teaser) | Magnetic robots make headway in medicine
+SciRobotics 2024 | non-research | PubMed abstract 15 words (teaser) | Merging sociality and robotics through an evolutionary perspective
+SciRobotics 2024 | non-research | PubMed abstract 18 words (teaser) | Overcoming adversaries in multirobot navigation
+SciRobotics 2024 | non-research | PubMed abstract 22 words (teaser) | Overcoming the challenges that women in robotics face
+SciRobotics 2024 | non-research | PubMed abstract 18 words (teaser) | Performing forceful robot manipulation tasks
+SciRobotics 2024 | non-research | PubMed abstract 15 words (teaser) | Promoting diverse and inclusive spaces with intentionality
+SciRobotics 2024 | non-research | PubMed abstract 13 words (teaser) | Real-world exoskeletons are better than those in the movie Atlas
+SciRobotics 2024 | non-research | PubMed abstract 16 words (teaser) | Remote magnetic navigation enables precision telesurgery
+SciRobotics 2024 | non-research | PubMed abstract 15 words (teaser) | Restoration of motor function using magnetoelectric metamaterials
+SciRobotics 2024 | non-research | PubMed abstract 12 words (teaser) | Robot behavior that can adapt to user interaction
+SciRobotics 2024 | non-research | PubMed abstract 20 words (teaser) | Robot pack mules remain science fiction for now
+SciRobotics 2024 | non-research | PubMed abstract 17 words (teaser) | Robot swarms meet soft matter physics
+SciRobotics 2024 | non-research | PubMed abstract 17 words (teaser) | Robots and animals teaming up in the wild to tackle ecosystem challenges
+SciRobotics 2024 | non-research | PubMed abstract 16 words (teaser) | Robots can motivate children to practice piano
+SciRobotics 2024 | non-research | PubMed abstract 14 words (teaser) | Safe radiation surveillance using uncrewed vehicles
+SciRobotics 2024 | non-research | PubMed abstract 15 words (teaser) | Social robot for at-home cognitive monitoring
+SciRobotics 2024 | non-research | PubMed abstract 14 words (teaser) | Taking control: Steering the future of biohybrid robots
+SciRobotics 2024 | non-research | PubMed abstract 13 words (teaser) | Teaching robots the art of human social synchrony
+SciRobotics 2024 | non-research | PubMed abstract 14 words (teaser) | Ted Chiang imagines a computational theory of robots
+SciRobotics 2024 | non-research | PubMed abstract 22 words (teaser) | The cold truth about robotics research in the United Kingdom as a Caribbean woman
+SciRobotics 2024 | non-research | PubMed abstract 50 words (teaser) | The force has limits: Molecular motors in robotics
+SciRobotics 2024 | non-research | PubMed abstract 13 words (teaser) | The future lies in a pair of tactile hands
+SciRobotics 2024 | non-research | PubMed abstract 19 words (teaser) | The role of low-cost robots in the future of spaceflight
+SciRobotics 2024 | non-research | PubMed abstract 17 words (teaser) | Tracking hand movements with a smart glove
+SciRobotics 2024 | non-research | PubMed abstract 16 words (teaser) | Using machine learning and robotics to discover plastic substitutes
+SciRobotics 2024 | non-research | PubMed abstract 13 words (teaser) | Virus-blocking mosquitoes take flight in the fight against dengue
+SciRobotics 2024 | non-research | PubMed abstract 11 words (teaser) | Visual seafloor mapping with autonomous robots
+SciRobotics 2024 | non-research | PubMed abstract 16 words (teaser) | Wearable robots for the real world need vision
+SciRobotics 2024 | non-research | PubMed abstract 11 words (teaser) | Web-based distributed robot localization
+SciRobotics 2024 | non-research | PubMed abstract 20 words (teaser) | What to give your robot mother on Mother's Day
+SciRobotics 2024 | non-research | PubMed abstract 14 words (teaser) | What will robots think of us?
+SciRobotics 2024 | non-research | PubMed abstract 20 words (teaser) | Would robots really bother with a bloody uprising?
+SciRobotics 2024 | non-research | PubMed abstract 11 words (teaser) | Would you risk humanity's survival on a robot built in two years?
+SciRobotics 2024 | review | PubMed type Review | Exploring beyond Earth using space robotics
+SciRobotics 2024 | review | PubMed type Review | Optimality principles in spacecraft neural guidance and control
+SciRobotics 2024 | review | PubMed type Review | Paleoinspired robotics as an experimental approach to the history of life
+SciRobotics 2024 | review | PubMed type Review | Transforming science labs into automated factories of discovery
+SciRobotics 2024 | review | PubMed type Review | Understanding the sense of self through robotics
+SciRobotics 2024 | review | PubMed type Review | Why animals can outrun robots
+SciRobotics 2025 | non-research | PubMed abstract 24 words (teaser) | "Data will solve robotics and automation: True or false?": A debate
+SciRobotics 2025 | non-research | PubMed abstract 18 words (teaser) | A democratized bimodal model of research for soft robotics: Integrating slow and fast science
+SciRobotics 2025 | non-research | PubMed abstract 55 words (teaser) | Accelerating discovery in natural science laboratories with AI and robotics: Perspectives and challenges
+SciRobotics 2025 | non-research | PubMed abstract 14 words (teaser) | Adaptive active solids
+SciRobotics 2025 | non-research | PubMed abstract 13 words (teaser) | Adaptive humanlike grasping
+SciRobotics 2025 | non-research | PubMed abstract 17 words (teaser) | Arm prosthesis with dexterous control and sensory feedback delivers winning performance at Cybathlon
+SciRobotics 2025 | non-research | PubMed abstract 47 words (teaser) | Autonomous robotic organizations for marine operations
+SciRobotics 2025 | non-research | PubMed abstract 14 words (teaser) | BCIT's BEAST wheelchair takes on Cybathlon with power, precision, and pilot-led design
+SciRobotics 2025 | non-research | PubMed abstract 15 words (teaser) | Biohybrid robot contracts like the human iris
+SciRobotics 2025 | non-research | PubMed abstract 17 words (teaser) | Embodied aerial physical interaction: Combining body and brain for robust interaction with unstructured environments
+SciRobotics 2025 | non-research | PubMed abstract 56 words (teaser) | Embodied intelligence paradigm for human-robot communication
+SciRobotics 2025 | non-research | PubMed abstract 16 words (teaser) | Equalizing access: How robotics and AI can transform surgical care worldwide
+SciRobotics 2025 | non-research | PubMed abstract 51 words (teaser) | Extending robot minds through collective learning
+SciRobotics 2025 | non-research | PubMed type Editorial | Good old-fashioned engineering can close the 100,000-year "data gap" in robotics
+SciRobotics 2025 | non-research | PubMed abstract 19 words (teaser) | Harnessing emotion and intonation in speech to improve robot acceptance
+SciRobotics 2025 | non-research | PubMed abstract 11 words (teaser) | How can educational robots enhance family life? Through careful integration
+SciRobotics 2025 | non-research | PubMed abstract 18 words (teaser) | How reliable is robotic manipulation in the real world?
+SciRobotics 2025 | non-research | PubMed abstract 17 words (teaser) | Humanoid robot learning of complex behaviors with LLMs
+SciRobotics 2025 | non-research | PubMed abstract 13 words (teaser) | It is hard to be a robot in the wild
+SciRobotics 2025 | non-research | PubMed abstract 15 words (teaser) | Jump, recharge, repeat: Insect-inspired jumping robots and the challenge of energy harvesting
+SciRobotics 2025 | non-research | PubMed abstract 13 words (teaser) | Knowledge before faith is the motto of a robot pope
+SciRobotics 2025 | non-research | PubMed abstract 15 words (teaser) | Learning robot behavior from human-human interactions
+SciRobotics 2025 | non-research | PubMed abstract 14 words (teaser) | Light-emitting, self-healing robotic fibers
+SciRobotics 2025 | non-research | PubMed abstract 17 words (teaser) | Lowly fly or impressive miniature robot?
+SciRobotics 2025 | non-research | PubMed type Editorial | Medical robots learn to be autonomous
+SciRobotics 2025 | non-research | PubMed abstract 17 words (teaser) | Neuroprosthesis converts brain activity to speech
+SciRobotics 2025 | non-research | PubMed abstract 14 words (teaser) | Physical control: A new avenue to achieve intelligence in soft robotics
+SciRobotics 2025 | non-research | PubMed abstract 14 words (teaser) | Reconfigurable aerial robot for subterranean mine inspection
+SciRobotics 2025 | non-research | PubMed abstract 15 words (teaser) | Restoration of tactile sensation in bionic hands
+SciRobotics 2025 | non-research | PubMed abstract 19 words (teaser) | Robotic cross-pollination of genetically modified flowers
+SciRobotics 2025 | non-research | PubMed abstract 17 words (teaser) | Roboticists are grappling with space debris
+SciRobotics 2025 | non-research | PubMed abstract 19 words (teaser) | Robotics in Africa is trending upward and has a bright future
+SciRobotics 2025 | non-research | PubMed abstract 15 words (teaser) | Robots do not like Asimov's three laws
+SciRobotics 2025 | non-research | PubMed abstract 16 words (teaser) | Robots in science fiction unload assumptions about freight logistics
+SciRobotics 2025 | non-research | PubMed abstract 15 words (teaser) | Shared control in assistive robotics: A Cybathlon-winning approach
+SciRobotics 2025 | non-research | PubMed abstract 16 words (teaser) | Sight Guide demonstrates robotics-inspired vision assistance at the Cybathlon
+SciRobotics 2025 | non-research | PubMed abstract 19 words (teaser) | Swimming in the "Matrix": VR fish pass the Turing test using a simple control law for collective behavior
+SciRobotics 2025 | non-research | PubMed abstract 16 words (teaser) | Team BeAGain's journey toward Cybathlon 2024 and holistic mobility with a robotic rehabilitation bicycle
+SciRobotics 2025 | non-research | PubMed abstract 14 words (teaser) | The Omnia bionic leg with a semipowered knee and ankle wins the Cybathlon 2024 leg prosthesis race
+SciRobotics 2025 | non-research | PubMed abstract 17 words (teaser) | The case against machine vision for the control of wearable robotics: Challenges for commercial adoption
+SciRobotics 2025 | non-research | PubMed abstract 49 words (teaser) | The grand challenges of learning medical robot autonomy
+SciRobotics 2025 | non-research | PubMed abstract 20 words (teaser) | The greatest challenge for prosthetics may be social, not neural, connections
+SciRobotics 2025 | non-research | PubMed type Editorial | The multifaceted approach to embodied intelligence in robotics
+SciRobotics 2025 | non-research | PubMed abstract 18 words (teaser) | The robot will see you now: Foundation models are the path forward for autonomous robotic surgery
+SciRobotics 2025 | non-research | PubMed abstract 21 words (teaser) | The robots in Superman and The Fantastic Four: First Steps are as amazing as the superheroes
+SciRobotics 2025 | non-research | PubMed abstract 15 words (teaser) | The robots in the Val Kilmer movie Red Planet predated Perseverance and Ingenuity
+SciRobotics 2025 | non-research | not in PubMed; abstract 0 words | Understanding humanoid robots could save your life
+SciRobotics 2025 | non-research | PubMed abstract 18 words (teaser) | Wearable robot provides lumbar and arm support
+SciRobotics 2025 | non-research | PubMed abstract 16 words (teaser) | Worm-like robot with integrated modular power
+SciRobotics 2025 | non-research | PubMed abstract 14 words (teaser) | Would a robot ever get angry enough to attack a person?
+SciRobotics 2025 | review | PubMed type Review | A review of learning-based dynamics models for robotic manipulation
+SciRobotics 2025 | review | PubMed type Review | AI in therapeutic and assistive exoskeletons and exosuits: Influences on performance and autonomy
+SciRobotics 2025 | review | PubMed type Review | Achieving animal endurance in robots through advanced energy storage
+SciRobotics 2025 | review | PubMed type Review | Advancing physical intelligence for autonomous soft robots
+SciRobotics 2025 | review | PubMed type Review | Aerial additive manufacturing: Toward on-site building construction with aerial robots
+SciRobotics 2025 | review | PubMed type Review | Medical needles in the hands of AI: Advancing toward autonomous robotic navigation
+SciRobotics 2025 | review | PubMed type Review | Metamaterial robotics
+SciRobotics 2025 | review | PubMed type Review | Robotically steerable guidewires - Current trends and future directions
+SciRobotics 2025 | review | PubMed type Review | Telesurgery and the importance of context
+SciRobotics 2025 | review | PubMed type Review | Will your next surgeon be a robot? Autonomy and AI in robotic surgery
+SciRobotics 2026 | non-research | PubMed abstract 45 words (teaser) | "Humanoids will soon replace most human workers": A debate
+SciRobotics 2026 | non-research | PubMed abstract 18 words (teaser) | A self-guided intubation device
+SciRobotics 2026 | non-research | PubMed abstract 15 words (teaser) | Acceptance of humanoid robots: A psychological perspective
+SciRobotics 2026 | non-research | PubMed abstract 16 words (teaser) | Beyond alignment: Why robotic foundation models need context-aware safety
+SciRobotics 2026 | non-research | PubMed abstract 9 words (teaser) | Beyond imitation: Robots that learn to work in the real world
+SciRobotics 2026 | non-research | PubMed abstract 18 words (teaser) | Collision-tolerant deformable quadrotor arms
+SciRobotics 2026 | non-research | PubMed abstract 14 words (teaser) | DNA origami snaps into place
+SciRobotics 2026 | non-research | PubMed abstract 15 words (teaser) | Designing microrobots with embodied physical intelligence
+SciRobotics 2026 | non-research | PubMed abstract 15 words (teaser) | Dexterous grasping with an active palm
+SciRobotics 2026 | non-research | PubMed abstract 14 words (teaser) | Do people feel safe in a robot's presence?
+SciRobotics 2026 | non-research | PubMed abstract 16 words (teaser) | Driver's licenses for autonomous systems
+SciRobotics 2026 | non-research | PubMed abstract 18 words (teaser) | Embodied or virtually represented: Navigating the embodiment debate in human-robot interaction
+SciRobotics 2026 | non-research | PubMed abstract 14 words (teaser) | Fusing LiDAR and vision to generate high-quality reconstructions
+SciRobotics 2026 | non-research | PubMed abstract 15 words (teaser) | Grasshopper-inspired wing design improves gliding performance
+SciRobotics 2026 | non-research | PubMed abstract 22 words (teaser) | Is a robot a tool or an agent?
+SciRobotics 2026 | non-research | PubMed abstract 15 words (teaser) | Is intermittent swimming lazy or clever?
+SciRobotics 2026 | non-research | PubMed abstract 20 words (teaser) | Is your robot vacuum cleaner spying on you?
+SciRobotics 2026 | non-research | PubMed abstract 14 words (teaser) | Learning flight navigation like a honey bee
+SciRobotics 2026 | non-research | PubMed abstract 16 words (teaser) | Lightweight haptic ring delivers high force feedback
+SciRobotics 2026 | non-research | PubMed abstract 15 words (teaser) | Neurorobotics may make a smarter, but not happier, robot
+SciRobotics 2026 | non-research | PubMed abstract 20 words (teaser) | Origami-inspired grasper for safe tissue manipulation
+SciRobotics 2026 | non-research | PubMed abstract 18 words (teaser) | Physical AI is enabled by mechanical hardware
+SciRobotics 2026 | non-research | PubMed abstract 13 words (teaser) | Robot farm elegy
+SciRobotics 2026 | non-research | PubMed abstract 16 words (teaser) | Shape-morphing metamaterials with continuous relearning
+SciRobotics 2026 | non-research | PubMed abstract 18 words (teaser) | Stop chasing identical outcomes in HRI replication: Learn from the differences
+SciRobotics 2026 | non-research | PubMed abstract 16 words (teaser) | The Moon needs robots
+SciRobotics 2026 | non-research | PubMed abstract 16 words (teaser) | The codevelopment of soft robotics and assistive technology
+SciRobotics 2026 | non-research | PubMed abstract 15 words (teaser) | The forgotten spectrum: Reviving ultrasound for robust autonomy
+SciRobotics 2026 | non-research | PubMed abstract 13 words (teaser) | Toward measurement of muscle forces during movement
+SciRobotics 2026 | non-research | PubMed type Editorial | Transfer learning in robotics: From promises to practice through the emerging role of foundation models
+SciRobotics 2026 | non-research | PubMed abstract 16 words (teaser) | Translational bottlenecks for biohybrid microrobots
+SciRobotics 2026 | non-research | PubMed abstract 17 words (teaser) | Vibrotactile feedback aids prosthesis usability
+SciRobotics 2026 | non-research | PubMed abstract 13 words (teaser) | Within arm's reach: A path forward for robot dexterity
+SciRobotics 2026 | non-research | PubMed abstract 13 words (teaser) | Would you give four stars to a restaurant entirely staffed by robots?
+SciRobotics 2026 | review | PubMed type Review | Advances, challenges, and opportunities for legged robots
+SciRobotics 2026 | review | PubMed type Review | Bioinspired multimodal robotics
+SciRobotics 2026 | review | PubMed type Review | From autonomy to alliance: Robotic foundation models must learn with us, not just for us
+SciRobotics 2026 | review | PubMed type Review | How foundation models will revolutionize robot swarms
+SciRobotics 2026 | review | PubMed type Review | Modular reconfigurable robots: Toward on-demand multifunctional applications
+T-RO 2020 | review | title | A Review of Tactile Information: Perception and Action Through Touch
+T-RO 2020 | review | title | A Survey on Policy Search Algorithms for Learning Robot Controllers in a Handful of Trials
+T-RO 2020 | review | title | Electroadhesion Technologies for Robotics: A Comprehensive Review
+T-RO 2021 | review | title | Object Handovers: A Review for Robotics
+T-RO 2022 | non-research | title | Introduction to the Special Section on Resilience in Networked Robotic Systems
+T-RO 2022 | non-research | title | Introduction to the Special Section on Wearable Robots
+T-RO 2022 | review | title | A Survey on Swarm Microrobotics
+T-RO 2022 | review | title | Mobile Microrobots for In Vitro Biomedical Applications: A Survey
+T-RO 2022 | review | title | Proximity Perception in Human-Centered Robotics: A Survey on Sensing Systems and Applications
+T-RO 2023 | review | title | A Decade of MRI Compatible Robots: Systematic Review
+T-RO 2023 | review | title | A Survey on Active Simultaneous Localization and Mapping: State of the Art and New Frontiers
+T-RO 2023 | review | title | Autonomous Navigation for Robot-Assisted Intraluminal and Endovascular Procedures: A Systematic Review
+T-RO 2023 | review | title | Deep Learning Approaches to Grasp Synthesis: A Review
+T-RO 2023 | review | title | Design and Fabrication of Concentric Tube Robots: A Survey
+T-RO 2023 | review | title | Human to Robot Hand Motion Mapping Methods: Review and Classification
+T-RO 2023 | review | title | Image-Integrated Magnetic Actuation Systems for Localization and Remote Actuation of Medical Miniature Robots: A Survey
+T-RO 2023 | review | title | Partially Observable Markov Decision Processes in Robotics: A Survey
+T-RO 2023 | review | title | Safe Control With Learned Certificates: A Survey of Neural Lyapunov, Barrier, and Contraction Methods for Robotics and Control
+T-RO 2023 | review | title | Teleoperation of Humanoid Robots: A Survey
+T-RO 2024 | review | title | A New Wave in Robotics: Survey on Recent MmWave Radar Applications in Robotics
+T-RO 2024 | review | title | Autonomous Drone Racing: A Survey
+T-RO 2024 | review | title | Parallel-Continuum Robots: A Survey
+T-RO 2025 | non-research | title | Guest EditorialSpecial Collection on Tactile Robotics
+T-RO 2025 | review | title | Continuous-Time State Estimation Methods in Robotics: A Survey
+T-RO 2026 | review | title | A Survey on Deep Generative Models for Robot Learning From Multimodal Demonstrations
+T-RO 2026 | review | title | How NeRFs and 3-D Gaussian Splatting Are Reshaping SLAM: A Survey

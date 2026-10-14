@@ -1,9 +1,12 @@
 """Single measure used from here on: a paper belongs to a topic if the title rule matches the title or the abstract
-rule matches the abstract (any occurrence). Papers 2024-2026 with an abstract (11,017).
+rule matches the abstract (any occurrence). All papers with an abstract (years from scripts/config.py).
 
 Output: data/topic_matrix_ta.csv
-        results/audit_abstract_matches.txt   most frequent matched words per rule inside abstracts
-        results/precision_ta_samples/<topic>.txt  random papers matched by the abstract only, with the matching sentence
+        results/audit_abstract_matches.txt   most frequent matched words per rule inside abstracts (all years)
+        results/audit_abstract_matches_by_period.txt   the same for 2020-2023 and 2024-2026 side by side (sense drift)
+        results/precision_ta_samples/<topic>.txt  random 2024-2026 papers matched by the abstract only, with the matching
+            sentence (same draw as the 2024-2026 study: same papers, order and seed)
+        results/precision_ta_samples_2020_2023/<topic>.txt  the same for 2020-2023
 """
 import collections
 import csv
@@ -37,14 +40,16 @@ def main():
     abs_rx = t.ABSTRACT_COMPILED
     rows, abstract_only = [], {n: [] for n in names}
     audit = {n: collections.Counter() for n in names}
+    audit_p = {per: {n: collections.Counter() for n in names} for per in ("2020-2023", "2024-2026")}
     for uid, a in abstracts.items():
         p = papers[uid]
         row = [uid, p["venue"], p["year"]]
         for n in names:
             in_title = bool(title_rx[n].search(p["title"]))
             hits = list(abs_rx[n].finditer(a))
+            per = "2020-2023" if int(p["year"]) <= 2023 else "2024-2026"
             for m in hits:
-                audit[n][word_at(a, m)] += 1
+                audit[n][word_at(a, m)] += 1; audit_p[per][n][word_at(a, m)] += 1
             row.append(int(in_title or bool(hits)))
             if hits and not in_title:
                 abstract_only[n].append(uid)
@@ -55,18 +60,24 @@ def main():
         for n in names:
             f.write(f"{n} [{'abstract rule' if n in t.ABSTRACT_OVERRIDES else 'title rule'}] {sum(audit[n].values())} | "
                     + ", ".join(f"{k}:{v}" for k, v in audit[n].most_common(10)) + "\n")
-    out_dir = os.path.join(ROOT, "results", "precision_ta_samples"); os.makedirs(out_dir, exist_ok=True)
-    rnd = random.Random(int(os.environ.get("SAMPLE_SEED", "0")))
-    for n in names:
-        uids = abstract_only[n]
-        safe = re.sub(r"[^A-Za-z0-9]+", "_", n).strip("_")
-        with open(os.path.join(out_dir, f"{safe}.txt"), "w") as f:
-            f.write(f"# {n}: {len(uids)} papers match by abstract only\n")
-            for uid in rnd.sample(uids, min(10, len(uids))):
-                a = abstracts[uid]
-                sent = next((s for s in re.split(r"(?<=[.!?])\s+", a) if abs_rx[n].search(s)), "")
-                f.write(f'{papers[uid]["venue"]} {papers[uid]["year"]} | {papers[uid]["title"][:100]}\n'
-                        f'    > {re.sub(abs_rx[n], lambda m: "[[" + m.group(0) + "]]", sent)[:220]}\n')
+    with open(os.path.join(ROOT, "results", "audit_abstract_matches_by_period.txt"), "w") as f:
+        for n in names:
+            f.write(f"{n} [{'abstract rule' if n in t.ABSTRACT_OVERRIDES else 'title rule'}]\n")
+            for per, a in audit_p.items():
+                f.write(f"  {per} {sum(a[n].values())} | " + ", ".join(f"{k}:{v}" for k, v in a[n].most_common(12)) + "\n")
+    for sub, keep in (("precision_ta_samples", lambda y: y >= 2024), ("precision_ta_samples_2020_2023", lambda y: y <= 2023)):
+        out_dir = os.path.join(ROOT, "results", sub); os.makedirs(out_dir, exist_ok=True)
+        rnd = random.Random(int(os.environ.get("SAMPLE_SEED", "0")))
+        for n in names:
+            uids = [u for u in abstract_only[n] if keep(int(papers[u]["year"]))]
+            safe = re.sub(r"[^A-Za-z0-9]+", "_", n).strip("_")
+            with open(os.path.join(out_dir, f"{safe}.txt"), "w") as f:
+                f.write(f"# {n}: {len(uids)} papers match by abstract only\n")
+                for uid in rnd.sample(uids, min(10, len(uids))):
+                    a = abstracts[uid]
+                    sent = next((s for s in re.split(r"(?<=[.!?])\s+", a) if abs_rx[n].search(s)), "")
+                    f.write(f'{papers[uid]["venue"]} {papers[uid]["year"]} | {papers[uid]["title"][:100]}\n'
+                            f'    > {re.sub(abs_rx[n], lambda m: "[[" + m.group(0) + "]]", sent)[:220]}\n')
     print(f"{len(rows)} papers, {len(names)} topics -> data/topic_matrix_ta.csv")
 
 

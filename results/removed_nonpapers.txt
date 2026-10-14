@@ -1,11 +1,14 @@
 IROS 2023 | DUPLICATE | Sensor Selection for Fine-Grained Behavior Verification that Respects Privacy
 IROS 2022 | DUPLICATE | A passive, asymmetrically-compliant knee joint improves obstacle traversal in an insect-scale legged robot
+IJRR 2020 | Editorial
 IJRR 2025 | Editorial
 IJRR 2024 | Retraction Notice
+IJRR 2021 | Editorial: Soft Robotic Modeling and Control: Bringing Together Articulated Soft Robots and Soft-Bodied Robots
 IJRR 2026 | Corrigendum to Landing strategies in honeybees and applications to uninhabited airborne vehicles
 T-RO 2026 | Corrections to "Characterizing Trust and Resilience in Distributed Consensus for Cyberphysical Systems"
 T-RO 2024 | Editorial Introduction to the IEEE T-RO Special Collection on Impact-Aware Robotics
 T-RO 2026 | Corrections to "Rethink Repeatable Measures of Robot Performance With Statistical Query"
+T-RO 2021 | Corrections to "Geometry of Adjoint-Invariant Submanifolds of SE(3)"
 T-RO 2025 | Corrections to "On-Manifold Strategies for Reactive Dynamical System Modulation With Nonconvex Obstacles"
 SciRobotics 2024 | Erratum for the Research Article "Restoration of grasping in an upper limb amputee using the myokinetic prosthesis with implanted magnets" by M. Gherardini et al 
 SciRobotics 2024 | Erratum for the Research Article "Field deployment of Wolbachia -infected Aedes aegypti using uncrewed aerial vehicle" by Y.-H. Lin et al 
@@ -14,6 +17,33 @@ SciRobotics 2024 | Erratum for the Research Article "Excitation of natural spina
 SciRobotics 2026 | Erratum for the Research Article "Observing a robot peer's failures facilitates students' classroom learning"
 SciRobotics 2025 | Erratum for the Research Article "Safety-assured high-speed navigation for MAVs" by Y. Ren et al 
 SciRobotics 2025 | Erratum for the Research Article "A lightweight robotic leg prosthesis replicating the biomechanics of the knee, ankle, and toe joint" by M. Tran et al 
+CoRL 2023 | DUPLICATE | Expansive Latent Planning for Sparse Reward Offline Reinforcement Learning
+CoRL 2023 | DUPLICATE | SayPlan: Grounding Large Language Models using 3D Scene Graphs for Scalable Robot Task Planning
+ICRA 2020 | Index of papers presented at ICRA 2020 and published in the IEEE Robotics and Automation Letters
+ICRA 2021 | Session Index
+ICRA 2021 | Plenary
+ICRA 2021 | Welcome
+ICRA 2021 | Author Index
+ICRA 2021 | Organizations
+ICRA 2022 | ICRA 2022 Plenary and Keynote Speakers
+ICRA 2022 | ICRA 2022 Conference Editorial Board
+ICRA 2022 | ICRA 2022 Oral presentation sessions overview
+ICRA 2022 | ICRA 2022 Statistics
+ICRA 2022 | ICRA 2022 Organizing Committee
+ICRA 2022 | ICRA 2022 Exhibitors
+ICRA 2022 | ICRA 2022 Awards and Finalists
+ICRA 2022 | ICRA 2022 Reviewers
+ICRA 2022 | ICRA 2022 Competitions
+ICRA 2022 | Foreword
+ICRA 2022 | ICRA 2022 Forums
+ICRA 2022 | ICRA 2022 Sponsors and Partners
+ICRA 2022 | ICRA 2022 Workshops and Tutorials
+ICRA 2023 | Organising Committee
+ICRA 2023 | Welcome Page
+ICRA 2023 | Table of Contents
+ICRA 2023 | Author Index
+ICRA 2023 | Programme at a glance
+ICRA 2023 | Top Menu
 ICRA 2024 | ICRA 2024 Welcome
 ICRA 2024 | ICRA 2024 Program
 ICRA 2024 | ICRA 2024 Organizing Committee

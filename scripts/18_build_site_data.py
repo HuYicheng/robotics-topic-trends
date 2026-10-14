@@ -1,9 +1,12 @@
 """Data for the interactive page: site/data.json.
 
-Contents: topics (name, family, standardised shares 2024/25/26 with 2026 interval, change, annual multiplier, call),
-papers of the final measure (title, venue, year, link, topic indices), papers per venue-year, build metadata.
+Contents: topics (name, family, standardised share per year with 95% interval, change, annual multiplier, call, the same
+for 2024 onwards), per-scope results (all venues, conferences, journals, each venue: share, interval, papers k of n per
+year, trend), papers of the final measure (title, venue, year, link, topic indices), papers per venue-year, build metadata.
+Per scope, "partial" lists years that are not complete (a member venue not yet published, or a journal year still running)
+and "estimated" the years whose standardised share includes a venue without papers (model estimate).
 No abstract text is published (publishers hold the copyright); abstracts were only used to assign topics.
-Links: DOI where known (dblp ee / OpenAlex doi), RSS proceedings page, PMLR page, else the OpenAlex record.
+Links: DOI where known (dblp ee / OpenAlex doi / PubMed), RSS proceedings page, PMLR page, else the OpenAlex record.
 """
 import csv
 import json
@@ -12,19 +15,25 @@ import time
 
 import numpy as np
 import pandas as pd
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import config  # noqa: E402
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 OUT = os.path.join(ROOT, "site", "data.json")
-VENUES = ["ICRA", "IROS", "RSS", "CoRL", "T-RO", "IJRR", "SciRobotics"]
+VENUES = config.VENUES
+JOURNALS = {"T-RO", "IJRR", "SciRobotics"}          # their last year is still running when the data are collected
+GROUPS = {"All venues": VENUES, "Conferences": ["ICRA", "IROS", "RSS", "CoRL"], "Journals": ["T-RO", "IJRR", "SciRobotics"]}
 
 
 def main():
-    sc = pd.read_csv(os.path.join(ROOT, "results", "shares_and_change_ta.csv")).sort_values("share_2025", ascending=False)
+    sc = pd.read_csv(os.path.join(ROOT, "results", "shares_and_change_ta.csv")).sort_values(f"share_{config.REF_YEAR}", ascending=False)
     topics = list(sc.topic)
     m = pd.read_csv(os.path.join(ROOT, "data", "topic_matrix_ta.csv"))
     with open(os.path.join(ROOT, "data", "papers.csv")) as f:
         papers = {r["uid"]: r for r in csv.DictReader(f)}
-    dblp = {r["key"]: r for r in map(json.loads, open(os.path.join(ROOT, "data", "dblp_venues_2022_2026.jsonl")))}
+    dblp = {r["key"]: r for r in map(json.loads, open(os.path.join(ROOT, config.DBLP_EXTRACT)))}
     extra = {r.get("id"): r for r in map(json.loads, open(os.path.join(ROOT, "data", "extra_venues.jsonl")))}
 
     def link(uid, src):
@@ -36,7 +45,7 @@ def main():
             return r.get("doi") or uid.replace("https://openalex.org/", "https://openalex.org/works/")
         if src.startswith("roboticsproceedings"):
             return f"https://www.roboticsproceedings.org/{uid}.html"
-        if src.startswith("pmlr"):
+        if src.startswith("pmlr") or src == "pubmed":       # PubMed-only Science Robotics items: uid is the DOI link
             return uid
         return None
 
@@ -52,10 +61,12 @@ def main():
     rows.sort(key=lambda r: (-r[2], r[1], r[0].lower()))
     totals = {f"{v}|{y}": int(n) for (v, y), n in m.groupby(["venue", "year"]).size().items()}
     # full precision (6 decimals): the page rounds once for display, so it shows the same numbers as REPORT.md
-    tp = [{"name": r.topic, "family": r.family.split(" ", 1)[1], "s24": round(r.share_2024, 6), "s25": round(r.share_2025, 6),
-           "s26": round(r.share_2026, 6), "s26lo": round(r.share_2026_lo, 6), "s26hi": round(r.share_2026_hi, 6),
-           "dpp": round(r.change_pp_24_26, 6), "or": round(r.annual_OR, 6), "orlo": round(r.annual_OR_lo, 6),
-           "orhi": round(r.annual_OR_hi, 6), "q": float(f"{r.q:.3g}"), "call": r.call} for r in sc.itertuples()]
+    R6 = lambda v: None if v is None or pd.isna(v) or not np.isfinite(float(v)) else round(float(v), 6)
+    tp = [{"name": r["topic"], "family": r["family"].split(" ", 1)[1],
+           "s": [R6(r[f"share_{y}"]) for y in config.YEARS], "lo": [R6(r[f"share_{y}_lo"]) for y in config.YEARS],
+           "hi": [R6(r[f"share_{y}_hi"]) for y in config.YEARS], "dpp": R6(r["change_pp"]), "or": R6(r["annual_OR"]),
+           "orlo": R6(r["annual_OR_lo"]), "orhi": R6(r["annual_OR_hi"]), "q": float(f"{r['q']:.3g}"), "call": r["call"],
+           "ror": R6(r["recent_OR"]), "rcall": r["recent_call"]} for _, r in sc.iterrows()]
     # per-scope results (scripts/20_scope_trends.py): all venues, conferences, journals, each venue
     st = pd.read_csv(os.path.join(ROOT, "results", "scope_trends_ta.csv"))
     tindex = {r["name"]: i for i, r in enumerate(tp)}
@@ -71,9 +82,20 @@ def main():
                           "hi": [f(f"hi_{y}") for y in years], "k": [int(getattr(r, f"k_{y}")) for y in years],
                           "n": [int(getattr(r, f"n_{y}")) for y in years], "dpp": f("change_pp"), "or": f("OR"),
                           "orlo": f("OR_lo"), "orhi": f("OR_hi"), "q": f("q"), "call": r.call,
+                          "ror": f("rec_OR"), "rcall": (r.rec_call if isinstance(getattr(r, "rec_call", None), str) else "unclear"),
                           "note": (r.note if isinstance(getattr(r, "note", None), str) else None)})
-        scopes[scope] = {"years": years, "single": scope in VENUES, "rows": srows}
-    data = {"built": time.strftime("%Y-%m-%d"), "venues": VENUES, "topics": tp, "totals": totals, "papers": rows, "scopes": scopes}
+        members = GROUPS.get(scope, [scope])
+        last = config.YEARS[-1]
+        missing = [v for v in members if totals.get(f"{v}|{last}", 0) == 0]
+        running = [v for v in members if v in JOURNALS]
+        partial = [last] if last in years and (missing or running) else []
+        estimated = [last] if last in years and missing and len(members) > 1 else []
+        scopes[scope] = {"years": years, "single": scope in VENUES, "partial": partial, "estimated": estimated, "rows": srows}
+    ab = pd.DataFrame([json.loads(l) for l in open(os.path.join(ROOT, "data", "abstracts.jsonl"))])
+    abs_words = {int(y): int(w) for y, w in ab.assign(w=ab.abstract.str.split().str.len()).groupby("year").w.median().items()}
+    data = {"built": time.strftime("%Y-%m-%d"), "years": config.YEARS, "ref": config.REF_YEAR, "venues": VENUES, "topics": tp,
+            "abs_words": abs_words,
+            "totals": totals, "papers": rows, "scopes": scopes}
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w") as f:
         json.dump(data, f, ensure_ascii=False, separators=(",", ":"), allow_nan=False)  # fail on NaN/Infinity

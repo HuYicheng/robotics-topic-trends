@@ -14,6 +14,10 @@ import re
 import time
 import urllib.parse
 import urllib.request
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import config  # noqa: E402
 
 UA = {"User-Agent": "robotics-trends-study/0.1 (research script)"}
 OUT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "extra_venues.jsonl"))
@@ -82,11 +86,11 @@ def openalex_icra(year):
 
 def main():
     all_recs = []
-    for vol, year in (("rss20", 2024), ("rss21", 2025), ("rss22", 2026)):
+    for year, vol in sorted(config.RSS_VOLUMES.items()):
         r = rss(vol, year); print(f"RSS {year} ({vol}): {len(r)}"); all_recs += r; time.sleep(3)
-    for vol, year in (("v270", 2024), ("v305", 2025)):
+    for year, vol in sorted(config.CORL_PMLR.items()):
         r = pmlr(vol, year); print(f"CoRL {year} ({vol}): {len(r)}"); all_recs += r; time.sleep(3)
-    for year in (2024, 2025, 2026):
+    for year in config.YEARS:
         r = openalex_icra(year); print(f"ICRA {year} (OpenAlex): {len(r)}"); all_recs += r
     with open(OUT, "w") as f:
         for r in all_recs:

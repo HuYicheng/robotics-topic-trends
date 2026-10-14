@@ -1,8 +1,8 @@
-"""Extract robotics venue papers (2022-2026) from the dblp XML dump.
+"""Extract robotics venue papers (years in scripts/config.py) from the dblp XML dump.
 
 Input : ~/.cache/robotics-trends/dblp/dblp.xml.gz (+ dblp.dtd beside it), downloaded from
         https://dblp.org/xml/ (CC0). The search API sits behind an anti-bot page, the dump does not.
-Output: data/dblp_venues_2022_2026.jsonl  (one record per paper)
+Output: data/dblp_venues_<first>_<last>.jsonl  (one record per paper)
 Venues are selected by dblp key prefix, which is unambiguous (booktitle strings vary).
 """
 import gzip
@@ -13,9 +13,12 @@ from collections import Counter
 
 from lxml import etree
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import config  # noqa: E402
+
 DUMP = os.path.expanduser("~/.cache/robotics-trends/dblp/dblp.xml.gz")
-OUT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "dblp_venues_2022_2026.jsonl"))
-YEARS = {"2022", "2023", "2024", "2025", "2026"}
+OUT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", config.DBLP_EXTRACT))
+YEARS = {str(y) for y in config.YEARS}
 VENUES = {  # dblp key prefix -> short name
     "conf/icra/": "ICRA", "conf/iros/": "IROS", "conf/rss/": "RSS", "conf/corl/": "CoRL",
     "journals/trob/": "T-RO", "journals/ijrr/": "IJRR", "journals/scirobotics/": "SciRobotics",

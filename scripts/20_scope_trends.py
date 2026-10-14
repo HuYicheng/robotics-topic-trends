@@ -23,6 +23,9 @@ from scipy.stats import chi2
 from statsmodels.stats.proportion import proportion_confint
 
 warnings.filterwarnings("ignore")
+import sys  # noqa: E402
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import config  # noqa: E402
 ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 spec = importlib.util.spec_from_file_location("t", os.path.join(ROOT, "scripts", "04_topics.py"))
 t = importlib.util.module_from_spec(spec); spec.loader.exec_module(t)
@@ -32,7 +35,7 @@ VENUES = ["ICRA", "IROS", "RSS", "CoRL", "T-RO", "IJRR", "SciRobotics"]
 SCOPES = {"All venues": VENUES, "Conferences": ["ICRA", "IROS", "RSS", "CoRL"], "Journals": ["T-RO", "IJRR", "SciRobotics"],
           **{v: [v] for v in VENUES}}
 m = pd.read_csv(os.path.join(ROOT, "data", "topic_matrix_ta.csv"))
-m = m[m.year.between(2024, 2026)]
+m = m[m.year.isin(config.YEARS)]
 rng = np.random.default_rng(0)
 
 
@@ -43,7 +46,7 @@ def single(d, topic, years):
         lo, hi = proportion_confint(k, n, method="wilson")
         r.update({f"share_{y}": 100 * k / n, f"lo_{y}": 100 * lo, f"hi_{y}": 100 * hi, f"k_{y}": k, f"n_{y}": n})
     if d[topic].sum() > 0 and d[topic].sum() < len(d):
-        dd = d.assign(y=d[topic], t=d.year - 2024)
+        dd = d.assign(y=d[topic], t=d.year - config.YEARS[0])
         f = smf.glm("y ~ t", data=dd, family=sm.families.Binomial()).fit()
         f0 = smf.glm("y ~ 1", data=dd, family=sm.families.Binomial()).fit()
         r.update(trend_stats(f, f0))
@@ -73,7 +76,7 @@ def group(d, topic, years):
             r[f"share_{y}"] = r[f"lo_{y}"] = r[f"hi_{y}"] = 0.0
         return r
     dd = dd[dd.venue.isin(keep)]
-    ref = d[d.year == 2025].venue.value_counts(normalize=True)
+    ref = d[d.year == config.REF_YEAR].venue.value_counts(normalize=True)
     try:
         f1 = smf.glm("y ~ C(venue) + C(year)", data=dd, family=sm.families.Binomial()).fit()
         names = list(f1.params.index)
@@ -91,7 +94,7 @@ def group(d, topic, years):
             r[f"share_{y}"] = 100 * float((w * (1 / (1 + np.exp(-X @ f1.params.values)))).sum())
             sims = ((1 / (1 + np.exp(-draws @ X.T))) * w).sum(axis=1)
             r[f"lo_{y}"], r[f"hi_{y}"] = 100 * np.percentile(sims, 2.5), 100 * np.percentile(sims, 97.5)
-        dt = dd.assign(t=dd.year - 2024)
+        dt = dd.assign(t=dd.year - config.YEARS[0])
         rhs0 = "C(venue)" if dt.venue.nunique() > 1 else "1"
         f2 = smf.glm(f"y ~ {rhs0} + t", data=dt, family=sm.families.Binomial()).fit()
         f0 = smf.glm(f"y ~ {rhs0}", data=dt, family=sm.families.Binomial()).fit()
@@ -112,7 +115,26 @@ for scope, vs in SCOPES.items():
         y0, y1 = years[0], years[-1]
         if f"share_{y0}" in r and f"share_{y1}" in r:
             r["change_pp"] = r[f"share_{y1}"] - r[f"share_{y0}"]
+        # recent trend (2024 onwards) with the same test
+        rec_years = [y for y in years if y >= 2024]
+        if len(rec_years) >= 2:
+            dr = d[d.year.isin(rec_years)]
+            rr = single(dr, topic, rec_years) if len(vs) == 1 else group(dr, topic, rec_years)
+            r.update({"rec_OR": rr.get("OR"), "rec_p": rr.get("p")})
         part.append(r)
+    rps = [(i, r["rec_p"]) for i, r in enumerate(part) if pd.notna(r.get("rec_p"))]
+    if rps:
+        rqs = multipletests([p for _, p in rps], method="fdr_bh")[1]
+        for (i, _), q in zip(rps, rqs):
+            part[i]["rec_q"] = q
+    for r in part:
+        q = r.get("rec_q")
+        if q is None or q >= 0.05:
+            r["rec_call"] = "unclear"
+        else:
+            last = int(r["years"].split(",")[-1])
+            up = r["rec_OR"] > 1 if pd.notna(r.get("rec_OR")) else r[f"share_{last}"] > r["share_2024"]
+            r["rec_call"] = "rising" if up else "declining"
     ps = [(i, r["p"]) for i, r in enumerate(part) if pd.notna(r.get("p"))]
     if ps:
         qs = multipletests([p for _, p in ps], method="fdr_bh")[1]
@@ -128,15 +150,21 @@ for scope, vs in SCOPES.items():
             r["call"] = "rising" if up else "declining"
     rows += part
 out = pd.DataFrame(rows)
-cols = ["scope", "topic", "family", "years"] + [c for y in (2024, 2025, 2026) for c in (f"share_{y}", f"lo_{y}", f"hi_{y}", f"k_{y}", f"n_{y}")] \
-       + ["change_pp", "OR", "OR_lo", "OR_hi", "p", "p_wald", "q", "call", "note", "error"]
+# The "All venues" scope is the main table's model; its intervals differ from 13's only by simulation noise. Take 13's
+# intervals so that both files, and the page, show identical numbers.
+main = pd.read_csv(os.path.join(ROOT, "results", "shares_and_change_ta.csv")).set_index("topic")
+allv = out.scope == "All venues"
+for y in config.YEARS:
+    out.loc[allv, f"lo_{y}"] = out.loc[allv, "topic"].map(main[f"share_{y}_lo"])
+    out.loc[allv, f"hi_{y}"] = out.loc[allv, "topic"].map(main[f"share_{y}_hi"])
+cols = ["scope", "topic", "family", "years"] + [c for y in config.YEARS for c in (f"share_{y}", f"lo_{y}", f"hi_{y}", f"k_{y}", f"n_{y}")] \
+       + ["change_pp", "OR", "OR_lo", "OR_hi", "p", "p_wald", "q", "call", "rec_OR", "rec_p", "rec_q", "rec_call", "note", "error"]
 out = out.reindex(columns=[c for c in cols if c in out.columns])
 out.to_csv(os.path.join(ROOT, "results", "scope_trends_ta.csv"), index=False)
 
 # check: the "All venues" scope must reproduce the main table's point estimates
-main = pd.read_csv(os.path.join(ROOT, "results", "shares_and_change_ta.csv")).set_index("topic")
 a = out[out.scope == "All venues"].set_index("topic")
-dev = max(abs(a.loc[tp, f"share_{y}"] - main.loc[tp, f"share_{y}"]) for tp in TOPICS for y in (2024, 2025, 2026))
+dev = max(abs(a.loc[tp, f"share_{y}"] - main.loc[tp, f"share_{y}"]) for tp in TOPICS for y in config.YEARS)
 dor = max(abs(a.loc[tp, "OR"] - main.loc[tp, "annual_OR"]) for tp in TOPICS)
 print(f"All-venues scope vs main table: max share difference {dev:.2e} points, max multiplier difference {dor:.2e}")
 diff_calls = [tp for tp in TOPICS if a.loc[tp, "call"] != main.loc[tp, "call"]]

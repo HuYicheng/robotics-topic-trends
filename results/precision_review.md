@@ -119,3 +119,50 @@ objects, bio-inspired "sensors", "re-construction", "in handling", "setpoint tra
 | legged | 4/5 (non-legged "locomotion": topic renamed "Legged robots / locomotion") |
 | motion planning, MPC, safety (new rule), uncertainty (new rule), force, hardware (new rule), calibration, 3DGS, NeRF, language grounding, human video, radar, event, GNN, Mamba, cross-embodiment | 4/4 each (cross-embodiment 3-4/4) |
 | fixed after reading (re-audited, not re-read): teleoperation 3/6, datasets 3-4/6, reasoning ~3/6, underwater 2/5, multi-robot 2-3/5, agriculture 3/5, micro/bio 3/5, industrial, dexterous 4/5, deformable 3/5, contact-rich 4/5, perception ~3/5, other generative 2-3/4 | audit of matched words clean after the fix |
+
+## Extension to 2020-2026: the same check on 2020-2023 (2026-10-14, evening)
+
+The analysis was extended to 2020-2026 with the same rules and the same method. The question for the new years is
+whether each rule's words mean the same thing in 2020-2023 as in 2024-2026 (sense drift): a word that is used in
+another sense more often in the early years inflates the early shares and flattens or exaggerates the change.
+
+Checks, all on the final measure (title rule on the title or abstract rule on the abstract):
+1. Most frequent matched words per rule, 2020-2023 and 2024-2026 side by side, titles
+   (scratch audit) and abstracts (`results/audit_abstract_matches_by_period.txt`).
+2. Ten random 2020-2023 papers matched by the abstract only, for every topic
+   (`results/precision_ta_samples_2020_2023/`, seed 0), read one by one.
+3. For the rules that looked weak: every 2020-2023 match read (diffusion: 44 papers, world models: 31, leader-follower: 8
+   titles), and every paper whose membership changed under the corrected rule listed and read, both periods.
+4. The 2024-2026 samples drawn with the same seed reproduce the archived ones exactly (same papers, same order, same rules),
+   so the earlier review still applies to them.
+
+What was wrong, and the fix (counts = papers, old -> new rule, 2020-2023 | 2024-2026):
+
+| topic | problem (2020-2023 sample or full listing) | fix | 2020-23 | 2024-26 |
+|---|---|---|---|---|
+| Diffusion / flow generative models | 18 of 44 early matches are not generative models: advection-/reaction-diffusion, label diffusion, distributed (consensus) diffusion, diffusion tensor imaging, SDE drift and diffusion terms, thermal / pheromone / smoke diffusion, cognitive drift-diffusion model, diffusion distance, "diffusion of" (spread of robots, of responsibilities), intermittent-diffusion optimisation, game "score based", image "denoising models"; 2020-2022 have no generative-diffusion paper at all. A rule requiring a generative word next to "diffusion" was tried and dropped: it lost real 2024-2026 papers ("diffusion-based endoscopic image generation", "Diffusion and Transformer models") | those senses excluded | 44 -> 26 | 552 -> 541 |
+| World models / video prediction | 12 of 31 early papers use the classical sense (the robot's semantic or symbolic world representation, the operator's mental model) or "real-world model(s)" | "world model" counts when a learning / prediction word is in the same sentence (learned, latent, deep, generative, predict, video, train, policy, dynamics, simulation, driving, embodied...), "real-world", "semantic", "spatial", "reliable", "abstract world model" excluded | 38 -> 26 | 125 -> 120 |
+| Teleoperation | "leader-follower" is mostly multi-robot formation control (6 of 8 early titles; also most 2024-2026 hits) | kept only in teleoperation set-ups (bilateral / haptic leader-follower, leader-follower arms, devices, interfaces) | 300 -> 277 | 393 -> 377 |
+| Cross-embodiment | "(for/on) any robot" is a generic portability claim (8 of 10 early abstract-only samples) | removed; added the plural sense that was missed: "diverse / multiple / novel robot embodiments", "across ... embodiments", "embodiment gap" (52 added papers read: about 45 in the cross-embodiment sense) | 21 -> 15 | 94 -> 127 |
+| Language grounding | "non-verbal" matched "verbal"; "context-conditioned" matched "text-conditioned"; "natural language processing" as a field name | excluded | 180 -> 157 | 522 -> 501 |
+| Deformable objects | "bag-of-words", "bag of tricks"; "deformable" for robot bodies, terrain, tactile elastomers, deformable convolution / attention | "deformable" counts only before an object word (objects, linear objects, materials, cloth, cables, tissue...); "bag of" excluded | 304 -> 210 | 361 -> 230 |
+| Imitation learning / LfD | "a demonstration video is available at ..." (project-video links) | excluded | 870 -> 862 | 1241 -> 1229 |
+| Learning from human video | the same project-video links ("Video demonstration: https://...") | excluded | 66 -> 56 | 133 -> 125 |
+| Aerial robots / UAV | time-of-flight sensors; flight / aerial phases of legged robots | excluded | 1202 -> 1172 | 1062 -> 1041 |
+| Micro / bio-inspired robots | fish-eye cameras; animal experiments / tissue in medical papers | excluded | 440 -> 429 | 406 -> 393 |
+| Agriculture / field | energy / solar harvesting; image crops | excluded | 205 -> 200 | 238 -> 232 |
+| Event cameras / neuromorphic | event-based (event-triggered) control, discrete-event simulators, Siamese networks (SNNs) | excluded | 110 -> 106 | 133 -> 131 |
+| Uncertainty / probabilistic | "probabilistically complete" planners, probabilistic roadmaps | excluded | 1171 -> 1136 | 911 -> 894 |
+| 3D Gaussian splatting | SplatPlanner (permutohedral lattice splatting, 2021) | excluded | 1 -> 0 | 223 -> 223 |
+| Underwater / marine | "submarine bunker" | word boundary | 331 -> 330 | 380 -> 379 |
+
+Counts: papers on the final research-article set with abstracts (22,629), old rules (scripts/04_topics.py before this
+check) against the final rules, title or abstract; the shares are in the result tables. The world-model "foundation" cue
+was narrowed to "foundation model(s)" after the redrawn samples showed "Industry Foundation Classes" (BIM) passing it.
+Read and left unchanged (precision similar in both periods): dexterous ("dexterity" in a generic sense), tactile
+("touching"), calibration ("calibrated" ground truth), wearable ("assistive"), safety ("shield", kinematic
+"reachability"), industrial ("manufacturing process" of a device). These are known weak spots, not drift.
+Topics whose 2020-2023 samples were all in the topic's sense: VLA, LLM/VLM, other generative, RL, sim-to-real,
+datasets, reasoning, NeRF (one "implicit layer"), self-supervised, GNN, humanoid, legged, space, mobile manipulation,
+whole-body, multi-robot, surgical, grasping, bimanual, contact-rich, articulated/affordance, haptics, navigation,
+long-horizon, HRI, perception, 3D perception, SLAM, radar, prediction, motion planning, MPC, force control, hardware.
