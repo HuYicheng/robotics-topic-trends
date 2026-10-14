@@ -67,30 +67,39 @@ def main():
            "hi": [R6(r[f"share_{y}_hi"]) for y in config.YEARS], "dpp": R6(r["change_pp"]), "or": R6(r["annual_OR"]),
            "orlo": R6(r["annual_OR_lo"]), "orhi": R6(r["annual_OR_hi"]), "q": float(f"{r['q']:.3g}"), "call": r["call"],
            "ror": R6(r["recent_OR"]), "rcall": r["recent_call"]} for _, r in sc.iterrows()]
-    # per-scope results (scripts/20_scope_trends.py): all venues, conferences, journals, each venue
-    st = pd.read_csv(os.path.join(ROOT, "results", "scope_trends_ta.csv"))
+    # per-scope results: the ten named scopes (scripts/20_scope_trends.py) go into data.json; the other 117 venue
+    # combinations (scripts/20b_scope_subsets.py) into subsets.json, which the page loads when a combination is chosen
     tindex = {r["name"]: i for i, r in enumerate(tp)}
-    scopes = {}
-    for scope, g in st.groupby("scope", sort=False):
-        years = [int(y) for y in g.years.iloc[0].split(",")]
-        srows = []
-        for r in g.itertuples():
-            def f(c, r=r):
-                v = getattr(r, c, float("nan"))
-                return None if v is None or pd.isna(v) or not np.isfinite(float(v)) else round(float(v), 6)
-            srows.append({"i": tindex[r.topic], "s": [f(f"share_{y}") for y in years], "lo": [f(f"lo_{y}") for y in years],
-                          "hi": [f(f"hi_{y}") for y in years], "k": [int(getattr(r, f"k_{y}")) for y in years],
-                          "n": [int(getattr(r, f"n_{y}")) for y in years], "dpp": f("change_pp"), "or": f("OR"),
-                          "orlo": f("OR_lo"), "orhi": f("OR_hi"), "q": f("q"), "call": r.call,
-                          "ror": f("rec_OR"), "rcall": (r.rec_call if isinstance(getattr(r, "rec_call", None), str) else "unclear"),
-                          "note": (r.note if isinstance(getattr(r, "note", None), str) else None)})
-        members = GROUPS.get(scope, [scope])
-        last = config.YEARS[-1]
-        missing = [v for v in members if totals.get(f"{v}|{last}", 0) == 0]
-        running = [v for v in members if v in JOURNALS]
-        partial = [last] if last in years and (missing or running) else []
-        estimated = [last] if last in years and missing and len(members) > 1 else []
-        scopes[scope] = {"years": years, "single": scope in VENUES, "partial": partial, "estimated": estimated, "rows": srows}
+
+    def build_scopes(st):
+        out = {}
+        for scope, g in st.groupby("scope", sort=False):
+            years = [int(y) for y in g.years.iloc[0].split(",")]
+            srows = []
+            for r in g.itertuples():
+                def f(c, r=r):
+                    v = getattr(r, c, float("nan"))
+                    return None if v is None or pd.isna(v) or not np.isfinite(float(v)) else round(float(v), 6)
+                srows.append({"i": tindex[r.topic], "s": [f(f"share_{y}") for y in years], "lo": [f(f"lo_{y}") for y in years],
+                              "hi": [f(f"hi_{y}") for y in years], "k": [int(getattr(r, f"k_{y}")) for y in years],
+                              "n": [int(getattr(r, f"n_{y}")) for y in years], "dpp": f("change_pp"), "or": f("OR"),
+                              "orlo": f("OR_lo"), "orhi": f("OR_hi"), "q": f("q"), "call": r.call,
+                              "ror": f("rec_OR"), "rcall": (r.rec_call if isinstance(getattr(r, "rec_call", None), str) else "unclear"),
+                              "note": (r.note if isinstance(getattr(r, "note", None), str) else None)})
+            members = GROUPS.get(scope, scope.split("+"))
+            last = config.YEARS[-1]
+            missing = [v for v in members if totals.get(f"{v}|{last}", 0) == 0]
+            running = [v for v in members if v in JOURNALS]
+            partial = [last] if last in years and (missing or running) else []
+            estimated = [last] if last in years and missing and len(members) > 1 else []
+            out[scope] = {"years": years, "single": len(members) == 1, "members": members, "partial": partial,
+                          "estimated": estimated, "rows": srows}
+        return out
+    scopes = build_scopes(pd.read_csv(os.path.join(ROOT, "results", "scope_trends_ta.csv")))
+    subsets = build_scopes(pd.read_csv(os.path.join(ROOT, "results", "scope_trends_subsets_ta.csv")))
+    with open(os.path.join(os.path.dirname(OUT), "subsets.json"), "w") as fh:
+        json.dump({"scopes": subsets}, fh, ensure_ascii=False, separators=(",", ":"), allow_nan=False)
+    print(f"subsets.json: {len(subsets)} venue combinations, {os.path.getsize(os.path.join(os.path.dirname(OUT), 'subsets.json')) / 1e6:.2f} MB")
     ab = pd.DataFrame([json.loads(l) for l in open(os.path.join(ROOT, "data", "abstracts.jsonl"))])
     abs_words = {int(y): int(w) for y, w in ab.assign(w=ab.abstract.str.split().str.len()).groupby("year").w.median().items()}
     data = {"built": time.strftime("%Y-%m-%d"), "years": config.YEARS, "ref": config.REF_YEAR, "venues": VENUES, "topics": tp,

@@ -104,6 +104,11 @@ ol.papers a:hover { color: var(--accent); text-decoration: underline; }
 .matrix td.cell.dark .up, .matrix td.cell.dark .down { color: #ffffff; }
 .legend { display: flex; flex-wrap: wrap; gap: 14px; font-size: 0.8rem; color: var(--muted); align-items: center; }
 .controls[hidden] { display: none; }
+.venuepick { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; flex-basis: 100%; }
+.venuepick .lbl { font-size: 0.85rem; color: var(--muted); margin-right: 4px; }
+.venuepick .vsep { width: 1px; align-self: stretch; background: var(--line); margin: 2px 4px; }
+.chip.quick { background: var(--bg); }
+.chip.quick[aria-pressed="true"] { background: var(--accent-soft); color: var(--fg); border-color: var(--accent); }
 body[data-view="charts"] .tableonly, body:not([data-view="charts"]) .chartonly { display: none; }
 .seg { display: inline-flex; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--surface); }
 .seg button { font: 500 0.85rem var(--font-body); color: var(--muted); background: none; border: 0; padding: 6px 12px; cursor: pointer; }
@@ -153,16 +158,14 @@ tbody tr.totals:hover { background: var(--bg); }
   </nav>
 
   <div class="controls" id="topiccontrols">
-      <label for="scope">Venue
-        <select id="scope">
-          <option value="All venues">All seven venues</option>
-          <option value="Conferences">Conferences (ICRA, IROS, RSS, CoRL)</option>
-          <option value="Journals">Journals (T-RO, IJRR, Science Robotics)</option>
-          <option value="ICRA">ICRA</option><option value="IROS">IROS</option><option value="RSS">RSS</option>
-          <option value="CoRL">CoRL</option><option value="T-RO">T-RO</option><option value="IJRR">IJRR</option>
-          <option value="SciRobotics">Science Robotics</option>
-        </select>
-      </label>
+      <div class="venuepick" role="group" aria-label="Venues">
+        <span class="lbl">Venues</span>
+        <button type="button" class="chip quick" data-set="all">All seven</button>
+        <button type="button" class="chip quick" data-set="conf">Conferences</button>
+        <button type="button" class="chip quick" data-set="jour">Journals</button>
+        <span class="vsep" aria-hidden="true"></span>
+        <span class="chips" id="venuechips"></span>
+      </div>
       <div class="seg" id="modeseg" role="group" aria-label="Show shares or numbers of papers">
         <button type="button" data-mode="share" aria-pressed="true">Share %</button>
         <button type="button" data-mode="count" aria-pressed="false">Papers</button>
@@ -279,7 +282,7 @@ tbody tr.totals:hover { background: var(--bg); }
   const fmt = (v, d) => { const q = v * 2 ** (d + 1);
     if (Number.isInteger(q) && Math.abs(q % 2) === 1) { const sc = 10 ** d, t = Math.round(v * sc - 0.5); return ((t % 2 === 0 ? t : t + 1) / sc).toFixed(d); }
     return v.toFixed(d); };
-  const state = { sel: [], venues: new Set(), years: new Set(), shown: 100, mode: "share" };
+  const state = { sel: [], venues: new Set(), years: new Set(), shown: 100, mode: "share", vsel: new Set() };
   try { const m = localStorage.getItem("rta-mode"); if (m === "share" || m === "count") state.mode = m; } catch (e) { /* storage unavailable */ }
   let D = null, TOP = [], P = [];
 
@@ -298,9 +301,11 @@ tbody tr.totals:hover { background: var(--bg); }
     const [h, opt] = location.hash.slice(1).split("/");
     if (opt === "papers" || opt === "share") setMode(opt === "papers" ? "count" : "share");
     if (TABS.includes(h)) tab(h);
-    if (h.startsWith("venue-") && D) {            // e.g. #venue-RSS, #venue-Journals, #venue-T-RO
-      const want = h.slice(6), opt = [...$("#scope").options].find((o) => o.value.replace(/\s/g, "") === want);
-      if (opt) { $("#scope").value = opt.value; tab("topics"); renderTopics(); }
+    if (h.startsWith("venue-") && D) {            // e.g. #venue-RSS, #venue-Journals, #venue-T-RO, #venue-ICRA+RSS
+      const want = decodeURIComponent(h.slice(6));
+      const named = { Allvenues: D.venues, All: D.venues, Conferences: SCOPE_VENUES.Conferences, Journals: SCOPE_VENUES.Journals };
+      const list = named[want] || want.split("+").filter((v) => D.venues.includes(v));
+      if (list.length) { if (!TABS.includes(h)) tab("topics"); setVenues(list); }
     }
   };
   window.addEventListener("hashchange", fromHash); fromHash();
@@ -308,9 +313,36 @@ tbody tr.totals:hover { background: var(--bg); }
   // ---------- Topics table ----------
   const LX = (v) => Math.log10(Math.max(v, 0.1));
   const SCOPE_VENUES = { "All venues": null, "Conferences": ["ICRA", "IROS", "RSS", "CoRL"], "Journals": ["T-RO", "IJRR", "SciRobotics"] };
+  const VLABEL = { SciRobotics: "Science Robotics" };
+  // Venue selection (Topics and Charts): any combination; named scopes for all / conferences / journals / one venue,
+  // the other 117 combinations come from subsets.json (same computation, scripts/20b_scope_subsets.py)
+  function scopeKey() {
+    const sel = D.venues.filter((v) => state.vsel.has(v));
+    const same = (g) => sel.length === g.length && g.every((v) => state.vsel.has(v));
+    if (sel.length === D.venues.length) return "All venues";
+    if (same(SCOPE_VENUES.Conferences)) return "Conferences";
+    if (same(SCOPE_VENUES.Journals)) return "Journals";
+    return sel.join("+");
+  }
+  let SUB = null, subLoading = null;
+  const getScope = (key) => D.scopes[key] || (SUB && SUB[key]) || null;
+  const scopeLabel = (key) => key.split("+").map((v) => VLABEL[v] || v).join(" + ");
+  function loadSubsets() {
+    if (!subLoading) subLoading = fetch("subsets.json").then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then((d) => { SUB = d.scopes; renderTopics(); })
+      .catch((err) => { subLoading = null; for (const id of ["#scopenote", "#chartnote"]) $(id).textContent = "The venue combinations did not load (" + err.message + ")."; });
+    return subLoading;
+  }
+  function venuePick() {
+    $("#venuechips").innerHTML = D.venues.map((v) => `<button type="button" class="chip" data-v="${v}" aria-pressed="${state.vsel.has(v)}">${VLABEL[v] || v}</button>`).join("");
+    const key = scopeKey();
+    for (const b of document.querySelectorAll(".venuepick .quick"))
+      b.setAttribute("aria-pressed", String({ all: "All venues", conf: "Conferences", jour: "Journals" }[b.dataset.set] === key));
+  }
+  function setVenues(list) { state.vsel = new Set(list); venuePick(); renderTopics(); }
   const pct = (v) => (v == null ? "–" : fmt(v, 1) + "%");
   function scopeRows() {
-    const sc = D.scopes[$("#scope").value];
+    const sc = getScope(scopeKey());
     return sc.rows.map((r) => {
       const t = TOP[r.i], by = {};
       sc.years.forEach((y, j) => { by[y] = { s: r.s[j], lo: r.lo[j], hi: r.hi[j], k: r.k[j], n: r.n[j] }; });
@@ -336,9 +368,9 @@ tbody tr.totals:hover { background: var(--bg); }
   const MEMBERS = { "Conferences": ["ICRA", "IROS", "RSS", "CoRL"], "Journals": ["T-RO", "IJRR", "SciRobotics"] };
   const JOURNALS = new Set(MEMBERS.Journals);
   function lastYearNote(scope, mode) {            // why the last year is not comparable as a count / is an estimate
-    const sc = D.scopes[scope], last = D.years[D.years.length - 1];
+    const sc = getScope(scope), last = D.years[D.years.length - 1];
     if (!sc.years.includes(last)) return `No ${last} papers yet.`;
-    const members = scope === "All venues" ? D.venues : MEMBERS[scope] || [scope];
+    const members = sc.members;
     const missing = members.filter((v) => !(D.totals[v + "|" + last] > 0)), jr = members.filter((v) => JOURNALS.has(v));
     const parts = [];
     if (missing.length) parts.push(`${missing.join(" and ")} ${last} not published yet`);
@@ -347,10 +379,16 @@ tbody tr.totals:hover { background: var(--bg); }
     if (mode === "count") return `*${last} is not a full year (${parts.join("; ")}), so its numbers of papers are not comparable with earlier years.`;
     return missing.length ? `*${last} is estimated from the venues published so far (${parts.join("; ")}).` : `*${last}: ${parts.join("; ")}.`;
   }
-  function renderTopics() { renderTable(); renderCharts(); }
+  function renderTopics() {
+    if (!getScope(scopeKey())) {                 // a combination: wait for subsets.json
+      for (const id of ["#scopenote", "#chartnote"]) $(id).textContent = "Loading the venue combination…";
+      loadSubsets(); return;
+    }
+    renderTable(); renderCharts();
+  }
   function renderTable() {
-    const scope = $("#scope").value, mode = state.mode;
-    const sc = D.scopes[scope], yrs = sc.years, Y = D.years;
+    const scope = scopeKey(), mode = state.mode;
+    const sc = getScope(scope), yrs = sc.years, Y = D.years;
     const rows = topicRows(), star = new Set(mode === "count" ? sc.partial : sc.estimated);
     const arrow = { rising: "↑ rising", declining: "↓ declining", unclear: "· unclear" };
     const mark = { rising: " ↑", declining: " ↓", unclear: "" };
@@ -371,8 +409,9 @@ tbody tr.totals:hover { background: var(--bg); }
       <td class="num" title="${t.orlo == null ? "not estimable" : "95% interval ×" + fmt(t.orlo, 2) + "–×" + fmt(t.orhi, 2)}">${t.orlo == null ? "–" : "×" + fmt(t.or, 2)}</td>
       <td class="num" title="2024 onwards">${t.ror == null ? "–" : "×" + fmt(t.ror, 2)}${mark[t.rcall]}</td>
       <td><span class="call ${t.call}">${arrow[t.call]}</span></td><td>${mode === "count" ? sparkBars(t, new Set(sc.partial)) : spark2(t)}</td></tr>`).join("");
-    const what = mode === "count" ? `${scope}: number of papers per year whose title or abstract names the topic (`
-      : sc.single ? `${scope}: raw shares of its papers, in % (` : `${scope}: shares in %, standardised to the ${D.ref} venue mix of the group (`;
+    const lab = scopeLabel(scope);
+    const what = mode === "count" ? `${lab}: number of papers per year whose title or abstract names the topic (`
+      : sc.single ? `${lab}: raw shares of its papers, in % (` : `${lab}: shares in %, standardised to the ${D.ref} venue mix of the selection (`;
     $("#scopenote").textContent = [what + yrs.map((y, j) => `${y}: ${n[j].toLocaleString("en")}`).join(", ") + " papers).", lastYearNote(scope, mode)].filter(Boolean).join(" ");
     $("#sparklegend").textContent = mode === "count" ? `bars: papers per year, ${Y[0]}–${Y[Y.length - 1]} (own scale per row)`
       : `dots on a log scale: ○ ${Y[0]} · • ${Y[1]}–${Y[Y.length - 2]} · ● ${Y[Y.length - 1]}`;
@@ -416,7 +455,7 @@ tbody tr.totals:hover { background: var(--bg); }
   let CHART = new Map();              // card key -> series, for the tooltip
   function renderCharts() {
     if (!D) return;
-    const scope = $("#scope").value, sc = D.scopes[scope], mode = state.mode, Y = D.years;
+    const scope = scopeKey(), sc = getScope(scope), mode = state.mode, Y = D.years;
     const star = new Set(mode === "count" ? sc.partial : sc.estimated), arrow = { rising: "↑ rising", declining: "↓ declining", unclear: "· unclear" };
     const ser = (t) => Y.map((y) => { const b = t.by[y]; return b && b.s != null ? { y, v: b.s, lo: b.lo, hi: b.hi, k: b.k, n: b.n } : { y, v: null, lo: null, hi: null, k: null, n: null }; });
     const peak = (S) => Math.max(0, ...S.map((d) => (mode === "count" ? d.k || 0 : d.hi ?? d.v ?? 0)));
@@ -440,8 +479,8 @@ tbody tr.totals:hover { background: var(--bg); }
     html += rows.map(([t, S]) => card(t.i, t.name, `<span class="call ${t.call}">${arrow[t.call]}</span>`, S, same ?? niceMax(peak(S)))).join("");
     $("#smgrid").innerHTML = rows.length ? html : `<p class="note">No topic matches these filters.</p>`;
     $("#chartnote").textContent = (mode === "count"
-      ? [`${scope}: number of papers per year whose title or abstract names the topic.`, sc.partial.length ? "Lighter bars: year not complete." : ""]
-      : [`${scope}: share of papers per year, in %${sc.single ? "" : `, standardised to the ${D.ref} venue mix`}.`, sc.estimated.length ? "Hollow dot: estimated." : ""])
+      ? [`${scopeLabel(scope)}: number of papers per year whose title or abstract names the topic.`, sc.partial.length ? "Lighter bars: year not complete." : ""]
+      : [`${scopeLabel(scope)}: share of papers per year, in %${sc.single ? "" : `, standardised to the ${D.ref} venue mix of the selection`}.`, sc.estimated.length ? "Hollow dot: estimated." : ""])
       .concat(lastYearNote(scope, mode)).filter(Boolean).join(" ");
   }
   const TIP = $("#tip");
@@ -450,7 +489,7 @@ tbody tr.totals:hover { background: var(--bg); }
   $("#smgrid").addEventListener("pointermove", (e) => {
     const r = e.target.closest("rect.hit"); if (!r) { TIP.hidden = true; return; }
     const key = r.closest(".sm").dataset.key, S = CHART.get(key), d = S && S[+r.dataset.j]; if (!d) return;
-    const sc = D.scopes[$("#scope").value], lines = [];
+    const sc = getScope(scopeKey()), lines = [];
     if (d.k == null) lines.push(tipLine(null, `${d.y}: no papers published yet`));
     else if (key === "all") lines.push(tipLine(d.n.toLocaleString("en"), `papers in ${d.y}${sc.partial.includes(d.y) ? " (year not complete)" : ""}`));
     else if (state.mode === "count") {
@@ -478,13 +517,24 @@ tbody tr.totals:hover { background: var(--bg); }
   }
   $("#modeseg").addEventListener("click", (e) => { const b = e.target.closest("button[data-mode]"); if (b) setMode(b.dataset.mode); });
   function setVenueScope(scope) {
-    const vs = SCOPE_VENUES[scope] === undefined ? [scope] : SCOPE_VENUES[scope];
+    const vs = SCOPE_VENUES[scope] === undefined ? scope.split("+") : SCOPE_VENUES[scope];
     state.venues = new Set(vs ? vs.map((v) => D.venues.indexOf(v)) : D.venues.map((_, j) => j));
   }
-  function openTopic(i, scope) { state.sel = [i]; state.shown = 100; setVenueScope(scope || $("#scope").value); filters(); tab("combine"); renderCombine(); }
+  function openTopic(i, scope) { state.sel = [i]; state.shown = 100; setVenueScope(scope || scopeKey()); filters(); tab("combine"); renderCombine(); }
   $("#topictable tbody").addEventListener("click", (e) => { const tr = e.target.closest("tr[data-i]"); if (tr) openTopic(+tr.dataset.i); });
   $("#topictable tbody").addEventListener("keydown", (e) => { const tr = e.target.closest("tr[data-i]"); if (tr && e.key === "Enter") openTopic(+tr.dataset.i); });
-  for (const id of ["#scope", "#sortby", "#family", "#onlysig"]) $(id).addEventListener("change", renderTopics);
+  for (const id of ["#sortby", "#family", "#onlysig"]) $(id).addEventListener("change", renderTopics);
+  $("#venuechips").addEventListener("click", (e) => {
+    const b = e.target.closest("button[data-v]"); if (!b) return;
+    const v = b.dataset.v;
+    if (state.vsel.has(v) && state.vsel.size === 1) return;          // keep at least one venue
+    const next = new Set(state.vsel); next.has(v) ? next.delete(v) : next.add(v);
+    setVenues([...next]);
+  });
+  document.querySelector(".venuepick").addEventListener("click", (e) => {
+    const b = e.target.closest("button.quick"); if (!b) return;
+    setVenues(b.dataset.set === "all" ? D.venues : SCOPE_VENUES[b.dataset.set === "conf" ? "Conferences" : "Journals"]);
+  });
   // ---------- By venue matrix ----------
   const SCOPE_ORDER = ["All venues", "Conferences", "Journals", "ICRA", "IROS", "RSS", "CoRL", "T-RO", "IJRR", "SciRobotics"];
   const SCOPE_LABEL = { "All venues": "All", "Conferences": "Conf.", "Journals": "Journals", "SciRobotics": "Sci. Robotics" };
@@ -573,6 +623,8 @@ tbody tr.totals:hover { background: var(--bg); }
     TOP = d.topics.map((t, i) => Object.assign({ i }, t));
     state.venues = new Set(d.venues.map((_, i) => i));   // all venues on; click to leave one out
     state.years = new Set(d.years);
+    state.vsel = new Set(d.venues);
+    venuePick();
     const nPapers = d.papers.length, y0 = d.years[0], y1 = d.years[d.years.length - 1];
     $("#lede").textContent = `What ${nPapers.toLocaleString("en")} papers at ICRA, IROS, RSS, CoRL, T-RO, IJRR and Science Robotics (${y0}–${y1}) are about, read from their titles and abstracts. Shares, how they changed, and which papers combine which topics.`;
     $("#m-range").textContent = String(y0); $("#m-n").textContent = nPapers.toLocaleString("en") + " papers";
