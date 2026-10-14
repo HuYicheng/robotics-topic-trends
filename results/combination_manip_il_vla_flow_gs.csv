@@ -1,0 +1,11 @@
+combination,n_2024,pct_2024,n_2025,pct_2025,n_2026,pct_2026
+manipulation,879,20.88,1000,21.93,643,28.62
+M+IL,180,4.28,270,5.92,206,9.17
+M+IL+Gen(diffusion/flow),20,0.48,50,1.1,56,2.49
+M+IL+VLA/VLM,18,0.43,38,0.83,42,1.87
+M+IL+VLA/VLM+Gen,3,0.07,5,0.11,9,0.4
+M+GS,4,0.1,30,0.66,15,0.67
+M+IL+GS,1,0.02,5,0.11,2,0.09
+all five: M+IL+VLA/VLM+Gen+GS,0,0.0,0,0.0,0,0.0
+flow matching (any),4,0.1,15,0.33,43,1.91
+M+IL+flow matching,1,0.02,2,0.04,10,0.45

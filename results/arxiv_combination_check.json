@@ -1,0 +1,446 @@
+{
+ "checked": "2026-10-14 22:17",
+ "source": "export.arxiv.org/api/query, all categories, any date",
+ "results": {
+  "GS & VLA": {
+   "query": "abs:\"gaussian splatting\" AND (abs:\"vision-language-action\" OR abs:VLA)",
+   "totalResults": 20,
+   "latest": [
+    {
+     "id": "2610.17521v1",
+     "date": "2026-10-13",
+     "title": "YUBI-Real2Sim: 3DGS Scene Verification for Reliable Policy Evaluation"
+    },
+    {
+     "id": "2610.13945v1",
+     "date": "2026-10-09",
+     "title": "Splat2Act: From Captured Scenes to Personalized VLA Manipulation"
+    },
+    {
+     "id": "2608.10756v1",
+     "date": "2026-08-11",
+     "title": "Embodied Multimodal Grounding for Open-Vocabulary Mobile Manipulation via Semantic 3D Gaussian Splatting"
+    },
+    {
+     "id": "2607.22997v1",
+     "date": "2026-07-25",
+     "title": "Real2Sim2Real for Vision-Language-Action Manipulation: An AMD ROCm-Based Pipeline"
+    },
+    {
+     "id": "2607.14997v1",
+     "date": "2026-07-16",
+     "title": "AeroAct: Action-Centered World-Action Models for Language-Conditioned Quadrotor Flight"
+    },
+    {
+     "id": "2606.01458v1",
+     "date": "2026-05-31",
+     "title": "LEGS: Fine-Tuning Teleop-Free VLAs for Humanoid Loco-manipulation in an Embodied Gaussian Splatting World"
+    },
+    {
+     "id": "2605.10485v1",
+     "date": "2026-05-11",
+     "title": "VEGA: Visual Encoder Grounding Alignment for Spatially-Aware Vision-Language-Action Models"
+    },
+    {
+     "id": "2604.08410v2",
+     "date": "2026-04-09",
+     "title": "BLaDA: Bridging Language to Functional Dexterous Actions within 3DGS Fields"
+    },
+    {
+     "id": "2603.25038v1",
+     "date": "2026-03-26",
+     "title": "$π$, But Make It Fly: Physics-Guided Transfer of VLA Models to Aerial Manipulation"
+    },
+    {
+     "id": "2603.19822v4",
+     "date": "2026-03-20",
+     "title": "HUGE-Bench: A Benchmark for High-Level UAV Vision-Language-Action Tasks"
+    },
+    {
+     "id": "2603.15186v1",
+     "date": "2026-03-16",
+     "title": "NavGSim: High-Fidelity Gaussian Splatting Simulator for Large-Scale Navigation"
+    },
+    {
+     "id": "2602.13444v1",
+     "date": "2026-02-13",
+     "title": "FlowHOI: Flow-based Semantics-Grounded Generation of Hand-Object Interactions for Dexterous Robot Manipulation"
+    },
+    {
+     "id": "2602.00096v1",
+     "date": "2026-01-24",
+     "title": "Mirage2Matter: A Physically Grounded Gaussian World Model from Video"
+    },
+    {
+     "id": "2512.15258v2",
+     "date": "2025-12-17",
+     "title": "VLA-AN: An Efficient and Onboard Vision-Language-Action Framework for Aerial Navigation in Complex Environments"
+    },
+    {
+     "id": "2512.02013v1",
+     "date": "2025-12-01",
+     "title": "ManualVLA: A Unified VLA Model for Chain-of-Thought Manual Generation and Robotic Manipulation"
+    },
+    {
+     "id": "2511.19861v2",
+     "date": "2025-11-25",
+     "title": "GigaWorld-0: World Models as Data Engine to Empower Embodied AI"
+    },
+    {
+     "id": "2511.14161v2",
+     "date": "2025-11-18",
+     "title": "RoboTidy : A 3D Gaussian Splatting Household Tidying Benchmark for Embodied Navigation and Action"
+    },
+    {
+     "id": "2509.14687v1",
+     "date": "2025-09-18",
+     "title": "RealMirror: A Comprehensive, Open-Source Vision-Language-Action Platform for Embodied AI"
+    },
+    {
+     "id": "2506.14009v2",
+     "date": "2025-06-16",
+     "title": "GRaD-Nav++: Vision-Language Model Enabled Visual Drone Navigation with Gaussian Radiance Fields and Differentiable Dynamics"
+    },
+    {
+     "id": "2505.09601v1",
+     "date": "2025-05-14",
+     "title": "Real2Render2Real: Scaling Robot Data Without Dynamics Simulation or Robot Hardware"
+    }
+   ]
+  },
+  "GS & imitation learning": {
+   "query": "abs:\"gaussian splatting\" AND (abs:\"imitation learning\" OR abs:\"behavior cloning\" OR abs:demonstrations)",
+   "totalResults": 1983,
+   "latest": [
+    {
+     "id": "2610.17936v1",
+     "date": "2026-10-13",
+     "title": "PUGS: Physics-Guided Uncertainty Modeling for Underwater Dynamic 3D Gaussian Splatting"
+    },
+    {
+     "id": "2610.17605v1",
+     "date": "2026-10-13",
+     "title": "PLEDGE: Progressive Lossy Error-Bounded Compression of 3D Gaussian Splatting"
+    },
+    {
+     "id": "2610.14963v1",
+     "date": "2026-10-10",
+     "title": "AD-GS: Anatomical Density-guided 3D Gaussian Splatting for Sparse-View Dental CBCT Reconstruction"
+    },
+    {
+     "id": "2610.14685v1",
+     "date": "2026-10-10",
+     "title": "Demiurge: Forging Navigable 4D Worlds via Autoregressive Video Rerendering"
+    },
+    {
+     "id": "2610.13945v1",
+     "date": "2026-10-09",
+     "title": "Splat2Act: From Captured Scenes to Personalized VLA Manipulation"
+    },
+    {
+     "id": "2610.13860v1",
+     "date": "2026-10-09",
+     "title": "Make It Flow: Animating Water in 3D Gaussian Splatting Scenes"
+    },
+    {
+     "id": "2610.13757v1",
+     "date": "2026-10-09",
+     "title": "Gaussian Splatting with Reflections Guided by What is Seen"
+    },
+    {
+     "id": "2610.13643v2",
+     "date": "2026-10-09",
+     "title": "AutoBio+: Benchmarking Dexterous Manipulation with Dynamic Experimental Phenomena in Realistic Laboratories"
+    },
+    {
+     "id": "2610.13503v1",
+     "date": "2026-10-09",
+     "title": "SplatQ: Interaction-Aware Pruning of 3D Gaussian Splatting via Quadratic Selection"
+    },
+    {
+     "id": "2610.13177v1",
+     "date": "2026-10-09",
+     "title": "CompactSplat: Spatially Adaptive Gaussian Distribution for Feedforward Scene Reconstruction"
+    },
+    {
+     "id": "2610.12127v1",
+     "date": "2026-10-08",
+     "title": "LVS: Local View Synthesis from Relative Camera Pose by Reusing Previous Views"
+    },
+    {
+     "id": "2610.11752v1",
+     "date": "2026-10-08",
+     "title": "2DGS-Planner: Rasterization-based Path Planning in 2D Gaussian Splatting Map"
+    },
+    {
+     "id": "2610.09116v1",
+     "date": "2026-10-06",
+     "title": "SPLATIFY: Reproduce, Discover, Innovate! From Papers and Ideas to Trainable 3DGS Code"
+    },
+    {
+     "id": "2610.07569v1",
+     "date": "2026-10-06",
+     "title": "OpenSplatGraph: From Dense Semantic Maps to Structured Scene Graphs for Open-Vocabulary Robot Perception"
+    },
+    {
+     "id": "2610.07110v1",
+     "date": "2026-10-05",
+     "title": "MoonGS: High-quality Representation of the Lunar Surface via Gaussian Splatting Using Robust Depth Features from Image Pairs"
+    },
+    {
+     "id": "2610.06472v1",
+     "date": "2026-10-05",
+     "title": "MaRO-GS: Mask-Robust Object-Centric Gaussian Splatting from Inconsistent Multi-view Masks"
+    },
+    {
+     "id": "2610.05289v2",
+     "date": "2026-10-04",
+     "title": "Mobile-4DGS: Unified Static-Dynamic Real-time Mobile Gaussian Splatting"
+    },
+    {
+     "id": "2610.04336v1",
+     "date": "2026-10-03",
+     "title": "A differentiable Lagrangian-coupled 3D Gaussian Splatting-SPH model for forward simulation and inverse analysis in solid mechanics"
+    },
+    {
+     "id": "2610.04076v1",
+     "date": "2026-10-02",
+     "title": "VCURF: Virtual Camera-based Uncertainty of Radiance Fields"
+    },
+    {
+     "id": "2610.04013v1",
+     "date": "2026-10-02",
+     "title": "Return-to-Home Feasible Micro-Aerial Vehicle Exploration for 3D Gaussian Splatting Reconstruction"
+    },
+    {
+     "id": "2610.03599v1",
+     "date": "2026-10-02",
+     "title": "ManifoldSplat: Language-Guided Semantic Shape Editing of 3D Gaussian Head Avatars"
+    },
+    {
+     "id": "2610.01707v1",
+     "date": "2026-10-01",
+     "title": "MEGA: Object-Level Mesh Extraction from 3D Gaussian Splatting via Spatial Visual Distillation"
+    },
+    {
+     "id": "2609.39553v1",
+     "date": "2026-09-30",
+     "title": "EffGS: Efficient and High-Fidelity Gaussian Splatting"
+    },
+    {
+     "id": "2609.39089v1",
+     "date": "2026-09-30",
+     "title": "UGOD: Uncertainty-Guided Opacity and Dropout for Sparse-View 3D Gaussian Splatting"
+    },
+    {
+     "id": "2609.38418v1",
+     "date": "2026-09-29",
+     "title": "PneuTac: Tactile Manipulation with Soft Pneumatic Robots via Unified MPM-Gaussian Splatting Simulation"
+    },
+    {
+     "id": "2609.37816v1",
+     "date": "2026-09-29",
+     "title": "WINGS: Reference-Free Gaussian Splatting Inpainting with 3D-Native Generative Priors"
+    },
+    {
+     "id": "2609.36969v1",
+     "date": "2026-09-29",
+     "title": "Prior-Driven Enhancements in 3D Gaussian Splatting: Normals and Depths Regularization"
+    },
+    {
+     "id": "2609.36940v1",
+     "date": "2026-09-29",
+     "title": "DispFlow-GS: Displacement Flow Supervision with Motion Disentangling for Monocular Deformable 3D Gaussian Splatting"
+    },
+    {
+     "id": "2609.36693v1",
+     "date": "2026-09-29",
+     "title": "AESplat: Advancing Pose-Free Feed-Forward 3D Gaussian Splatting via Decoupled Appearance Modeling"
+    },
+    {
+     "id": "2609.35619v1",
+     "date": "2026-09-28",
+     "title": "CollisionSplatting: Collision-Aware Motion Planning in 3DGS Scenes with Image-Conditioned Objectives and Adjustable Conservatism"
+    },
+    {
+     "id": "2609.35612v1",
+     "date": "2026-09-28",
+     "title": "Remote Sensing Sparse-View 3D Gaussian Splatting via Depth Image-Based Rendering"
+    },
+    {
+     "id": "2609.34853v1",
+     "date": "2026-09-28",
+     "title": "EviSplat: Preserving Multi-View Evidence in 3D Gaussian Splatting for Open-Vocabulary Segmentation"
+    },
+    {
+     "id": "2609.33872v1",
+     "date": "2026-09-27",
+     "title": "Robot-GST: geometry-aware spatial-temporal robot policy representation and evaluation"
+    },
+    {
+     "id": "2609.33330v1",
+     "date": "2026-09-27",
+     "title": "FeCoSplat: Feedback-Guided Compression for Feed-Forward 3D Gaussian Splatting"
+    },
+    {
+     "id": "2609.32711v1",
+     "date": "2026-09-26",
+     "title": "ProDyGS: Dynamic Gaussian Splatting from a Single Static Monocular Camera"
+    },
+    {
+     "id": "2609.32399v1",
+     "date": "2026-09-26",
+     "title": "Endo-TSR: Temporal Spectral Modeling of Appearance and Motion for Endoscopic Reconstruction"
+    },
+    {
+     "id": "2609.32323v1",
+     "date": "2026-09-26",
+     "title": "FoundDSR: A Generalizable Foundation Model with Guided 2D Gaussian Splatting for Depth Super-Resolution"
+    },
+    {
+     "id": "2609.31374v1",
+     "date": "2026-09-25",
+     "title": "RECAST: From Log Replay to Closed-Loop Driving Simulation with View-Complete Actors"
+    },
+    {
+     "id": "2609.31339v1",
+     "date": "2026-09-25",
+     "title": "ChronoFuseGS: Multi-Temporal Gaussian Fusion with Per-Splat Persistence and Change Visualization"
+    },
+    {
+     "id": "2609.30393v1",
+     "date": "2026-09-24",
+     "title": "LiTe-GS: Oracle-Efficient Next Best View Selection for 3D Gaussian Splatting"
+    }
+   ]
+  },
+  "GS & flow matching/diffusion policy": {
+   "query": "abs:\"gaussian splatting\" AND (abs:\"flow matching\" OR abs:\"diffusion policy\")",
+   "totalResults": 18,
+   "latest": [
+    {
+     "id": "2610.13781v1",
+     "date": "2026-10-09",
+     "title": "SimVTA: Simulation-Grounded Video-Trajectory Alignment for Driving World Action Models"
+    },
+    {
+     "id": "2610.07958v1",
+     "date": "2026-10-06",
+     "title": "DensiTok: Making Feed-Forward 3D Gaussian Splatting See More Views Than It Is Given"
+    },
+    {
+     "id": "2609.32175v1",
+     "date": "2026-09-26",
+     "title": "OneFixer: High-Quality and Consistent One-Step Autoregressive 3DGS Refinement for Driving Scenes"
+    },
+    {
+     "id": "2609.21112v1",
+     "date": "2026-09-17",
+     "title": "Demonstration Synthesis from a Single Scan via Gaussian Splatting for Visuomotor Policy Learning"
+    },
+    {
+     "id": "2608.18388v2",
+     "date": "2026-08-18",
+     "title": "Depth Anything V4: Dynamic 4D Scene Reconstruction via Riemannian Flow Matching on 4D Gaussian Splatting"
+    },
+    {
+     "id": "2606.19019v1",
+     "date": "2026-06-17",
+     "title": "FlowObject: Flow Steering for Bridging Generative Priors and Reconstruction Fidelity"
+    },
+    {
+     "id": "2605.22147v1",
+     "date": "2026-05-21",
+     "title": "Flow-based Gaussian Splatting for Continuous-Scale Remote Sensing Image Super-Resolution"
+    },
+    {
+     "id": "2605.01195v2",
+     "date": "2026-05-02",
+     "title": "TAIL-Safe: Task-Agnostic Safety Monitoring for Imitation Learning Policies"
+    },
+    {
+     "id": "2603.25038v1",
+     "date": "2026-03-26",
+     "title": "$π$, But Make It Fly: Physics-Guided Transfer of VLA Models to Aerial Manipulation"
+    },
+    {
+     "id": "2603.10446v4",
+     "date": "2026-03-11",
+     "title": "SignSparK: Efficient Multilingual Sign Language Production via Sparse Keyframe Learning"
+    },
+    {
+     "id": "2602.13444v1",
+     "date": "2026-02-13",
+     "title": "FlowHOI: Flow-based Semantics-Grounded Generation of Hand-Object Interactions for Dexterous Robot Manipulation"
+    },
+    {
+     "id": "2601.06212v2",
+     "date": "2026-01-08",
+     "title": "Akasha 2: Hamiltonian State Space Duality and Visual-Language Joint Embedding Predictive Architectur"
+    },
+    {
+     "id": "2512.04731v1",
+     "date": "2025-12-04",
+     "title": "Bridging Simulation and Reality: Cross-Domain Transfer with Semantic 2D Gaussian Splatting"
+    },
+    {
+     "id": "2508.07118v3",
+     "date": "2025-08-09",
+     "title": "DexFruit: Dexterous Manipulation and Gaussian Splatting Inspection of Fruit"
+    },
+    {
+     "id": "2507.16535v2",
+     "date": "2025-07-22",
+     "title": "EarthCrafter: Scalable 3D Earth Generation via Dual-Sparse Latent Diffusion"
+    },
+    {
+     "id": "2506.01600v1",
+     "date": "2025-06-02",
+     "title": "WoMAP: World Models For Embodied Open-Vocabulary Object Localization"
+    },
+    {
+     "id": "2504.04612v2",
+     "date": "2025-04-06",
+     "title": "Tool-as-Interface: Learning Robot Policies from Observing Human Tool Use"
+    },
+    {
+     "id": "2504.01647v2",
+     "date": "2025-04-02",
+     "title": "FlowR: Flowing from Sparse to Dense 3D Reconstructions"
+    }
+   ]
+  },
+  "GS & VLA & (flow matching or diffusion)": {
+   "query": "abs:\"gaussian splatting\" AND (abs:\"vision-language-action\" OR abs:VLA) AND (abs:\"flow matching\" OR abs:diffusion)",
+   "totalResults": 4,
+   "latest": [
+    {
+     "id": "2608.10756v1",
+     "date": "2026-08-11",
+     "title": "Embodied Multimodal Grounding for Open-Vocabulary Mobile Manipulation via Semantic 3D Gaussian Splatting"
+    },
+    {
+     "id": "2607.14997v1",
+     "date": "2026-07-16",
+     "title": "AeroAct: Action-Centered World-Action Models for Language-Conditioned Quadrotor Flight"
+    },
+    {
+     "id": "2603.25038v1",
+     "date": "2026-03-26",
+     "title": "$π$, But Make It Fly: Physics-Guided Transfer of VLA Models to Aerial Manipulation"
+    },
+    {
+     "id": "2602.13444v1",
+     "date": "2026-02-13",
+     "title": "FlowHOI: Flow-based Semantics-Grounded Generation of Hand-Object Interactions for Dexterous Robot Manipulation"
+    }
+   ]
+  }
+ },
+ "caveats": {
+  "GS & imitation learning": "INVALID: arXiv search stems 'demonstrations' to match 'demonstrate'; the 1,983 hits are mostly unrelated 3DGS papers. Do not use this count.",
+  "GS & flow matching/diffusion policy": "approximate: arXiv phrase matching is loose (some hits are 3DGS refinement/driving papers without a policy).",
+  "GS & VLA": "titles inspected: the latest hits are real GS+VLA papers (Splat2Act, YUBI-Real2Sim, Real2Sim2Real for VLA).",
+  "GS & VLA & (flow matching or diffusion)": "4 papers, titles listed; includes aerial manipulation and hand-object generation, not only tabletop manipulation."
+ }
+}

@@ -1,0 +1,161 @@
+"""Per-venue analysis (title + abstract measure): share per year and change for every topic, by scope.
+
+Scopes: all seven venues, conferences (ICRA, IROS, RSS, CoRL), journals (T-RO, IJRR, Science Robotics), and each venue.
+- single venue: raw share per year with Wilson 95% interval; trend = logistic topic ~ year (linear) within the venue.
+- group of venues: share standardised to the group's 2025 venue mix from topic ~ C(venue) + C(year), with 95% intervals
+  from 2,000 coefficient draws (as in 13_shares_and_change.py); trend = topic ~ C(venue) + year.
+  Years with no venue of the group present are left empty (IROS and CoRL have no 2026).
+Trend test = likelihood-ratio test of the year term (valid when a topic is absent in some years of a small venue,
+where the Wald test breaks down); the multiplier is reported only when estimable (no separation).
+Benjamini-Hochberg within each scope across topics; call only at q < 0.05.
+Output: results/scope_trends_ta.csv, results/venue_matrix_ta.md
+"""
+import importlib.util
+import os
+import warnings
+
+import numpy as np
+import pandas as pd
+import statsmodels.api as sm
+import statsmodels.formula.api as smf
+from statsmodels.stats.multitest import multipletests
+from scipy.stats import chi2
+from statsmodels.stats.proportion import proportion_confint
+
+warnings.filterwarnings("ignore")
+ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
+spec = importlib.util.spec_from_file_location("t", os.path.join(ROOT, "scripts", "04_topics.py"))
+t = importlib.util.module_from_spec(spec); spec.loader.exec_module(t)
+TOPICS = [n for n, f, _ in t.TOPICS if f != "E term"]
+FAMILY = {n: f.split(" ", 1)[1] for n, f, _ in t.TOPICS}
+VENUES = ["ICRA", "IROS", "RSS", "CoRL", "T-RO", "IJRR", "SciRobotics"]
+SCOPES = {"All venues": VENUES, "Conferences": ["ICRA", "IROS", "RSS", "CoRL"], "Journals": ["T-RO", "IJRR", "SciRobotics"],
+          **{v: [v] for v in VENUES}}
+m = pd.read_csv(os.path.join(ROOT, "data", "topic_matrix_ta.csv"))
+m = m[m.year.between(2024, 2026)]
+rng = np.random.default_rng(0)
+
+
+def single(d, topic, years):
+    r = {}
+    for y in years:
+        g = d[d.year == y][topic]; k, n = int(g.sum()), len(g)
+        lo, hi = proportion_confint(k, n, method="wilson")
+        r.update({f"share_{y}": 100 * k / n, f"lo_{y}": 100 * lo, f"hi_{y}": 100 * hi, f"k_{y}": k, f"n_{y}": n})
+    if d[topic].sum() > 0 and d[topic].sum() < len(d):
+        dd = d.assign(y=d[topic], t=d.year - 2024)
+        f = smf.glm("y ~ t", data=dd, family=sm.families.Binomial()).fit()
+        f0 = smf.glm("y ~ 1", data=dd, family=sm.families.Binomial()).fit()
+        r.update(trend_stats(f, f0))
+    return r
+
+
+def trend_stats(f, f0):
+    """LR test of the year term; multiplier and Wald interval only when the fit did not separate."""
+    lr = max(0.0, 2 * (f.llf - f0.llf))
+    out = {"p": float(chi2.sf(lr, 1)), "p_wald": float(f.pvalues["t"])}
+    b, se = f.params["t"], f.bse["t"]
+    if np.isfinite(se) and abs(b) < 10 and se < 10:
+        out.update(OR=np.exp(b), OR_lo=np.exp(b - 1.96 * se), OR_hi=np.exp(b + 1.96 * se))
+    else:
+        out["note"] = "not estimable: topic absent in some years"
+    return out
+
+
+def group(d, topic, years):
+    dd = d[["venue", "year", topic]].rename(columns={topic: "y"})
+    keep = dd.groupby("venue").y.sum(); keep = keep[keep > 0].index
+    r = {}
+    for y in years:
+        g = dd[dd.year == y]; r[f"k_{y}"] = int(g.y.sum()); r[f"n_{y}"] = len(g)
+    if len(keep) == 0:                            # topic absent from every venue of the group: share 0 in all years
+        for y in years:
+            r[f"share_{y}"] = r[f"lo_{y}"] = r[f"hi_{y}"] = 0.0
+        return r
+    dd = dd[dd.venue.isin(keep)]
+    ref = d[d.year == 2025].venue.value_counts(normalize=True)
+    try:
+        f1 = smf.glm("y ~ C(venue) + C(year)", data=dd, family=sm.families.Binomial()).fit()
+        names = list(f1.params.index)
+        draws = rng.multivariate_normal(f1.params.values, f1.cov_params().values, size=2000)
+        for y in years:
+            X, w = [], []
+            for v, share in ref.items():
+                if v not in keep:
+                    continue                      # venue never has the topic: contributes share 0
+                x = np.zeros(len(names)); x[names.index("Intercept")] = 1
+                if f"C(venue)[T.{v}]" in names: x[names.index(f"C(venue)[T.{v}]")] = 1
+                if f"C(year)[T.{y}]" in names: x[names.index(f"C(year)[T.{y}]")] = 1
+                X.append(x); w.append(share)
+            X, w = np.array(X), np.array(w)
+            r[f"share_{y}"] = 100 * float((w * (1 / (1 + np.exp(-X @ f1.params.values)))).sum())
+            sims = ((1 / (1 + np.exp(-draws @ X.T))) * w).sum(axis=1)
+            r[f"lo_{y}"], r[f"hi_{y}"] = 100 * np.percentile(sims, 2.5), 100 * np.percentile(sims, 97.5)
+        dt = dd.assign(t=dd.year - 2024)
+        rhs0 = "C(venue)" if dt.venue.nunique() > 1 else "1"
+        f2 = smf.glm(f"y ~ {rhs0} + t", data=dt, family=sm.families.Binomial()).fit()
+        f0 = smf.glm(f"y ~ {rhs0}", data=dt, family=sm.families.Binomial()).fit()
+        r.update(trend_stats(f2, f0))
+    except Exception as e:  # noqa: BLE001
+        r["error"] = str(e)[:80]
+    return r
+
+
+rows = []
+for scope, vs in SCOPES.items():
+    d = m[m.venue.isin(vs)]
+    years = sorted(d.year.unique())
+    part = []
+    for topic in TOPICS:
+        r = single(d, topic, years) if len(vs) == 1 else group(d, topic, years)
+        r.update(scope=scope, topic=topic, family=FAMILY[topic], years=",".join(map(str, years)))
+        y0, y1 = years[0], years[-1]
+        if f"share_{y0}" in r and f"share_{y1}" in r:
+            r["change_pp"] = r[f"share_{y1}"] - r[f"share_{y0}"]
+        part.append(r)
+    ps = [(i, r["p"]) for i, r in enumerate(part) if pd.notna(r.get("p"))]
+    if ps:
+        qs = multipletests([p for _, p in ps], method="fdr_bh")[1]
+        for (i, _), q in zip(ps, qs):
+            part[i]["q"] = q
+    for r in part:
+        q = r.get("q")
+        if q is None or q >= 0.05:
+            r["call"] = "unclear"
+        else:   # direction from the data when the multiplier is not estimable
+            ys = [int(y) for y in r["years"].split(",")]
+            up = r["OR"] > 1 if "OR" in r else r[f"share_{ys[-1]}"] > r[f"share_{ys[0]}"]
+            r["call"] = "rising" if up else "declining"
+    rows += part
+out = pd.DataFrame(rows)
+cols = ["scope", "topic", "family", "years"] + [c for y in (2024, 2025, 2026) for c in (f"share_{y}", f"lo_{y}", f"hi_{y}", f"k_{y}", f"n_{y}")] \
+       + ["change_pp", "OR", "OR_lo", "OR_hi", "p", "p_wald", "q", "call", "note", "error"]
+out = out.reindex(columns=[c for c in cols if c in out.columns])
+out.to_csv(os.path.join(ROOT, "results", "scope_trends_ta.csv"), index=False)
+
+# check: the "All venues" scope must reproduce the main table's point estimates
+main = pd.read_csv(os.path.join(ROOT, "results", "shares_and_change_ta.csv")).set_index("topic")
+a = out[out.scope == "All venues"].set_index("topic")
+dev = max(abs(a.loc[tp, f"share_{y}"] - main.loc[tp, f"share_{y}"]) for tp in TOPICS for y in (2024, 2025, 2026))
+dor = max(abs(a.loc[tp, "OR"] - main.loc[tp, "annual_OR"]) for tp in TOPICS)
+print(f"All-venues scope vs main table: max share difference {dev:.2e} points, max multiplier difference {dor:.2e}")
+diff_calls = [tp for tp in TOPICS if a.loc[tp, "call"] != main.loc[tp, "call"]]
+print("All-venues calls (LR test) differing from the main table (Wald):", diff_calls or "none")
+
+# matrix: latest-year share with trend mark, topics x scopes
+mark = {"rising": "↑", "declining": "↓", "unclear": ""}
+order = main.sort_values("share_2025", ascending=False).index
+lines = ["# Topic share by venue (title + abstract)", "",
+         "Cell = share in the venue's latest year (2026 for ICRA, RSS and the journals; 2025 for IROS and CoRL); "
+         "↑/↓ = trend significant within that venue (q < 0.05 across 59 topics). Generated by scripts/20_scope_trends.py.", "",
+         "| topic | " + " | ".join(SCOPES) + " |", "|---|" + "---|" * len(SCOPES)]
+for tp in order:
+    cells = []
+    for scope in SCOPES:
+        r = out[(out.scope == scope) & (out.topic == tp)].iloc[0]
+        y = int(r.years.split(",")[-1])
+        cells.append(f"{r[f'share_{y}']:.1f}{mark[r.call]}")
+    lines.append(f"| {tp} | " + " | ".join(cells) + " |")
+open(os.path.join(ROOT, "results", "venue_matrix_ta.md"), "w").write("\n".join(lines) + "\n")
+calls = out.groupby("scope").call.value_counts().unstack(fill_value=0).reindex(list(SCOPES))
+print(calls.to_string())

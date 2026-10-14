@@ -1,0 +1,60 @@
+topic,share_2024,raw_2024,share_2025,raw_2025,share_2026,share_2026_lo,share_2026_hi,raw5_2024,raw5_2026
+Manipulation (any),20.75,20.88,21.93,21.93,28.05,26.01,30.25,20.56,28.62
+Motion / path planning,16.48,16.44,16.9,16.9,16.42,14.73,18.21,17.09,17.36
+Perception: detection / segmentation / tracking / pose,16.18,16.04,16.33,16.33,13.9,12.34,15.79,14.47,12.82
+3D perception / LiDAR / point clouds,15.69,15.7,16.16,16.16,15.81,14.15,17.54,14.85,15.89
+Navigation,15.43,15.44,16.05,16.05,15.75,14.12,17.47,14.85,15.89
+Reinforcement learning,13.06,13.19,12.96,12.96,13.71,12.26,15.5,11.97,13.44
+SLAM / localization / state estimation,12.75,12.52,11.51,11.51,10.06,8.74,11.55,12.48,10.01
+Imitation learning / LfD,9.01,9.15,11.34,11.34,15.78,14.21,17.7,7.4,15.22
+Autonomous driving,11.56,11.64,11.14,11.14,10.56,9.3,12.2,10.87,10.5
+Hardware: mechanisms / actuators / design,10.57,10.41,9.93,9.93,9.83,8.51,11.32,11.13,9.3
+Legged robots / locomotion,8.28,8.34,9.56,9.56,8.76,7.54,10.11,7.95,8.68
+Aerial robots / UAV,9.8,9.67,9.56,9.56,9.92,8.65,11.51,10.36,9.79
+LLM / VLM,4.97,5.01,8.35,8.35,10.81,9.34,12.59,3.85,9.61
+Self-supervised / pretraining / representation,8.11,8.27,8.22,8.22,9.6,8.38,11.15,7.49,9.97
+MPC / optimal control / trajectory optimization,6.48,6.44,7.96,7.96,7.57,6.49,8.9,7.57,8.59
+Human-robot interaction,7.78,7.77,7.59,7.59,6.77,5.74,8.02,8.33,7.03
+Uncertainty / probabilistic,8.78,8.7,7.5,7.5,8.43,7.32,9.82,9.14,8.99
+Multi-robot / multi-agent / swarms,7.95,7.89,7.48,7.48,8.11,6.98,9.5,7.49,7.88
+Safety / verification,7.62,7.65,7.39,7.39,6.27,5.31,7.39,8.63,7.12
+Surgical / medical,6.05,6.03,7.13,7.13,6.88,5.79,8.19,6.6,6.32
+Grasping,7.2,7.1,6.82,6.82,7.66,6.53,9.05,6.73,7.21
+Dexterous / in-hand,5.1,5.11,5.72,5.72,6.24,5.21,7.47,5.37,6.5
+Diffusion / flow generative models,2.35,2.38,5.61,5.61,9.96,8.4,11.78,1.14,8.68
+Calibration / registration,5.04,4.97,5.46,5.46,5.99,4.92,7.3,5.03,5.65
+Soft robots,5.33,5.23,5.37,5.37,6.28,5.23,7.63,5.71,5.7
+Contact-rich / assembly,4.51,4.54,5.09,5.09,6.69,5.62,7.94,4.1,7.39
+Long-horizon / task planning / TAMP,4.09,4.11,4.98,4.98,6.93,5.81,8.37,3.51,6.68
+Language grounding / open-vocabulary,4.26,4.3,4.96,4.96,5.52,4.53,6.85,3.34,5.16
+Tactile sensing,4.47,4.47,4.47,4.47,4.63,3.8,5.76,4.74,4.85
+Micro / bio-inspired robots,3.3,3.4,4.19,4.19,3.4,2.7,4.42,4.57,3.47
+Underwater / marine,2.69,2.66,4.1,4.1,3.76,2.99,4.81,2.75,3.56
+Sim-to-real,3.55,3.61,4.01,4.01,5.81,4.86,7.09,3.43,6.1
+Wearable / exoskeleton / prosthesis / rehab,4.06,4.06,3.92,3.92,4.53,3.67,5.7,4.57,4.36
+Industrial / logistics / construction,4.84,4.82,3.81,3.81,3.91,3.13,4.99,5.08,3.83
+Datasets / benchmarks,3.3,3.33,3.68,3.68,2.9,2.27,3.78,3.47,3.03
+Other generative models,2.7,2.73,3.53,3.53,4.73,3.81,6.04,2.12,4.63
+Teleoperation (incl. data-collection interfaces),2.88,2.9,3.49,3.49,5.08,4.14,6.34,2.58,4.94
+Deformable objects,3.02,3.04,3.24,3.24,3.65,2.86,4.65,3.3,3.83
+Humanoid robots,2.09,2.09,2.96,2.96,4.92,3.95,6.33,1.73,4.49
+3D Gaussian splatting,0.53,0.52,2.92,2.92,3.67,2.71,5.02,0.0,3.03
+Force / impedance control,3.01,2.95,2.85,2.85,3.32,2.63,4.26,3.43,3.52
+Reasoning / chain-of-thought,1.86,1.9,2.59,2.59,5.32,4.24,6.92,1.65,4.9
+Prediction / forecasting,2.35,2.35,2.35,2.35,2.7,2.05,3.64,2.16,2.71
+Bimanual,1.93,1.95,2.32,2.32,3.34,2.53,4.45,1.57,2.98
+Agriculture / field,2.27,2.3,2.21,2.21,1.61,1.17,2.28,2.45,1.78
+Whole-body control / loco-manipulation,1.3,1.31,2.15,2.15,2.99,2.25,4.08,0.89,2.71
+NeRF / neural implicit fields,2.44,2.42,1.67,1.67,1.33,0.91,2.02,1.78,1.25
+VLA / robot foundation models,0.54,0.57,1.43,1.43,5.11,3.99,6.62,0.3,4.9
+Radar / 4D radar,1.18,1.19,1.4,1.4,1.15,0.79,1.74,1.27,1.25
+Mobile manipulation,1.38,1.4,1.38,1.38,1.36,0.93,2.06,1.18,1.38
+Articulated objects / affordance,1.46,1.47,1.34,1.34,1.78,1.23,2.71,1.1,1.51
+World models / video prediction,0.46,0.48,1.29,1.29,1.85,1.33,2.77,0.42,2.05
+Learning from human video / human-to-robot transfer,0.77,0.81,1.27,1.27,1.58,1.13,2.32,0.8,1.78
+Haptics,1.25,1.24,1.21,1.21,1.11,0.74,1.78,1.31,1.07
+Event cameras / neuromorphic,1.27,1.26,1.05,1.05,1.25,0.85,1.9,1.27,1.38
+Graph neural networks,1.07,1.07,0.94,0.94,0.69,0.41,1.25,1.02,0.67
+Space robotics,1.36,1.4,0.92,0.92,0.97,0.64,1.51,1.57,1.07
+Cross-embodiment,0.51,0.52,0.64,0.64,1.73,1.21,2.65,0.47,1.91
+Mamba / state-space sequence models,0.05,0.05,0.42,0.42,1.03,0.43,2.72,0.0,0.53
