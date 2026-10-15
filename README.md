@@ -1,6 +1,6 @@
-# Robotics Topic Atlas
+# Robotics Topic Trends
 
-**Page:** https://huyicheng.github.io/robotics-topic-atlas/
+**Page:** https://huyicheng.github.io/robotics-topic-trends/
 
 What 22,629 research articles at ICRA, IROS, RSS, CoRL, T-RO, IJRR and Science Robotics (2020 to October 2026) are
 about, read from their titles and abstracts: the share and the number of papers of each of 59 topics per year, how they
