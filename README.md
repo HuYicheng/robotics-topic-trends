@@ -2,6 +2,8 @@
 
 **Page:** https://huyicheng.github.io/robotics-topic-trends/
 
+**Submission deadlines** of the seven venues, one year from 20 October 2026, with official links: https://huyicheng.github.io/robotics-topic-trends/deadlines.html
+
 What 22,629 research articles at ICRA, IROS, RSS, CoRL, T-RO, IJRR and Science Robotics (2020 to October 2026) are
 about, read from their titles and abstracts: the share and the number of papers of each of 59 topics per year, how they
 changed, the same for any combination of venues, one small chart per topic, and a topic word cloud that lists the papers combining any set of
@@ -52,6 +54,7 @@ fetches them again from the sources above.
 | path | content |
 |---|---|
 | `index.html`, `data.json`, `subsets.json` | the page (static; `data.json` holds titles, venues, years, links and topic labels; `subsets.json` the results for every combination of venues, loaded when one is picked) |
+| `deadlines.html` | submission deadlines of the seven venues for one year from 20 October 2026, each date with the official page it was read from (built by `scripts/23_deadlines_page.py`, which holds the dates) |
 | `scripts/` | the pipeline, numbered in run order; `config.py` holds years, venues and the reviews switch; `page_template.html` is the page source |
 | `results/` | tables and reports; `figures/` the figures |
 | `data/` | `papers.csv` (research articles), `article_types.csv` (type of every item and why), `topic_matrix_ta.csv` (paper × topic, final measure), `topic_matrix.csv` (title only), `dblp_venues_2020_2026.jsonl` (venue subset of the dblp dump) |
