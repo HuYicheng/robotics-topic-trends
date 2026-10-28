@@ -5,30 +5,30 @@ Cell = share in the venue's latest year (2026 for ICRA, RSS, CoRL and the journa
 | topic | All venues | Conferences | Journals | ICRA | IROS | RSS | CoRL | T-RO | IJRR | SciRobotics |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Manipulation (any) | 29.0↑ | 29.5↑ | 25.2 | 27.1↑ | 18.8 | 44.8↑ | 56.0↑ | 24.2 | 30.0 | 22.9 |
-| Motion / path planning | 15.9 | 15.6 | 18.5 | 16.8 | 15.3 | 17.1 | 11.7 | 20.0 | 20.0 | 8.3 |
 | 3D perception / LiDAR / point clouds | 14.4↑ | 14.7↑ | 12.4↑ | 16.9↑ | 16.6↑ | 13.8 | 6.4↓ | 13.2↑ | 12.0 | 8.3 |
+| Motion / path planning | 15.5↓ | 15.2↓ | 18.5 | 16.3 | 14.9 | 17.1 | 10.8 | 20.0 | 20.0 | 8.3 |
 | Navigation | 15.8↑ | 15.6↑ | 17.2↑ | 15.8↑ | 15.7↑ | 14.8 | 10.4 | 17.9↑ | 14.0 | 18.8 |
 | Perception: detection / segmentation / tracking / pose | 12.5 | 13.1 | 7.7 | 13.9 | 18.4↑ | 7.1 | 3.3↓ | 7.4 | 10.0 | 6.2 |
 | Reinforcement learning | 12.9↑ | 13.2 | 11.4↑ | 12.5↑ | 12.0↑ | 24.3 | 26.6↓ | 10.5 | 6.0 | 20.8↑ |
 | SLAM / localization / state estimation | 10.3↓ | 10.0↓ | 12.2 | 10.2↓ | 11.7 | 6.7 | 3.7↓ | 11.6 | 18.0 | 6.2 |
 | Imitation learning / LfD | 13.9↑ | 14.3↑ | 11.5↑ | 14.2↑ | 8.6↑ | 25.7↑ | 33.6↑ | 11.1↑ | 8.0 | 16.7↑ |
 | Autonomous driving | 9.7 | 10.4 | 4.1 | 12.3↑ | 12.1 | 3.8↓ | 4.7↓ | 4.2 | 0.0 | 8.3 |
-| Hardware: mechanisms / actuators / design | 9.6↓ | 8.7↓ | 16.4↓ | 8.4↓ | 11.1 | 5.2 | 1.9 | 13.7↓ | 26.0 | 18.8 |
+| Hardware: mechanisms / actuators / design | 9.5↓ | 8.6↓ | 16.4↓ | 8.3↓ | 11.0 | 5.2 | 1.6 | 13.7 | 26.0 | 18.8 |
 | Legged robots / locomotion | 9.1↑ | 8.7↑ | 12.2 | 7.7 | 8.3 | 10.5 | 12.2↑ | 9.5 | 16.0 | 20.8 |
 | Aerial robots / UAV | 9.4 | 8.4↓ | 16.6 | 9.2 | 9.6 | 6.2 | 2.4 | 17.4 | 12.0 | 18.8 |
 | LLM / VLM | 9.1↑ | 10.1↑ | 1.7↑ | 11.0↑ | 9.2↑ | 10.0↑ | 16.2↑ | 2.1↑ | 0.0 | 2.1 |
 | Self-supervised / pretraining / representation | 9.9↑ | 10.5↑ | 5.9↑ | 9.7↑ | 6.9↑ | 17.6↑ | 24.2↑ | 5.3 | 6.0 | 8.3 |
 | MPC / optimal control / trajectory optimization | 6.8 | 6.5 | 9.0 | 7.5 | 7.0 | 9.0 | 3.1↓ | 11.6 | 4.0 | 2.1 |
 | Multi-robot / multi-agent / swarms | 7.2 | 6.6 | 11.5 | 7.4 | 7.5 | 5.7 | 2.6↓ | 13.2 | 10.0 | 6.2 |
-| Human-robot interaction | 6.9 | 6.9 | 6.6 | 6.9 | 8.4 | 5.7 | 4.7 | 7.9 | 4.0 | 4.2 |
 | Uncertainty / probabilistic | 7.7↓ | 7.2↓ | 12.2 | 8.3↓ | 6.8↓ | 10.5 | 3.0↓ | 14.2 | 14.0 | 0.0 |
+| Human-robot interaction | 6.8 | 6.8 | 6.6 | 6.8 | 8.2 | 5.7 | 4.5 | 7.9 | 4.0 | 4.2 |
 | Surgical / medical | 6.4 | 6.4↑ | 7.3 | 6.6 | 9.1↑ | 3.8 | 0.5 | 6.3 | 4.0 | 16.7 |
 | Grasping | 6.7↓ | 6.6↓ | 7.4 | 6.8↓ | 7.2 | 9.5 | 6.3 | 8.9 | 8.0 | 0.0 |
 | Safety / verification | 6.0 | 5.9 | 7.2 | 6.3↑ | 5.7 | 9.0 | 5.7 | 8.4 | 8.0 | 0.0 |
 | Dexterous / in-hand | 6.5↑ | 6.6↑ | 6.2 | 5.8↑ | 5.2 | 12.4↑ | 11.7↑ | 5.8 | 4.0 | 10.4 |
 | Diffusion / flow generative models | 7.4↑ | 8.0↑ | 2.7↑ | 8.6↑ | 4.3↑ | 15.7↑ | 16.7↑ | 2.6↑ | 0.0 | 6.2↑ |
-| Calibration / registration | 5.6 | 5.6 | 5.3 | 5.5 | 6.1↑ | 6.2 | 4.3 | 5.3 | 8.0 | 2.1 |
 | Soft robots | 5.5 | 4.7 | 11.4 | 4.5 | 5.7 | 5.7 | 0.3 | 11.1 | 20.0 | 6.2↓ |
+| Calibration / registration | 5.2 | 5.2 | 5.3 | 5.2 | 6.1↑ | 4.8 | 3.5 | 5.3 | 8.0 | 2.1 |
 | Contact-rich / assembly | 7.3↑ | 7.6↑ | 5.5 | 6.6↑ | 3.4 | 16.2↑ | 12.9↑ | 3.7 | 12.0 | 6.2 |
 | Long-horizon / task planning / TAMP | 6.9↑ | 7.2↑ | 5.2↑ | 5.9↑ | 4.3↑ | 15.2↑ | 18.6↑ | 5.8↑ | 2.0 | 6.2 |
 | Language grounding / open-vocabulary | 4.4↑ | 4.8↑ | 1.3 | 5.4↑ | 5.0↑ | 5.2 | 9.2↑ | 1.1 | 0.0 | 4.2 |
@@ -36,8 +36,8 @@ Cell = share in the venue's latest year (2026 for ICRA, RSS, CoRL and the journa
 | Underwater / marine | 3.6↑ | 3.5↑ | 4.1 | 3.7 | 4.8↑ | 2.4 | 0.2 | 1.6 | 10.0 | 8.3 |
 | Sim-to-real | 5.4↑ | 5.5↑ | 4.9↑ | 5.3↑ | 2.9 | 14.3↑ | 11.3↑ | 3.7 | 8.0 | 6.2 |
 | Micro / bio-inspired robots | 3.3 | 2.8 | 7.0 | 3.0 | 4.0 | 1.4 | 0.3 | 7.4 | 2.0 | 14.6 |
-| Wearable / exoskeleton / prosthesis / rehab | 4.4 | 4.0 | 8.0 | 4.0 | 4.2 | 1.9 | 1.7 | 6.8 | 6.0 | 16.7 |
 | Industrial / logistics / construction | 3.6 | 3.5 | 4.2 | 4.0 | 4.5 | 1.0 | 0.7 | 4.7 | 4.0 | 2.1 |
+| Wearable / exoskeleton / prosthesis / rehab | 4.0 | 3.6 | 7.3 | 3.5↓ | 4.1 | 1.9 | 1.4 | 6.3 | 6.0 | 14.6 |
 | Datasets / benchmarks | 3.2↑ | 3.3↑ | 2.9 | 3.2↑ | 3.5↑ | 2.9 | 4.2 | 1.6 | 10.0 | 0.0 |
 | Other generative models | 4.8↑ | 5.1↑ | 2.8↑ | 4.5↑ | 2.6 | 7.1↑ | 12.5↑ | 3.2↑ | 0.0 | 4.2↑ |
 | Teleoperation (incl. data-collection interfaces) | 5.4↑ | 5.4↑ | 5.1 | 4.6↑ | 2.7 | 7.1↑ | 11.5↑ | 3.7 | 2.0 | 14.6 |

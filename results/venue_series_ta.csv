@@ -29,7 +29,7 @@ Whole-body control / loco-manipulation,CoRL,2020,0,165,0.0,-0.0,2.28
 Soft robots,CoRL,2020,1,165,0.61,0.11,3.35
 Micro / bio-inspired robots,CoRL,2020,0,165,0.0,-0.0,2.28
 Multi-robot / multi-agent / swarms,CoRL,2020,12,165,7.27,4.21,12.28
-Wearable / exoskeleton / prosthesis / rehab,CoRL,2020,6,165,3.64,1.68,7.71
+Wearable / exoskeleton / prosthesis / rehab,CoRL,2020,3,165,1.82,0.62,5.21
 Surgical / medical,CoRL,2020,2,165,1.21,0.33,4.31
 Agriculture / field,CoRL,2020,1,165,0.61,0.11,3.35
 Industrial / logistics / construction,CoRL,2020,3,165,1.82,0.62,5.21
@@ -111,7 +111,7 @@ Tactile sensing,CoRL,2021,5,166,3.01,1.29,6.86
 Haptics,CoRL,2021,2,166,1.2,0.33,4.29
 Navigation,CoRL,2021,15,166,9.04,5.55,14.37
 Long-horizon / task planning / TAMP,CoRL,2021,11,166,6.63,3.74,11.47
-Human-robot interaction,CoRL,2021,10,166,6.02,3.3,10.73
+Human-robot interaction,CoRL,2021,9,166,5.42,2.88,9.98
 Perception: detection / segmentation / tracking / pose,CoRL,2021,12,166,7.23,4.18,12.21
 3D perception / LiDAR / point clouds,CoRL,2021,26,166,15.66,10.92,21.96
 SLAM / localization / state estimation,CoRL,2021,10,166,6.02,3.3,10.73
@@ -191,7 +191,7 @@ Safety / verification,CoRL,2022,11,197,5.58,3.15,9.72
 Uncertainty / probabilistic,CoRL,2022,18,197,9.14,5.86,13.98
 Force / impedance control,CoRL,2022,1,197,0.51,0.09,2.82
 Hardware: mechanisms / actuators / design,CoRL,2022,1,197,0.51,0.09,2.82
-Calibration / registration,CoRL,2022,5,197,2.54,1.09,5.8
+Calibration / registration,CoRL,2022,4,197,2.03,0.79,5.1
 [term] learn*,CoRL,2022,164,197,83.25,77.41,87.82
 [term] neural / deep,CoRL,2022,51,197,25.89,20.27,32.42
 [term] foundation model,CoRL,2022,0,197,0.0,0.0,1.91
@@ -230,7 +230,7 @@ Whole-body control / loco-manipulation,CoRL,2023,0,199,0.0,0.0,1.89
 Soft robots,CoRL,2023,6,199,3.02,1.39,6.42
 Micro / bio-inspired robots,CoRL,2023,4,199,2.01,0.78,5.05
 Multi-robot / multi-agent / swarms,CoRL,2023,14,199,7.04,4.24,11.46
-Wearable / exoskeleton / prosthesis / rehab,CoRL,2023,4,199,2.01,0.78,5.05
+Wearable / exoskeleton / prosthesis / rehab,CoRL,2023,3,199,1.51,0.51,4.34
 Surgical / medical,CoRL,2023,3,199,1.51,0.51,4.34
 Agriculture / field,CoRL,2023,1,199,0.5,0.09,2.79
 Industrial / logistics / construction,CoRL,2023,3,199,1.51,0.51,4.34
@@ -252,7 +252,7 @@ SLAM / localization / state estimation,CoRL,2023,6,199,3.02,1.39,6.42
 Radar / 4D radar,CoRL,2023,0,199,0.0,0.0,1.89
 Event cameras / neuromorphic,CoRL,2023,0,199,0.0,0.0,1.89
 Prediction / forecasting,CoRL,2023,7,199,3.52,1.71,7.08
-Motion / path planning,CoRL,2023,34,199,17.09,12.49,22.93
+Motion / path planning,CoRL,2023,33,199,16.58,12.06,22.37
 MPC / optimal control / trajectory optimization,CoRL,2023,11,199,5.53,3.11,9.63
 Safety / verification,CoRL,2023,10,199,5.03,2.75,9.0
 Uncertainty / probabilistic,CoRL,2023,23,199,11.56,7.83,16.75
@@ -297,7 +297,7 @@ Whole-body control / loco-manipulation,CoRL,2024,13,264,4.92,2.9,8.24
 Soft robots,CoRL,2024,5,264,1.89,0.81,4.36
 Micro / bio-inspired robots,CoRL,2024,4,264,1.52,0.59,3.83
 Multi-robot / multi-agent / swarms,CoRL,2024,16,264,6.06,3.76,9.62
-Wearable / exoskeleton / prosthesis / rehab,CoRL,2024,2,264,0.76,0.21,2.72
+Wearable / exoskeleton / prosthesis / rehab,CoRL,2024,1,264,0.38,0.07,2.11
 Surgical / medical,CoRL,2024,1,264,0.38,0.07,2.11
 Agriculture / field,CoRL,2024,0,264,0.0,0.0,1.43
 Industrial / logistics / construction,CoRL,2024,5,264,1.89,0.81,4.36
@@ -312,7 +312,7 @@ Tactile sensing,CoRL,2024,11,264,4.17,2.34,7.31
 Haptics,CoRL,2024,0,264,0.0,0.0,1.43
 Navigation,CoRL,2024,38,264,14.39,10.67,19.14
 Long-horizon / task planning / TAMP,CoRL,2024,25,264,9.47,6.5,13.61
-Human-robot interaction,CoRL,2024,12,264,4.55,2.62,7.78
+Human-robot interaction,CoRL,2024,11,264,4.17,2.34,7.31
 Perception: detection / segmentation / tracking / pose,CoRL,2024,19,264,7.2,4.66,10.97
 3D perception / LiDAR / point clouds,CoRL,2024,33,264,12.5,9.04,17.03
 SLAM / localization / state estimation,CoRL,2024,5,264,1.89,0.81,4.36
@@ -324,7 +324,7 @@ MPC / optimal control / trajectory optimization,CoRL,2024,4,264,1.52,0.59,3.83
 Safety / verification,CoRL,2024,15,264,5.68,3.47,9.16
 Uncertainty / probabilistic,CoRL,2024,15,264,5.68,3.47,9.16
 Force / impedance control,CoRL,2024,1,264,0.38,0.07,2.11
-Hardware: mechanisms / actuators / design,CoRL,2024,6,264,2.27,1.05,4.87
+Hardware: mechanisms / actuators / design,CoRL,2024,5,264,1.89,0.81,4.36
 Calibration / registration,CoRL,2024,2,264,0.76,0.21,2.72
 [term] learn*,CoRL,2024,202,264,76.52,71.04,81.23
 [term] neural / deep,CoRL,2024,36,264,13.64,10.02,18.3
@@ -364,7 +364,7 @@ Whole-body control / loco-manipulation,CoRL,2025,17,263,6.46,4.07,10.11
 Soft robots,CoRL,2025,4,263,1.52,0.59,3.84
 Micro / bio-inspired robots,CoRL,2025,2,263,0.76,0.21,2.73
 Multi-robot / multi-agent / swarms,CoRL,2025,13,263,4.94,2.91,8.27
-Wearable / exoskeleton / prosthesis / rehab,CoRL,2025,7,263,2.66,1.3,5.39
+Wearable / exoskeleton / prosthesis / rehab,CoRL,2025,5,263,1.9,0.81,4.37
 Surgical / medical,CoRL,2025,3,263,1.14,0.39,3.3
 Agriculture / field,CoRL,2025,0,263,0.0,0.0,1.44
 Industrial / logistics / construction,CoRL,2025,5,263,1.9,0.81,4.37
@@ -386,13 +386,13 @@ SLAM / localization / state estimation,CoRL,2025,11,263,4.18,2.35,7.33
 Radar / 4D radar,CoRL,2025,0,263,0.0,0.0,1.44
 Event cameras / neuromorphic,CoRL,2025,0,263,0.0,0.0,1.44
 Prediction / forecasting,CoRL,2025,3,263,1.14,0.39,3.3
-Motion / path planning,CoRL,2025,44,263,16.73,12.71,21.71
+Motion / path planning,CoRL,2025,42,263,15.97,12.04,20.88
 MPC / optimal control / trajectory optimization,CoRL,2025,15,263,5.7,3.49,9.2
 Safety / verification,CoRL,2025,20,263,7.6,4.98,11.45
 Uncertainty / probabilistic,CoRL,2025,14,263,5.32,3.2,8.74
 Force / impedance control,CoRL,2025,7,263,2.66,1.3,5.39
 Hardware: mechanisms / actuators / design,CoRL,2025,2,263,0.76,0.21,2.73
-Calibration / registration,CoRL,2025,18,263,6.84,4.37,10.56
+Calibration / registration,CoRL,2025,17,263,6.46,4.07,10.11
 [term] learn*,CoRL,2025,192,263,73.0,67.34,78.01
 [term] neural / deep,CoRL,2025,21,263,7.98,5.28,11.9
 [term] foundation model,CoRL,2025,17,263,6.46,4.07,10.11
@@ -431,7 +431,7 @@ Whole-body control / loco-manipulation,CoRL,2026,56,575,9.74,7.58,12.44
 Soft robots,CoRL,2026,2,575,0.35,0.1,1.26
 Micro / bio-inspired robots,CoRL,2026,2,575,0.35,0.1,1.26
 Multi-robot / multi-agent / swarms,CoRL,2026,15,575,2.61,1.59,4.26
-Wearable / exoskeleton / prosthesis / rehab,CoRL,2026,10,575,1.74,0.95,3.17
+Wearable / exoskeleton / prosthesis / rehab,CoRL,2026,8,575,1.39,0.71,2.72
 Surgical / medical,CoRL,2026,3,575,0.52,0.18,1.52
 Agriculture / field,CoRL,2026,3,575,0.52,0.18,1.52
 Industrial / logistics / construction,CoRL,2026,4,575,0.7,0.27,1.77
@@ -446,20 +446,20 @@ Tactile sensing,CoRL,2026,43,575,7.48,5.6,9.92
 Haptics,CoRL,2026,1,575,0.17,0.03,0.98
 Navigation,CoRL,2026,60,575,10.43,8.19,13.2
 Long-horizon / task planning / TAMP,CoRL,2026,107,575,18.61,15.64,21.99
-Human-robot interaction,CoRL,2026,27,575,4.7,3.25,6.75
+Human-robot interaction,CoRL,2026,26,575,4.52,3.1,6.54
 Perception: detection / segmentation / tracking / pose,CoRL,2026,19,575,3.3,2.13,5.1
 3D perception / LiDAR / point clouds,CoRL,2026,37,575,6.43,4.7,8.74
 SLAM / localization / state estimation,CoRL,2026,21,575,3.65,2.4,5.52
 Radar / 4D radar,CoRL,2026,0,575,0.0,0.0,0.66
 Event cameras / neuromorphic,CoRL,2026,3,575,0.52,0.18,1.52
 Prediction / forecasting,CoRL,2026,12,575,2.09,1.2,3.61
-Motion / path planning,CoRL,2026,67,575,11.65,9.28,14.53
+Motion / path planning,CoRL,2026,62,575,10.78,8.5,13.58
 MPC / optimal control / trajectory optimization,CoRL,2026,18,575,3.13,1.99,4.89
 Safety / verification,CoRL,2026,33,575,5.74,4.12,7.95
 Uncertainty / probabilistic,CoRL,2026,17,575,2.96,1.85,4.68
 Force / impedance control,CoRL,2026,16,575,2.78,1.72,4.47
-Hardware: mechanisms / actuators / design,CoRL,2026,11,575,1.91,1.07,3.39
-Calibration / registration,CoRL,2026,25,575,4.35,2.96,6.34
+Hardware: mechanisms / actuators / design,CoRL,2026,9,575,1.57,0.83,2.95
+Calibration / registration,CoRL,2026,20,575,3.48,2.26,5.31
 [term] learn*,CoRL,2026,384,575,66.78,62.83,70.51
 [term] neural / deep,CoRL,2026,31,575,5.39,3.82,7.55
 [term] foundation model,CoRL,2026,50,575,8.7,6.66,11.28
@@ -498,7 +498,7 @@ Whole-body control / loco-manipulation,ICRA,2020,14,1073,1.3,0.78,2.18
 Soft robots,ICRA,2020,54,1073,5.03,3.88,6.51
 Micro / bio-inspired robots,ICRA,2020,32,1073,2.98,2.12,4.18
 Multi-robot / multi-agent / swarms,ICRA,2020,69,1073,6.43,5.11,8.06
-Wearable / exoskeleton / prosthesis / rehab,ICRA,2020,62,1073,5.78,4.53,7.34
+Wearable / exoskeleton / prosthesis / rehab,ICRA,2020,59,1073,5.5,4.29,7.03
 Surgical / medical,ICRA,2020,68,1073,6.34,5.03,7.96
 Agriculture / field,ICRA,2020,16,1073,1.49,0.92,2.41
 Industrial / logistics / construction,ICRA,2020,45,1073,4.19,3.15,5.57
@@ -513,20 +513,20 @@ Tactile sensing,ICRA,2020,29,1073,2.7,1.89,3.85
 Haptics,ICRA,2020,22,1073,2.05,1.36,3.08
 Navigation,ICRA,2020,116,1073,10.81,9.09,12.81
 Long-horizon / task planning / TAMP,ICRA,2020,13,1073,1.21,0.71,2.06
-Human-robot interaction,ICRA,2020,69,1073,6.43,5.11,8.06
+Human-robot interaction,ICRA,2020,67,1073,6.24,4.95,7.85
 Perception: detection / segmentation / tracking / pose,ICRA,2020,172,1073,16.03,13.96,18.35
 3D perception / LiDAR / point clouds,ICRA,2020,119,1073,11.09,9.35,13.11
 SLAM / localization / state estimation,ICRA,2020,160,1073,14.91,12.91,17.17
 Radar / 4D radar,ICRA,2020,12,1073,1.12,0.64,1.94
 Event cameras / neuromorphic,ICRA,2020,10,1073,0.93,0.51,1.71
 Prediction / forecasting,ICRA,2020,17,1073,1.58,0.99,2.52
-Motion / path planning,ICRA,2020,177,1073,16.5,14.4,18.84
+Motion / path planning,ICRA,2020,176,1073,16.4,14.31,18.74
 MPC / optimal control / trajectory optimization,ICRA,2020,77,1073,7.18,5.78,8.88
 Safety / verification,ICRA,2020,46,1073,4.29,3.23,5.67
 Uncertainty / probabilistic,ICRA,2020,116,1073,10.81,9.09,12.81
 Force / impedance control,ICRA,2020,43,1073,4.01,2.99,5.35
-Hardware: mechanisms / actuators / design,ICRA,2020,124,1073,11.56,9.78,13.61
-Calibration / registration,ICRA,2020,62,1073,5.78,4.53,7.34
+Hardware: mechanisms / actuators / design,ICRA,2020,123,1073,11.46,9.69,13.51
+Calibration / registration,ICRA,2020,61,1073,5.68,4.45,7.24
 [term] learn*,ICRA,2020,331,1073,30.85,28.16,33.68
 [term] neural / deep,ICRA,2020,212,1073,19.76,17.48,22.25
 [term] foundation model,ICRA,2020,0,1073,0.0,0.0,0.36
@@ -565,7 +565,7 @@ Whole-body control / loco-manipulation,ICRA,2021,17,1387,1.23,0.77,1.95
 Soft robots,ICRA,2021,59,1387,4.25,3.31,5.45
 Micro / bio-inspired robots,ICRA,2021,34,1387,2.45,1.76,3.41
 Multi-robot / multi-agent / swarms,ICRA,2021,108,1387,7.79,6.49,9.32
-Wearable / exoskeleton / prosthesis / rehab,ICRA,2021,49,1387,3.53,2.68,4.64
+Wearable / exoskeleton / prosthesis / rehab,ICRA,2021,46,1387,3.32,2.5,4.4
 Surgical / medical,ICRA,2021,94,1387,6.78,5.57,8.22
 Agriculture / field,ICRA,2021,21,1387,1.51,0.99,2.3
 Industrial / logistics / construction,ICRA,2021,53,1387,3.82,2.93,4.96
@@ -580,14 +580,14 @@ Tactile sensing,ICRA,2021,36,1387,2.6,1.88,3.57
 Haptics,ICRA,2021,14,1387,1.01,0.6,1.69
 Navigation,ICRA,2021,157,1387,11.32,9.76,13.09
 Long-horizon / task planning / TAMP,ICRA,2021,37,1387,2.67,1.94,3.66
-Human-robot interaction,ICRA,2021,97,1387,6.99,5.77,8.46
+Human-robot interaction,ICRA,2021,95,1387,6.85,5.64,8.3
 Perception: detection / segmentation / tracking / pose,ICRA,2021,200,1387,14.42,12.67,16.37
 3D perception / LiDAR / point clouds,ICRA,2021,177,1387,12.76,11.11,14.62
 SLAM / localization / state estimation,ICRA,2021,178,1387,12.83,11.18,14.7
 Radar / 4D radar,ICRA,2021,11,1387,0.79,0.44,1.41
 Event cameras / neuromorphic,ICRA,2021,10,1387,0.72,0.39,1.32
 Prediction / forecasting,ICRA,2021,29,1387,2.09,1.46,2.99
-Motion / path planning,ICRA,2021,265,1387,19.11,17.12,21.26
+Motion / path planning,ICRA,2021,263,1387,18.96,16.99,21.11
 MPC / optimal control / trajectory optimization,ICRA,2021,111,1387,8.0,6.69,9.55
 Safety / verification,ICRA,2021,82,1387,5.91,4.79,7.28
 Uncertainty / probabilistic,ICRA,2021,130,1387,9.37,7.95,11.02
@@ -632,7 +632,7 @@ Whole-body control / loco-manipulation,ICRA,2022,13,931,1.4,0.82,2.37
 Soft robots,ICRA,2022,39,931,4.19,3.08,5.68
 Micro / bio-inspired robots,ICRA,2022,21,931,2.26,1.48,3.42
 Multi-robot / multi-agent / swarms,ICRA,2022,67,931,7.2,5.71,9.04
-Wearable / exoskeleton / prosthesis / rehab,ICRA,2022,41,931,4.4,3.26,5.92
+Wearable / exoskeleton / prosthesis / rehab,ICRA,2022,39,931,4.19,3.08,5.68
 Surgical / medical,ICRA,2022,51,931,5.48,4.19,7.13
 Agriculture / field,ICRA,2022,15,931,1.61,0.98,2.64
 Industrial / logistics / construction,ICRA,2022,46,931,4.94,3.72,6.53
@@ -654,12 +654,12 @@ SLAM / localization / state estimation,ICRA,2022,102,931,10.96,9.11,13.13
 Radar / 4D radar,ICRA,2022,4,931,0.43,0.17,1.1
 Event cameras / neuromorphic,ICRA,2022,9,931,0.97,0.51,1.83
 Prediction / forecasting,ICRA,2022,32,931,3.44,2.45,4.81
-Motion / path planning,ICRA,2022,162,931,17.4,15.1,19.97
+Motion / path planning,ICRA,2022,161,931,17.29,15.0,19.86
 MPC / optimal control / trajectory optimization,ICRA,2022,83,931,8.92,7.25,10.92
 Safety / verification,ICRA,2022,61,931,6.55,5.13,8.33
 Uncertainty / probabilistic,ICRA,2022,98,931,10.53,8.71,12.66
 Force / impedance control,ICRA,2022,21,931,2.26,1.48,3.42
-Hardware: mechanisms / actuators / design,ICRA,2022,94,931,10.1,8.32,12.2
+Hardware: mechanisms / actuators / design,ICRA,2022,93,931,9.99,8.22,12.08
 Calibration / registration,ICRA,2022,36,931,3.87,2.81,5.31
 [term] learn*,ICRA,2022,338,931,36.31,33.28,39.44
 [term] neural / deep,ICRA,2022,203,931,21.8,19.27,24.57
@@ -699,7 +699,7 @@ Whole-body control / loco-manipulation,ICRA,2023,16,1341,1.19,0.74,1.93
 Soft robots,ICRA,2023,60,1341,4.47,3.49,5.72
 Micro / bio-inspired robots,ICRA,2023,34,1341,2.54,1.82,3.52
 Multi-robot / multi-agent / swarms,ICRA,2023,109,1341,8.13,6.78,9.71
-Wearable / exoskeleton / prosthesis / rehab,ICRA,2023,46,1341,3.43,2.58,4.55
+Wearable / exoskeleton / prosthesis / rehab,ICRA,2023,43,1341,3.21,2.39,4.29
 Surgical / medical,ICRA,2023,82,1341,6.11,4.95,7.53
 Agriculture / field,ICRA,2023,29,1341,2.16,1.51,3.09
 Industrial / logistics / construction,ICRA,2023,54,1341,4.03,3.1,5.22
@@ -714,20 +714,20 @@ Tactile sensing,ICRA,2023,48,1341,3.58,2.71,4.71
 Haptics,ICRA,2023,22,1341,1.64,1.09,2.47
 Navigation,ICRA,2023,172,1341,12.83,11.14,14.72
 Long-horizon / task planning / TAMP,ICRA,2023,38,1341,2.83,2.07,3.87
-Human-robot interaction,ICRA,2023,108,1341,8.05,6.71,9.63
+Human-robot interaction,ICRA,2023,106,1341,7.9,6.58,9.47
 Perception: detection / segmentation / tracking / pose,ICRA,2023,241,1341,17.97,16.01,20.12
 3D perception / LiDAR / point clouds,ICRA,2023,233,1341,17.38,15.44,19.5
 SLAM / localization / state estimation,ICRA,2023,158,1341,11.78,10.16,13.62
 Radar / 4D radar,ICRA,2023,18,1341,1.34,0.85,2.11
 Event cameras / neuromorphic,ICRA,2023,17,1341,1.27,0.79,2.02
 Prediction / forecasting,ICRA,2023,27,1341,2.01,1.39,2.91
-Motion / path planning,ICRA,2023,213,1341,15.88,14.03,17.94
+Motion / path planning,ICRA,2023,209,1341,15.59,13.74,17.62
 MPC / optimal control / trajectory optimization,ICRA,2023,105,1341,7.83,6.51,9.39
 Safety / verification,ICRA,2023,92,1341,6.86,5.63,8.34
 Uncertainty / probabilistic,ICRA,2023,136,1341,10.14,8.64,11.87
 Force / impedance control,ICRA,2023,41,1341,3.06,2.26,4.12
-Hardware: mechanisms / actuators / design,ICRA,2023,129,1341,9.62,8.15,11.32
-Calibration / registration,ICRA,2023,67,1341,5.0,3.95,6.3
+Hardware: mechanisms / actuators / design,ICRA,2023,127,1341,9.47,8.02,11.16
+Calibration / registration,ICRA,2023,65,1341,4.85,3.82,6.13
 [term] learn*,ICRA,2023,494,1341,36.84,34.3,39.45
 [term] neural / deep,ICRA,2023,286,1341,21.33,19.22,23.6
 [term] foundation model,ICRA,2023,0,1341,0.0,0.0,0.29
@@ -766,7 +766,7 @@ Whole-body control / loco-manipulation,ICRA,2024,17,1760,0.97,0.6,1.54
 Soft robots,ICRA,2024,76,1760,4.32,3.46,5.37
 Micro / bio-inspired robots,ICRA,2024,46,1760,2.61,1.97,3.47
 Multi-robot / multi-agent / swarms,ICRA,2024,134,1760,7.61,6.46,8.95
-Wearable / exoskeleton / prosthesis / rehab,ICRA,2024,71,1760,4.03,3.21,5.06
+Wearable / exoskeleton / prosthesis / rehab,ICRA,2024,65,1760,3.69,2.91,4.68
 Surgical / medical,ICRA,2024,117,1760,6.65,5.58,7.91
 Agriculture / field,ICRA,2024,49,1760,2.78,2.11,3.66
 Industrial / logistics / construction,ICRA,2024,92,1760,5.23,4.28,6.37
@@ -781,20 +781,20 @@ Tactile sensing,ICRA,2024,84,1760,4.77,3.87,5.87
 Haptics,ICRA,2024,22,1760,1.25,0.83,1.89
 Navigation,ICRA,2024,267,1760,15.17,13.57,16.92
 Long-horizon / task planning / TAMP,ICRA,2024,61,1760,3.47,2.71,4.43
-Human-robot interaction,ICRA,2024,153,1760,8.69,7.47,10.1
+Human-robot interaction,ICRA,2024,150,1760,8.52,7.31,9.92
 Perception: detection / segmentation / tracking / pose,ICRA,2024,288,1760,16.36,14.71,18.16
 3D perception / LiDAR / point clouds,ICRA,2024,306,1760,17.39,15.69,19.23
 SLAM / localization / state estimation,ICRA,2024,219,1760,12.44,10.98,14.07
 Radar / 4D radar,ICRA,2024,25,1760,1.42,0.96,2.09
 Event cameras / neuromorphic,ICRA,2024,20,1760,1.14,0.74,1.75
 Prediction / forecasting,ICRA,2024,46,1760,2.61,1.97,3.47
-Motion / path planning,ICRA,2024,297,1760,16.88,15.2,18.7
+Motion / path planning,ICRA,2024,289,1760,16.42,14.76,18.22
 MPC / optimal control / trajectory optimization,ICRA,2024,125,1760,7.1,5.99,8.4
 Safety / verification,ICRA,2024,142,1760,8.07,6.89,9.43
 Uncertainty / probabilistic,ICRA,2024,157,1760,8.92,7.68,10.34
 Force / impedance control,ICRA,2024,59,1760,3.35,2.61,4.3
-Hardware: mechanisms / actuators / design,ICRA,2024,178,1760,10.11,8.79,11.61
-Calibration / registration,ICRA,2024,95,1760,5.4,4.44,6.55
+Hardware: mechanisms / actuators / design,ICRA,2024,175,1760,9.94,8.63,11.43
+Calibration / registration,ICRA,2024,91,1760,5.17,4.23,6.31
 [term] learn*,ICRA,2024,644,1760,36.59,34.37,38.87
 [term] neural / deep,ICRA,2024,302,1760,17.16,15.47,18.99
 [term] foundation model,ICRA,2024,19,1760,1.08,0.69,1.68
@@ -833,7 +833,7 @@ Whole-body control / loco-manipulation,ICRA,2025,26,1604,1.62,1.11,2.36
 Soft robots,ICRA,2025,60,1604,3.74,2.92,4.79
 Micro / bio-inspired robots,ICRA,2025,53,1604,3.3,2.54,4.3
 Multi-robot / multi-agent / swarms,ICRA,2025,124,1604,7.73,6.52,9.14
-Wearable / exoskeleton / prosthesis / rehab,ICRA,2025,49,1604,3.05,2.32,4.02
+Wearable / exoskeleton / prosthesis / rehab,ICRA,2025,48,1604,2.99,2.26,3.95
 Surgical / medical,ICRA,2025,92,1604,5.74,4.7,6.98
 Agriculture / field,ICRA,2025,42,1604,2.62,1.94,3.52
 Industrial / logistics / construction,ICRA,2025,59,1604,3.68,2.86,4.72
@@ -848,20 +848,20 @@ Tactile sensing,ICRA,2025,58,1604,3.62,2.81,4.65
 Haptics,ICRA,2025,15,1604,0.94,0.57,1.54
 Navigation,ICRA,2025,287,1604,17.89,16.09,19.84
 Long-horizon / task planning / TAMP,ICRA,2025,75,1604,4.68,3.75,5.82
-Human-robot interaction,ICRA,2025,110,1604,6.86,5.72,8.2
+Human-robot interaction,ICRA,2025,107,1604,6.67,5.55,8.0
 Perception: detection / segmentation / tracking / pose,ICRA,2025,270,1604,16.83,15.08,18.74
 3D perception / LiDAR / point clouds,ICRA,2025,293,1604,18.27,16.45,20.23
 SLAM / localization / state estimation,ICRA,2025,182,1604,11.35,9.89,12.99
 Radar / 4D radar,ICRA,2025,28,1604,1.75,1.21,2.51
 Event cameras / neuromorphic,ICRA,2025,23,1604,1.43,0.96,2.14
 Prediction / forecasting,ICRA,2025,45,1604,2.81,2.1,3.73
-Motion / path planning,ICRA,2025,271,1604,16.9,15.14,18.81
+Motion / path planning,ICRA,2025,262,1604,16.33,14.61,18.22
 MPC / optimal control / trajectory optimization,ICRA,2025,116,1604,7.23,6.06,8.6
 Safety / verification,ICRA,2025,115,1604,7.17,6.01,8.54
 Uncertainty / probabilistic,ICRA,2025,118,1604,7.36,6.18,8.74
 Force / impedance control,ICRA,2025,33,1604,2.06,1.47,2.88
-Hardware: mechanisms / actuators / design,ICRA,2025,130,1604,8.1,6.87,9.54
-Calibration / registration,ICRA,2025,72,1604,4.49,3.58,5.62
+Hardware: mechanisms / actuators / design,ICRA,2025,127,1604,7.92,6.69,9.34
+Calibration / registration,ICRA,2025,68,1604,4.24,3.36,5.34
 [term] learn*,ICRA,2025,625,1604,38.97,36.61,41.38
 [term] neural / deep,ICRA,2025,245,1604,15.27,13.6,17.12
 [term] foundation model,ICRA,2025,42,1604,2.62,1.94,3.52
@@ -900,7 +900,7 @@ Whole-body control / loco-manipulation,ICRA,2026,42,1762,2.38,1.77,3.21
 Soft robots,ICRA,2026,80,1762,4.54,3.66,5.62
 Micro / bio-inspired robots,ICRA,2026,52,1762,2.95,2.26,3.85
 Multi-robot / multi-agent / swarms,ICRA,2026,131,1762,7.43,6.3,8.75
-Wearable / exoskeleton / prosthesis / rehab,ICRA,2026,71,1762,4.03,3.21,5.05
+Wearable / exoskeleton / prosthesis / rehab,ICRA,2026,62,1762,3.52,2.75,4.49
 Surgical / medical,ICRA,2026,116,1762,6.58,5.52,7.84
 Agriculture / field,ICRA,2026,35,1762,1.99,1.43,2.75
 Industrial / logistics / construction,ICRA,2026,71,1762,4.03,3.21,5.05
@@ -915,20 +915,20 @@ Tactile sensing,ICRA,2026,86,1762,4.88,3.97,5.99
 Haptics,ICRA,2026,17,1762,0.96,0.6,1.54
 Navigation,ICRA,2026,278,1762,15.78,14.15,17.55
 Long-horizon / task planning / TAMP,ICRA,2026,104,1762,5.9,4.89,7.1
-Human-robot interaction,ICRA,2026,122,1762,6.92,5.83,8.21
+Human-robot interaction,ICRA,2026,120,1762,6.81,5.73,8.08
 Perception: detection / segmentation / tracking / pose,ICRA,2026,245,1762,13.9,12.37,15.6
 3D perception / LiDAR / point clouds,ICRA,2026,298,1762,16.91,15.23,18.73
 SLAM / localization / state estimation,ICRA,2026,180,1762,10.22,8.89,11.72
 Radar / 4D radar,ICRA,2026,21,1762,1.19,0.78,1.82
 Event cameras / neuromorphic,ICRA,2026,21,1762,1.19,0.78,1.82
 Prediction / forecasting,ICRA,2026,55,1762,3.12,2.41,4.04
-Motion / path planning,ICRA,2026,296,1762,16.8,15.13,18.62
+Motion / path planning,ICRA,2026,288,1762,16.35,14.69,18.14
 MPC / optimal control / trajectory optimization,ICRA,2026,133,1762,7.55,6.41,8.88
 Safety / verification,ICRA,2026,111,1762,6.3,5.26,7.53
 Uncertainty / probabilistic,ICRA,2026,147,1762,8.34,7.14,9.73
 Force / impedance control,ICRA,2026,57,1762,3.23,2.51,4.17
-Hardware: mechanisms / actuators / design,ICRA,2026,148,1762,8.4,7.19,9.79
-Calibration / registration,ICRA,2026,97,1762,5.51,4.53,6.67
+Hardware: mechanisms / actuators / design,ICRA,2026,146,1762,8.29,7.09,9.67
+Calibration / registration,ICRA,2026,92,1762,5.22,4.28,6.36
 [term] learn*,ICRA,2026,735,1762,41.71,39.43,44.03
 [term] neural / deep,ICRA,2026,204,1762,11.58,10.17,13.16
 [term] foundation model,ICRA,2026,62,1762,3.52,2.75,4.49
@@ -982,7 +982,7 @@ Tactile sensing,IJRR,2020,3,85,3.53,1.21,9.87
 Haptics,IJRR,2020,3,85,3.53,1.21,9.87
 Navigation,IJRR,2020,14,85,16.47,10.07,25.77
 Long-horizon / task planning / TAMP,IJRR,2020,1,85,1.18,0.21,6.37
-Human-robot interaction,IJRR,2020,9,85,10.59,5.67,18.91
+Human-robot interaction,IJRR,2020,8,85,9.41,4.85,17.49
 Perception: detection / segmentation / tracking / pose,IJRR,2020,4,85,4.71,1.85,11.48
 3D perception / LiDAR / point clouds,IJRR,2020,8,85,9.41,4.85,17.49
 SLAM / localization / state estimation,IJRR,2020,16,85,18.82,11.93,28.41
@@ -1257,7 +1257,7 @@ SLAM / localization / state estimation,IJRR,2024,19,91,20.88,13.79,30.32
 Radar / 4D radar,IJRR,2024,0,91,0.0,0.0,4.05
 Event cameras / neuromorphic,IJRR,2024,0,91,0.0,0.0,4.05
 Prediction / forecasting,IJRR,2024,0,91,0.0,0.0,4.05
-Motion / path planning,IJRR,2024,22,91,24.18,16.54,33.9
+Motion / path planning,IJRR,2024,21,91,23.08,15.62,32.72
 MPC / optimal control / trajectory optimization,IJRR,2024,8,91,8.79,4.52,16.4
 Safety / verification,IJRR,2024,9,91,9.89,5.29,17.74
 Uncertainty / probabilistic,IJRR,2024,11,91,12.09,6.89,20.36
@@ -1330,7 +1330,7 @@ Safety / verification,IJRR,2025,7,94,7.45,3.65,14.58
 Uncertainty / probabilistic,IJRR,2025,19,94,20.21,13.34,29.43
 Force / impedance control,IJRR,2025,2,94,2.13,0.59,7.43
 Hardware: mechanisms / actuators / design,IJRR,2025,10,94,10.64,5.88,18.49
-Calibration / registration,IJRR,2025,6,94,6.38,2.96,13.23
+Calibration / registration,IJRR,2025,5,94,5.32,2.29,11.85
 [term] learn*,IJRR,2025,34,94,36.17,27.18,46.25
 [term] neural / deep,IJRR,2025,14,94,14.89,9.08,23.46
 [term] foundation model,IJRR,2025,1,94,1.06,0.19,5.78
@@ -1436,7 +1436,7 @@ Whole-body control / loco-manipulation,IROS,2020,19,1128,1.68,1.08,2.62
 Soft robots,IROS,2020,55,1128,4.88,3.77,6.29
 Micro / bio-inspired robots,IROS,2020,41,1128,3.63,2.69,4.89
 Multi-robot / multi-agent / swarms,IROS,2020,84,1128,7.45,6.05,9.13
-Wearable / exoskeleton / prosthesis / rehab,IROS,2020,48,1128,4.26,3.22,5.6
+Wearable / exoskeleton / prosthesis / rehab,IROS,2020,46,1128,4.08,3.07,5.4
 Surgical / medical,IROS,2020,74,1128,6.56,5.26,8.16
 Agriculture / field,IROS,2020,17,1128,1.51,0.94,2.4
 Industrial / logistics / construction,IROS,2020,60,1128,5.32,4.15,6.79
@@ -1464,7 +1464,7 @@ Safety / verification,IROS,2020,59,1128,5.23,4.08,6.69
 Uncertainty / probabilistic,IROS,2020,130,1128,11.52,9.79,13.52
 Force / impedance control,IROS,2020,36,1128,3.19,2.31,4.39
 Hardware: mechanisms / actuators / design,IROS,2020,141,1128,12.5,10.7,14.56
-Calibration / registration,IROS,2020,55,1128,4.88,3.77,6.29
+Calibration / registration,IROS,2020,54,1128,4.79,3.69,6.19
 [term] learn*,IROS,2020,333,1128,29.52,26.93,32.25
 [term] neural / deep,IROS,2020,222,1128,19.68,17.47,22.1
 [term] foundation model,IROS,2020,0,1128,0.0,0.0,0.34
@@ -1518,7 +1518,7 @@ Tactile sensing,IROS,2021,33,1032,3.2,2.29,4.46
 Haptics,IROS,2021,18,1032,1.74,1.11,2.74
 Navigation,IROS,2021,143,1032,13.86,11.88,16.1
 Long-horizon / task planning / TAMP,IROS,2021,17,1032,1.65,1.03,2.62
-Human-robot interaction,IROS,2021,61,1032,5.91,4.63,7.52
+Human-robot interaction,IROS,2021,60,1032,5.81,4.54,7.41
 Perception: detection / segmentation / tracking / pose,IROS,2021,191,1032,18.51,16.26,20.99
 3D perception / LiDAR / point clouds,IROS,2021,142,1032,13.76,11.79,16.0
 SLAM / localization / state estimation,IROS,2021,148,1032,14.34,12.33,16.61
@@ -1530,7 +1530,7 @@ MPC / optimal control / trajectory optimization,IROS,2021,62,1032,6.01,4.71,7.63
 Safety / verification,IROS,2021,67,1032,6.49,5.14,8.16
 Uncertainty / probabilistic,IROS,2021,85,1032,8.24,6.71,10.07
 Force / impedance control,IROS,2021,36,1032,3.49,2.53,4.79
-Hardware: mechanisms / actuators / design,IROS,2021,109,1032,10.56,8.83,12.59
+Hardware: mechanisms / actuators / design,IROS,2021,108,1032,10.47,8.74,12.48
 Calibration / registration,IROS,2021,41,1032,3.97,2.94,5.35
 [term] learn*,IROS,2021,364,1032,35.27,32.42,38.24
 [term] neural / deep,IROS,2021,210,1032,20.35,18.0,22.91
@@ -1570,7 +1570,7 @@ Whole-body control / loco-manipulation,IROS,2022,22,1213,1.81,1.2,2.73
 Soft robots,IROS,2022,70,1213,5.77,4.59,7.23
 Micro / bio-inspired robots,IROS,2022,37,1213,3.05,2.22,4.18
 Multi-robot / multi-agent / swarms,IROS,2022,85,1213,7.01,5.7,8.58
-Wearable / exoskeleton / prosthesis / rehab,IROS,2022,43,1213,3.54,2.64,4.74
+Wearable / exoskeleton / prosthesis / rehab,IROS,2022,41,1213,3.38,2.5,4.55
 Surgical / medical,IROS,2022,77,1213,6.35,5.11,7.86
 Agriculture / field,IROS,2022,25,1213,2.06,1.4,3.02
 Industrial / logistics / construction,IROS,2022,61,1213,5.03,3.93,6.41
@@ -1592,12 +1592,12 @@ SLAM / localization / state estimation,IROS,2022,173,1213,14.26,12.41,16.34
 Radar / 4D radar,IROS,2022,12,1213,0.99,0.57,1.72
 Event cameras / neuromorphic,IROS,2022,7,1213,0.58,0.28,1.19
 Prediction / forecasting,IROS,2022,20,1213,1.65,1.07,2.53
-Motion / path planning,IROS,2022,202,1213,16.65,14.66,18.85
+Motion / path planning,IROS,2022,201,1213,16.57,14.58,18.77
 MPC / optimal control / trajectory optimization,IROS,2022,94,1213,7.75,6.37,9.39
 Safety / verification,IROS,2022,68,1213,5.61,4.45,7.05
 Uncertainty / probabilistic,IROS,2022,111,1213,9.15,7.65,10.9
 Force / impedance control,IROS,2022,42,1213,3.46,2.57,4.65
-Hardware: mechanisms / actuators / design,IROS,2022,147,1213,12.12,10.4,14.08
+Hardware: mechanisms / actuators / design,IROS,2022,146,1213,12.04,10.32,13.99
 Calibration / registration,IROS,2022,48,1213,3.96,3.0,5.21
 [term] learn*,IROS,2022,397,1213,32.73,30.15,35.42
 [term] neural / deep,IROS,2022,222,1213,18.3,16.23,20.58
@@ -1637,7 +1637,7 @@ Whole-body control / loco-manipulation,IROS,2023,21,1195,1.76,1.15,2.67
 Soft robots,IROS,2023,63,1195,5.27,4.14,6.69
 Micro / bio-inspired robots,IROS,2023,48,1195,4.02,3.04,5.29
 Multi-robot / multi-agent / swarms,IROS,2023,103,1195,8.62,7.16,10.35
-Wearable / exoskeleton / prosthesis / rehab,IROS,2023,66,1195,5.52,4.36,6.97
+Wearable / exoskeleton / prosthesis / rehab,IROS,2023,62,1195,5.19,4.07,6.6
 Surgical / medical,IROS,2023,73,1195,6.11,4.89,7.61
 Agriculture / field,IROS,2023,26,1195,2.18,1.49,3.17
 Industrial / logistics / construction,IROS,2023,50,1195,4.18,3.19,5.47
@@ -1652,20 +1652,20 @@ Tactile sensing,IROS,2023,40,1195,3.35,2.47,4.53
 Haptics,IROS,2023,22,1195,1.84,1.22,2.77
 Navigation,IROS,2023,174,1195,14.56,12.67,16.67
 Long-horizon / task planning / TAMP,IROS,2023,29,1195,2.43,1.69,3.46
-Human-robot interaction,IROS,2023,111,1195,9.29,7.77,11.07
+Human-robot interaction,IROS,2023,109,1195,9.12,7.62,10.89
 Perception: detection / segmentation / tracking / pose,IROS,2023,209,1195,17.49,15.44,19.75
 3D perception / LiDAR / point clouds,IROS,2023,151,1195,12.64,10.87,14.64
 SLAM / localization / state estimation,IROS,2023,149,1195,12.47,10.71,14.46
 Radar / 4D radar,IROS,2023,8,1195,0.67,0.34,1.32
 Event cameras / neuromorphic,IROS,2023,12,1195,1.0,0.58,1.75
 Prediction / forecasting,IROS,2023,34,1195,2.85,2.04,3.95
-Motion / path planning,IROS,2023,197,1195,16.49,14.49,18.7
+Motion / path planning,IROS,2023,196,1195,16.4,14.41,18.61
 MPC / optimal control / trajectory optimization,IROS,2023,84,1195,7.03,5.71,8.62
 Safety / verification,IROS,2023,72,1195,6.03,4.81,7.52
 Uncertainty / probabilistic,IROS,2023,103,1195,8.62,7.16,10.35
 Force / impedance control,IROS,2023,36,1195,3.01,2.18,4.14
 Hardware: mechanisms / actuators / design,IROS,2023,138,1195,11.55,9.86,13.48
-Calibration / registration,IROS,2023,56,1195,4.69,3.63,6.04
+Calibration / registration,IROS,2023,54,1195,4.52,3.48,5.85
 [term] learn*,IROS,2023,437,1195,36.57,33.89,39.34
 [term] neural / deep,IROS,2023,214,1195,17.91,15.84,20.18
 [term] foundation model,IROS,2023,1,1195,0.08,0.01,0.47
@@ -1704,7 +1704,7 @@ Whole-body control / loco-manipulation,IROS,2024,21,1581,1.33,0.87,2.02
 Soft robots,IROS,2024,80,1581,5.06,4.08,6.25
 Micro / bio-inspired robots,IROS,2024,30,1581,1.9,1.33,2.7
 Multi-robot / multi-agent / swarms,IROS,2024,138,1581,8.73,7.44,10.22
-Wearable / exoskeleton / prosthesis / rehab,IROS,2024,59,1581,3.73,2.9,4.78
+Wearable / exoskeleton / prosthesis / rehab,IROS,2024,58,1581,3.67,2.85,4.71
 Surgical / medical,IROS,2024,97,1581,6.14,5.06,7.43
 Agriculture / field,IROS,2024,39,1581,2.47,1.81,3.35
 Industrial / logistics / construction,IROS,2024,78,1581,4.93,3.97,6.11
@@ -1719,20 +1719,20 @@ Tactile sensing,IROS,2024,65,1581,4.11,3.24,5.21
 Haptics,IROS,2024,21,1581,1.33,0.87,2.02
 Navigation,IROS,2024,259,1581,16.38,14.64,18.29
 Long-horizon / task planning / TAMP,IROS,2024,65,1581,4.11,3.24,5.21
-Human-robot interaction,IROS,2024,117,1581,7.4,6.21,8.8
+Human-robot interaction,IROS,2024,116,1581,7.34,6.15,8.73
 Perception: detection / segmentation / tracking / pose,IROS,2024,308,1581,19.48,17.6,21.51
 3D perception / LiDAR / point clouds,IROS,2024,277,1581,17.52,15.73,19.47
 SLAM / localization / state estimation,IROS,2024,227,1581,14.36,12.72,16.17
 Radar / 4D radar,IROS,2024,20,1581,1.27,0.82,1.95
 Event cameras / neuromorphic,IROS,2024,19,1581,1.2,0.77,1.87
 Prediction / forecasting,IROS,2024,41,1581,2.59,1.92,3.5
-Motion / path planning,IROS,2024,255,1581,16.13,14.4,18.02
+Motion / path planning,IROS,2024,249,1581,15.75,14.04,17.63
 MPC / optimal control / trajectory optimization,IROS,2024,82,1581,5.19,4.2,6.39
 Safety / verification,IROS,2024,90,1581,5.69,4.65,6.95
 Uncertainty / probabilistic,IROS,2024,130,1581,8.22,6.97,9.68
 Force / impedance control,IROS,2024,42,1581,2.66,1.97,3.57
-Hardware: mechanisms / actuators / design,IROS,2024,166,1581,10.5,9.08,12.11
-Calibration / registration,IROS,2024,85,1581,5.38,4.37,6.6
+Hardware: mechanisms / actuators / design,IROS,2024,164,1581,10.37,8.96,11.97
+Calibration / registration,IROS,2024,84,1581,5.31,4.31,6.53
 [term] learn*,IROS,2024,578,1581,36.56,34.22,38.96
 [term] neural / deep,IROS,2024,295,1581,18.66,16.82,20.65
 [term] foundation model,IROS,2024,23,1581,1.45,0.97,2.17
@@ -1771,7 +1771,7 @@ Whole-body control / loco-manipulation,IROS,2025,31,1983,1.56,1.1,2.21
 Soft robots,IROS,2025,113,1983,5.7,4.76,6.81
 Micro / bio-inspired robots,IROS,2025,79,1983,3.98,3.21,4.94
 Multi-robot / multi-agent / swarms,IROS,2025,149,1983,7.51,6.43,8.76
-Wearable / exoskeleton / prosthesis / rehab,IROS,2025,83,1983,4.19,3.39,5.16
+Wearable / exoskeleton / prosthesis / rehab,IROS,2025,81,1983,4.08,3.3,5.05
 Surgical / medical,IROS,2025,180,1983,9.08,7.89,10.42
 Agriculture / field,IROS,2025,44,1983,2.22,1.66,2.97
 Industrial / logistics / construction,IROS,2025,90,1983,4.54,3.71,5.55
@@ -1786,19 +1786,19 @@ Tactile sensing,IROS,2025,78,1983,3.93,3.16,4.88
 Haptics,IROS,2025,23,1983,1.16,0.77,1.73
 Navigation,IROS,2025,312,1983,15.73,14.2,17.4
 Long-horizon / task planning / TAMP,IROS,2025,85,1983,4.29,3.48,5.27
-Human-robot interaction,IROS,2025,166,1983,8.37,7.23,9.67
+Human-robot interaction,IROS,2025,162,1983,8.17,7.04,9.46
 Perception: detection / segmentation / tracking / pose,IROS,2025,365,1983,18.41,16.76,20.17
 3D perception / LiDAR / point clouds,IROS,2025,330,1983,16.64,15.07,18.34
 SLAM / localization / state estimation,IROS,2025,232,1983,11.7,10.36,13.19
 Radar / 4D radar,IROS,2025,29,1983,1.46,1.02,2.09
 Event cameras / neuromorphic,IROS,2025,15,1983,0.76,0.46,1.24
 Prediction / forecasting,IROS,2025,51,1983,2.57,1.96,3.37
-Motion / path planning,IROS,2025,303,1983,15.28,13.76,16.93
+Motion / path planning,IROS,2025,296,1983,14.93,13.43,16.56
 MPC / optimal control / trajectory optimization,IROS,2025,139,1983,7.01,5.97,8.22
 Safety / verification,IROS,2025,114,1983,5.75,4.81,6.86
 Uncertainty / probabilistic,IROS,2025,134,1983,6.76,5.73,7.95
 Force / impedance control,IROS,2025,53,1983,2.67,2.05,3.48
-Hardware: mechanisms / actuators / design,IROS,2025,220,1983,11.09,9.79,12.55
+Hardware: mechanisms / actuators / design,IROS,2025,219,1983,11.04,9.74,12.5
 Calibration / registration,IROS,2025,120,1983,6.05,5.08,7.19
 [term] learn*,IROS,2025,691,1983,34.85,32.78,36.97
 [term] neural / deep,IROS,2025,294,1983,14.83,13.33,16.46
@@ -1860,7 +1860,7 @@ SLAM / localization / state estimation,RSS,2020,10,103,9.71,5.36,16.96
 Radar / 4D radar,RSS,2020,1,103,0.97,0.17,5.3
 Event cameras / neuromorphic,RSS,2020,2,103,1.94,0.53,6.81
 Prediction / forecasting,RSS,2020,1,103,0.97,0.17,5.3
-Motion / path planning,RSS,2020,22,103,21.36,14.55,30.23
+Motion / path planning,RSS,2020,21,103,20.39,13.74,29.17
 MPC / optimal control / trajectory optimization,RSS,2020,13,103,12.62,7.53,20.4
 Safety / verification,RSS,2020,13,103,12.62,7.53,20.4
 Uncertainty / probabilistic,RSS,2020,18,103,17.48,11.35,25.94
@@ -1972,7 +1972,7 @@ Whole-body control / loco-manipulation,RSS,2022,0,74,0.0,0.0,4.93
 Soft robots,RSS,2022,2,74,2.7,0.74,9.33
 Micro / bio-inspired robots,RSS,2022,1,74,1.35,0.24,7.27
 Multi-robot / multi-agent / swarms,RSS,2022,11,74,14.86,8.51,24.69
-Wearable / exoskeleton / prosthesis / rehab,RSS,2022,1,74,1.35,0.24,7.27
+Wearable / exoskeleton / prosthesis / rehab,RSS,2022,0,74,0.0,0.0,4.93
 Surgical / medical,RSS,2022,0,74,0.0,0.0,4.93
 Agriculture / field,RSS,2022,1,74,1.35,0.24,7.27
 Industrial / logistics / construction,RSS,2022,7,74,9.46,4.66,18.26
@@ -2039,7 +2039,7 @@ Whole-body control / loco-manipulation,RSS,2023,2,112,1.79,0.49,6.28
 Soft robots,RSS,2023,6,112,5.36,2.48,11.2
 Micro / bio-inspired robots,RSS,2023,2,112,1.79,0.49,6.28
 Multi-robot / multi-agent / swarms,RSS,2023,14,112,12.5,7.59,19.89
-Wearable / exoskeleton / prosthesis / rehab,RSS,2023,1,112,0.89,0.16,4.88
+Wearable / exoskeleton / prosthesis / rehab,RSS,2023,0,112,0.0,0.0,3.32
 Surgical / medical,RSS,2023,1,112,0.89,0.16,4.88
 Agriculture / field,RSS,2023,6,112,5.36,2.48,11.2
 Industrial / logistics / construction,RSS,2023,5,112,4.46,1.92,10.03
@@ -2106,7 +2106,7 @@ Whole-body control / loco-manipulation,RSS,2024,3,134,2.24,0.76,6.38
 Soft robots,RSS,2024,5,134,3.73,1.6,8.44
 Micro / bio-inspired robots,RSS,2024,2,134,1.49,0.41,5.28
 Multi-robot / multi-agent / swarms,RSS,2024,11,134,8.21,4.65,14.1
-Wearable / exoskeleton / prosthesis / rehab,RSS,2024,4,134,2.99,1.17,7.42
+Wearable / exoskeleton / prosthesis / rehab,RSS,2024,3,134,2.24,0.76,6.38
 Surgical / medical,RSS,2024,3,134,2.24,0.76,6.38
 Agriculture / field,RSS,2024,3,134,2.24,0.76,6.38
 Industrial / logistics / construction,RSS,2024,7,134,5.22,2.55,10.39
@@ -2128,13 +2128,13 @@ SLAM / localization / state estimation,RSS,2024,10,134,7.46,4.1,13.19
 Radar / 4D radar,RSS,2024,0,134,0.0,0.0,2.79
 Event cameras / neuromorphic,RSS,2024,2,134,1.49,0.41,5.28
 Prediction / forecasting,RSS,2024,1,134,0.75,0.13,4.11
-Motion / path planning,RSS,2024,22,134,16.42,11.1,23.61
+Motion / path planning,RSS,2024,20,134,14.93,9.87,21.93
 MPC / optimal control / trajectory optimization,RSS,2024,15,134,11.19,6.9,17.65
 Safety / verification,RSS,2024,13,134,9.7,5.76,15.89
 Uncertainty / probabilistic,RSS,2024,15,134,11.19,6.9,17.65
 Force / impedance control,RSS,2024,3,134,2.24,0.76,6.38
 Hardware: mechanisms / actuators / design,RSS,2024,4,134,2.99,1.17,7.42
-Calibration / registration,RSS,2024,4,134,2.99,1.17,7.42
+Calibration / registration,RSS,2024,3,134,2.24,0.76,6.38
 [term] learn*,RSS,2024,73,134,54.48,46.04,62.67
 [term] neural / deep,RSS,2024,13,134,9.7,5.76,15.89
 [term] foundation model,RSS,2024,5,134,3.73,1.6,8.44
@@ -2195,13 +2195,13 @@ SLAM / localization / state estimation,RSS,2025,18,163,11.04,7.1,16.78
 Radar / 4D radar,RSS,2025,3,163,1.84,0.63,5.27
 Event cameras / neuromorphic,RSS,2025,2,163,1.23,0.34,4.36
 Prediction / forecasting,RSS,2025,3,163,1.84,0.63,5.27
-Motion / path planning,RSS,2025,40,163,24.54,18.57,31.68
+Motion / path planning,RSS,2025,39,163,23.93,18.03,31.03
 MPC / optimal control / trajectory optimization,RSS,2025,22,163,13.5,9.08,19.59
 Safety / verification,RSS,2025,18,163,11.04,7.1,16.78
 Uncertainty / probabilistic,RSS,2025,14,163,8.59,5.19,13.9
 Force / impedance control,RSS,2025,7,163,4.29,2.1,8.6
 Hardware: mechanisms / actuators / design,RSS,2025,11,163,6.75,3.81,11.68
-Calibration / registration,RSS,2025,9,163,5.52,2.93,10.16
+Calibration / registration,RSS,2025,7,163,4.29,2.1,8.6
 [term] learn*,RSS,2025,105,163,64.42,56.81,71.36
 [term] neural / deep,RSS,2025,27,163,16.56,11.64,23.03
 [term] foundation model,RSS,2025,8,163,4.91,2.51,9.38
@@ -2268,7 +2268,7 @@ Safety / verification,RSS,2026,19,210,9.05,5.87,13.7
 Uncertainty / probabilistic,RSS,2026,22,210,10.48,7.02,15.35
 Force / impedance control,RSS,2026,8,210,3.81,1.94,7.34
 Hardware: mechanisms / actuators / design,RSS,2026,11,210,5.24,2.95,9.13
-Calibration / registration,RSS,2026,13,210,6.19,3.65,10.3
+Calibration / registration,RSS,2026,10,210,4.76,2.61,8.54
 [term] learn*,RSS,2026,130,210,61.9,55.18,68.2
 [term] neural / deep,RSS,2026,15,210,7.14,4.38,11.45
 [term] foundation model,RSS,2026,10,210,4.76,2.61,8.54
@@ -2389,7 +2389,7 @@ Tactile sensing,SciRobotics,2021,3,75,4.0,1.37,11.11
 Haptics,SciRobotics,2021,1,75,1.33,0.24,7.17
 Navigation,SciRobotics,2021,13,75,17.33,10.42,27.43
 Long-horizon / task planning / TAMP,SciRobotics,2021,1,75,1.33,0.24,7.17
-Human-robot interaction,SciRobotics,2021,9,75,12.0,6.44,21.26
+Human-robot interaction,SciRobotics,2021,8,75,10.67,5.5,19.66
 Perception: detection / segmentation / tracking / pose,SciRobotics,2021,3,75,4.0,1.37,11.11
 3D perception / LiDAR / point clouds,SciRobotics,2021,2,75,2.67,0.73,9.21
 SLAM / localization / state estimation,SciRobotics,2021,1,75,1.33,0.24,7.17
@@ -2642,7 +2642,7 @@ Whole-body control / loco-manipulation,SciRobotics,2025,3,70,4.29,1.47,11.86
 Soft robots,SciRobotics,2025,14,70,20.0,12.3,30.82
 Micro / bio-inspired robots,SciRobotics,2025,21,70,30.0,20.54,41.54
 Multi-robot / multi-agent / swarms,SciRobotics,2025,5,70,7.14,3.09,15.66
-Wearable / exoskeleton / prosthesis / rehab,SciRobotics,2025,8,70,11.43,5.91,20.96
+Wearable / exoskeleton / prosthesis / rehab,SciRobotics,2025,7,70,10.0,4.93,19.23
 Surgical / medical,SciRobotics,2025,16,70,22.86,14.59,33.95
 Agriculture / field,SciRobotics,2025,2,70,2.86,0.79,9.83
 Industrial / logistics / construction,SciRobotics,2025,1,70,1.43,0.25,7.66
@@ -2709,7 +2709,7 @@ Whole-body control / loco-manipulation,SciRobotics,2026,2,48,4.17,1.15,13.98
 Soft robots,SciRobotics,2026,3,48,6.25,2.15,16.84
 Micro / bio-inspired robots,SciRobotics,2026,7,48,14.58,7.25,27.17
 Multi-robot / multi-agent / swarms,SciRobotics,2026,3,48,6.25,2.15,16.84
-Wearable / exoskeleton / prosthesis / rehab,SciRobotics,2026,8,48,16.67,8.7,29.58
+Wearable / exoskeleton / prosthesis / rehab,SciRobotics,2026,7,48,14.58,7.25,27.17
 Surgical / medical,SciRobotics,2026,8,48,16.67,8.7,29.58
 Agriculture / field,SciRobotics,2026,0,48,0.0,0.0,7.41
 Industrial / logistics / construction,SciRobotics,2026,1,48,2.08,0.37,10.9
@@ -2925,7 +2925,7 @@ Tactile sensing,T-RO,2022,7,230,3.04,1.48,6.15
 Haptics,T-RO,2022,4,230,1.74,0.68,4.39
 Navigation,T-RO,2022,25,230,10.87,7.47,15.55
 Long-horizon / task planning / TAMP,T-RO,2022,1,230,0.43,0.08,2.42
-Human-robot interaction,T-RO,2022,8,230,3.48,1.77,6.71
+Human-robot interaction,T-RO,2022,7,230,3.04,1.48,6.15
 Perception: detection / segmentation / tracking / pose,T-RO,2022,20,230,8.7,5.7,13.05
 3D perception / LiDAR / point clouds,T-RO,2022,20,230,8.7,5.7,13.05
 SLAM / localization / state estimation,T-RO,2022,27,230,11.74,8.19,16.54
@@ -2937,7 +2937,7 @@ MPC / optimal control / trajectory optimization,T-RO,2022,18,230,7.83,5.01,12.03
 Safety / verification,T-RO,2022,23,230,10.0,6.76,14.56
 Uncertainty / probabilistic,T-RO,2022,23,230,10.0,6.76,14.56
 Force / impedance control,T-RO,2022,21,230,9.13,6.05,13.55
-Hardware: mechanisms / actuators / design,T-RO,2022,39,230,16.96,12.66,22.34
+Hardware: mechanisms / actuators / design,T-RO,2022,38,230,16.52,12.28,21.86
 Calibration / registration,T-RO,2022,17,230,7.39,4.67,11.52
 [term] learn*,T-RO,2022,38,230,16.52,12.28,21.86
 [term] neural / deep,T-RO,2022,18,230,7.83,5.01,12.03
@@ -3059,7 +3059,7 @@ Tactile sensing,T-RO,2024,11,266,4.14,2.32,7.25
 Haptics,T-RO,2024,6,266,2.26,1.04,4.83
 Navigation,T-RO,2024,27,266,10.15,7.07,14.37
 Long-horizon / task planning / TAMP,T-RO,2024,5,266,1.88,0.81,4.32
-Human-robot interaction,T-RO,2024,11,266,4.14,2.32,7.25
+Human-robot interaction,T-RO,2024,10,266,3.76,2.05,6.78
 Perception: detection / segmentation / tracking / pose,T-RO,2024,23,266,8.65,5.83,12.64
 3D perception / LiDAR / point clouds,T-RO,2024,24,266,9.02,6.14,13.07
 SLAM / localization / state estimation,T-RO,2024,43,266,16.17,12.23,21.07
@@ -3111,7 +3111,7 @@ Whole-body control / loco-manipulation,T-RO,2025,9,360,2.5,1.32,4.68
 Soft robots,T-RO,2025,40,360,11.11,8.27,14.78
 Micro / bio-inspired robots,T-RO,2025,18,360,5.0,3.19,7.76
 Multi-robot / multi-agent / swarms,T-RO,2025,29,360,8.06,5.67,11.33
-Wearable / exoskeleton / prosthesis / rehab,T-RO,2025,24,360,6.67,4.52,9.73
+Wearable / exoskeleton / prosthesis / rehab,T-RO,2025,22,360,6.11,4.07,9.08
 Surgical / medical,T-RO,2025,20,360,5.56,3.62,8.42
 Agriculture / field,T-RO,2025,5,360,1.39,0.59,3.21
 Industrial / logistics / construction,T-RO,2025,13,360,3.61,2.12,6.08
@@ -3126,7 +3126,7 @@ Tactile sensing,T-RO,2025,34,360,9.44,6.84,12.91
 Haptics,T-RO,2025,7,360,1.94,0.95,3.96
 Navigation,T-RO,2025,57,360,15.83,12.43,19.96
 Long-horizon / task planning / TAMP,T-RO,2025,4,360,1.11,0.43,2.82
-Human-robot interaction,T-RO,2025,27,360,7.5,5.21,10.69
+Human-robot interaction,T-RO,2025,25,360,6.94,4.75,10.05
 Perception: detection / segmentation / tracking / pose,T-RO,2025,44,360,12.22,9.23,16.01
 3D perception / LiDAR / point clouds,T-RO,2025,50,360,13.89,10.7,17.84
 SLAM / localization / state estimation,T-RO,2025,62,360,17.22,13.67,21.46
@@ -3178,7 +3178,7 @@ Whole-body control / loco-manipulation,T-RO,2026,5,190,2.63,1.13,6.01
 Soft robots,T-RO,2026,21,190,11.05,7.34,16.31
 Micro / bio-inspired robots,T-RO,2026,14,190,7.37,4.44,11.99
 Multi-robot / multi-agent / swarms,T-RO,2026,25,190,13.16,9.07,18.7
-Wearable / exoskeleton / prosthesis / rehab,T-RO,2026,13,190,6.84,4.04,11.35
+Wearable / exoskeleton / prosthesis / rehab,T-RO,2026,12,190,6.32,3.65,10.71
 Surgical / medical,T-RO,2026,12,190,6.32,3.65,10.71
 Agriculture / field,T-RO,2026,1,190,0.53,0.09,2.92
 Industrial / logistics / construction,T-RO,2026,9,190,4.74,2.51,8.76

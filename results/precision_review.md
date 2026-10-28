@@ -246,3 +246,25 @@ How it was checked:
     papers in 2024-26); "planner(s)" for task-level planners and learned modules; ML "prototype" (2 CoRL 2026 papers);
     "assistive" and "trust" broad in every period. Possible next fix for calibration: drop a match whose sentence has an
     uncertainty cue and no sensor cue (untested).
+
+## Round 3: sentence-level vetoes (2026-10-28; user: "推完了接着修", after the push of rounds 1-2)
+
+- New mechanism (scripts/04_topics.py: VETO, kept(), sentence_at()): for five topics a match of a target word does not count
+  when its sentence has a cue of another sense and no cue of the topic's own sense. A title is one sentence; a Wearable title
+  match may take its own-sense cue from the abstract. Sentences are not split after "e.g." / "i.e.".
+  - Calibration: "calibrat..." with confidence / uncertainty / conformal / critic / risk cues and no sensor cue.
+  - Motion planning: bare "planner(s)" with LLM / VLM / task / symbolic / high-level / agent / subgoal / skill cues and no
+    motion cue (path, trajectory, collision, navigation, route, cost function ...).
+  - HRI: "trust" only with a human cue in the sentence (user, operator, participants, public, usability ...).
+  - Wearable: "assistive" only with a wearable / rehabilitation / disability / daily-living cue (or, for a title, in the abstract).
+  - Hardware: "prototype" with ML / software cues and no physical cue.
+- Check: two independent reviewers read every removal (258 in the first version; `results/rulefix_round3_review_{C,D}_2026-10-28.txt`,
+  lists in `results/rulefix_diff_round3_2026-10-28/`) and tested cue additions corpus-wide; their patches were applied.
+  Final round 3 vs round 2: 202 memberships removed, 0 added: 151 right, 45 borderline, 6 still wrong (motion planning 5:
+  navigation / driving planners caught by "high-level", "agents", "skill"; wearable 1). Calibration 34 removed (30 right,
+  4 borderline), HRI 31 (24 / 7), hardware 21 (all right).
+- Fragile result: motion planning's whole-period trend becomes "declining" (q 0.040). Counting the 5 wrong removals back gives
+  q 0.046; counting also the 10 borderline ones (learned "planners": video, diffusion, world-model search, heuristic,
+  centralized) gives q 0.056 ("unclear"). The verdict depends on whether learned planners count as motion planning.
+- Known keep-side leaks (not fixed): 8 wrong-sense papers keep their membership through an own-sense cue that has another
+  meaning ("robots", "depth", "mechanism", "collaborative").

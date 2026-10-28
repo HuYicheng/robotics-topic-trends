@@ -155,19 +155,19 @@ year,domain,method,k,n,pct,lift
 2021,Multi-robot / multi-agent / swarms,Language grounding / open-vocabulary,2,220,0.9090909090909091,0.7722077922077921
 2021,Multi-robot / multi-agent / swarms,Learning from human video / human-to-robot transfer,1,220,0.45454545454545453,1.6892045454545455
 2021,Multi-robot / multi-agent / swarms,Cross-embodiment,0,220,0.0,0.0
-2021,Human-robot interaction,Imitation learning / LfD,18,195,9.23076923076923,1.4368103101087395
-2021,Human-robot interaction,Reinforcement learning,22,195,11.282051282051283,0.8944410256410257
-2021,Human-robot interaction,LLM / VLM,0,195,0.0,0.0
-2021,Human-robot interaction,VLA / robot foundation models,0,195,0.0,
-2021,Human-robot interaction,Diffusion / flow generative models,0,195,0.0,
-2021,Human-robot interaction,World models / video prediction,0,195,0.0,0.0
-2021,Human-robot interaction,3D Gaussian splatting,0,195,0.0,
-2021,Human-robot interaction,NeRF / neural implicit fields,0,195,0.0,0.0
-2021,Human-robot interaction,Sim-to-real,0,195,0.0,0.0
-2021,Human-robot interaction,Self-supervised / pretraining / representation,3,195,1.5384615384615385,0.30091093117408907
-2021,Human-robot interaction,Language grounding / open-vocabulary,8,195,4.102564102564102,3.4848351648351645
-2021,Human-robot interaction,Learning from human video / human-to-robot transfer,2,195,1.0256410256410255,3.8115384615384613
-2021,Human-robot interaction,Cross-embodiment,0,195,0.0,0.0
+2021,Human-robot interaction,Imitation learning / LfD,18,190,9.473684210526315,1.47462110774318
+2021,Human-robot interaction,Reinforcement learning,22,190,11.578947368421053,0.9179789473684211
+2021,Human-robot interaction,LLM / VLM,0,190,0.0,0.0
+2021,Human-robot interaction,VLA / robot foundation models,0,190,0.0,
+2021,Human-robot interaction,Diffusion / flow generative models,0,190,0.0,
+2021,Human-robot interaction,World models / video prediction,0,190,0.0,0.0
+2021,Human-robot interaction,3D Gaussian splatting,0,190,0.0,
+2021,Human-robot interaction,NeRF / neural implicit fields,0,190,0.0,0.0
+2021,Human-robot interaction,Sim-to-real,0,190,0.0,0.0
+2021,Human-robot interaction,Self-supervised / pretraining / representation,3,190,1.5789473684210527,0.30882963988919665
+2021,Human-robot interaction,Language grounding / open-vocabulary,8,190,4.2105263157894735,3.5765413533834587
+2021,Human-robot interaction,Learning from human video / human-to-robot transfer,2,190,1.0526315789473684,3.911842105263158
+2021,Human-robot interaction,Cross-embodiment,0,190,0.0,0.0
 2021,Surgical / medical,Imitation learning / LfD,7,186,3.763440860215054,0.5857963181894951
 2021,Surgical / medical,Reinforcement learning,9,186,4.838709677419355,0.38361290322580643
 2021,Surgical / medical,LLM / VLM,0,186,0.0,0.0
@@ -181,19 +181,19 @@ year,domain,method,k,n,pct,lift
 2021,Surgical / medical,Language grounding / open-vocabulary,1,186,0.5376344086021505,0.4566820276497696
 2021,Surgical / medical,Learning from human video / human-to-robot transfer,0,186,0.0,0.0
 2021,Surgical / medical,Cross-embodiment,0,186,0.0,0.0
-2021,Wearable / exoskeleton / prosthesis / rehab,Imitation learning / LfD,10,116,8.620689655172415,1.341848709153277
-2021,Wearable / exoskeleton / prosthesis / rehab,Reinforcement learning,7,116,6.0344827586206895,0.47841379310344834
-2021,Wearable / exoskeleton / prosthesis / rehab,LLM / VLM,0,116,0.0,0.0
-2021,Wearable / exoskeleton / prosthesis / rehab,VLA / robot foundation models,0,116,0.0,
-2021,Wearable / exoskeleton / prosthesis / rehab,Diffusion / flow generative models,0,116,0.0,
-2021,Wearable / exoskeleton / prosthesis / rehab,World models / video prediction,0,116,0.0,0.0
-2021,Wearable / exoskeleton / prosthesis / rehab,3D Gaussian splatting,0,116,0.0,
-2021,Wearable / exoskeleton / prosthesis / rehab,NeRF / neural implicit fields,0,116,0.0,0.0
-2021,Wearable / exoskeleton / prosthesis / rehab,Sim-to-real,1,116,0.8620689655172413,0.3825270200720535
-2021,Wearable / exoskeleton / prosthesis / rehab,Self-supervised / pretraining / representation,0,116,0.0,0.0
-2021,Wearable / exoskeleton / prosthesis / rehab,Language grounding / open-vocabulary,1,116,0.8620689655172413,0.7322660098522167
-2021,Wearable / exoskeleton / prosthesis / rehab,Learning from human video / human-to-robot transfer,0,116,0.0,0.0
-2021,Wearable / exoskeleton / prosthesis / rehab,Cross-embodiment,0,116,0.0,0.0
+2021,Wearable / exoskeleton / prosthesis / rehab,Imitation learning / LfD,9,113,7.964601769911504,1.239725710049576
+2021,Wearable / exoskeleton / prosthesis / rehab,Reinforcement learning,6,113,5.3097345132743365,0.4209557522123894
+2021,Wearable / exoskeleton / prosthesis / rehab,LLM / VLM,0,113,0.0,0.0
+2021,Wearable / exoskeleton / prosthesis / rehab,VLA / robot foundation models,0,113,0.0,
+2021,Wearable / exoskeleton / prosthesis / rehab,Diffusion / flow generative models,0,113,0.0,
+2021,Wearable / exoskeleton / prosthesis / rehab,World models / video prediction,0,113,0.0,0.0
+2021,Wearable / exoskeleton / prosthesis / rehab,3D Gaussian splatting,0,113,0.0,
+2021,Wearable / exoskeleton / prosthesis / rehab,NeRF / neural implicit fields,0,113,0.0,0.0
+2021,Wearable / exoskeleton / prosthesis / rehab,Sim-to-real,1,113,0.8849557522123894,0.3926826046757364
+2021,Wearable / exoskeleton / prosthesis / rehab,Self-supervised / pretraining / representation,0,113,0.0,0.0
+2021,Wearable / exoskeleton / prosthesis / rehab,Language grounding / open-vocabulary,1,113,0.8849557522123894,0.7517067003792667
+2021,Wearable / exoskeleton / prosthesis / rehab,Learning from human video / human-to-robot transfer,0,113,0.0,0.0
+2021,Wearable / exoskeleton / prosthesis / rehab,Cross-embodiment,0,113,0.0,0.0
 2021,Soft robots,Imitation learning / LfD,6,180,3.3333333333333335,0.518848167539267
 2021,Soft robots,Reinforcement learning,4,180,2.2222222222222223,0.1761777777777778
 2021,Soft robots,LLM / VLM,0,180,0.0,0.0
@@ -454,19 +454,19 @@ year,domain,method,k,n,pct,lift
 2023,Multi-robot / multi-agent / swarms,Language grounding / open-vocabulary,0,269,0.0,0.0
 2023,Multi-robot / multi-agent / swarms,Learning from human video / human-to-robot transfer,0,269,0.0,0.0
 2023,Multi-robot / multi-agent / swarms,Cross-embodiment,0,269,0.0,0.0
-2023,Human-robot interaction,Imitation learning / LfD,17,246,6.9105691056910565,0.7992977241600374
-2023,Human-robot interaction,Reinforcement learning,26,246,10.56910569105691,0.8463152373459218
-2023,Human-robot interaction,LLM / VLM,4,246,1.6260162601626016,0.9716952725082808
-2023,Human-robot interaction,VLA / robot foundation models,0,246,0.0,0.0
-2023,Human-robot interaction,Diffusion / flow generative models,2,246,0.8130081300813008,1.009068167604753
-2023,Human-robot interaction,World models / video prediction,1,246,0.4065040650406504,2.1863143631436315
-2023,Human-robot interaction,3D Gaussian splatting,0,246,0.0,
-2023,Human-robot interaction,NeRF / neural implicit fields,2,246,0.8130081300813008,0.6101342408772925
-2023,Human-robot interaction,Sim-to-real,1,246,0.4065040650406504,0.15616531165311656
-2023,Human-robot interaction,Self-supervised / pretraining / representation,7,246,2.845528455284553,0.39751170238975114
-2023,Human-robot interaction,Language grounding / open-vocabulary,8,246,3.252032520325203,1.4375765675464975
-2023,Human-robot interaction,Learning from human video / human-to-robot transfer,2,246,0.8130081300813008,1.7490514905149053
-2023,Human-robot interaction,Cross-embodiment,0,246,0.0,0.0
+2023,Human-robot interaction,Imitation learning / LfD,16,242,6.6115702479338845,0.7647145946266182
+2023,Human-robot interaction,Reinforcement learning,25,242,10.330578512396695,0.8272153066874475
+2023,Human-robot interaction,LLM / VLM,4,242,1.6528925619834711,0.9877563513927151
+2023,Human-robot interaction,VLA / robot foundation models,0,242,0.0,0.0
+2023,Human-robot interaction,Diffusion / flow generative models,2,242,0.8264462809917356,1.0257469802924348
+2023,Human-robot interaction,World models / video prediction,1,242,0.4132231404958678,2.2224517906336088
+2023,Human-robot interaction,3D Gaussian splatting,0,242,0.0,
+2023,Human-robot interaction,NeRF / neural implicit fields,2,242,0.8264462809917356,0.6202191043628675
+2023,Human-robot interaction,Sim-to-real,1,242,0.4132231404958678,0.1587465564738292
+2023,Human-robot interaction,Self-supervised / pretraining / representation,7,242,2.8925619834710745,0.4040821437515652
+2023,Human-robot interaction,Language grounding / open-vocabulary,8,242,3.3057851239669422,1.4613381637042908
+2023,Human-robot interaction,Learning from human video / human-to-robot transfer,2,242,0.8264462809917356,1.777961432506887
+2023,Human-robot interaction,Cross-embodiment,0,242,0.0,0.0
 2023,Surgical / medical,Imitation learning / LfD,18,194,9.278350515463918,1.0731626205520453
 2023,Surgical / medical,Reinforcement learning,10,194,5.154639175257732,0.4127548540584789
 2023,Surgical / medical,LLM / VLM,0,194,0.0,0.0
@@ -480,19 +480,19 @@ year,domain,method,k,n,pct,lift
 2023,Surgical / medical,Language grounding / open-vocabulary,1,194,0.5154639175257731,0.22786329614461234
 2023,Surgical / medical,Learning from human video / human-to-robot transfer,0,194,0.0,0.0
 2023,Surgical / medical,Cross-embodiment,0,194,0.0,0.0
-2023,Wearable / exoskeleton / prosthesis / rehab,Imitation learning / LfD,14,144,9.722222222222221,1.1245021903624055
-2023,Wearable / exoskeleton / prosthesis / rehab,Reinforcement learning,6,144,4.166666666666667,0.3336435070306038
-2023,Wearable / exoskeleton / prosthesis / rehab,LLM / VLM,0,144,0.0,0.0
-2023,Wearable / exoskeleton / prosthesis / rehab,VLA / robot foundation models,0,144,0.0,0.0
-2023,Wearable / exoskeleton / prosthesis / rehab,Diffusion / flow generative models,0,144,0.0,0.0
-2023,Wearable / exoskeleton / prosthesis / rehab,World models / video prediction,0,144,0.0,0.0
-2023,Wearable / exoskeleton / prosthesis / rehab,3D Gaussian splatting,0,144,0.0,
-2023,Wearable / exoskeleton / prosthesis / rehab,NeRF / neural implicit fields,0,144,0.0,0.0
-2023,Wearable / exoskeleton / prosthesis / rehab,Sim-to-real,1,144,0.6944444444444444,0.2667824074074074
-2023,Wearable / exoskeleton / prosthesis / rehab,Self-supervised / pretraining / representation,2,144,1.3888888888888888,0.194023569023569
-2023,Wearable / exoskeleton / prosthesis / rehab,Language grounding / open-vocabulary,3,144,2.0833333333333335,0.9209474885844748
-2023,Wearable / exoskeleton / prosthesis / rehab,Learning from human video / human-to-robot transfer,1,144,0.6944444444444444,1.4939814814814814
-2023,Wearable / exoskeleton / prosthesis / rehab,Cross-embodiment,0,144,0.0,0.0
+2023,Wearable / exoskeleton / prosthesis / rehab,Imitation learning / LfD,13,135,9.62962962962963,1.1137926456922873
+2023,Wearable / exoskeleton / prosthesis / rehab,Reinforcement learning,5,135,3.7037037037037037,0.2965720062494256
+2023,Wearable / exoskeleton / prosthesis / rehab,LLM / VLM,0,135,0.0,0.0
+2023,Wearable / exoskeleton / prosthesis / rehab,VLA / robot foundation models,0,135,0.0,0.0
+2023,Wearable / exoskeleton / prosthesis / rehab,Diffusion / flow generative models,0,135,0.0,0.0
+2023,Wearable / exoskeleton / prosthesis / rehab,World models / video prediction,0,135,0.0,0.0
+2023,Wearable / exoskeleton / prosthesis / rehab,3D Gaussian splatting,0,135,0.0,
+2023,Wearable / exoskeleton / prosthesis / rehab,NeRF / neural implicit fields,0,135,0.0,0.0
+2023,Wearable / exoskeleton / prosthesis / rehab,Sim-to-real,0,135,0.0,0.0
+2023,Wearable / exoskeleton / prosthesis / rehab,Self-supervised / pretraining / representation,1,135,0.7407407407407407,0.10347923681257014
+2023,Wearable / exoskeleton / prosthesis / rehab,Language grounding / open-vocabulary,2,135,1.4814814814814814,0.6548959918822933
+2023,Wearable / exoskeleton / prosthesis / rehab,Learning from human video / human-to-robot transfer,1,135,0.7407407407407407,1.5935802469135802
+2023,Wearable / exoskeleton / prosthesis / rehab,Cross-embodiment,0,135,0.0,0.0
 2023,Soft robots,Imitation learning / LfD,12,182,6.593406593406593,0.7626137303556659
 2023,Soft robots,Reinforcement learning,6,182,3.2967032967032965,0.2639816758923459
 2023,Soft robots,LLM / VLM,0,182,0.0,0.0
@@ -753,19 +753,19 @@ year,domain,method,k,n,pct,lift
 2025,Multi-robot / multi-agent / swarms,Language grounding / open-vocabulary,15,338,4.437869822485207,0.9193888303477344
 2025,Multi-robot / multi-agent / swarms,Learning from human video / human-to-robot transfer,1,338,0.2958579881656805,0.24405594405594402
 2025,Multi-robot / multi-agent / swarms,Cross-embodiment,0,338,0.0,0.0
-2025,Human-robot interaction,Imitation learning / LfD,33,335,9.850746268656716,0.8797802326947938
-2025,Human-robot interaction,Reinforcement learning,39,335,11.64179104477612,0.895233999494055
-2025,Human-robot interaction,LLM / VLM,46,335,13.73134328358209,1.6351470991499197
-2025,Human-robot interaction,VLA / robot foundation models,1,335,0.29850746268656714,0.20835820895522386
-2025,Human-robot interaction,Diffusion / flow generative models,12,335,3.582089552238806,0.6474876612951181
-2025,Human-robot interaction,World models / video prediction,0,335,0.0,0.0
-2025,Human-robot interaction,3D Gaussian splatting,2,335,0.5970149253731343,0.20365839973066996
-2025,Human-robot interaction,NeRF / neural implicit fields,2,335,0.5970149253731343,0.3517735995347936
-2025,Human-robot interaction,Sim-to-real,6,335,1.791044776119403,0.4440420846586739
-2025,Human-robot interaction,Self-supervised / pretraining / representation,15,335,4.477611940298507,0.541731343283582
-2025,Human-robot interaction,Language grounding / open-vocabulary,23,335,6.865671641791045,1.422353983507122
-2025,Human-robot interaction,Learning from human video / human-to-robot transfer,4,335,1.1940298507462686,0.9849660786974219
-2025,Human-robot interaction,Cross-embodiment,3,335,0.8955223880597015,0.9234056987788332
+2025,Human-robot interaction,Imitation learning / LfD,32,326,9.815950920245399,0.8766726245108932
+2025,Human-robot interaction,Reinforcement learning,38,326,11.656441717791411,0.8963606114172817
+2025,Human-robot interaction,LLM / VLM,45,326,13.803680981595091,1.6437611709579247
+2025,Human-robot interaction,VLA / robot foundation models,1,326,0.3067484662576687,0.21411042944785275
+2025,Human-robot interaction,Diffusion / flow generative models,12,326,3.6809815950920246,0.665363087527192
+2025,Human-robot interaction,World models / video prediction,0,326,0.0,0.0
+2025,Human-robot interaction,3D Gaussian splatting,2,326,0.6134969325153374,0.20928087088887865
+2025,Human-robot interaction,NeRF / neural implicit fields,2,326,0.6134969325153374,0.3614851406262449
+2025,Human-robot interaction,Sim-to-real,6,326,1.8404907975460123,0.45630091521673544
+2025,Human-robot interaction,Self-supervised / pretraining / representation,14,326,4.294478527607362,0.5195746421267894
+2025,Human-robot interaction,Language grounding / open-vocabulary,22,326,6.748466257668712,1.3980726671709107
+2025,Human-robot interaction,Learning from human video / human-to-robot transfer,4,326,1.2269938650306749,1.0121583937534857
+2025,Human-robot interaction,Cross-embodiment,3,326,0.9202453987730062,0.9488984941438929
 2025,Surgical / medical,Imitation learning / LfD,18,319,5.6426332288401255,0.5039493495914892
 2025,Surgical / medical,Reinforcement learning,18,319,5.6426332288401255,0.433908931512672
 2025,Surgical / medical,LLM / VLM,2,319,0.6269592476489029,0.07465916290244283
@@ -779,19 +779,19 @@ year,domain,method,k,n,pct,lift
 2025,Surgical / medical,Language grounding / open-vocabulary,1,319,0.31347962382445144,0.0649432444425359
 2025,Surgical / medical,Learning from human video / human-to-robot transfer,1,319,0.31347962382445144,0.25859219150755197
 2025,Surgical / medical,Cross-embodiment,0,319,0.0,0.0
-2025,Wearable / exoskeleton / prosthesis / rehab,Imitation learning / LfD,15,176,8.522727272727273,0.7611734967788116
-2025,Wearable / exoskeleton / prosthesis / rehab,Reinforcement learning,11,176,6.25,0.480614406779661
-2025,Wearable / exoskeleton / prosthesis / rehab,LLM / VLM,10,176,5.681818181818182,0.6765986638033882
-2025,Wearable / exoskeleton / prosthesis / rehab,VLA / robot foundation models,0,176,0.0,0.0
-2025,Wearable / exoskeleton / prosthesis / rehab,Diffusion / flow generative models,4,176,2.272727272727273,0.41081130025353135
-2025,Wearable / exoskeleton / prosthesis / rehab,World models / video prediction,0,176,0.0,0.0
-2025,Wearable / exoskeleton / prosthesis / rehab,3D Gaussian splatting,0,176,0.0,0.0
-2025,Wearable / exoskeleton / prosthesis / rehab,NeRF / neural implicit fields,0,176,0.0,0.0
-2025,Wearable / exoskeleton / prosthesis / rehab,Sim-to-real,2,176,1.1363636363636365,0.2817312468951813
-2025,Wearable / exoskeleton / prosthesis / rehab,Self-supervised / pretraining / representation,13,176,7.386363636363637,0.8936515151515151
-2025,Wearable / exoskeleton / prosthesis / rehab,Language grounding / open-vocabulary,1,176,0.5681818181818182,0.11770963055209631
-2025,Wearable / exoskeleton / prosthesis / rehab,Learning from human video / human-to-robot transfer,1,176,0.5681818181818182,0.468698347107438
-2025,Wearable / exoskeleton / prosthesis / rehab,Cross-embodiment,2,176,1.1363636363636365,1.171745867768595
+2025,Wearable / exoskeleton / prosthesis / rehab,Imitation learning / LfD,15,168,8.928571428571429,0.797419853768279
+2025,Wearable / exoskeleton / prosthesis / rehab,Reinforcement learning,10,168,5.9523809523809526,0.45772800645681994
+2025,Wearable / exoskeleton / prosthesis / rehab,LLM / VLM,7,168,4.166666666666667,0.496172353455818
+2025,Wearable / exoskeleton / prosthesis / rehab,VLA / robot foundation models,0,168,0.0,0.0
+2025,Wearable / exoskeleton / prosthesis / rehab,Diffusion / flow generative models,4,168,2.380952380952381,0.4303737431227471
+2025,Wearable / exoskeleton / prosthesis / rehab,World models / video prediction,0,168,0.0,0.0
+2025,Wearable / exoskeleton / prosthesis / rehab,3D Gaussian splatting,0,168,0.0,0.0
+2025,Wearable / exoskeleton / prosthesis / rehab,NeRF / neural implicit fields,0,168,0.0,0.0
+2025,Wearable / exoskeleton / prosthesis / rehab,Sim-to-real,2,168,1.1904761904761905,0.2951470205568566
+2025,Wearable / exoskeleton / prosthesis / rehab,Self-supervised / pretraining / representation,13,168,7.738095238095238,0.9362063492063492
+2025,Wearable / exoskeleton / prosthesis / rehab,Language grounding / open-vocabulary,0,168,0.0,0.0
+2025,Wearable / exoskeleton / prosthesis / rehab,Learning from human video / human-to-robot transfer,1,168,0.5952380952380952,0.49101731601731596
+2025,Wearable / exoskeleton / prosthesis / rehab,Cross-embodiment,2,168,1.1904761904761905,1.2275432900432899
 2025,Soft robots,Imitation learning / LfD,6,243,2.4691358024691357,0.22052104598036354
 2025,Soft robots,Reinforcement learning,12,243,4.938271604938271,0.37974471646788027
 2025,Soft robots,LLM / VLM,0,243,0.0,0.0

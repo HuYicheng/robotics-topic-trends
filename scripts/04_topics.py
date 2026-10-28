@@ -108,6 +108,74 @@ ABSTRACT_OVERRIDES = {
 }
 ABSTRACT_COMPILED = {n: re.compile(ABSTRACT_OVERRIDES.get(n, p), re.I) for n, _, p in TOPICS}
 
+# Sentence-level vetoes (2026-10-28, round 3 of the fixes after the CoRL 2026 review). For these topics, a match whose
+# text contains `target` does not count when its sentence has a cue of another sense (`other`; None = always) and no cue
+# of the topic's own sense (`own`). The title is one sentence. Applied by kept() in 04 (titles) and 12 (titles, abstracts).
+_UNC = (r"conformal|uncertaint\w*|confiden\w*|probabilit\w*|coverage|\bcritics?\b|value[- ]functions?|\bvalues?\b|\bece\b|"
+        r"miscalibrat\w*|reliab\w*|credit|\brisks?\b|belief|residuals?|\bscores?\b|over-?confiden\w*|predictive distribution|quantil\w*")
+_SENSOR = (r"cameras?|sensors?|\bimus?\b|inertial|lidars?|extrinsic|intrinsic|\brigs?\b|hand[- ]eye|eye[- ]in[- ]hand|tactile|mocap|"
+           r"motion[- ]capture|kinematic\w*|encoders?|retarget\w*|actuators?|\bjoints?\b|stereo|projectors?|depth|force[-/ ]torque|e-?skins?|electronic skins?|visual[- ]servo\w*|ultra-wideband|\buwb\b|ranging|"
+           r"robots?\b|manipulators?|registration|point[- ]clouds?|checkerboard|markers?|fiducial|apriltags?|odometry|lens|distortion|"
+           r"time[- ]?offsets?|synchroni\w*|spatio-?temporal|magnetometer|accelerometer|gyroscope|radars?|thermal|ultrasound|endoscop\w*|"
+           r"microscop\w*|laser|tool[- ]center|\btcp\b|hand[- ]eye|end[- ]effector")
+_TASK = (r"\bllms?\b|\bvlms?\b|\bmllms?\b|language models?|foundation models?|\bgpt|task[- ](?:level|planners?|planning|plans?)|symbolic|"
+         r"pddl|high[- ]level|agentic|\bagents?\b|sub-?goals?|\bskills?\b|instructions?|reasoning|chain[- ]of[- ]thought|"
+         r"video (?:planners?|generation|models?)|world models?|\bvlas?\b|vision[- ]language")
+_MOTION = (r"\bpaths?\b|trajector\w*|waypoints?|motions?\b|collisions?|kinodynamic|sampling[- ]based|\brrt|configuration[- ]space|"
+           r"c-space|obstacles?|footsteps?|local planners?|global planners?|velocit\w*|dynamically feasible|cost[- ]?(?:maps?|functions?)|occupancy|"
+           r"maneuver\w*|steering|swept|reachab\w*|joint[- ]space|inverse kinematics|navigat\w*|\broutes?\b")
+_HUMAN = (r"\bhumans?\b|\busers?\b|operators?|people|\bpersons?\b|participants?|pedestrians?|\bsubjects?\b|workers?|patients?|"
+          r"caregivers?|teammates?|partners?|novices?|clinicians?|surgeons?|drivers?|passengers?|older adults|children|social|"
+          r"interaction|collaborat\w*|teleoperat\w*|public|usability|adoption|\bratings?\b|explain\w*|"
+          r"robot[- ]assist\w*|trust[- ](?:aware|dynamics|repair)|decision support")
+_ASSIST = (r"exoskeleton|exosuit|wearable|prosthe\w*|orthos[ie]s|orthotic|rehab\w*|patients?|disabilit\w*|disabled|impair\w*|"
+           r"elderly|older adults|\bage?ing\b|wheelchairs?|\bgait\b|walking aids?|mobility aids?|feeding|daily living|\badls?\b|caregiv\w*|"
+           r"stroke|spinal|amput\w*|paraly\w*|(?:people|persons|users|individuals) (?:with|unable|who cannot)|assistive (?:and [\w-]+ )?(?:devices?|technolog\w*|robots?|manipulat\w*|"
+           r"robotics|exoskeletons?|gloves?|suits?)|muscle|joint torques? of the (?:user|wearer)|wearer|assistive (?:navigation|gym)|navigation aids?|\beating\b|\bdressing\b|"
+           r"\bbathing\b|\bshaving\b|sit[- ]to[- ]stand|stand[- ]to[- ]sit|\bbcis?\b|brain[- ](?:computer|machine)|motor imagery|\beeg\b|\blimbs?\b|\bdaily\b")
+_ML = (r"embedding|representation|class(?:es|ification|ifier)?\b(?! of\b)|features?\b|tokens?|\bparameters\b|neural|networks?|learning|"
+       r"software|\bros ?2?\b|prototype-level|codebook|cluster\w*|latent|semantic|few-shot|zero-shot|"
+       r"transformer|router|mixture|vectors?|memory|datasets?|\bsolv\w*")
+_HW = (r"\bbuilt\b|fabricat\w*|manufactur\w*|propulsion|diameters?|\d\s?mm\b|\d\s?cm\b|\d\s?k?g\b|physical|hardware|grippers?|"
+       r"end-effectors?|actuat\w*|motors?|prosthe\w*|devices?|mechanis\w*|3d[- ]print\w*|materials?|silicone|pneumatic|tendons?|"
+       r"springs?|circuit|\bpcb\b|battery|\blegs?\b|wheels?|fingers?|exoskeleton|soft robot|tested|robotic|developed|\buavs?\b|flight")
+VETO = {
+    "Calibration / registration": (r"calibrat", _UNC, _SENSOR),
+    "Motion / path planning": (r"\bplanners?\b", _TASK, _MOTION),
+    "Human-robot interaction": (r"\btrust\b", None, _HUMAN),
+    "Wearable / exoskeleton / prosthesis / rehab": (r"assistive", None, _ASSIST),
+    "Hardware: mechanisms / actuators / design": (r"prototype", _ML, _HW),
+}
+VETO_COMPILED = {n: (re.compile(a, re.I), re.compile(b, re.I) if b else None, re.compile(c, re.I)) for n, (a, b, c) in VETO.items()}
+_STOP = re.compile(r"(?<!\be\.g)(?<!\bi\.e)[.;!?](?=\s|$)")
+
+
+def sentence_at(text, pos):
+    """The sentence of text that holds position pos (split at . ; ! ? followed by a space or the end)."""
+    start = 0
+    for m in _STOP.finditer(text, 0, pos):
+        start = m.end()
+    m = _STOP.search(text, pos)
+    return text[start:m.end() if m else len(text)]
+
+
+TITLE_CONTEXT = {"Wearable / exoskeleton / prosthesis / rehab"}   # a vetoed title match survives when the abstract has an own cue
+
+
+def kept(name, rx, text, title=False, context=""):
+    """Matches of rx in text that survive the topic's sentence veto (all of them when the topic has no veto). A title is
+    one sentence; for TITLE_CONTEXT topics the abstract (context) may supply the own-sense cue of a title match."""
+    v = VETO_COMPILED.get(name)
+    out = []
+    for m in rx.finditer(text):
+        if v and v[0].search(m.group(0)):
+            s = text if title else sentence_at(text, m.start())
+            if (v[1] is None or v[1].search(s)) and not v[2].search(s) \
+                    and not (title and name in TITLE_CONTEXT and context and v[2].search(context)):
+                continue
+        out.append(m)
+    return out
+
 
 
 def load_papers():
@@ -122,14 +190,14 @@ def main():
         w = csv.writer(f)
         w.writerow(["uid", "venue", "year"] + names)
         for p in papers:
-            w.writerow([p["uid"], p["venue"], p["year"]] + [int(bool(rx.search(p["title"]))) for _, _, rx in COMPILED])
+            w.writerow([p["uid"], p["venue"], p["year"]] + [int(bool(kept(n, rx, p["title"], title=True))) for n, _, rx in COMPILED])
     os.makedirs(os.path.join(ROOT, "results", "precision_samples"), exist_ok=True)
     rnd = random.Random(int(os.environ.get('SAMPLE_SEED', '0')))
     # the reviewed draw (results/precision_review.md) stays the same: papers added later (CoRL 2026 from the conference
     # site, 2026-10-28) are left out of it; they get their own check in 12_title_abstract.py
     recent = [p for p in papers if int(p["year"]) >= 2024 and not p["source"].startswith("corl.org/")]
     for n, fam, rx in COMPILED:
-        hits = [p for p in recent if rx.search(p["title"])]
+        hits = [p for p in recent if kept(n, rx, p["title"], title=True)]
         sample = rnd.sample(hits, min(15, len(hits)))
         safe = re.sub(r"[^A-Za-z0-9]+", "_", n).strip("_")
         with open(os.path.join(ROOT, "results", "precision_samples", f"{safe}.txt"), "w") as f:

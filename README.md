@@ -28,7 +28,11 @@ topics, each linked to the original.
   topic's sense in the early years too (`results/precision_review.md`). On 2026-10-28 a review of CoRL 2026 found words
   used in new senses (learned "whole-body control", conformal "calibration", "frontier models", task-level "planners",
   paired human-robot data, ML "prototypes"); ten rules were narrowed, URLs in abstracts are no longer matched, and every
-  paper that left or entered a topic in any year was read (last section of `results/precision_review.md`).
+  paper that left or entered a topic in any year was read (last sections of `results/precision_review.md`). A third
+  round judges five words within their sentence ("calibration" next to "confidence", a "planner" next to "LLM", "trust"
+  with no person, "assistive" with no wearable or disability context, an ML "prototype"). After it, the whole-period
+  decline of motion / path planning sits near the significance threshold: it holds only if learned "planners" (video,
+  diffusion or world-model search planners) are not counted as motion planning.
 - **Shares**: percentage of papers, standardised to the 2025 venue mix so the years compare; 2026 uses the within-venue
   change at ICRA, RSS, CoRL and the journals. IROS 2026 (44% of the 2025 mix) is extrapolated from that common change, so
   the 2026 shares are provisional until IROS 2026 is out: adding CoRL 2026 alone moved some of them by up to 2.4 points. **Numbers of papers**: raw counts, all venues (2026 is not a full year).

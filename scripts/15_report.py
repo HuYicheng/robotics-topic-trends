@@ -67,6 +67,9 @@ L = [f"# Robotics topics at top venues, {Y[0]}–{Y[-1]}: share and change (titl
      "- A share counts papers that use the topic's words in the topic's sense, including passing mentions; it is not a count of papers whose main contribution is the topic.",
      f"- RSS and CoRL have {int(cov.loc[['RSS', 'CoRL']].replace(0, pd.NA).min().min())}–{int(cov.loc[['RSS', 'CoRL']].max().max())} papers a year; ICRA and IROS dominate the totals.",
      "- Reasoning is counted by capability phrasing (spatial/commonsense/physical reasoning, reasoning ability, VLM reasoning, chain of thought).",
+     "- Motion / path planning: since the rule change of 2026-10-28 its whole-period trend sits near the significance threshold;",
+     "  whether learned 'planners' (video, diffusion or world-model search planners) count as motion planning decides the call",
+     "  (results/precision_review.md, round 3).",
      "- Abstracts got longer: median " + ", ".join(f"{y}: {int(w)}" for y, w in ABS_WORDS.items()) + " words. Counting any mention,",
      "  a longer abstract has more chances to name a topic, so part of a small rise can come from length alone; length does not",
      "  explain the large risers (LLM/VLM, diffusion, VLA, imitation learning).", ""]

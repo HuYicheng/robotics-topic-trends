@@ -52,8 +52,8 @@ def main():
         p = papers[uid]
         row = [uid, p["venue"], p["year"]]
         for n in names:
-            in_title = bool(title_rx[n].search(p["title"]))
-            hits = list(abs_rx[n].finditer(a))
+            in_title = bool(t.kept(n, title_rx[n], p["title"], title=True, context=a))
+            hits = t.kept(n, abs_rx[n], a)                 # sentence vetoes of 04_topics.py (2026-10-28)
             per = "2020-2023" if int(p["year"]) <= 2023 else "2024-2026"
             for m in hits:
                 audit[n][word_at(a, m)] += 1; audit_p[per][n][word_at(a, m)] += 1
