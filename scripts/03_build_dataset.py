@@ -3,7 +3,9 @@
 ICRA  2020-2026 : OpenAlex (title sets match dblp apart from front matter and formatting)
 IROS  2020-2025 : dblp            (IROS 2026 proceedings not published yet)
 RSS   2020-2026 : roboticsproceedings.org (titles identical to dblp)
-CoRL  2020-2025 : PMLR v155, v164, v205, v229, v270, v305 (titles match dblp); CoRL 2026 list not public
+CoRL  2020-2025 : PMLR v155, v164, v205, v229, v270, v305 (titles match dblp)
+CoRL  2026      : accepted-papers list of the conference site (02b_fetch_corl_site.py; PMLR volume not out yet;
+                  the 2025 site list matches PMLR v305: 263 = 263, 260 identical titles, 3 differ in formatting/wording)
 T-RO, IJRR, Science Robotics 2020-2026 : dblp (2026 = issues published so far)
 Front matter (indexes, committees, prefaces...) is removed here; 03b_research_articles.py then keeps research articles only.
 Output: data/papers_all.csv (venue, year, title, source, uid) and results/removed_nonpapers.txt
@@ -35,6 +37,9 @@ def norm(t):
 def main():
     dblp = [json.loads(l) for l in open(os.path.join(ROOT, config.DBLP_EXTRACT))]
     extra = [json.loads(l) for l in open(os.path.join(ROOT, "data", "extra_venues.jsonl"))]
+    site = os.path.join(ROOT, "data", "extra_corl_site.jsonl")          # CoRL years in config.CORL_SITE
+    if os.path.exists(site):
+        extra += [r for r in map(json.loads, open(site)) if r["year"] in config.CORL_SITE and r["year"] not in config.CORL_PMLR]
     rows = []
     for r in dblp:
         v, y = r["venue"], r["year"]

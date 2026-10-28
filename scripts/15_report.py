@@ -14,6 +14,15 @@ arrow = {"rising": "↑ rising", "declining": "↓ declining", "unclear": "· un
 
 
 Y = config.YEARS
+MISSING = [v for v in config.VENUES if Y[-1] not in cov.columns or cov.loc[v, Y[-1]] == 0]   # not published yet
+PRESENT_CONF = [v for v in ["ICRA", "IROS", "RSS", "CoRL"] if v not in MISSING]
+_pp = pd.read_csv(os.path.join(ROOT, "data", "papers.csv"))
+SITE = {y: (int(((_pp.venue == "CoRL") & (_pp.year == y)).sum()), int(cov.loc["CoRL", y]))
+        for y in config.CORL_SITE if y in cov.columns}                    # CoRL years from the conference site
+SITE_NOTE = " ".join(f"**CoRL {y}** is the accepted-papers list of the conference site (no PMLR volume yet); its abstracts are"
+                     f" those of the papers' arXiv versions, found for {k:,} of {n:,} papers; the other {n - k:,} have no abstract"
+                     " and are not counted." for y, (n, k) in SITE.items())
+SMALL = cov.loc[["RSS", "CoRL", "IJRR", "SciRobotics"]].replace(0, pd.NA)
 import json  # noqa: E402
 _ab = pd.DataFrame([json.loads(l) for l in open(os.path.join(ROOT, "data", "abstracts.jsonl"))])
 ABS_WORDS = _ab.assign(w=_ab.abstract.str.split().str.len()).groupby("year").w.median().to_dict()
@@ -33,8 +42,9 @@ L = [f"# Robotics topics at top venues, {Y[0]}–{Y[-1]}: share and change (titl
      "**Papers** = research articles only (editorials, commentaries, Focus/highlight pieces, errata, special-issue introductions",
      f"and reviews/surveys removed: scripts/03b_research_articles.py, list in results/removed_nonresearch.txt; KEEP_REVIEWS={config.KEEP_REVIEWS}).",
      "**Share** = percentage of papers, standardised to the 2025 venue mix of all seven venues so that the years compare;",
-     "2026 has no IROS and no CoRL yet, so its share is the 2025 mix moved by the 2026 within-venue change at ICRA, RSS and the",
-     "journals (95% intervals in results/shares_and_change_ta.csv). **Change** = first to last year in percentage points;",
+     f"{Y[-1]} has no {' and no '.join(MISSING)} yet, so its share is the 2025 mix moved by the {Y[-1]} within-venue change at"
+     f" {', '.join(PRESENT_CONF)} and the",
+     "journals (95% intervals in results/shares_and_change_ta.csv). " + SITE_NOTE + " **Change** = first to last year in percentage points;",
      "**per year** = annual odds multiplier over the whole period from topic ~ venue + year (95% CI), **recent** = the same",
      "over 2024–2026 (↑/↓ when significant); **trend** uses the whole period, Benjamini–Hochberg q < 0.05.", "",
      f"Research articles with abstracts ({len(papers):,}):", "", cov.to_markdown(), "",
@@ -43,8 +53,10 @@ L = [f"# Robotics topics at top venues, {Y[0]}–{Y[-1]}: share and change (titl
      "|---|" + "---|" * (len(Y) + 4),
      *[line(r) for r in d.itertuples()], "",
      "## Number of papers per topic and year", "",
-     f"Raw counts, all seven venues (the shares above are standardised; these are not). {Y[-1]} is not a full year: IROS and",
-     f"CoRL {Y[-1]} are not published yet and the journals run to mid-October, so {Y[-1]} counts are not comparable with earlier years.", "",
+     f"Raw counts, all seven venues (the shares above are standardised; these are not). {Y[-1]} is not a full year: "
+     f"{' and '.join(MISSING)} {Y[-1]} {'is' if len(MISSING) == 1 else 'are'} not published yet,"
+     + (f" CoRL {Y[-1]} counts only its papers with an arXiv abstract," if Y[-1] in SITE else ""),
+     f"and the journals run to mid-October, so {Y[-1]} counts are not comparable with earlier years.", "",
      "| topic | " + " | ".join(str(y) for y in Y[:-1]) + f" | {Y[-1]} (part) | all years |", "|---|" + "---|" * (len(Y) + 1),
      "| **all papers** | " + " | ".join(f"**{(papers.year == y).sum():,}**" for y in Y) + f" | **{len(papers):,}** |",
      *[f"| {r.topic} | " + " | ".join(f"{int(getattr(r, f'n_{y}')):,}" for y in Y) + f" | {sum(int(getattr(r, f'n_{y}')) for y in Y):,} |"
@@ -68,7 +80,8 @@ L += ["## By venue", "",
       "Same measure per scope: each venue alone (raw shares, Wilson intervals in results/scope_trends_ta.csv), and the",
       "conference and journal groups (standardised to the group's 2025 venue mix). Trend = likelihood-ratio test of the year",
       "term (valid when a topic is absent in some years of a small venue); Benjamini–Hochberg within each scope.",
-      "Small venues (RSS, CoRL, IJRR, Science Robotics: 40–260 papers a year with abstracts) rarely reach significance.", "",
+      f"Small venues (RSS, CoRL, IJRR, Science Robotics: {int(SMALL.min().min())}–{int(SMALL.max().max())} papers a year with"
+      " abstracts) rarely reach significance.", "",
       "Significant trends by scope (outside the all-venue table):", "",
       "| scope | topic | share per year (papers) | q | trend |", "|---|---|---|---|---|",
       *[f"| {r['scope']} | {r['topic']} | {seq(r)} | {r['q']:.3g} | {arrow[r['call']]} |" for _, r in sig.sort_values(["scope", "q"]).iterrows()],

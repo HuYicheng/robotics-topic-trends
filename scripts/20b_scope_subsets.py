@@ -42,7 +42,9 @@ def work(vs):
 def main():
     todo = combos()
     print(f"{len(todo)} venue combinations")
-    with mp.get_context("fork").Pool(16) as pool:
+    # results do not depend on the number of workers (each combination seeds its own draws from its name);
+    # at most 3 workers on this machine (2026-10-28 rule), WORKERS overrides
+    with mp.get_context("fork").Pool(int(os.environ.get("WORKERS", "3"))) as pool:
         parts = pool.map(work, todo, chunksize=1)
     out = pd.DataFrame([r for part in parts for r in part])
     cols = list(pd.read_csv(os.path.join(ROOT, "results", "scope_trends_ta.csv"), nrows=1).columns)

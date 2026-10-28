@@ -3,10 +3,12 @@
 Contents: topics (name, family, standardised share per year with 95% interval, change, annual multiplier, call, the same
 for 2024 onwards), per-scope results (all venues, conferences, journals, each venue: share, interval, papers k of n per
 year, trend), papers of the final measure (title, venue, year, link, topic indices), papers per venue-year, build metadata.
-Per scope, "partial" lists years that are not complete (a member venue not yet published, or a journal year still running)
+Per scope, "partial" lists years that are not complete (a member venue not yet published, a journal year still running, or a
+member venue-year where under 95% of the papers have an abstract, listed in "coverage")
 and "estimated" the years whose standardised share includes a venue without papers (model estimate).
 No abstract text is published (publishers hold the copyright); abstracts were only used to assign topics.
-Links: DOI where known (dblp ee / OpenAlex doi / PubMed), RSS proceedings page, PMLR page, else the OpenAlex record.
+Links: DOI where known (dblp ee / OpenAlex doi / PubMed), RSS proceedings page, PMLR page, OpenReview page (CoRL from the
+conference site), else the OpenAlex record.
 """
 import csv
 import json
@@ -47,6 +49,8 @@ def main():
             return f"https://www.roboticsproceedings.org/{uid}.html"
         if src.startswith("pmlr") or src == "pubmed":       # PubMed-only Science Robotics items: uid is the DOI link
             return uid
+        if src.startswith("corl.org/"):                      # CoRL from the conference site: uid is the OpenReview page
+            return uid
         return None
 
     rows, missing = [], 0
@@ -60,6 +64,12 @@ def main():
         rows.append([p["title"], VENUES.index(venue), year, url or "", ks])
     rows.sort(key=lambda r: (-r[2], r[1], r[0].lower()))
     totals = {f"{v}|{y}": int(n) for (v, y), n in m.groupby(["venue", "year"]).size().items()}
+    # venue-years where under 95% of the papers have an abstract (only those are analysed): [with abstract, all papers].
+    # CoRL 2026 (conference-site list, arXiv abstracts): its counts are not comparable with earlier years.
+    n_all = pd.DataFrame(papers.values()).astype({"year": int}).groupby(["venue", "year"]).size()
+    coverage = {f"{v}|{y}": [totals.get(f"{v}|{y}", 0), int(n)] for (v, y), n in n_all.items()
+                if y in config.YEARS and totals.get(f"{v}|{y}", 0) < 0.95 * n}
+    print("venue-years with under 95% abstracts:", coverage)
     # full precision (6 decimals): the page rounds once for display, so it shows the same numbers as REPORT.md
     R6 = lambda v: None if v is None or pd.isna(v) or not np.isfinite(float(v)) else round(float(v), 6)
     tp = [{"name": r["topic"], "family": r["family"].split(" ", 1)[1],
@@ -90,7 +100,8 @@ def main():
             last = config.YEARS[-1]
             missing = [v for v in members if totals.get(f"{v}|{last}", 0) == 0]
             running = [v for v in members if v in JOURNALS]
-            partial = [last] if last in years and (missing or running) else []
+            incomplete = [v for v in members if f"{v}|{last}" in coverage]
+            partial = [last] if last in years and (missing or running or incomplete) else []
             estimated = [last] if last in years and missing and len(members) > 1 else []
             out[scope] = {"years": years, "single": len(members) == 1, "members": members, "partial": partial,
                           "estimated": estimated, "rows": srows}
@@ -103,7 +114,7 @@ def main():
     ab = pd.DataFrame([json.loads(l) for l in open(os.path.join(ROOT, "data", "abstracts.jsonl"))])
     abs_words = {int(y): int(w) for y, w in ab.assign(w=ab.abstract.str.split().str.len()).groupby("year").w.median().items()}
     data = {"built": time.strftime("%Y-%m-%d"), "years": config.YEARS, "ref": config.REF_YEAR, "venues": VENUES, "topics": tp,
-            "abs_words": abs_words,
+            "abs_words": abs_words, "coverage": coverage,
             "totals": totals, "papers": rows, "scopes": scopes}
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w") as f:

@@ -159,7 +159,7 @@ tbody tr.totals:hover { background: var(--bg); }
   <header class="top">
     <h1>Robotics Topic Trends</h1>
     <p class="lede" id="lede">What the papers at ICRA, IROS, RSS, CoRL, T-RO, IJRR and Science Robotics are about, read from their titles and abstracts. Shares, how they changed, and which papers combine which topics.</p>
-    <p class="note" id="datanote">2026 so far: ICRA, RSS and the journals. IROS 2026 and CoRL 2026 are not published yet.</p>
+    <p class="note" id="datanote">2026 so far: ICRA, RSS, CoRL and the journals; IROS 2026 is not published yet. CoRL 2026 is its accepted-papers list (687 papers), counted with the 575 that have an arXiv abstract.</p>
   </header>
   <nav class="tabs" role="tablist">
     <button role="tab" id="tab-topics" aria-selected="true" aria-controls="view-topics">Topics</button>
@@ -232,7 +232,7 @@ tbody tr.totals:hover { background: var(--bg); }
   <div class="tip" id="tip" role="tooltip" hidden></div>
 
   <section id="view-venues" role="tabpanel" aria-labelledby="tab-venues" hidden>
-    <p class="note" style="margin-bottom:10px">Share of each topic in each venue's latest year (2026 for ICRA, RSS and the journals; 2025 for IROS and CoRL).
+    <p class="note" style="margin-bottom:10px">Share of each topic in each venue's latest year (2026 for ICRA, RSS, CoRL and the journals; 2025 for IROS).
       ↑ / ↓ mark a trend over <span id="mx-range">the whole period</span> that is significant within that venue. Darker cells are larger shares. Click a cell to see those papers.</p>
     <div class="tablewrap"><table class="matrix" id="matrix"></table></div>
   </section>
@@ -264,12 +264,12 @@ tbody tr.totals:hover { background: var(--bg); }
   <section id="view-method" role="tabpanel" aria-labelledby="tab-method" hidden>
     <div class="prose">
       <h2>Papers</h2>
-      <p>Research articles only: accepted papers of ICRA, IROS, RSS and CoRL, and research articles of T-RO, IJRR and Science Robotics, <span id="m-range">2020</span> to October 2026, with an abstract (<span id="m-n">–</span>). Editorials, commentaries, Focus and highlight pieces, errata, special-issue introductions and reviews or surveys are left out; for Science Robotics the article type comes from PubMed. Sources: the dblp XML dump of 2026-10-13 (IROS, journals), OpenAlex (ICRA), the RSS proceedings site, PMLR (CoRL), PubMed (Science Robotics types and abstracts, and its newest 2026 articles that dblp does not list yet). Each source was checked against dblp on a year both cover. Abstracts missing from these sources were taken from Crossref, Semantic Scholar or the arXiv version, only when the title is identical.</p>
+      <p>Research articles only: accepted papers of ICRA, IROS, RSS and CoRL, and research articles of T-RO, IJRR and Science Robotics, <span id="m-range">2020</span> to October 2026, with an abstract (<span id="m-n">–</span>). Editorials, commentaries, Focus and highlight pieces, errata, special-issue introductions and reviews or surveys are left out; for Science Robotics the article type comes from PubMed. Sources: the dblp XML dump of 2026-10-13 (IROS, journals), OpenAlex (ICRA), the RSS proceedings site, PMLR (CoRL 2020–2025), the CoRL 2026 accepted-papers list on corl.org (its PMLR volume is not out yet), PubMed (Science Robotics types and abstracts, and its newest 2026 articles that dblp does not list yet). Each source was checked against dblp on a year both cover; the CoRL site list against PMLR on 2025 (263 = 263 papers). CoRL 2026 abstracts are those of the papers' arXiv versions, found for 575 of 687 (532 by an identical title, 43 by reading pairs whose titles differ slightly; OpenReview has all of them but turns away automated access); the other 112 are not counted. Abstracts missing from these sources were taken from Crossref, Semantic Scholar or the arXiv version, only when the title is identical.</p>
       <div class="tablewrap" style="max-width:520px"><table id="coverage"></table></div>
       <h2>Topics</h2>
       <p>Each topic is a written rule (keywords and phrases). A paper counts for a topic when the rule matches its title or its abstract. Words that are generic inside abstracts (dataset, safety, mapping, detection, uncertainty, mechanism, reasoning) have stricter abstract rules. For every topic, random papers matched only through the abstract were read to check that the word is used in the topic's sense; rules were corrected until the samples held up.</p>
       <h2>Shares and trends</h2>
-      <p>Shares are standardised to the 2025 mix of the seven venues, so the years compare. 2026 has no IROS or CoRL yet; its share applies the within-venue 2026 change seen at ICRA, RSS and the journals, with a 95% interval. The trend is a logistic regression of topic on venue and year over the whole period; a topic is called rising or declining only when significant after Benjamini–Hochberg correction across the 59 topics. "2024 onwards" repeats the test on 2024–2026 alone. Per venue, the trend is a likelihood-ratio test, which stays valid when a topic is absent in some years of a small venue.</p>
+      <p>Shares are standardised to the 2025 mix of the seven venues, so the years compare. 2026 has no IROS yet; its share applies the within-venue 2026 change seen at ICRA, RSS, CoRL and the journals, with a 95% interval. The trend is a logistic regression of topic on venue and year over the whole period; a topic is called rising or declining only when significant after Benjamini–Hochberg correction across the 59 topics. "2024 onwards" repeats the test on 2024–2026 alone. Per venue, the trend is a likelihood-ratio test, which stays valid when a topic is absent in some years of a small venue.</p>
       <h2>Limits</h2>
       <ul>
         <li>A share counts papers that name a topic, including in passing; it is not a count of papers whose main contribution is that topic.</li>
@@ -388,6 +388,10 @@ tbody tr.totals:hover { background: var(--bg); }
     const parts = [];
     if (missing.length) parts.push(`${missing.join(" and ")} ${last} not published yet`);
     if (jr.length) parts.push(`${jr.length > 1 ? "journals" : jr[0]} only up to mid-October ${last}`);
+    for (const v of members) {                     // venue-years where only part of the papers have an abstract
+      const c = (D.coverage || {})[v + "|" + last];
+      if (c) parts.push(`${v} counts only the ${c[0].toLocaleString("en")} of its ${c[1].toLocaleString("en")} accepted papers that have an abstract`);
+    }
     if (!parts.length) return "";
     if (mode === "count") return `*${last} is not a full year (${parts.join("; ")}), so its numbers of papers are not comparable with earlier years.`;
     return missing.length ? `*${last} is estimated from the venues published so far (${parts.join("; ")}).` : `*${last}: ${parts.join("; ")}.`;

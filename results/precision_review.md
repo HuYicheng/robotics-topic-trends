@@ -166,3 +166,83 @@ Topics whose 2020-2023 samples were all in the topic's sense: VLA, LLM/VLM, othe
 datasets, reasoning, NeRF (one "implicit layer"), self-supervised, GNN, humanoid, legged, space, mobile manipulation,
 whole-body, multi-robot, surgical, grasping, bimanual, contact-rich, articulated/affordance, haptics, navigation,
 long-horizon, HRI, perception, 3D perception, SLAM, radar, prediction, motion planning, MPC, force control, hardware.
+
+## CoRL 2026 (added 2026-10-28): review of its abstract-only matches
+
+Independent reviewer (a separate agent), same criterion as above, every sample in `results/precision_ta_samples_corl2026/`
+read (547 papers, 66 topics; the redraw reproduced all files), plus every CoRL 2026 member of the suspicious topics.
+Full report with per-topic table and counts: `results/precision_review_corl2026.md` (local only: it quotes abstract phrases).
+
+- Overall 407/467 correct (87%; 90% with borderline) on 58 topics; vocabulary topics 78/80. On the 41 topics found clean
+  after the earlier fixes (~99%), CoRL 2026 gives 87.5%.
+- Clean as before: VLA, LLM/VLM, language grounding, diffusion, imitation, RL, sim-to-real, world models, human video,
+  teleoperation, cross-embodiment, humanoid, legged, grasping, bimanual, deformable, contact-rich, tactile, articulated.
+- Worse at CoRL 2026, each backed by a count over all CoRL 2026 members (not only the 10-paper draw):
+  - MPC / optimal control: 16 of 34 members rest only on "whole-body control" (learned humanoid controllers); all 2026
+    venues 41 of 228 (18%) against 13 of 270 (4.8%) in 2024; of 15 read 2026 cases 11-14 are not optimisation-based.
+    Removing them cuts at most the 2024→2026 raw rise from +1.6 to +0.4 points.
+  - Calibration: about 19-20 of 38 members are sensor/robot calibration; 11 use the uncertainty sense (conformal,
+    calibrated confidence), 7 a generic one ("Trust-Calibrated", "action calibration").
+  - Human-robot interaction: 25 of 36 correct; 7 rest on "human-robot" in a data sense (paired data, co-training,
+    embodiment gap): 19% of members against ≤ 2.5% elsewhere.
+  - Navigation: bare "frontier" ("frontier models") carries 11 of 71 members (1.6-3% elsewhere).
+  - Motion planning: bare "planner(s)" more and more means task-level VLM/LLM planners (field-wide drift, strongest here).
+  - Multi-robot: "fleet data", "multi-robot pretraining" (multi-embodiment data); LLM "multi-agent" only 1 paper.
+  - Hardware: "prototype" (ML sense) 0/3, "gear" (URLs, "gear meshing") 0/3, "fabricated" 2/2.
+  - Perception title rule: bare "tracking" catches humanoid motion tracking control, "detection" failure detection.
+  - Wearable: mostly data-collection wearables (UMI gloves, mocap suits): a scope question, not precision.
+  - Safety: "reachab" in the kinematic/goal sense; 7/10 also in the 2024-26 draw, so the earlier 4/4 was optimistic.
+  - URL and substring bugs: "pose graph" inside "propose Graph", "avian" in URLs, "space robot" in "task-space robot".
+- Reviewer-effect control: the same reviewer re-read the reviewed 2024-26 draws of 8 flagged topics: 8 of 80 false there
+  against 27 of 80 at CoRL 2026 (topics chosen after seeing the CoRL samples; the population counts are the evidence).
+- Status: no rule changed yet (2026-10-28). Suggested fixes are listed in the report, section 4; untested.
+
+## Rule fixes after the CoRL 2026 review (2026-10-28; user: "先修规则再发布")
+
+What changed (scripts/04_topics.py; the version before is in archive/2020-2026_corl2026_before_rulefix/scripts/):
+- URLs in abstracts are replaced by "(link)" before matching (12_title_abstract.py): lab names in GitHub links
+  (HKUST-Aerial-Robotics, leggedrobotics, robot-learning.uk, labs/gear, mars-lab, davian) no longer count.
+- MPC: "whole-body control" counts on titles only with a cue in the same title (QP, inverse dynamics, operational/task space,
+  torque-based, hierarchical, Riccati, model-based ...); in abstracts (new override) when the abstract has an optimisation /
+  model-based cue anywhere and no policy-learning word, or no learning word at all. "model predictive" also hyphenated.
+- HRI: "human-robot" not before data / embodiment / retargeting / co-training words; "shared controllers" except "single" /
+  "non-shared"; not "trust region" / "trust-calibrated".
+- Calibration: not the confidence / uncertainty sense (conformal, calibrated confidence / probabilities / risk / belief,
+  miscalibrated predictions ...) nor generic compounds (trust-, preference-, action calibration); "uncalibrated /
+  miscalibrated / well-calibrated" cameras, sensors and robots still count, as they did before.
+- Navigation: "frontier(s)" only in the exploration sense (frontier-based ..., or an exploration / map / grid cue in the same
+  sentence), not "frontier models".
+- Motion planning: "planner(s)" not after task / symbolic / high-level / LLM / VLM / language / PDDL / reasoning / semantic,
+  unless a path / trajectory / waypoint word is in the same sentence.
+- Safety: "reachab..." only as reachability analysis (reachable sets / tubes, Hamilton-Jacobi, backward / forward
+  reachability, reach-avoid, reachability games), not kinematic or goal reachability.
+- Perception (title rule): not failure / anomaly / fault / slip / collision / contact / error detection; humanoid motion
+  tracking and whole-body tracking (control) do not count, tracking of people's or objects' motion does; "panoptic" added.
+- Hardware (abstract rule): "prototype" not in the ML sense (prototype-based, class / visual / support prototypes); plural
+  "prototypes" with a physical cue in the same sentence; "gear" not as a task object (gear insertion / assembly / meshing).
+- Multi-robot: not "multi-robot pretraining / rollouts / data", "fleet data", "fleet-mean". Wearable: not the verb
+  "rehabilitates", not AI "assistive agents". Small fixes: "\bpose graph", "\bavian", "task-space robot" ≠ space robot,
+  MARS-LVIG, event-based pedestrian behaviour, whole-body interaction control, image "crops"; VSLAM / ORB-SLAM3 and
+  SoftNeRF-type compounds now match.
+
+How it was checked:
+- Round 1 removed 662 topic memberships (all years). Two independent reviewers read every one of them with its matched
+  phrases (results/rulefix_review_A_2026-10-28.txt: safety, perception, MPC; ..._B_...: the rest): 37 (A) + 73 (B) were
+  wrong removals, mostly before 2026 (uncalibrated cameras, plural prototypes, exploration frontiers, classical QP whole-body
+  control, human/object motion tracking). Their tested patches (section 3 of each review) were applied as round 2.
+- Final rules vs the old ones (results/rulefix_final_check_2026-10-28.txt): 606 memberships removed, every one read by a
+  reviewer: 559 right, 37 borderline, 10 still wrong (navigation 4 whose exploration cue is only in the title, MPC 2 RL+QP
+  hybrids, calibration / motion planning / HRI / multi-robot 1 each). 35 added: 27 "model-predictive" MPC papers, 3 reach-avoid
+  safety papers, 3 SLAM and 2 NeRF compounds; all read, all in the topic's sense.
+- Scope kept as before (noted, user can change): data-collection wearables (UMI gloves, mocap suits) still count as wearable;
+  visual anomaly detection titles no longer count as perception (as in the abstract rule, which never had it).
+- Fresh-sample re-check after the fix (independent reviewer; `results/rulefix_recheck_2026-10-28.txt`), the 10 changed
+  topics, seed-0 abstract-only draws with the final rules:
+  - CoRL 2026: 69 C / 14 B / 10 F of 93 (before the fix: 60/9/31 of 100). All CoRL 2026 members of the 10 topics:
+    232/33/20 of 285 (81% strict, 93% with borderline). In-sample: the fix was written from CoRL 2026's false hits.
+  - 2024-26, other venues (the fairer test): 85 C / 9 B / 6 F of 100.
+  - Still weak (not fixed; sizes in the re-check, section 3): calibration's uncertainty sense in other wordings ("calibrates
+    ... residuals", "critic calibration", conformal "to calibrate"; growing at other 2026 venues too, about 0.2-0.4 pp of
+    papers in 2024-26); "planner(s)" for task-level planners and learned modules; ML "prototype" (2 CoRL 2026 papers);
+    "assistive" and "trust" broad in every period. Possible next fix for calibration: drop a match whose sentence has an
+    uncertainty cue and no sensor cue (untested).

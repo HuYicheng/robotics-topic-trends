@@ -2,8 +2,8 @@
 
 Years and venues from scripts/config.py (2020-2026 since 2026-10-14; the 2024-2026 version is archived in
 archive/2024-2026_v1/). Share per year = topic share standardised to the REF_YEAR (2025) venue mix of all seven venues,
-from the per-topic logistic model  topic ~ C(venue) + C(year). Years in which a venue has no papers yet (IROS and CoRL
-in 2026) get that venue's share from the model, i.e. its venue level moved by the year change seen at the other venues.
+from the per-topic logistic model  topic ~ C(venue) + C(year). Years in which a venue has no papers yet (IROS in 2026;
+CoRL 2026 added 2026-10-28) get that venue's share from the model, i.e. its venue level moved by the year change seen at the other venues.
 95% intervals by 2,000 draws of the coefficients from their estimated covariance. Raw pooled shares are kept alongside.
 Trend: logistic topic ~ C(venue) + year over the whole period (annual odds multiplier, 95% CI); the same over 2024-2026
 ("recent"). Benjamini-Hochberg q over topics for each; 'rising'/'declining' only when q < 0.05.

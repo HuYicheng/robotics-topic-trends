@@ -7,6 +7,8 @@ Output: data/topic_matrix_ta.csv
         results/precision_ta_samples/<topic>.txt  random 2024-2026 papers matched by the abstract only, with the matching
             sentence (same draw as the 2024-2026 study: same papers, order and seed)
         results/precision_ta_samples_2020_2023/<topic>.txt  the same for 2020-2023
+        results/precision_ta_samples_corl2026/<topic>.txt  the same for CoRL 2026 (conference-site list, arXiv abstracts),
+            which the two draws above leave out so that they stay the reviewed ones
 """
 import collections
 import csv
@@ -31,10 +33,15 @@ def word_at(a, m):
     return ((prev[0].lower() + " ") if prev else "") + a[s:e].lower()
 
 
+# URLs (project pages, code links) are replaced by "(link)" before matching: words inside them ("labs/gear", "mars-lab",
+# "davian") are not mentions of a topic; "(link)" keeps rules that look for a following link working (2026-10-28)
+URL = re.compile(r"(?:https?://|www\.)\S+|\b(?:[\w-]+\.)+(?:com|org|net|io|ai|edu|dev|site|page)(?:/\S*)?", re.I)
+
+
 def main():
     with open(os.path.join(ROOT, "data", "papers.csv")) as f:
         papers = {r["uid"]: r for r in csv.DictReader(f)}
-    abstracts = {r["uid"]: r["abstract"] for r in map(json.loads, open(os.path.join(ROOT, "data", "abstracts.jsonl")))}
+    abstracts = {r["uid"]: URL.sub(" (link) ", r["abstract"]) for r in map(json.loads, open(os.path.join(ROOT, "data", "abstracts.jsonl")))}
     names = [n for n, _, _ in t.COMPILED]
     title_rx = {n: rx for n, _, rx in t.COMPILED}
     abs_rx = t.ABSTRACT_COMPILED
@@ -65,11 +72,16 @@ def main():
             f.write(f"{n} [{'abstract rule' if n in t.ABSTRACT_OVERRIDES else 'title rule'}]\n")
             for per, a in audit_p.items():
                 f.write(f"  {per} {sum(a[n].values())} | " + ", ".join(f"{k}:{v}" for k, v in a[n].most_common(12)) + "\n")
-    for sub, keep in (("precision_ta_samples", lambda y: y >= 2024), ("precision_ta_samples_2020_2023", lambda y: y <= 2023)):
+    # the reviewed draws stay the same: papers added later (CoRL 2026 from the conference site, 2026-10-28) are left
+    # out of them and get their own sample
+    new = lambda p: p["source"].startswith("corl.org/")
+    for sub, keep in (("precision_ta_samples", lambda p: int(p["year"]) >= 2024 and not new(p)),
+                      ("precision_ta_samples_2020_2023", lambda p: int(p["year"]) <= 2023 and not new(p)),
+                      ("precision_ta_samples_corl2026", new)):
         out_dir = os.path.join(ROOT, "results", sub); os.makedirs(out_dir, exist_ok=True)
         rnd = random.Random(int(os.environ.get("SAMPLE_SEED", "0")))
         for n in names:
-            uids = [u for u in abstract_only[n] if keep(int(papers[u]["year"]))]
+            uids = [u for u in abstract_only[n] if keep(papers[u])]
             safe = re.sub(r"[^A-Za-z0-9]+", "_", n).strip("_")
             with open(os.path.join(out_dir, f"{safe}.txt"), "w") as f:
                 f.write(f"# {n}: {len(uids)} papers match by abstract only\n")

@@ -7,6 +7,8 @@ DBLP_EXTRACT = f"data/dblp_venues_{YEAR_MIN}_{YEAR_MAX}.jsonl"
 # per-venue sources (one source per venue for every year)
 RSS_VOLUMES = {2020: "rss16", 2021: "rss17", 2022: "rss18", 2023: "rss19", 2024: "rss20", 2025: "rss21", 2026: "rss22"}
 CORL_PMLR = {2020: "v155", 2021: "v164", 2022: "v205", 2023: "v229", 2024: "v270", 2025: "v305"}
+# CoRL years without a PMLR volume yet: accepted-papers list of the conference site (scripts/02b_fetch_corl_site.py)
+CORL_SITE = {2026: "https://www.corl.org/program/accepted-papers"}
 ICRA_OPENALEX_SOURCE = "S4210217939"
 
 # Only research articles are analysed (user, 2026-10-14). Editorials, commentaries, Focus/highlight pieces, errata and

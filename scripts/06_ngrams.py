@@ -3,7 +3,7 @@
 Weighted log-odds ratio with an informative Dirichlet prior (Monroe, Colaresi & Quinn 2008, Political Analysis
 16:372), on document frequencies (a title counts once per n-gram). Papers are reweighted so each venue has the
 same share of the corpus in both years being compared (venue mix differs between years, e.g. more RSS in 2026).
-Comparisons: (a) 2026 vs 2024 on ICRA+RSS+T-RO+IJRR+SciRobotics; (b) 2025 vs 2024 on all seven venues;
+Comparisons: (a) 2026 vs 2024 on ICRA+RSS+CoRL+T-RO+IJRR+SciRobotics (CoRL since 2026-10-28; IROS has no 2026); (b) 2025 vs 2024 on all seven venues;
 (c) 2025 vs 2020 on all seven venues (added 2026-10-14 with the extension to 2020: does any big mover lack a topic rule?).
 Output: results/ngrams_2026_vs_2024.csv, results/ngrams_2025_vs_2024.csv, results/ngrams_2025_vs_2020.csv
 """
@@ -66,7 +66,7 @@ def compare(papers, venues, y_new, y_old, min_df=12):
 def main():
     with open(os.path.join(ROOT, "data", "papers.csv")) as f:
         papers = [dict(r, year=int(r["year"])) for r in csv.DictReader(f)]
-    jobs = [("2026_vs_2024", ["ICRA", "RSS", "T-RO", "IJRR", "SciRobotics"], 2026, 2024),
+    jobs = [("2026_vs_2024", ["ICRA", "RSS", "CoRL", "T-RO", "IJRR", "SciRobotics"], 2026, 2024),
             ("2025_vs_2024", ["ICRA", "IROS", "RSS", "CoRL", "T-RO", "IJRR", "SciRobotics"], 2025, 2024),
             ("2025_vs_2020", ["ICRA", "IROS", "RSS", "CoRL", "T-RO", "IJRR", "SciRobotics"], 2025, 2020)]   # added with the 2020 extension
     for name, venues, y1, y2 in jobs:
