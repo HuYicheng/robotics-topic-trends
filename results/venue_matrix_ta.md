@@ -4,62 +4,62 @@ Cell = share in the venue's latest year (2026 for ICRA, RSS, CoRL and the journa
 
 | topic | All venues | Conferences | Journals | ICRA | IROS | RSS | CoRL | T-RO | IJRR | SciRobotics |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Manipulation (any) | 29.0↑ | 29.5↑ | 25.2 | 27.1↑ | 18.8 | 44.8↑ | 56.0↑ | 24.2 | 30.0 | 22.9 |
-| 3D perception / LiDAR / point clouds | 14.4↑ | 14.7↑ | 12.4↑ | 16.9↑ | 16.6↑ | 13.8 | 6.4↓ | 13.2↑ | 12.0 | 8.3 |
-| Motion / path planning | 15.5↓ | 15.2↓ | 18.5 | 16.3 | 14.9 | 17.1 | 10.8 | 20.0 | 20.0 | 8.3 |
-| Navigation | 15.8↑ | 15.6↑ | 17.2↑ | 15.8↑ | 15.7↑ | 14.8 | 10.4 | 17.9↑ | 14.0 | 18.8 |
-| Perception: detection / segmentation / tracking / pose | 12.5 | 13.1 | 7.7 | 13.9 | 18.4↑ | 7.1 | 3.3↓ | 7.4 | 10.0 | 6.2 |
-| Reinforcement learning | 12.9↑ | 13.2 | 11.4↑ | 12.5↑ | 12.0↑ | 24.3 | 26.6↓ | 10.5 | 6.0 | 20.8↑ |
-| SLAM / localization / state estimation | 10.3↓ | 10.0↓ | 12.2 | 10.2↓ | 11.7 | 6.7 | 3.7↓ | 11.6 | 18.0 | 6.2 |
-| Imitation learning / LfD | 13.9↑ | 14.3↑ | 11.5↑ | 14.2↑ | 8.6↑ | 25.7↑ | 33.6↑ | 11.1↑ | 8.0 | 16.7↑ |
-| Autonomous driving | 9.7 | 10.4 | 4.1 | 12.3↑ | 12.1 | 3.8↓ | 4.7↓ | 4.2 | 0.0 | 8.3 |
-| Hardware: mechanisms / actuators / design | 9.5↓ | 8.6↓ | 16.4↓ | 8.3↓ | 11.0 | 5.2 | 1.6 | 13.7 | 26.0 | 18.8 |
-| Legged robots / locomotion | 9.1↑ | 8.7↑ | 12.2 | 7.7 | 8.3 | 10.5 | 12.2↑ | 9.5 | 16.0 | 20.8 |
-| Aerial robots / UAV | 9.4 | 8.4↓ | 16.6 | 9.2 | 9.6 | 6.2 | 2.4 | 17.4 | 12.0 | 18.8 |
-| LLM / VLM | 9.1↑ | 10.1↑ | 1.7↑ | 11.0↑ | 9.2↑ | 10.0↑ | 16.2↑ | 2.1↑ | 0.0 | 2.1 |
-| Self-supervised / pretraining / representation | 9.9↑ | 10.5↑ | 5.9↑ | 9.7↑ | 6.9↑ | 17.6↑ | 24.2↑ | 5.3 | 6.0 | 8.3 |
-| MPC / optimal control / trajectory optimization | 6.8 | 6.5 | 9.0 | 7.5 | 7.0 | 9.0 | 3.1↓ | 11.6 | 4.0 | 2.1 |
-| Multi-robot / multi-agent / swarms | 7.2 | 6.6 | 11.5 | 7.4 | 7.5 | 5.7 | 2.6↓ | 13.2 | 10.0 | 6.2 |
-| Uncertainty / probabilistic | 7.7↓ | 7.2↓ | 12.2 | 8.3↓ | 6.8↓ | 10.5 | 3.0↓ | 14.2 | 14.0 | 0.0 |
-| Human-robot interaction | 6.8 | 6.8 | 6.6 | 6.8 | 8.2 | 5.7 | 4.5 | 7.9 | 4.0 | 4.2 |
-| Surgical / medical | 6.4 | 6.4↑ | 7.3 | 6.6 | 9.1↑ | 3.8 | 0.5 | 6.3 | 4.0 | 16.7 |
-| Grasping | 6.7↓ | 6.6↓ | 7.4 | 6.8↓ | 7.2 | 9.5 | 6.3 | 8.9 | 8.0 | 0.0 |
-| Safety / verification | 6.0 | 5.9 | 7.2 | 6.3↑ | 5.7 | 9.0 | 5.7 | 8.4 | 8.0 | 0.0 |
-| Dexterous / in-hand | 6.5↑ | 6.6↑ | 6.2 | 5.8↑ | 5.2 | 12.4↑ | 11.7↑ | 5.8 | 4.0 | 10.4 |
-| Diffusion / flow generative models | 7.4↑ | 8.0↑ | 2.7↑ | 8.6↑ | 4.3↑ | 15.7↑ | 16.7↑ | 2.6↑ | 0.0 | 6.2↑ |
-| Soft robots | 5.5 | 4.7 | 11.4 | 4.5 | 5.7 | 5.7 | 0.3 | 11.1 | 20.0 | 6.2↓ |
-| Calibration / registration | 5.2 | 5.2 | 5.3 | 5.2 | 6.1↑ | 4.8 | 3.5 | 5.3 | 8.0 | 2.1 |
-| Contact-rich / assembly | 7.3↑ | 7.6↑ | 5.5 | 6.6↑ | 3.4 | 16.2↑ | 12.9↑ | 3.7 | 12.0 | 6.2 |
-| Long-horizon / task planning / TAMP | 6.9↑ | 7.2↑ | 5.2↑ | 5.9↑ | 4.3↑ | 15.2↑ | 18.6↑ | 5.8↑ | 2.0 | 6.2 |
-| Language grounding / open-vocabulary | 4.4↑ | 4.8↑ | 1.3 | 5.4↑ | 5.0↑ | 5.2 | 9.2↑ | 1.1 | 0.0 | 4.2 |
-| Tactile sensing | 5.3↑ | 5.5↑ | 3.8 | 4.9↑ | 3.9 | 5.7 | 7.5↑ | 4.2↑ | 4.0 | 2.1 |
-| Underwater / marine | 3.6↑ | 3.5↑ | 4.1 | 3.7 | 4.8↑ | 2.4 | 0.2 | 1.6 | 10.0 | 8.3 |
-| Sim-to-real | 5.4↑ | 5.5↑ | 4.9↑ | 5.3↑ | 2.9 | 14.3↑ | 11.3↑ | 3.7 | 8.0 | 6.2 |
-| Micro / bio-inspired robots | 3.3 | 2.8 | 7.0 | 3.0 | 4.0 | 1.4 | 0.3 | 7.4 | 2.0 | 14.6 |
-| Industrial / logistics / construction | 3.6 | 3.5 | 4.2 | 4.0 | 4.5 | 1.0 | 0.7 | 4.7 | 4.0 | 2.1 |
-| Wearable / exoskeleton / prosthesis / rehab | 4.0 | 3.6 | 7.3 | 3.5↓ | 4.1 | 1.9 | 1.4 | 6.3 | 6.0 | 14.6 |
-| Datasets / benchmarks | 3.2↑ | 3.3↑ | 2.9 | 3.2↑ | 3.5↑ | 2.9 | 4.2 | 1.6 | 10.0 | 0.0 |
-| Other generative models | 4.8↑ | 5.1↑ | 2.8↑ | 4.5↑ | 2.6 | 7.1↑ | 12.5↑ | 3.2↑ | 0.0 | 4.2↑ |
-| Teleoperation (incl. data-collection interfaces) | 5.4↑ | 5.4↑ | 5.1 | 4.6↑ | 2.7 | 7.1↑ | 11.5↑ | 3.7 | 2.0 | 14.6 |
-| Humanoid robots | 5.9↑ | 6.3↑ | 3.7 | 4.0 | 2.6 | 10.5↑ | 13.2↑ | 1.6 | 0.0 | 16.7↑ |
-| 3D Gaussian splatting | 2.8↑ | 3.1↑ | 0.7↑ | 3.5↑ | 3.1↑ | 1.9↑ | 1.4↑ | 0.5↑ | 2.0 | 0.0 |
-| Force / impedance control | 3.8 | 3.6 | 5.3 | 3.2 | 2.7 | 3.8↑ | 2.8↑ | 5.8 | 6.0 | 2.1 |
-| Reasoning / chain-of-thought | 4.1↑ | 4.5↑ | 1.0 | 5.6↑ | 2.7↑ | 5.2↑ | 6.4↑ | 0.5 | 0.0 | 4.2↑ |
-| Prediction / forecasting | 2.6 | 2.8 | 1.4 | 3.1↑ | 2.6 | 2.9 | 2.1↓ | 2.1 | 0.0 | 0.0 |
-| Bimanual | 3.1↑ | 3.2↑ | 2.4↑ | 3.1↑ | 2.0↑ | 3.3↑ | 7.5↑ | 2.6 | 2.0 | 2.1 |
-| Whole-body control / loco-manipulation | 3.7↑ | 3.9↑ | 2.7 | 2.4↑ | 1.6 | 5.7↑ | 9.7↑ | 2.6 | 2.0 | 4.2 |
-| Deformable objects | 1.9 | 2.0 | 1.1 | 2.2↑ | 1.8 | 3.8 | 3.0 | 1.1 | 0.0 | 2.1 |
-| Agriculture / field | 1.7↑ | 1.8↑ | 1.0 | 2.0↑ | 2.2 | 1.0 | 0.5 | 0.5 | 4.0 | 0.0 |
-| NeRF / neural implicit fields | 0.9↑ | 0.8↑ | 1.7↑ | 1.2↑ | 1.5↑ | 0.5 | 0.3 | 1.1↑ | 4.0 | 2.1 |
-| VLA / robot foundation models | 4.5↑ | 5.0↑ | 0.8↑ | 3.8↑ | 0.5↑ | 18.6↑ | 29.2↑ | 0.0 | 0.0 | 6.2↑ |
-| Radar / 4D radar | 1.1↑ | 1.0↑ | 2.1 | 1.2 | 1.5 | 0.5 | 0.0↓ | 1.6 | 2.0 | 4.2 |
-| Mobile manipulation | 1.6↑ | 1.7↑ | 0.7 | 1.5 | 1.0 | 1.9 | 3.7↑ | 1.1 | 0.0 | 0.0 |
-| Articulated objects / affordance | 1.3↑ | 1.4↑ | 0.3 | 1.6↑ | 1.2↑ | 1.9 | 3.3 | 0.5 | 0.0 | 0.0 |
-| World models / video prediction | 2.2↑ | 2.5↑ | 0.0 | 1.9↑ | 0.8↑ | 4.8↑ | 11.0↑ | 0.0 | 0.0 | 0.0 |
-| Learning from human video / human-to-robot transfer | 1.5↑ | 1.6↑ | 1.0 | 1.5↑ | 0.6 | 4.8 | 6.6↑ | 1.1 | 0.0 | 2.1 |
-| Haptics | 1.1 | 1.0 | 2.0 | 1.0 | 1.2 | 0.5 | 0.2 | 2.1 | 0.0 | 4.2 |
-| Event cameras / neuromorphic | 1.4 | 1.1 | 3.4↑ | 1.2 | 0.8 | 0.5 | 0.5 | 4.7↑ | 0.0 | 2.1 |
-| Cross-embodiment | 1.8↑ | 1.9↑ | 1.7↑ | 1.9↑ | 0.4↑ | 10.0↑ | 7.7↑ | 2.1↑ | 0.0 | 2.1 |
-| Graph neural networks | 0.5 | 0.6 | 0.0 | 0.8 | 1.0 | 0.5 | 0.3↓ | 0.0 | 0.0 | 0.0 |
-| Space robotics | 1.0 | 1.0 | 1.3 | 1.1 | 0.7 | 0.0 | 0.3 | 0.5 | 2.0 | 4.2 |
-| Mamba / state-space sequence models | 0.9↑ | 1.0↑ | 0.0 | 0.7↑ | 0.7↑ | 0.0 | 0.2 | 0.0 | 0.0 | 0.0 |
+| Manipulation (any) | 30.0↑ | 31.1↑ | 21.6 | 27.2↑ | 18.9 | 50.0↑ | 66.1↑ | 23.2↑ | 20.0 | 16.7 |
+| Perception: detection / segmentation / tracking / pose | 17.0↑ | 17.5 | 12.5↑ | 19.7↑ | 23.2 | 7.6 | 7.1↓ | 11.6↑ | 12.0 | 16.7 |
+| 3D perception / LiDAR / point clouds | 18.0↑ | 18.5↑ | 13.8↑ | 21.2↑ | 19.4↑ | 16.7↑ | 10.6↓ | 15.3↑ | 12.0 | 8.3 |
+| Motion / path planning | 16.4↓ | 15.9↓ | 20.3 | 17.6↓ | 15.6↓ | 12.9↓ | 9.2 | 22.1 | 22.0 | 8.3 |
+| Hardware: mechanisms / actuators / design | 13.4↓ | 12.2 | 22.2 | 11.9↓ | 16.6 | 8.1 | 2.8 | 16.8 | 30.0 | 41.7 |
+| Reinforcement learning | 12.5↑ | 12.8 | 10.6↑ | 12.3↑ | 11.4 | 24.3 | 26.6↓ | 8.9 | 6.0 | 22.9↑ |
+| Navigation | 11.9↑ | 11.9↑ | 11.8 | 11.9↑ | 10.9 | 13.3 | 9.6 | 12.6 | 8.0 | 12.5 |
+| SLAM / localization / state estimation | 10.2↓ | 9.3↓ | 17.2 | 9.3↓ | 11.4↓ | 7.1 | 3.3 | 17.9 | 22.0 | 6.2 |
+| Imitation learning / LfD | 15.2↑ | 15.7↑ | 11.5↑ | 13.7↑ | 7.6↑ | 33.3↑ | 44.3↑ | 9.5↑ | 10.0 | 20.8↑ |
+| Autonomous driving | 8.4 | 9.0 | 3.9 | 11.2 | 11.3 | 2.9↓ | 4.2↓ | 5.3 | 0.0 | 2.1 |
+| LLM / VLM | 14.7↑ | 16.3↑ | 2.4↑ | 13.9↑ | 10.8↑ | 23.3↑ | 37.4↑ | 2.1↑ | 0.0 | 6.2↑ |
+| MPC / optimal control / trajectory optimization | 8.8↓ | 8.3↓ | 13.2 | 9.5 | 8.6 | 12.4 | 3.5↓ | 16.3 | 10.0 | 2.1 |
+| Multi-robot / multi-agent / swarms | 8.8 | 7.7 | 16.5 | 8.3 | 9.6 | 7.1 | 2.6 | 19.5 | 10.0 | 10.4 |
+| Datasets / benchmarks | 10.7↑ | 11.3↑ | 6.7↑ | 10.6↑ | 9.6↑ | 13.8↑ | 16.5↑ | 5.3↑ | 14.0 | 4.2 |
+| Sim-to-real | 10.3↑ | 10.5↑ | 8.8↑ | 9.4↑ | 6.3 | 19.5↑ | 25.6↑ | 7.9↑ | 6.0 | 16.7↑ |
+| Human-robot interaction | 7.5↓ | 7.5 | 7.9 | 7.8 | 8.2↓ | 6.7 | 5.0 | 6.8 | 6.0 | 14.6 |
+| Uncertainty / probabilistic | 9.5↓ | 8.9↓ | 14.3 | 9.6↓ | 6.8↓ | 13.3↓ | 7.0↓ | 15.3 | 20.0 | 2.1 |
+| Legged robots / locomotion | 7.7↑ | 7.6↑ | 8.9 | 6.4 | 6.7 | 11.4↑ | 13.0↑ | 6.8 | 10.0 | 16.7 |
+| Aerial robots / UAV | 8.1↓ | 7.2↓ | 14.9 | 7.7↓ | 8.3 | 5.7 | 2.4 | 16.3 | 10.0 | 14.6 |
+| Long-horizon / task planning / TAMP | 8.4↑ | 8.6↑ | 6.4 | 7.7↑ | 6.8 | 13.8 | 16.5↑ | 6.3 | 6.0 | 6.2 |
+| Language grounding / open-vocabulary | 6.8↑ | 7.4↑ | 2.1↑ | 7.7↑ | 7.4↑ | 8.1 | 15.7↑ | 2.1↑ | 0.0 | 4.2↑ |
+| Soft robots | 5.9 | 5.0 | 13.1 | 4.7 | 6.4 | 5.2 | 0.7 | 12.1 | 20.0 | 12.5 |
+| Safety / verification | 5.7 | 5.8 | 5.0 | 6.1 | 5.1 | 10.5 | 6.1 | 6.3 | 4.0 | 0.0 |
+| Grasping | 5.4↓ | 5.3 | 6.3 | 5.2↓ | 6.3 | 8.6 | 5.9 | 8.4 | 4.0 | 0.0 |
+| Self-supervised / pretraining / representation | 6.6 | 7.0 | 3.8 | 6.8 | 5.1 | 11.0 | 15.8 | 2.6 | 2.0 | 10.4 |
+| Surgical / medical | 5.0 | 4.8 | 6.6 | 5.2 | 6.5↑ | 1.4 | 0.3 | 7.4 | 2.0 | 10.4 |
+| Diffusion / flow generative models | 7.6↑ | 8.2↑ | 2.7↑ | 8.5↑ | 4.1↑ | 15.7↑ | 18.1↑ | 2.6↑ | 0.0 | 6.2↑ |
+| Micro / bio-inspired robots | 3.9 | 3.2 | 9.0 | 3.2 | 5.8 | 0.5 | 0.2 | 9.5 | 8.0 | 12.5↓ |
+| Calibration / registration | 4.0 | 3.7 | 5.7 | 3.7 | 5.7 | 3.3 | 1.2 | 6.3 | 2.0 | 6.2 |
+| Underwater / marine | 3.6↑ | 3.7↑ | 3.0 | 3.9↑ | 4.9↑ | 1.9 | 0.2 | 1.1 | 8.0 | 6.2 |
+| Contact-rich / assembly | 6.1↑ | 6.2↑ | 5.7 | 5.0 | 2.8 | 10.5↑ | 13.7↑ | 4.2 | 14.0 | 2.1 |
+| Teleoperation (incl. data-collection interfaces) | 5.4↑ | 5.5↑ | 4.8 | 4.6↑ | 3.5 | 7.1↑ | 8.3↑ | 3.7 | 2.0 | 12.5 |
+| Tactile sensing | 4.8↑ | 5.0↑ | 3.4 | 4.5↑ | 3.5 | 5.7 | 6.8↑ | 3.7↑ | 4.0 | 2.1 |
+| Prediction / forecasting | 3.4 | 3.6 | 2.5 | 4.1 | 3.8 | 2.4 | 3.3↓ | 3.7 | 0.0 | 0.0 |
+| Wearable / exoskeleton / prosthesis / rehab | 2.8 | 2.6 | 4.7 | 2.7↓ | 3.6 | 3.3 | 0.2 | 4.7 | 6.0 | 4.2 |
+| Agriculture / field | 2.6 | 2.5 | 2.9 | 3.0↑ | 3.3 | 1.4 | 0.7 | 2.1↑ | 6.0 | 4.2 |
+| Industrial / logistics / construction | 3.5↓ | 3.5↓ | 3.1 | 3.5 | 3.9 | 1.9 | 1.0 | 3.7 | 4.0 | 0.0 |
+| Dexterous / in-hand | 4.1↑ | 4.2↑ | 3.1 | 3.6↑ | 2.9↑ | 8.6↑ | 9.4↑ | 3.7 | 2.0 | 2.1 |
+| Deformable objects | 2.9↑ | 2.9 | 2.8 | 3.3 | 2.8 | 4.3 | 3.8 | 3.7 | 0.0 | 2.1 |
+| Force / impedance control | 3.7↓ | 3.5↓ | 5.3 | 3.2 | 2.8↓ | 3.3 | 2.8↑ | 5.3 | 8.0 | 2.1 |
+| Reasoning / chain-of-thought | 3.8↑ | 4.1↑ | 1.0 | 4.9↑ | 2.8↑ | 4.3 | 5.9↑ | 0.5 | 0.0 | 4.2↑ |
+| 3D Gaussian splatting | 3.0↑ | 3.3↑ | 1.1↑ | 3.9↑ | 2.8↑ | 2.4↑ | 1.4↑ | 1.1↑ | 2.0 | 0.0 |
+| Humanoid robots | 5.6↑ | 6.0↑ | 3.4 | 3.6 | 2.4 | 10.5↑ | 12.7↑ | 1.1 | 0.0 | 16.7↑ |
+| World models / video prediction | 3.8↑ | 4.1↑ | 1.1 | 3.0↑ | 1.2 | 7.1 | 15.7↑ | 0.5 | 2.0 | 2.1 |
+| Mobile manipulation | 2.6↑ | 2.7↑ | 1.7 | 2.0 | 2.0 | 3.3 | 7.0↑ | 2.6 | 0.0 | 0.0 |
+| Bimanual | 3.0↑ | 3.1↑ | 2.4 | 3.1↑ | 1.9↑ | 3.3↑ | 7.3↑ | 2.6 | 2.0 | 2.1 |
+| Learning from human video / human-to-robot transfer | 3.3↑ | 3.4↑ | 2.7↑ | 2.7↑ | 1.7 | 8.1↑ | 12.0↑ | 2.1↑ | 0.0 | 8.3↑ |
+| Whole-body control / loco-manipulation | 4.1↑ | 4.2↑ | 3.5 | 2.8 | 1.7 | 6.7↑ | 10.1↑ | 3.2 | 2.0 | 6.2 |
+| Articulated objects / affordance | 1.5↑ | 1.6↑ | 0.7 | 2.0↑ | 1.5↑ | 1.0 | 3.8 | 1.1↑ | 0.0 | 0.0 |
+| Graph neural networks | 1.3 | 1.4 | 0.0↑ | 2.0 | 2.1 | 1.4 | 0.3↓ | 0.0 | 0.0 | 0.0 |
+| Cross-embodiment | 2.5↑ | 2.5↑ | 3.4↑ | 2.2↑ | 0.8 | 8.6↑ | 9.2↑ | 3.2↑ | 0.0 | 8.3 |
+| VLA / robot foundation models | 4.9↑ | 5.3↑ | 1.3↑ | 4.1↑ | 0.5↑ | 16.7↑ | 30.3↑ | 1.1↑ | 0.0 | 4.2↑ |
+| NeRF / neural implicit fields | 0.9↑ | 0.8↑ | 1.4↑ | 1.1↑ | 1.3↑ | 0.5 | 0.9 | 1.1↑ | 4.0 | 0.0 |
+| Other generative models | 1.6 | 1.7 | 0.7 | 1.5 | 1.4 | 2.4 | 2.6 | 0.5 | 0.0 | 2.1 |
+| Radar / 4D radar | 1.1↑ | 1.0 | 1.8 | 1.2 | 1.2 | 0.5 | 0.0 | 1.6 | 2.0 | 2.1 |
+| Haptics | 1.3 | 1.2 | 2.4 | 1.1 | 1.2 | 0.0 | 0.3 | 2.1 | 2.0 | 4.2 |
+| Event cameras / neuromorphic | 1.3 | 1.0 | 3.3↑ | 1.1 | 0.8 | 0.5 | 0.5 | 4.2↑ | 0.0 | 4.2 |
+| Space robotics | 0.9 | 0.9 | 1.0 | 1.0 | 0.6 | 0.0 | 0.3 | 0.5 | 2.0 | 2.1 |
+| Mamba / state-space sequence models | 1.0↑ | 1.0↑ | 0.4 | 0.8↑ | 0.9↑ | 0.0 | 0.3 | 0.5 | 0.0 | 0.0 |

@@ -1,0 +1,60 @@
+topic,keyword,semantic,semantic_main,both,keyword_only,semantic_only,kappa
+VLA / robot foundation models,369,394,302,308,61,86,0.8041
+LLM / VLM,972,1312,702,918,54,394,0.7939
+Language grounding / open-vocabulary,711,999,493,613,98,386,0.7064
+Diffusion / flow generative models,663,643,497,620,43,23,0.948
+Other generative models,698,357,192,286,412,71,0.5327
+Imitation learning / LfD,2285,2131,1206,1660,625,471,0.7257
+Reinforcement learning,3007,2907,2300,2656,351,251,0.8833
+Sim-to-real,816,1814,600,722,94,1092,0.5261
+World models / video prediction,209,602,398,184,25,418,0.4464
+Learning from human video / human-to-robot transfer,219,429,251,176,43,253,0.5374
+Teleoperation (incl. data-collection interfaces),721,862,472,568,153,294,0.7077
+Datasets / benchmarks,668,1897,920,625,43,1272,0.4645
+Reasoning / chain-of-thought,435,434,182,244,191,190,0.5532
+Cross-embodiment,186,318,159,132,54,186,0.5189
+3D Gaussian splatting,231,237,213,222,9,15,0.9482
+NeRF / neural implicit fields,275,300,261,232,43,68,0.8045
+Mamba / state-space sequence models,34,47,38,33,1,14,0.8145
+Self-supervised / pretraining / representation,1803,1508,739,1071,732,437,0.62
+Graph neural networks,220,407,226,212,8,195,0.6722
+Humanoid robots,639,596,327,573,66,23,0.926
+Legged robots / locomotion,1985,1662,1055,1475,510,187,0.7927
+Aerial robots / UAV,2220,1962,1296,1919,301,43,0.9096
+Autonomous driving,2472,2386,1312,1902,570,484,0.7577
+Underwater / marine,710,722,546,648,62,74,0.902
+Space robotics,238,227,168,176,62,51,0.7545
+Mobile manipulation,317,484,204,287,30,197,0.7118
+Whole-body control / loco-manipulation,432,488,258,335,97,153,0.7228
+Soft robots,1244,1364,1011,1035,209,329,0.7815
+Micro / bio-inspired robots,823,980,668,549,274,431,0.5933
+Multi-robot / multi-agent / swarms,1743,2173,1817,1492,251,681,0.7404
+Wearable / exoskeleton / prosthesis / rehab,902,781,681,635,267,146,0.7454
+Surgical / medical,1432,1075,942,998,434,77,0.7848
+Agriculture / field,436,729,325,308,128,421,0.5174
+Industrial / logistics / construction,950,913,333,502,448,411,0.5196
+Manipulation (any),5111,5422,730,3721,1390,1701,0.6205
+Grasping,1734,1467,709,1288,446,179,0.7904
+Dexterous / in-hand,1198,688,443,627,571,61,0.6518
+Bimanual,420,426,183,368,52,58,0.8676
+Deformable objects,457,687,403,395,62,292,0.6831
+Contact-rich / assembly,1205,962,430,654,551,308,0.5844
+Articulated objects / affordance,287,380,195,248,39,132,0.74
+Tactile sensing,943,827,723,762,181,65,0.8555
+Haptics,312,303,216,217,95,86,0.7017
+Navigation,3257,2522,1293,1911,1346,611,0.6141
+Long-horizon / task planning / TAMP,970,1635,1018,730,240,905,0.5361
+Human-robot interaction,1652,1985,1273,1193,459,792,0.6271
+Perception: detection / segmentation / tracking / pose,3366,4301,2503,2404,962,1897,0.5546
+3D perception / LiDAR / point clouds,3316,4019,2067,2922,394,1097,0.759
+SLAM / localization / state estimation,2745,2752,2235,2152,593,600,0.7538
+Radar / 4D radar,248,223,198,223,25,0,0.9464
+Event cameras / neuromorphic,240,241,230,227,13,14,0.9433
+Prediction / forecasting,544,868,556,448,96,420,0.6237
+Motion / path planning,3824,4110,2355,3000,824,1110,0.7061
+MPC / optimal control / trajectory optimization,1708,2263,1402,1502,206,761,0.7342
+Safety / verification,1493,1472,1075,1114,379,358,0.7345
+Uncertainty / probabilistic,2047,2506,1416,1535,512,971,0.6392
+Force / impedance control,730,847,508,559,171,288,0.6988
+Hardware: mechanisms / actuators / design,2385,3392,2690,1773,612,1619,0.5608
+Calibration / registration,1107,1019,565,746,361,273,0.6875

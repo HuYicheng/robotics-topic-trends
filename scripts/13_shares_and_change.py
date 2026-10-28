@@ -1,4 +1,7 @@
-"""Main table (title + abstract measure): share of each topic per year, comparable across years, and its change.
+"""Main table (final measure: semantic labels from title + abstract since 2026-10-28): share of each topic per year,
+comparable across years, and its change. usage: 13_shares_and_change.py [MATRIX OUT] (defaults topic_matrix_ta.csv,
+shares_and_change_ta.csv; the same table for the keyword matrix or the "main" labels: topic_matrix_ta_keyword.csv
+shares_and_change_ta_keyword.csv, topic_matrix_ta_main.csv shares_and_change_ta_main.csv).
 
 Years and venues from scripts/config.py (2020-2026 since 2026-10-14; the 2024-2026 version is archived in
 archive/2024-2026_v1/). Share per year = topic share standardised to the REF_YEAR (2025) venue mix of all seven venues,
@@ -29,7 +32,8 @@ spec = importlib.util.spec_from_file_location("t", os.path.join(ROOT, "scripts",
 t = importlib.util.module_from_spec(spec); spec.loader.exec_module(t)
 family = {n: f for n, f, _ in t.TOPICS}
 YEARS, REF = config.YEARS, config.REF_YEAR
-m = pd.read_csv(os.path.join(ROOT, "data", "topic_matrix_ta.csv"))
+MATRIX, OUT = (sys.argv[1], sys.argv[2]) if len(sys.argv) > 2 else ("topic_matrix_ta.csv", "shares_and_change_ta.csv")
+m = pd.read_csv(os.path.join(ROOT, "data", MATRIX))
 m = m[m.year.isin(YEARS)]
 ref = m[m.year == REF].venue.value_counts(normalize=True)
 rng = np.random.default_rng(0)
@@ -77,7 +81,7 @@ for p, q, c, o in (("p", "q", "call", "annual_OR"), ("recent_p", "recent_q", "re
     out[q] = multipletests(out[p], method="fdr_bh")[1]
     out[c] = np.where(out[q] < 0.05, np.where(out[o] > 1, "rising", "declining"), "unclear")
 out = out.sort_values(f"share_{REF}", ascending=False)
-out.to_csv(os.path.join(ROOT, "results", "shares_and_change_ta.csv"), index=False)
+out.to_csv(os.path.join(ROOT, "results", OUT), index=False)
 print("papers with abstracts per year:", m.groupby("year").size().to_dict())
 show = out[["topic"] + [f"share_{y}" for y in YEARS] + ["change_pp", "annual_OR", "call", "recent_OR", "recent_call"]].copy()
 for c in [f"share_{y}" for y in YEARS]:

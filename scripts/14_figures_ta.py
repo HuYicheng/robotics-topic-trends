@@ -45,7 +45,7 @@ def fig_shares():
         ax.spines[sp].set_visible(False)
     ax.text(1.01, len(t) - 0.1, f"{Y[0]} → 2024 → {Y[-1]}   (change, points)", transform=ax.get_yaxis_transform(),
             ha="left", va="bottom", fontsize=7.5, color=INK2)
-    ax.set_xlabel("Share of papers whose title or abstract names the topic (log scale)")
+    ax.set_xlabel("Share of papers whose work involves the topic (log scale)")
     handles = [plt.Line2D([], [], marker="o", ls="", mfc=SURF, mec=INK2, mew=1.6, ms=6, label=str(Y[0])),
                plt.Line2D([], [], marker="o", ls="", color=INK2, ms=3, label=f"{Y[1]}–{Y[-2]}"),
                plt.Line2D([], [], marker="o", ls="", color=INK2, ms=7, label=str(Y[-1])),

@@ -1,0 +1,60 @@
+topic,first_pass,second_pass,kappa
+VLA / robot foundation models,35,35,0.942
+LLM / VLM,142,135,0.9654
+Language grounding / open-vocabulary,104,107,0.9454
+Diffusion / flow generative models,68,68,1.0
+Other generative models,42,41,0.9877
+Imitation learning / LfD,217,222,0.9623
+Reinforcement learning,295,285,0.9724
+Sim-to-real,175,182,0.9545
+World models / video prediction,54,59,0.9184
+Learning from human video / human-to-robot transfer,25,24,0.9794
+Teleoperation (incl. data-collection interfaces),83,87,0.9634
+Datasets / benchmarks,179,178,0.9727
+Reasoning / chain-of-thought,49,49,0.8958
+Cross-embodiment,27,27,0.9625
+3D Gaussian splatting,17,17,1.0
+NeRF / neural implicit fields,26,25,0.9802
+Mamba / state-space sequence models,5,5,1.0
+Self-supervised / pretraining / representation,149,155,0.9366
+Graph neural networks,36,36,1.0
+Humanoid robots,50,48,0.9792
+Legged robots / locomotion,159,159,0.9662
+Aerial robots / UAV,215,216,0.9974
+Autonomous driving,226,226,0.9804
+Underwater / marine,74,77,0.9795
+Space robotics,17,17,1.0
+Mobile manipulation,50,51,0.9292
+Whole-body control / loco-manipulation,45,44,0.8969
+Soft robots,148,148,0.9783
+Micro / bio-inspired robots,106,107,0.9852
+Multi-robot / multi-agent / swarms,205,204,0.992
+Wearable / exoskeleton / prosthesis / rehab,72,73,0.9786
+Surgical / medical,115,114,0.977
+Agriculture / field,63,66,0.9123
+Industrial / logistics / construction,85,86,0.9332
+Manipulation (any),532,542,0.9564
+Grasping,150,154,0.9718
+Dexterous / in-hand,66,66,0.9844
+Bimanual,50,49,0.9897
+Deformable objects,72,73,0.9502
+Contact-rich / assembly,109,111,0.9714
+Articulated objects / affordance,30,32,0.9673
+Tactile sensing,88,88,0.9882
+Haptics,33,33,0.9693
+Navigation,266,264,0.9233
+Long-horizon / task planning / TAMP,157,163,0.9329
+Human-robot interaction,196,193,0.9523
+Perception: detection / segmentation / tracking / pose,409,423,0.9268
+3D perception / LiDAR / point clouds,375,384,0.9669
+SLAM / localization / state estimation,282,277,0.9695
+Radar / 4D radar,23,23,1.0
+Event cameras / neuromorphic,27,26,0.9809
+Prediction / forecasting,89,89,0.9649
+Motion / path planning,406,421,0.9308
+MPC / optimal control / trajectory optimization,198,199,0.9807
+Safety / verification,149,147,0.9567
+Uncertainty / probabilistic,257,259,0.9389
+Force / impedance control,84,83,0.9565
+Hardware: mechanisms / actuators / design,363,358,0.9721
+Calibration / registration,110,101,0.9156

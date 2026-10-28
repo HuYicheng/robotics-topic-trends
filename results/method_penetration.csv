@@ -1,898 +1,898 @@
 year,domain,method,k,n,pct,lift
-2021,Manipulation (any),Imitation learning / LfD,64,570,11.228070175438596,1.7476990906585836
-2021,Manipulation (any),Reinforcement learning,85,570,14.912280701754385,1.1822456140350877
-2021,Manipulation (any),LLM / VLM,1,570,0.17543859649122806,2.6078947368421055
-2021,Manipulation (any),VLA / robot foundation models,0,570,0.0,
-2021,Manipulation (any),Diffusion / flow generative models,0,570,0.0,
-2021,Manipulation (any),World models / video prediction,0,570,0.0,0.0
-2021,Manipulation (any),3D Gaussian splatting,0,570,0.0,
-2021,Manipulation (any),NeRF / neural implicit fields,2,570,0.3508771929824561,1.7385964912280703
-2021,Manipulation (any),Sim-to-real,22,570,3.8596491228070176,1.7126472898664573
-2021,Manipulation (any),Self-supervised / pretraining / representation,34,570,5.964912280701754,1.1666897506925207
-2021,Manipulation (any),Language grounding / open-vocabulary,14,570,2.456140350877193,2.086315789473684
-2021,Manipulation (any),Learning from human video / human-to-robot transfer,4,570,0.7017543859649122,2.6078947368421055
-2021,Manipulation (any),Cross-embodiment,1,570,0.17543859649122806,1.7385964912280703
-2021,Grasping,Imitation learning / LfD,21,231,9.090909090909092,1.4150404569252737
-2021,Grasping,Reinforcement learning,24,231,10.38961038961039,0.8236883116883118
-2021,Grasping,LLM / VLM,0,231,0.0,0.0
-2021,Grasping,VLA / robot foundation models,0,231,0.0,
-2021,Grasping,Diffusion / flow generative models,0,231,0.0,
-2021,Grasping,World models / video prediction,0,231,0.0,0.0
-2021,Grasping,3D Gaussian splatting,0,231,0.0,
-2021,Grasping,NeRF / neural implicit fields,2,231,0.8658008658008658,4.29004329004329
-2021,Grasping,Sim-to-real,7,231,3.0303030303030303,1.3446404341926732
-2021,Grasping,Self-supervised / pretraining / representation,20,231,8.658008658008658,1.6934381408065617
-2021,Grasping,Language grounding / open-vocabulary,7,231,3.0303030303030303,2.574025974025974
-2021,Grasping,Learning from human video / human-to-robot transfer,0,231,0.0,0.0
-2021,Grasping,Cross-embodiment,0,231,0.0,0.0
-2021,Dexterous / in-hand,Imitation learning / LfD,12,127,9.448818897637794,1.47075071113493
-2021,Dexterous / in-hand,Reinforcement learning,14,127,11.023622047244094,0.8739527559055118
-2021,Dexterous / in-hand,LLM / VLM,0,127,0.0,0.0
-2021,Dexterous / in-hand,VLA / robot foundation models,0,127,0.0,
-2021,Dexterous / in-hand,Diffusion / flow generative models,0,127,0.0,
-2021,Dexterous / in-hand,World models / video prediction,0,127,0.0,0.0
-2021,Dexterous / in-hand,3D Gaussian splatting,0,127,0.0,
-2021,Dexterous / in-hand,NeRF / neural implicit fields,0,127,0.0,0.0
-2021,Dexterous / in-hand,Sim-to-real,1,127,0.7874015748031497,0.34939475849100954
-2021,Dexterous / in-hand,Self-supervised / pretraining / representation,2,127,1.5748031496062993,0.30801906340654783
-2021,Dexterous / in-hand,Language grounding / open-vocabulary,2,127,1.5748031496062993,1.3376827896512935
-2021,Dexterous / in-hand,Learning from human video / human-to-robot transfer,2,127,1.5748031496062993,5.852362204724409
-2021,Dexterous / in-hand,Cross-embodiment,0,127,0.0,0.0
-2021,Deformable objects,Imitation learning / LfD,3,38,7.894736842105263,1.2288509231193165
-2021,Deformable objects,Reinforcement learning,5,38,13.157894736842104,1.043157894736842
-2021,Deformable objects,LLM / VLM,0,38,0.0,0.0
-2021,Deformable objects,VLA / robot foundation models,0,38,0.0,
-2021,Deformable objects,Diffusion / flow generative models,0,38,0.0,
-2021,Deformable objects,World models / video prediction,0,38,0.0,0.0
-2021,Deformable objects,3D Gaussian splatting,0,38,0.0,
-2021,Deformable objects,NeRF / neural implicit fields,0,38,0.0,0.0
-2021,Deformable objects,Sim-to-real,4,38,10.526315789473685,4.670856245090338
-2021,Deformable objects,Self-supervised / pretraining / representation,1,38,2.6315789473684212,0.5147160664819944
-2021,Deformable objects,Language grounding / open-vocabulary,0,38,0.0,0.0
-2021,Deformable objects,Learning from human video / human-to-robot transfer,0,38,0.0,0.0
-2021,Deformable objects,Cross-embodiment,0,38,0.0,0.0
-2021,Mobile manipulation,Imitation learning / LfD,3,30,10.0,1.556544502617801
-2021,Mobile manipulation,Reinforcement learning,4,30,13.333333333333334,1.0570666666666666
-2021,Mobile manipulation,LLM / VLM,0,30,0.0,0.0
-2021,Mobile manipulation,VLA / robot foundation models,0,30,0.0,
-2021,Mobile manipulation,Diffusion / flow generative models,0,30,0.0,
-2021,Mobile manipulation,World models / video prediction,0,30,0.0,0.0
-2021,Mobile manipulation,3D Gaussian splatting,0,30,0.0,
-2021,Mobile manipulation,NeRF / neural implicit fields,0,30,0.0,0.0
-2021,Mobile manipulation,Sim-to-real,0,30,0.0,0.0
-2021,Mobile manipulation,Self-supervised / pretraining / representation,0,30,0.0,0.0
-2021,Mobile manipulation,Language grounding / open-vocabulary,0,30,0.0,0.0
-2021,Mobile manipulation,Learning from human video / human-to-robot transfer,0,30,0.0,0.0
-2021,Mobile manipulation,Cross-embodiment,0,30,0.0,0.0
-2021,Humanoid robots,Imitation learning / LfD,3,57,5.2631578947368425,0.819233948746211
-2021,Humanoid robots,Reinforcement learning,4,57,7.017543859649122,0.5563508771929825
-2021,Humanoid robots,LLM / VLM,0,57,0.0,0.0
-2021,Humanoid robots,VLA / robot foundation models,0,57,0.0,
-2021,Humanoid robots,Diffusion / flow generative models,0,57,0.0,
-2021,Humanoid robots,World models / video prediction,0,57,0.0,0.0
-2021,Humanoid robots,3D Gaussian splatting,0,57,0.0,
-2021,Humanoid robots,NeRF / neural implicit fields,0,57,0.0,0.0
-2021,Humanoid robots,Sim-to-real,2,57,3.508771929824561,1.5569520816967792
-2021,Humanoid robots,Self-supervised / pretraining / representation,2,57,3.508771929824561,0.6862880886426592
-2021,Humanoid robots,Language grounding / open-vocabulary,1,57,1.7543859649122806,1.4902255639097743
-2021,Humanoid robots,Learning from human video / human-to-robot transfer,0,57,0.0,0.0
-2021,Humanoid robots,Cross-embodiment,0,57,0.0,0.0
-2021,Legged robots / locomotion,Imitation learning / LfD,8,228,3.508771929824561,0.5461559658308074
-2021,Legged robots / locomotion,Reinforcement learning,39,228,17.105263157894736,1.356105263157895
-2021,Legged robots / locomotion,LLM / VLM,0,228,0.0,0.0
-2021,Legged robots / locomotion,VLA / robot foundation models,0,228,0.0,
-2021,Legged robots / locomotion,Diffusion / flow generative models,0,228,0.0,
-2021,Legged robots / locomotion,World models / video prediction,0,228,0.0,0.0
-2021,Legged robots / locomotion,3D Gaussian splatting,0,228,0.0,
-2021,Legged robots / locomotion,NeRF / neural implicit fields,0,228,0.0,0.0
-2021,Legged robots / locomotion,Sim-to-real,13,228,5.701754385964913,2.5300471327572662
-2021,Legged robots / locomotion,Self-supervised / pretraining / representation,2,228,0.8771929824561403,0.1715720221606648
-2021,Legged robots / locomotion,Language grounding / open-vocabulary,0,228,0.0,0.0
-2021,Legged robots / locomotion,Learning from human video / human-to-robot transfer,0,228,0.0,0.0
-2021,Legged robots / locomotion,Cross-embodiment,0,228,0.0,0.0
-2021,Aerial robots / UAV,Imitation learning / LfD,7,290,2.413793103448276,0.3757176385629175
-2021,Aerial robots / UAV,Reinforcement learning,19,290,6.551724137931035,0.5194206896551725
-2021,Aerial robots / UAV,LLM / VLM,0,290,0.0,0.0
-2021,Aerial robots / UAV,VLA / robot foundation models,0,290,0.0,
-2021,Aerial robots / UAV,Diffusion / flow generative models,0,290,0.0,
-2021,Aerial robots / UAV,World models / video prediction,0,290,0.0,0.0
-2021,Aerial robots / UAV,3D Gaussian splatting,0,290,0.0,
-2021,Aerial robots / UAV,NeRF / neural implicit fields,0,290,0.0,0.0
-2021,Aerial robots / UAV,Sim-to-real,3,290,1.0344827586206897,0.4590324240864643
-2021,Aerial robots / UAV,Self-supervised / pretraining / representation,7,290,2.413793103448276,0.47211887477313974
-2021,Aerial robots / UAV,Language grounding / open-vocabulary,1,290,0.3448275862068966,0.2929064039408867
-2021,Aerial robots / UAV,Learning from human video / human-to-robot transfer,1,290,0.3448275862068966,1.2814655172413794
-2021,Aerial robots / UAV,Cross-embodiment,0,290,0.0,0.0
-2021,Autonomous driving,Imitation learning / LfD,19,304,6.25,0.9728403141361257
-2021,Autonomous driving,Reinforcement learning,34,304,11.18421052631579,0.8866842105263159
-2021,Autonomous driving,LLM / VLM,0,304,0.0,0.0
-2021,Autonomous driving,VLA / robot foundation models,0,304,0.0,
-2021,Autonomous driving,Diffusion / flow generative models,0,304,0.0,
-2021,Autonomous driving,World models / video prediction,0,304,0.0,0.0
-2021,Autonomous driving,3D Gaussian splatting,0,304,0.0,
-2021,Autonomous driving,NeRF / neural implicit fields,0,304,0.0,0.0
-2021,Autonomous driving,Sim-to-real,1,304,0.32894736842105265,0.14596425765907306
-2021,Autonomous driving,Self-supervised / pretraining / representation,28,304,9.210526315789474,1.8015062326869804
-2021,Autonomous driving,Language grounding / open-vocabulary,1,304,0.32894736842105265,0.2794172932330827
-2021,Autonomous driving,Learning from human video / human-to-robot transfer,0,304,0.0,0.0
-2021,Autonomous driving,Cross-embodiment,0,304,0.0,0.0
-2021,Navigation,Imitation learning / LfD,27,356,7.584269662921348,1.1805253250191188
-2021,Navigation,Reinforcement learning,65,356,18.258426966292134,1.4475280898876406
-2021,Navigation,LLM / VLM,0,356,0.0,0.0
-2021,Navigation,VLA / robot foundation models,0,356,0.0,
-2021,Navigation,Diffusion / flow generative models,0,356,0.0,
-2021,Navigation,World models / video prediction,0,356,0.0,0.0
-2021,Navigation,3D Gaussian splatting,0,356,0.0,
-2021,Navigation,NeRF / neural implicit fields,0,356,0.0,0.0
-2021,Navigation,Sim-to-real,10,356,2.808988764044944,1.246436357538152
-2021,Navigation,Self-supervised / pretraining / representation,17,356,4.775280898876405,0.9340072442341809
-2021,Navigation,Language grounding / open-vocabulary,5,356,1.404494382022472,1.1930176565008026
-2021,Navigation,Learning from human video / human-to-robot transfer,0,356,0.0,0.0
-2021,Navigation,Cross-embodiment,1,356,0.2808988764044944,2.783707865168539
-2021,SLAM / localization / state estimation,Imitation learning / LfD,6,374,1.6042780748663101,0.24971302181034244
-2021,SLAM / localization / state estimation,Reinforcement learning,4,374,1.0695187165775402,0.08479144385026738
-2021,SLAM / localization / state estimation,LLM / VLM,0,374,0.0,0.0
-2021,SLAM / localization / state estimation,VLA / robot foundation models,0,374,0.0,
-2021,SLAM / localization / state estimation,Diffusion / flow generative models,0,374,0.0,
-2021,SLAM / localization / state estimation,World models / video prediction,0,374,0.0,0.0
-2021,SLAM / localization / state estimation,3D Gaussian splatting,0,374,0.0,
-2021,SLAM / localization / state estimation,NeRF / neural implicit fields,1,374,0.26737967914438504,1.3248663101604277
-2021,SLAM / localization / state estimation,Sim-to-real,2,374,0.5347593582887701,0.2372894883869423
-2021,SLAM / localization / state estimation,Self-supervised / pretraining / representation,23,374,6.149732620320855,1.2028391500140727
-2021,SLAM / localization / state estimation,Language grounding / open-vocabulary,0,374,0.0,0.0
-2021,SLAM / localization / state estimation,Learning from human video / human-to-robot transfer,1,374,0.26737967914438504,0.9936497326203207
-2021,SLAM / localization / state estimation,Cross-embodiment,0,374,0.0,0.0
-2021,Multi-robot / multi-agent / swarms,Imitation learning / LfD,12,220,5.454545454545454,0.8490242741551641
-2021,Multi-robot / multi-agent / swarms,Reinforcement learning,40,220,18.181818181818183,1.4414545454545455
-2021,Multi-robot / multi-agent / swarms,LLM / VLM,0,220,0.0,0.0
-2021,Multi-robot / multi-agent / swarms,VLA / robot foundation models,0,220,0.0,
-2021,Multi-robot / multi-agent / swarms,Diffusion / flow generative models,0,220,0.0,
-2021,Multi-robot / multi-agent / swarms,World models / video prediction,1,220,0.45454545454545453,2.252272727272727
-2021,Multi-robot / multi-agent / swarms,3D Gaussian splatting,0,220,0.0,
-2021,Multi-robot / multi-agent / swarms,NeRF / neural implicit fields,0,220,0.0,0.0
-2021,Multi-robot / multi-agent / swarms,Sim-to-real,3,220,1.3636363636363635,0.6050881953867029
-2021,Multi-robot / multi-agent / swarms,Self-supervised / pretraining / representation,6,220,2.727272727272727,0.533433014354067
-2021,Multi-robot / multi-agent / swarms,Language grounding / open-vocabulary,2,220,0.9090909090909091,0.7722077922077921
-2021,Multi-robot / multi-agent / swarms,Learning from human video / human-to-robot transfer,1,220,0.45454545454545453,1.6892045454545455
-2021,Multi-robot / multi-agent / swarms,Cross-embodiment,0,220,0.0,0.0
-2021,Human-robot interaction,Imitation learning / LfD,18,190,9.473684210526315,1.47462110774318
-2021,Human-robot interaction,Reinforcement learning,22,190,11.578947368421053,0.9179789473684211
-2021,Human-robot interaction,LLM / VLM,0,190,0.0,0.0
-2021,Human-robot interaction,VLA / robot foundation models,0,190,0.0,
-2021,Human-robot interaction,Diffusion / flow generative models,0,190,0.0,
-2021,Human-robot interaction,World models / video prediction,0,190,0.0,0.0
-2021,Human-robot interaction,3D Gaussian splatting,0,190,0.0,
-2021,Human-robot interaction,NeRF / neural implicit fields,0,190,0.0,0.0
-2021,Human-robot interaction,Sim-to-real,0,190,0.0,0.0
-2021,Human-robot interaction,Self-supervised / pretraining / representation,3,190,1.5789473684210527,0.30882963988919665
-2021,Human-robot interaction,Language grounding / open-vocabulary,8,190,4.2105263157894735,3.5765413533834587
-2021,Human-robot interaction,Learning from human video / human-to-robot transfer,2,190,1.0526315789473684,3.911842105263158
-2021,Human-robot interaction,Cross-embodiment,0,190,0.0,0.0
-2021,Surgical / medical,Imitation learning / LfD,7,186,3.763440860215054,0.5857963181894951
-2021,Surgical / medical,Reinforcement learning,9,186,4.838709677419355,0.38361290322580643
-2021,Surgical / medical,LLM / VLM,0,186,0.0,0.0
-2021,Surgical / medical,VLA / robot foundation models,0,186,0.0,
-2021,Surgical / medical,Diffusion / flow generative models,0,186,0.0,
-2021,Surgical / medical,World models / video prediction,1,186,0.5376344086021505,2.663978494623656
-2021,Surgical / medical,3D Gaussian splatting,0,186,0.0,
-2021,Surgical / medical,NeRF / neural implicit fields,0,186,0.0,0.0
-2021,Surgical / medical,Sim-to-real,2,186,1.075268817204301,0.4771304766490131
-2021,Surgical / medical,Self-supervised / pretraining / representation,8,186,4.301075268817204,0.8412563667232598
-2021,Surgical / medical,Language grounding / open-vocabulary,1,186,0.5376344086021505,0.4566820276497696
-2021,Surgical / medical,Learning from human video / human-to-robot transfer,0,186,0.0,0.0
-2021,Surgical / medical,Cross-embodiment,0,186,0.0,0.0
-2021,Wearable / exoskeleton / prosthesis / rehab,Imitation learning / LfD,9,113,7.964601769911504,1.239725710049576
-2021,Wearable / exoskeleton / prosthesis / rehab,Reinforcement learning,6,113,5.3097345132743365,0.4209557522123894
-2021,Wearable / exoskeleton / prosthesis / rehab,LLM / VLM,0,113,0.0,0.0
-2021,Wearable / exoskeleton / prosthesis / rehab,VLA / robot foundation models,0,113,0.0,
-2021,Wearable / exoskeleton / prosthesis / rehab,Diffusion / flow generative models,0,113,0.0,
-2021,Wearable / exoskeleton / prosthesis / rehab,World models / video prediction,0,113,0.0,0.0
-2021,Wearable / exoskeleton / prosthesis / rehab,3D Gaussian splatting,0,113,0.0,
-2021,Wearable / exoskeleton / prosthesis / rehab,NeRF / neural implicit fields,0,113,0.0,0.0
-2021,Wearable / exoskeleton / prosthesis / rehab,Sim-to-real,1,113,0.8849557522123894,0.3926826046757364
-2021,Wearable / exoskeleton / prosthesis / rehab,Self-supervised / pretraining / representation,0,113,0.0,0.0
-2021,Wearable / exoskeleton / prosthesis / rehab,Language grounding / open-vocabulary,1,113,0.8849557522123894,0.7517067003792667
-2021,Wearable / exoskeleton / prosthesis / rehab,Learning from human video / human-to-robot transfer,0,113,0.0,0.0
-2021,Wearable / exoskeleton / prosthesis / rehab,Cross-embodiment,0,113,0.0,0.0
-2021,Soft robots,Imitation learning / LfD,6,180,3.3333333333333335,0.518848167539267
-2021,Soft robots,Reinforcement learning,4,180,2.2222222222222223,0.1761777777777778
-2021,Soft robots,LLM / VLM,0,180,0.0,0.0
-2021,Soft robots,VLA / robot foundation models,0,180,0.0,
-2021,Soft robots,Diffusion / flow generative models,0,180,0.0,
-2021,Soft robots,World models / video prediction,0,180,0.0,0.0
-2021,Soft robots,3D Gaussian splatting,0,180,0.0,
-2021,Soft robots,NeRF / neural implicit fields,0,180,0.0,0.0
-2021,Soft robots,Sim-to-real,2,180,1.1111111111111112,0.4930348258706468
-2021,Soft robots,Self-supervised / pretraining / representation,4,180,2.2222222222222223,0.43464912280701756
-2021,Soft robots,Language grounding / open-vocabulary,0,180,0.0,0.0
-2021,Soft robots,Learning from human video / human-to-robot transfer,0,180,0.0,0.0
-2021,Soft robots,Cross-embodiment,0,180,0.0,0.0
-2021,Micro / bio-inspired robots,Imitation learning / LfD,4,114,3.508771929824561,0.5461559658308074
-2021,Micro / bio-inspired robots,Reinforcement learning,9,114,7.894736842105263,0.6258947368421053
-2021,Micro / bio-inspired robots,LLM / VLM,0,114,0.0,0.0
-2021,Micro / bio-inspired robots,VLA / robot foundation models,0,114,0.0,
-2021,Micro / bio-inspired robots,Diffusion / flow generative models,0,114,0.0,
-2021,Micro / bio-inspired robots,World models / video prediction,0,114,0.0,0.0
-2021,Micro / bio-inspired robots,3D Gaussian splatting,0,114,0.0,
-2021,Micro / bio-inspired robots,NeRF / neural implicit fields,0,114,0.0,0.0
-2021,Micro / bio-inspired robots,Sim-to-real,2,114,1.7543859649122806,0.7784760408483896
-2021,Micro / bio-inspired robots,Self-supervised / pretraining / representation,0,114,0.0,0.0
-2021,Micro / bio-inspired robots,Language grounding / open-vocabulary,0,114,0.0,0.0
-2021,Micro / bio-inspired robots,Learning from human video / human-to-robot transfer,0,114,0.0,0.0
-2021,Micro / bio-inspired robots,Cross-embodiment,1,114,0.8771929824561403,8.692982456140351
-2021,Agriculture / field,Imitation learning / LfD,1,46,2.1739130434782608,0.33837923969952194
-2021,Agriculture / field,Reinforcement learning,4,46,8.695652173913043,0.6893913043478261
-2021,Agriculture / field,LLM / VLM,0,46,0.0,0.0
-2021,Agriculture / field,VLA / robot foundation models,0,46,0.0,
-2021,Agriculture / field,Diffusion / flow generative models,0,46,0.0,
-2021,Agriculture / field,World models / video prediction,1,46,2.1739130434782608,10.771739130434781
-2021,Agriculture / field,3D Gaussian splatting,0,46,0.0,
-2021,Agriculture / field,NeRF / neural implicit fields,0,46,0.0,0.0
-2021,Agriculture / field,Sim-to-real,0,46,0.0,0.0
-2021,Agriculture / field,Self-supervised / pretraining / representation,1,46,2.1739130434782608,0.4252002288329519
-2021,Agriculture / field,Language grounding / open-vocabulary,0,46,0.0,0.0
-2021,Agriculture / field,Learning from human video / human-to-robot transfer,0,46,0.0,0.0
-2021,Agriculture / field,Cross-embodiment,0,46,0.0,0.0
-2021,Industrial / logistics / construction,Imitation learning / LfD,7,110,6.363636363636363,0.9905283198476915
-2021,Industrial / logistics / construction,Reinforcement learning,18,110,16.363636363636363,1.297309090909091
-2021,Industrial / logistics / construction,LLM / VLM,0,110,0.0,0.0
-2021,Industrial / logistics / construction,VLA / robot foundation models,0,110,0.0,
-2021,Industrial / logistics / construction,Diffusion / flow generative models,0,110,0.0,
-2021,Industrial / logistics / construction,World models / video prediction,0,110,0.0,0.0
-2021,Industrial / logistics / construction,3D Gaussian splatting,0,110,0.0,
-2021,Industrial / logistics / construction,NeRF / neural implicit fields,0,110,0.0,0.0
-2021,Industrial / logistics / construction,Sim-to-real,1,110,0.9090909090909091,0.4033921302578019
-2021,Industrial / logistics / construction,Self-supervised / pretraining / representation,2,110,1.8181818181818181,0.35562200956937795
-2021,Industrial / logistics / construction,Language grounding / open-vocabulary,1,110,0.9090909090909091,0.7722077922077921
-2021,Industrial / logistics / construction,Learning from human video / human-to-robot transfer,0,110,0.0,0.0
-2021,Industrial / logistics / construction,Cross-embodiment,0,110,0.0,0.0
-2021,Underwater / marine,Imitation learning / LfD,3,81,3.7037037037037037,0.5764979639325188
-2021,Underwater / marine,Reinforcement learning,10,81,12.345679012345679,0.9787654320987654
-2021,Underwater / marine,LLM / VLM,0,81,0.0,0.0
-2021,Underwater / marine,VLA / robot foundation models,0,81,0.0,
-2021,Underwater / marine,Diffusion / flow generative models,0,81,0.0,
-2021,Underwater / marine,World models / video prediction,1,81,1.2345679012345678,6.117283950617283
-2021,Underwater / marine,3D Gaussian splatting,0,81,0.0,
-2021,Underwater / marine,NeRF / neural implicit fields,0,81,0.0,0.0
-2021,Underwater / marine,Sim-to-real,2,81,2.4691358024691357,1.095632946379215
-2021,Underwater / marine,Self-supervised / pretraining / representation,0,81,0.0,0.0
-2021,Underwater / marine,Language grounding / open-vocabulary,1,81,1.2345679012345678,1.0486772486772487
-2021,Underwater / marine,Learning from human video / human-to-robot transfer,0,81,0.0,0.0
-2021,Underwater / marine,Cross-embodiment,0,81,0.0,0.0
-2021,Space robotics,Imitation learning / LfD,2,24,8.333333333333334,1.2971204188481675
-2021,Space robotics,Reinforcement learning,3,24,12.5,0.991
-2021,Space robotics,LLM / VLM,0,24,0.0,0.0
-2021,Space robotics,VLA / robot foundation models,0,24,0.0,
-2021,Space robotics,Diffusion / flow generative models,0,24,0.0,
-2021,Space robotics,World models / video prediction,0,24,0.0,0.0
-2021,Space robotics,3D Gaussian splatting,0,24,0.0,
-2021,Space robotics,NeRF / neural implicit fields,0,24,0.0,0.0
-2021,Space robotics,Sim-to-real,0,24,0.0,0.0
-2021,Space robotics,Self-supervised / pretraining / representation,1,24,4.166666666666667,0.8149671052631579
-2021,Space robotics,Language grounding / open-vocabulary,0,24,0.0,0.0
-2021,Space robotics,Learning from human video / human-to-robot transfer,0,24,0.0,0.0
-2021,Space robotics,Cross-embodiment,0,24,0.0,0.0
-2021,Tactile sensing,Imitation learning / LfD,4,87,4.597701149425287,0.7156526448817476
-2021,Tactile sensing,Reinforcement learning,11,87,12.64367816091954,1.0023908045977012
-2021,Tactile sensing,LLM / VLM,0,87,0.0,0.0
-2021,Tactile sensing,VLA / robot foundation models,0,87,0.0,
-2021,Tactile sensing,Diffusion / flow generative models,0,87,0.0,
-2021,Tactile sensing,World models / video prediction,0,87,0.0,0.0
-2021,Tactile sensing,3D Gaussian splatting,0,87,0.0,
-2021,Tactile sensing,NeRF / neural implicit fields,0,87,0.0,0.0
-2021,Tactile sensing,Sim-to-real,4,87,4.597701149425287,2.0401441070509523
-2021,Tactile sensing,Self-supervised / pretraining / representation,5,87,5.747126436781609,1.124092558983666
-2021,Tactile sensing,Language grounding / open-vocabulary,0,87,0.0,0.0
-2021,Tactile sensing,Learning from human video / human-to-robot transfer,0,87,0.0,0.0
-2021,Tactile sensing,Cross-embodiment,0,87,0.0,0.0
-2021,(all papers),Imitation learning / LfD,191,2973,6.424487050117726,1.0
-2021,(all papers),Reinforcement learning,375,2973,12.613521695257315,1.0
-2021,(all papers),LLM / VLM,2,2973,0.06727211570803902,1.0
-2021,(all papers),VLA / robot foundation models,0,2973,0.0,
+2021,Manipulation (any),Imitation learning / LfD,75,571,13.134851138353765,2.4254603996475614
+2021,Manipulation (any),Reinforcement learning,120,571,21.015761821366024,1.6932211353637179
+2021,Manipulation (any),LLM / VLM,2,571,0.3502626970227671,1.7355516637478108
+2021,Manipulation (any),VLA / robot foundation models,1,571,0.17513134851138354,5.206654991243433
+2021,Manipulation (any),Diffusion / flow generative models,0,571,0.0,
+2021,Manipulation (any),World models / video prediction,31,571,5.42907180385289,2.2110452702540604
+2021,Manipulation (any),3D Gaussian splatting,0,571,0.0,
+2021,Manipulation (any),NeRF / neural implicit fields,4,571,0.7005253940455342,2.314068884997081
+2021,Manipulation (any),Sim-to-real,53,571,9.281961471103328,1.6929614388705638
+2021,Manipulation (any),Self-supervised / pretraining / representation,58,571,10.157618213660244,1.7763881734830536
+2021,Manipulation (any),Language grounding / open-vocabulary,17,571,2.9772329246935203,2.5289467100325242
+2021,Manipulation (any),Learning from human video / human-to-robot transfer,17,571,2.9772329246935203,3.052177063832357
+2021,Manipulation (any),Cross-embodiment,8,571,1.4010507880910683,2.1922757857867086
+2021,Grasping,Imitation learning / LfD,11,191,5.7591623036649215,1.0634776104842119
+2021,Grasping,Reinforcement learning,28,191,14.659685863874346,1.181117779764185
+2021,Grasping,LLM / VLM,0,191,0.0,0.0
+2021,Grasping,VLA / robot foundation models,0,191,0.0,0.0
+2021,Grasping,Diffusion / flow generative models,0,191,0.0,
+2021,Grasping,World models / video prediction,5,191,2.6178010471204187,1.066126371656028
+2021,Grasping,3D Gaussian splatting,0,191,0.0,
+2021,Grasping,NeRF / neural implicit fields,3,191,1.5706806282722514,5.18848167539267
+2021,Grasping,Sim-to-real,26,191,13.612565445026178,2.4828317219670444
+2021,Grasping,Self-supervised / pretraining / representation,17,191,8.900523560209423,1.556544502617801
+2021,Grasping,Language grounding / open-vocabulary,6,191,3.141361256544503,2.668362004487659
+2021,Grasping,Learning from human video / human-to-robot transfer,6,191,3.141361256544503,3.2204369019678643
+2021,Grasping,Cross-embodiment,2,191,1.0471204188481675,1.6384678974924223
+2021,Dexterous / in-hand,Imitation learning / LfD,4,68,5.882352941176471,1.0862257946656924
+2021,Dexterous / in-hand,Reinforcement learning,11,68,16.176470588235293,1.3033237685318029
+2021,Dexterous / in-hand,LLM / VLM,0,68,0.0,0.0
+2021,Dexterous / in-hand,VLA / robot foundation models,0,68,0.0,0.0
+2021,Dexterous / in-hand,Diffusion / flow generative models,0,68,0.0,
+2021,Dexterous / in-hand,World models / video prediction,1,68,1.4705882352941178,0.5989121676067688
+2021,Dexterous / in-hand,3D Gaussian splatting,0,68,0.0,
+2021,Dexterous / in-hand,NeRF / neural implicit fields,0,68,0.0,0.0
+2021,Dexterous / in-hand,Sim-to-real,3,68,4.411764705882353,0.8046734031035727
+2021,Dexterous / in-hand,Self-supervised / pretraining / representation,4,68,5.882352941176471,1.0287197231833909
+2021,Dexterous / in-hand,Language grounding / open-vocabulary,1,68,1.4705882352941178,1.2491596638655462
+2021,Dexterous / in-hand,Learning from human video / human-to-robot transfer,7,68,10.294117647058824,10.553245436105476
+2021,Dexterous / in-hand,Cross-embodiment,3,68,4.411764705882353,6.9032507739938085
+2021,Deformable objects,Imitation learning / LfD,5,72,6.944444444444445,1.2823498964803313
+2021,Deformable objects,Reinforcement learning,6,72,8.333333333333334,0.6714092140921408
+2021,Deformable objects,LLM / VLM,1,72,1.3888888888888888,6.881944444444444
+2021,Deformable objects,VLA / robot foundation models,0,72,0.0,0.0
+2021,Deformable objects,Diffusion / flow generative models,0,72,0.0,
+2021,Deformable objects,World models / video prediction,8,72,11.11111111111111,4.525114155251141
+2021,Deformable objects,3D Gaussian splatting,0,72,0.0,
+2021,Deformable objects,NeRF / neural implicit fields,0,72,0.0,0.0
+2021,Deformable objects,Sim-to-real,8,72,11.11111111111111,2.0265848670756643
+2021,Deformable objects,Self-supervised / pretraining / representation,5,72,6.944444444444445,1.2144607843137256
+2021,Deformable objects,Language grounding / open-vocabulary,1,72,1.3888888888888888,1.1797619047619046
+2021,Deformable objects,Learning from human video / human-to-robot transfer,0,72,0.0,0.0
+2021,Deformable objects,Cross-embodiment,0,72,0.0,0.0
+2021,Mobile manipulation,Imitation learning / LfD,4,38,10.526315789473685,1.943772474664923
+2021,Mobile manipulation,Reinforcement learning,3,38,7.894736842105263,0.6360718870346598
+2021,Mobile manipulation,LLM / VLM,0,38,0.0,0.0
+2021,Mobile manipulation,VLA / robot foundation models,0,38,0.0,0.0
+2021,Mobile manipulation,Diffusion / flow generative models,0,38,0.0,
+2021,Mobile manipulation,World models / video prediction,1,38,2.6315789473684212,1.0717375630857966
+2021,Mobile manipulation,3D Gaussian splatting,0,38,0.0,
+2021,Mobile manipulation,NeRF / neural implicit fields,0,38,0.0,0.0
+2021,Mobile manipulation,Sim-to-real,0,38,0.0,0.0
+2021,Mobile manipulation,Self-supervised / pretraining / representation,2,38,5.2631578947368425,0.9204334365325076
+2021,Mobile manipulation,Language grounding / open-vocabulary,0,38,0.0,0.0
+2021,Mobile manipulation,Learning from human video / human-to-robot transfer,0,38,0.0,0.0
+2021,Mobile manipulation,Cross-embodiment,0,38,0.0,0.0
+2021,Humanoid robots,Imitation learning / LfD,5,51,9.803921568627452,1.8103763244428206
+2021,Humanoid robots,Reinforcement learning,4,51,7.8431372549019605,0.631914554439662
+2021,Humanoid robots,LLM / VLM,0,51,0.0,0.0
+2021,Humanoid robots,VLA / robot foundation models,0,51,0.0,0.0
+2021,Humanoid robots,Diffusion / flow generative models,0,51,0.0,
+2021,Humanoid robots,World models / video prediction,2,51,3.9215686274509802,1.59709911361805
+2021,Humanoid robots,3D Gaussian splatting,0,51,0.0,
+2021,Humanoid robots,NeRF / neural implicit fields,0,51,0.0,0.0
+2021,Humanoid robots,Sim-to-real,2,51,3.9215686274509802,0.7152652472031757
+2021,Humanoid robots,Self-supervised / pretraining / representation,4,51,7.8431372549019605,1.3716262975778546
+2021,Humanoid robots,Language grounding / open-vocabulary,0,51,0.0,0.0
+2021,Humanoid robots,Learning from human video / human-to-robot transfer,5,51,9.803921568627452,10.050709939148073
+2021,Humanoid robots,Cross-embodiment,1,51,1.9607843137254901,3.068111455108359
+2021,Legged robots / locomotion,Imitation learning / LfD,6,183,3.278688524590164,0.6054373281743204
+2021,Legged robots / locomotion,Reinforcement learning,40,183,21.85792349726776,1.7610733484384022
+2021,Legged robots / locomotion,LLM / VLM,0,183,0.0,0.0
+2021,Legged robots / locomotion,VLA / robot foundation models,0,183,0.0,0.0
+2021,Legged robots / locomotion,Diffusion / flow generative models,0,183,0.0,
+2021,Legged robots / locomotion,World models / video prediction,5,183,2.73224043715847,1.1127329889961823
+2021,Legged robots / locomotion,3D Gaussian splatting,0,183,0.0,
+2021,Legged robots / locomotion,NeRF / neural implicit fields,0,183,0.0,0.0
+2021,Legged robots / locomotion,Sim-to-real,23,183,12.568306010928962,2.292366488987227
+2021,Legged robots / locomotion,Self-supervised / pretraining / representation,3,183,1.639344262295082,0.2866923818707811
+2021,Legged robots / locomotion,Language grounding / open-vocabulary,0,183,0.0,0.0
+2021,Legged robots / locomotion,Learning from human video / human-to-robot transfer,1,183,0.546448087431694,0.5602035048049746
+2021,Legged robots / locomotion,Cross-embodiment,1,183,0.546448087431694,0.8550474547023296
+2021,Aerial robots / UAV,Imitation learning / LfD,3,260,1.1538461538461537,0.2130673674151935
+2021,Aerial robots / UAV,Reinforcement learning,16,260,6.153846153846154,0.4958098811757348
+2021,Aerial robots / UAV,LLM / VLM,0,260,0.0,0.0
+2021,Aerial robots / UAV,VLA / robot foundation models,0,260,0.0,0.0
+2021,Aerial robots / UAV,Diffusion / flow generative models,0,260,0.0,
+2021,Aerial robots / UAV,World models / video prediction,0,260,0.0,0.0
+2021,Aerial robots / UAV,3D Gaussian splatting,0,260,0.0,
+2021,Aerial robots / UAV,NeRF / neural implicit fields,0,260,0.0,0.0
+2021,Aerial robots / UAV,Sim-to-real,11,260,4.230769230769231,0.7716611609249646
+2021,Aerial robots / UAV,Self-supervised / pretraining / representation,2,260,0.7692307692307693,0.13452488687782807
+2021,Aerial robots / UAV,Language grounding / open-vocabulary,0,260,0.0,0.0
+2021,Aerial robots / UAV,Learning from human video / human-to-robot transfer,0,260,0.0,0.0
+2021,Aerial robots / UAV,Cross-embodiment,0,260,0.0,0.0
+2021,Autonomous driving,Imitation learning / LfD,18,325,5.538461538461538,1.022723363592929
+2021,Autonomous driving,Reinforcement learning,30,325,9.23076923076923,0.7437148217636023
+2021,Autonomous driving,LLM / VLM,0,325,0.0,0.0
+2021,Autonomous driving,VLA / robot foundation models,0,325,0.0,0.0
+2021,Autonomous driving,Diffusion / flow generative models,0,325,0.0,
+2021,Autonomous driving,World models / video prediction,5,325,1.5384615384615385,0.6265542676501581
+2021,Autonomous driving,3D Gaussian splatting,0,325,0.0,
+2021,Autonomous driving,NeRF / neural implicit fields,1,325,0.3076923076923077,1.0164102564102564
+2021,Autonomous driving,Sim-to-real,14,325,4.3076923076923075,0.785691363850873
+2021,Autonomous driving,Self-supervised / pretraining / representation,27,325,8.307692307692308,1.452868778280543
+2021,Autonomous driving,Language grounding / open-vocabulary,1,325,0.3076923076923077,0.2613626373626374
+2021,Autonomous driving,Learning from human video / human-to-robot transfer,0,325,0.0,0.0
+2021,Autonomous driving,Cross-embodiment,0,325,0.0,0.0
+2021,Navigation,Imitation learning / LfD,20,289,6.920415224913495,1.277912699606697
+2021,Navigation,Reinforcement learning,60,289,20.761245674740483,1.672714997046164
+2021,Navigation,LLM / VLM,0,289,0.0,0.0
+2021,Navigation,VLA / robot foundation models,0,289,0.0,0.0
+2021,Navigation,Diffusion / flow generative models,0,289,0.0,
+2021,Navigation,World models / video prediction,10,289,3.4602076124567476,1.4092051002512207
+2021,Navigation,3D Gaussian splatting,0,289,0.0,
+2021,Navigation,NeRF / neural implicit fields,0,289,0.0,0.0
+2021,Navigation,Sim-to-real,24,289,8.304498269896193,1.5146793470184896
+2021,Navigation,Self-supervised / pretraining / representation,19,289,6.57439446366782,1.1497455729696722
+2021,Navigation,Language grounding / open-vocabulary,5,289,1.7301038062283738,1.4695996045477016
+2021,Navigation,Learning from human video / human-to-robot transfer,0,289,0.0,0.0
+2021,Navigation,Cross-embodiment,5,289,1.7301038062283738,2.7071571662720815
+2021,SLAM / localization / state estimation,Imitation learning / LfD,0,387,0.0,0.0
+2021,SLAM / localization / state estimation,Reinforcement learning,6,387,1.550387596899225,0.12491334215667738
+2021,SLAM / localization / state estimation,LLM / VLM,0,387,0.0,0.0
+2021,SLAM / localization / state estimation,VLA / robot foundation models,0,387,0.0,0.0
+2021,SLAM / localization / state estimation,Diffusion / flow generative models,0,387,0.0,
+2021,SLAM / localization / state estimation,World models / video prediction,0,387,0.0,0.0
+2021,SLAM / localization / state estimation,3D Gaussian splatting,0,387,0.0,
+2021,SLAM / localization / state estimation,NeRF / neural implicit fields,2,387,0.5167958656330749,1.7071490094745911
+2021,SLAM / localization / state estimation,Sim-to-real,9,387,2.3255813953488373,0.42416892566699954
+2021,SLAM / localization / state estimation,Self-supervised / pretraining / representation,31,387,8.010335917312661,1.4008663930688554
+2021,SLAM / localization / state estimation,Language grounding / open-vocabulary,0,387,0.0,0.0
+2021,SLAM / localization / state estimation,Learning from human video / human-to-robot transfer,0,387,0.0,0.0
+2021,SLAM / localization / state estimation,Cross-embodiment,1,387,0.25839793281653745,0.4043247654018768
+2021,Multi-robot / multi-agent / swarms,Imitation learning / LfD,7,276,2.536231884057971,0.4683364839319471
+2021,Multi-robot / multi-agent / swarms,Reinforcement learning,28,276,10.144927536231885,0.8173677388947803
+2021,Multi-robot / multi-agent / swarms,LLM / VLM,0,276,0.0,0.0
+2021,Multi-robot / multi-agent / swarms,VLA / robot foundation models,0,276,0.0,0.0
+2021,Multi-robot / multi-agent / swarms,Diffusion / flow generative models,0,276,0.0,
+2021,Multi-robot / multi-agent / swarms,World models / video prediction,3,276,1.0869565217391304,0.4426742108397856
+2021,Multi-robot / multi-agent / swarms,3D Gaussian splatting,0,276,0.0,
+2021,Multi-robot / multi-agent / swarms,NeRF / neural implicit fields,0,276,0.0,0.0
+2021,Multi-robot / multi-agent / swarms,Sim-to-real,5,276,1.8115942028985508,0.33042144571885834
+2021,Multi-robot / multi-agent / swarms,Self-supervised / pretraining / representation,5,276,1.8115942028985508,0.31681585677749363
+2021,Multi-robot / multi-agent / swarms,Language grounding / open-vocabulary,0,276,0.0,0.0
+2021,Multi-robot / multi-agent / swarms,Learning from human video / human-to-robot transfer,0,276,0.0,0.0
+2021,Multi-robot / multi-agent / swarms,Cross-embodiment,0,276,0.0,0.0
+2021,Human-robot interaction,Imitation learning / LfD,22,250,8.8,1.6249937888198756
+2021,Human-robot interaction,Reinforcement learning,22,250,8.8,0.7090081300813007
+2021,Human-robot interaction,LLM / VLM,1,250,0.4,1.982
+2021,Human-robot interaction,VLA / robot foundation models,0,250,0.0,0.0
+2021,Human-robot interaction,Diffusion / flow generative models,0,250,0.0,
+2021,Human-robot interaction,World models / video prediction,0,250,0.0,0.0
+2021,Human-robot interaction,3D Gaussian splatting,0,250,0.0,
+2021,Human-robot interaction,NeRF / neural implicit fields,0,250,0.0,0.0
+2021,Human-robot interaction,Sim-to-real,3,250,1.2,0.21887116564417178
+2021,Human-robot interaction,Self-supervised / pretraining / representation,2,250,0.8,0.13990588235294119
+2021,Human-robot interaction,Language grounding / open-vocabulary,9,250,3.6,3.057942857142857
+2021,Human-robot interaction,Learning from human video / human-to-robot transfer,7,250,2.8,2.87048275862069
+2021,Human-robot interaction,Cross-embodiment,1,250,0.4,0.6258947368421053
+2021,Surgical / medical,Imitation learning / LfD,5,151,3.3112582781456954,0.6114516062687673
+2021,Surgical / medical,Reinforcement learning,9,151,5.960264900662252,0.48021321272815376
+2021,Surgical / medical,LLM / VLM,0,151,0.0,0.0
+2021,Surgical / medical,VLA / robot foundation models,0,151,0.0,0.0
+2021,Surgical / medical,Diffusion / flow generative models,0,151,0.0,
+2021,Surgical / medical,World models / video prediction,1,151,0.6622516556291391,0.26970879071033294
+2021,Surgical / medical,3D Gaussian splatting,0,151,0.0,
+2021,Surgical / medical,NeRF / neural implicit fields,0,151,0.0,0.0
+2021,Surgical / medical,Sim-to-real,5,151,3.3112582781456954,0.6039491325722179
+2021,Surgical / medical,Self-supervised / pretraining / representation,6,151,3.9735099337748343,0.6948967666536814
+2021,Surgical / medical,Language grounding / open-vocabulary,0,151,0.0,0.0
+2021,Surgical / medical,Learning from human video / human-to-robot transfer,1,151,0.6622516556291391,0.6789221283398036
+2021,Surgical / medical,Cross-embodiment,0,151,0.0,0.0
+2021,Wearable / exoskeleton / prosthesis / rehab,Imitation learning / LfD,6,103,5.825242718446602,1.0756799131640837
+2021,Wearable / exoskeleton / prosthesis / rehab,Reinforcement learning,5,103,4.854368932038835,0.39111216354881995
+2021,Wearable / exoskeleton / prosthesis / rehab,LLM / VLM,0,103,0.0,0.0
+2021,Wearable / exoskeleton / prosthesis / rehab,VLA / robot foundation models,0,103,0.0,0.0
+2021,Wearable / exoskeleton / prosthesis / rehab,Diffusion / flow generative models,0,103,0.0,
+2021,Wearable / exoskeleton / prosthesis / rehab,World models / video prediction,0,103,0.0,0.0
+2021,Wearable / exoskeleton / prosthesis / rehab,3D Gaussian splatting,0,103,0.0,
+2021,Wearable / exoskeleton / prosthesis / rehab,NeRF / neural implicit fields,0,103,0.0,0.0
+2021,Wearable / exoskeleton / prosthesis / rehab,Sim-to-real,0,103,0.0,0.0
+2021,Wearable / exoskeleton / prosthesis / rehab,Self-supervised / pretraining / representation,1,103,0.970873786407767,0.16978869217589948
+2021,Wearable / exoskeleton / prosthesis / rehab,Language grounding / open-vocabulary,0,103,0.0,0.0
+2021,Wearable / exoskeleton / prosthesis / rehab,Learning from human video / human-to-robot transfer,1,103,0.970873786407767,0.9953130231001004
+2021,Wearable / exoskeleton / prosthesis / rehab,Cross-embodiment,0,103,0.0,0.0
+2021,Soft robots,Imitation learning / LfD,0,189,0.0,0.0
+2021,Soft robots,Reinforcement learning,6,189,3.1746031746031744,0.25577493870176793
+2021,Soft robots,LLM / VLM,0,189,0.0,0.0
+2021,Soft robots,VLA / robot foundation models,0,189,0.0,0.0
+2021,Soft robots,Diffusion / flow generative models,0,189,0.0,
+2021,Soft robots,World models / video prediction,2,189,1.0582010582010581,0.4309632528810611
+2021,Soft robots,3D Gaussian splatting,0,189,0.0,
+2021,Soft robots,NeRF / neural implicit fields,0,189,0.0,0.0
+2021,Soft robots,Sim-to-real,5,189,2.6455026455026456,0.4825202064465868
+2021,Soft robots,Self-supervised / pretraining / representation,3,189,1.5873015873015872,0.2775910364145658
+2021,Soft robots,Language grounding / open-vocabulary,0,189,0.0,0.0
+2021,Soft robots,Learning from human video / human-to-robot transfer,0,189,0.0,0.0
+2021,Soft robots,Cross-embodiment,0,189,0.0,0.0
+2021,Micro / bio-inspired robots,Imitation learning / LfD,0,122,0.0,0.0
+2021,Micro / bio-inspired robots,Reinforcement learning,6,122,4.918032786885246,0.3962415033986405
+2021,Micro / bio-inspired robots,LLM / VLM,0,122,0.0,0.0
+2021,Micro / bio-inspired robots,VLA / robot foundation models,0,122,0.0,0.0
+2021,Micro / bio-inspired robots,Diffusion / flow generative models,0,122,0.0,
+2021,Micro / bio-inspired robots,World models / video prediction,0,122,0.0,0.0
+2021,Micro / bio-inspired robots,3D Gaussian splatting,0,122,0.0,
+2021,Micro / bio-inspired robots,NeRF / neural implicit fields,0,122,0.0,0.0
+2021,Micro / bio-inspired robots,Sim-to-real,3,122,2.459016393442623,0.4485064869757618
+2021,Micro / bio-inspired robots,Self-supervised / pretraining / representation,0,122,0.0,0.0
+2021,Micro / bio-inspired robots,Language grounding / open-vocabulary,0,122,0.0,0.0
+2021,Micro / bio-inspired robots,Learning from human video / human-to-robot transfer,0,122,0.0,0.0
+2021,Micro / bio-inspired robots,Cross-embodiment,0,122,0.0,0.0
+2021,Agriculture / field,Imitation learning / LfD,2,79,2.5316455696202533,0.4674895825143486
+2021,Agriculture / field,Reinforcement learning,5,79,6.329113924050633,0.5099310486775754
+2021,Agriculture / field,LLM / VLM,0,79,0.0,0.0
+2021,Agriculture / field,VLA / robot foundation models,0,79,0.0,0.0
+2021,Agriculture / field,Diffusion / flow generative models,0,79,0.0,
+2021,Agriculture / field,World models / video prediction,3,79,3.7974683544303796,1.5465580024276055
+2021,Agriculture / field,3D Gaussian splatting,0,79,0.0,
+2021,Agriculture / field,NeRF / neural implicit fields,0,79,0.0,0.0
+2021,Agriculture / field,Sim-to-real,4,79,5.063291139240507,0.92350702803448
+2021,Agriculture / field,Self-supervised / pretraining / representation,7,79,8.860759493670885,1.549590469099032
+2021,Agriculture / field,Language grounding / open-vocabulary,0,79,0.0,0.0
+2021,Agriculture / field,Learning from human video / human-to-robot transfer,0,79,0.0,0.0
+2021,Agriculture / field,Cross-embodiment,0,79,0.0,0.0
+2021,Industrial / logistics / construction,Imitation learning / LfD,6,113,5.3097345132743365,0.9804870004946957
+2021,Industrial / logistics / construction,Reinforcement learning,9,113,7.964601769911504,0.6417008417871789
+2021,Industrial / logistics / construction,LLM / VLM,0,113,0.0,0.0
+2021,Industrial / logistics / construction,VLA / robot foundation models,0,113,0.0,0.0
+2021,Industrial / logistics / construction,Diffusion / flow generative models,0,113,0.0,
+2021,Industrial / logistics / construction,World models / video prediction,2,113,1.7699115044247788,0.7208146441992969
+2021,Industrial / logistics / construction,3D Gaussian splatting,0,113,0.0,
+2021,Industrial / logistics / construction,NeRF / neural implicit fields,0,113,0.0,0.0
+2021,Industrial / logistics / construction,Sim-to-real,2,113,1.7699115044247788,0.32281882838373416
+2021,Industrial / logistics / construction,Self-supervised / pretraining / representation,5,113,4.424778761061947,0.7738157209786569
+2021,Industrial / logistics / construction,Language grounding / open-vocabulary,0,113,0.0,0.0
+2021,Industrial / logistics / construction,Learning from human video / human-to-robot transfer,0,113,0.0,0.0
+2021,Industrial / logistics / construction,Cross-embodiment,0,113,0.0,0.0
+2021,Underwater / marine,Imitation learning / LfD,1,85,1.1764705882352942,0.21724515893313848
+2021,Underwater / marine,Reinforcement learning,7,85,8.235294117647058,0.6635102821616451
+2021,Underwater / marine,LLM / VLM,0,85,0.0,0.0
+2021,Underwater / marine,VLA / robot foundation models,0,85,0.0,0.0
+2021,Underwater / marine,Diffusion / flow generative models,0,85,0.0,
+2021,Underwater / marine,World models / video prediction,1,85,1.1764705882352942,0.479129734085415
+2021,Underwater / marine,3D Gaussian splatting,0,85,0.0,
+2021,Underwater / marine,NeRF / neural implicit fields,0,85,0.0,0.0
+2021,Underwater / marine,Sim-to-real,3,85,3.5294117647058822,0.6437387224828581
+2021,Underwater / marine,Self-supervised / pretraining / representation,0,85,0.0,0.0
+2021,Underwater / marine,Language grounding / open-vocabulary,1,85,1.1764705882352942,0.9993277310924369
+2021,Underwater / marine,Learning from human video / human-to-robot transfer,0,85,0.0,0.0
+2021,Underwater / marine,Cross-embodiment,1,85,1.1764705882352942,1.8408668730650153
+2021,Space robotics,Imitation learning / LfD,0,19,0.0,0.0
+2021,Space robotics,Reinforcement learning,1,19,5.2631578947368425,0.42404792468977315
+2021,Space robotics,LLM / VLM,0,19,0.0,0.0
+2021,Space robotics,VLA / robot foundation models,0,19,0.0,0.0
+2021,Space robotics,Diffusion / flow generative models,0,19,0.0,
+2021,Space robotics,World models / video prediction,0,19,0.0,0.0
+2021,Space robotics,3D Gaussian splatting,0,19,0.0,
+2021,Space robotics,NeRF / neural implicit fields,0,19,0.0,0.0
+2021,Space robotics,Sim-to-real,0,19,0.0,0.0
+2021,Space robotics,Self-supervised / pretraining / representation,0,19,0.0,0.0
+2021,Space robotics,Language grounding / open-vocabulary,0,19,0.0,0.0
+2021,Space robotics,Learning from human video / human-to-robot transfer,0,19,0.0,0.0
+2021,Space robotics,Cross-embodiment,0,19,0.0,0.0
+2021,Tactile sensing,Imitation learning / LfD,0,75,0.0,0.0
+2021,Tactile sensing,Reinforcement learning,8,75,10.666666666666666,0.8594037940379404
+2021,Tactile sensing,LLM / VLM,0,75,0.0,0.0
+2021,Tactile sensing,VLA / robot foundation models,0,75,0.0,0.0
+2021,Tactile sensing,Diffusion / flow generative models,0,75,0.0,
+2021,Tactile sensing,World models / video prediction,3,75,4.0,1.6290410958904111
+2021,Tactile sensing,3D Gaussian splatting,0,75,0.0,
+2021,Tactile sensing,NeRF / neural implicit fields,1,75,1.3333333333333333,4.404444444444445
+2021,Tactile sensing,Sim-to-real,5,75,6.666666666666667,1.2159509202453986
+2021,Tactile sensing,Self-supervised / pretraining / representation,8,75,10.666666666666666,1.8654117647058825
+2021,Tactile sensing,Language grounding / open-vocabulary,0,75,0.0,0.0
+2021,Tactile sensing,Learning from human video / human-to-robot transfer,0,75,0.0,0.0
+2021,Tactile sensing,Cross-embodiment,0,75,0.0,0.0
+2021,(all papers),Imitation learning / LfD,161,2973,5.415405314497141,1.0
+2021,(all papers),Reinforcement learning,369,2973,12.411705348133198,1.0
+2021,(all papers),LLM / VLM,6,2973,0.20181634712411706,1.0
+2021,(all papers),VLA / robot foundation models,1,2973,0.03363605785401951,1.0
 2021,(all papers),Diffusion / flow generative models,0,2973,0.0,
-2021,(all papers),World models / video prediction,6,2973,0.20181634712411706,1.0
+2021,(all papers),World models / video prediction,73,2973,2.4554322233434243,1.0
 2021,(all papers),3D Gaussian splatting,0,2973,0.0,
-2021,(all papers),NeRF / neural implicit fields,6,2973,0.20181634712411706,1.0
-2021,(all papers),Sim-to-real,67,2973,2.2536158762193073,1.0
-2021,(all papers),Self-supervised / pretraining / representation,152,2973,5.1126807938109655,1.0
+2021,(all papers),NeRF / neural implicit fields,9,2973,0.30272452068617556,1.0
+2021,(all papers),Sim-to-real,163,2973,5.48267743020518,1.0
+2021,(all papers),Self-supervised / pretraining / representation,170,2973,5.7181298351833165,1.0
 2021,(all papers),Language grounding / open-vocabulary,35,2973,1.1772620248906829,1.0
-2021,(all papers),Learning from human video / human-to-robot transfer,8,2973,0.2690884628321561,1.0
-2021,(all papers),Cross-embodiment,3,2973,0.10090817356205853,1.0
-2023,Manipulation (any),Imitation learning / LfD,104,684,15.2046783625731,1.7586199668825588
-2023,Manipulation (any),Reinforcement learning,102,684,14.912280701754385,1.1940925514779503
-2023,Manipulation (any),LLM / VLM,22,684,3.216374269005848,1.9220814381633096
-2023,Manipulation (any),VLA / robot foundation models,1,684,0.14619883040935672,1.5726120857699804
-2023,Manipulation (any),Diffusion / flow generative models,11,684,1.608187134502924,1.9960076473234367
-2023,Manipulation (any),World models / video prediction,1,684,0.14619883040935672,0.7863060428849902
-2023,Manipulation (any),3D Gaussian splatting,0,684,0.0,
-2023,Manipulation (any),NeRF / neural implicit fields,11,684,1.608187134502924,1.2068883448932408
-2023,Manipulation (any),Sim-to-real,29,684,4.239766081871345,1.6287768031189083
-2023,Manipulation (any),Self-supervised / pretraining / representation,57,684,8.333333333333334,1.164141414141414
-2023,Manipulation (any),Language grounding / open-vocabulary,34,684,4.970760233918129,2.1973483938155893
-2023,Manipulation (any),Learning from human video / human-to-robot transfer,7,684,1.023391812865497,2.2016569200779723
-2023,Manipulation (any),Cross-embodiment,4,684,0.5847953216374269,2.096816114359974
-2023,Grasping,Imitation learning / LfD,20,254,7.874015748031496,0.9107329325769763
-2023,Grasping,Reinforcement learning,26,254,10.236220472440944,0.8196596393192787
-2023,Grasping,LLM / VLM,7,254,2.7559055118110236,1.6469087197433656
-2023,Grasping,VLA / robot foundation models,1,254,0.3937007874015748,4.2349081364829395
-2023,Grasping,Diffusion / flow generative models,2,254,0.7874015748031497,0.9772864930345245
-2023,Grasping,World models / video prediction,0,254,0.0,0.0
-2023,Grasping,3D Gaussian splatting,0,254,0.0,
-2023,Grasping,NeRF / neural implicit fields,4,254,1.5748031496062993,1.1818348287859366
-2023,Grasping,Sim-to-real,7,254,2.7559055118110236,1.0587270341207349
-2023,Grasping,Self-supervised / pretraining / representation,24,254,9.448818897637794,1.3199713672154616
-2023,Grasping,Language grounding / open-vocabulary,15,254,5.905511811023622,2.610559810160716
-2023,Grasping,Learning from human video / human-to-robot transfer,3,254,1.1811023622047243,2.5409448818897635
-2023,Grasping,Cross-embodiment,2,254,0.7874015748031497,2.823272090988626
-2023,Dexterous / in-hand,Imitation learning / LfD,23,151,15.2317880794702,1.7617555603028794
-2023,Dexterous / in-hand,Reinforcement learning,28,151,18.543046357615893,1.4848240842686473
-2023,Dexterous / in-hand,LLM / VLM,1,151,0.6622516556291391,0.3957566838361541
-2023,Dexterous / in-hand,VLA / robot foundation models,0,151,0.0,0.0
-2023,Dexterous / in-hand,Diffusion / flow generative models,0,151,0.0,0.0
-2023,Dexterous / in-hand,World models / video prediction,0,151,0.0,0.0
-2023,Dexterous / in-hand,3D Gaussian splatting,0,151,0.0,
-2023,Dexterous / in-hand,NeRF / neural implicit fields,1,151,0.6622516556291391,0.49699676574772833
-2023,Dexterous / in-hand,Sim-to-real,7,151,4.635761589403973,1.7809050772626933
-2023,Dexterous / in-hand,Self-supervised / pretraining / representation,3,151,1.9867549668874172,0.27754364840457557
-2023,Dexterous / in-hand,Language grounding / open-vocabulary,1,151,0.6622516556291391,0.29275151955003176
-2023,Dexterous / in-hand,Learning from human video / human-to-robot transfer,2,151,1.3245033112582782,2.849448123620309
-2023,Dexterous / in-hand,Cross-embodiment,0,151,0.0,0.0
-2023,Deformable objects,Imitation learning / LfD,7,64,10.9375,1.265064964157706
-2023,Deformable objects,Reinforcement learning,5,64,7.8125,0.6255815756823822
-2023,Deformable objects,LLM / VLM,0,64,0.0,0.0
-2023,Deformable objects,VLA / robot foundation models,0,64,0.0,0.0
-2023,Deformable objects,Diffusion / flow generative models,0,64,0.0,0.0
-2023,Deformable objects,World models / video prediction,0,64,0.0,0.0
-2023,Deformable objects,3D Gaussian splatting,0,64,0.0,
-2023,Deformable objects,NeRF / neural implicit fields,0,64,0.0,0.0
-2023,Deformable objects,Sim-to-real,3,64,4.6875,1.80078125
-2023,Deformable objects,Self-supervised / pretraining / representation,9,64,14.0625,1.9644886363636362
-2023,Deformable objects,Language grounding / open-vocabulary,0,64,0.0,0.0
-2023,Deformable objects,Learning from human video / human-to-robot transfer,0,64,0.0,0.0
-2023,Deformable objects,Cross-embodiment,0,64,0.0,0.0
-2023,Mobile manipulation,Imitation learning / LfD,7,51,13.72549019607843,1.587532504041043
-2023,Mobile manipulation,Reinforcement learning,6,51,11.764705882352942,0.9420522551452343
-2023,Mobile manipulation,LLM / VLM,6,51,11.764705882352942,7.030501089324619
-2023,Mobile manipulation,VLA / robot foundation models,0,51,0.0,0.0
-2023,Mobile manipulation,Diffusion / flow generative models,0,51,0.0,0.0
-2023,Mobile manipulation,World models / video prediction,0,51,0.0,0.0
-2023,Mobile manipulation,3D Gaussian splatting,0,51,0.0,
-2023,Mobile manipulation,NeRF / neural implicit fields,0,51,0.0,0.0
-2023,Mobile manipulation,Sim-to-real,2,51,3.9215686274509802,1.5065359477124183
-2023,Mobile manipulation,Self-supervised / pretraining / representation,4,51,7.8431372549019605,1.0956625074272133
-2023,Mobile manipulation,Language grounding / open-vocabulary,3,51,5.882352941176471,2.6003223207091057
-2023,Mobile manipulation,Learning from human video / human-to-robot transfer,1,51,1.9607843137254901,4.218300653594771
-2023,Mobile manipulation,Cross-embodiment,0,51,0.0,0.0
-2023,Humanoid robots,Imitation learning / LfD,4,47,8.51063829787234,0.9843666590406467
-2023,Humanoid robots,Reinforcement learning,5,47,10.638297872340425,0.8518557626313289
-2023,Humanoid robots,LLM / VLM,0,47,0.0,0.0
-2023,Humanoid robots,VLA / robot foundation models,0,47,0.0,0.0
-2023,Humanoid robots,Diffusion / flow generative models,0,47,0.0,0.0
-2023,Humanoid robots,World models / video prediction,0,47,0.0,0.0
-2023,Humanoid robots,3D Gaussian splatting,0,47,0.0,
-2023,Humanoid robots,NeRF / neural implicit fields,1,47,2.127659574468085,1.5967342899554675
-2023,Humanoid robots,Sim-to-real,2,47,4.25531914893617,1.6347517730496455
-2023,Humanoid robots,Self-supervised / pretraining / representation,0,47,0.0,0.0
-2023,Humanoid robots,Language grounding / open-vocabulary,1,47,2.127659574468085,0.9405421160011659
-2023,Humanoid robots,Learning from human video / human-to-robot transfer,0,47,0.0,0.0
-2023,Humanoid robots,Cross-embodiment,0,47,0.0,0.0
-2023,Legged robots / locomotion,Imitation learning / LfD,20,263,7.604562737642586,0.8795671668233915
-2023,Legged robots / locomotion,Reinforcement learning,49,263,18.631178707224336,1.4918812329581372
-2023,Legged robots / locomotion,LLM / VLM,3,263,1.1406844106463878,0.6816645542881286
-2023,Legged robots / locomotion,VLA / robot foundation models,0,263,0.0,0.0
-2023,Legged robots / locomotion,Diffusion / flow generative models,0,263,0.0,0.0
-2023,Legged robots / locomotion,World models / video prediction,0,263,0.0,0.0
-2023,Legged robots / locomotion,3D Gaussian splatting,0,263,0.0,
-2023,Legged robots / locomotion,NeRF / neural implicit fields,1,263,0.38022813688212925,0.28534795295782117
-2023,Legged robots / locomotion,Sim-to-real,10,263,3.802281368821293,1.4607097591888467
-2023,Legged robots / locomotion,Self-supervised / pretraining / representation,8,263,3.041825095057034,0.42493374812766443
-2023,Legged robots / locomotion,Language grounding / open-vocabulary,3,263,1.1406844106463878,0.5042450127610814
-2023,Legged robots / locomotion,Learning from human video / human-to-robot transfer,0,263,0.0,0.0
-2023,Legged robots / locomotion,Cross-embodiment,1,263,0.38022813688212925,1.3633291085762567
-2023,Aerial robots / UAV,Imitation learning / LfD,10,341,2.932551319648094,0.339187925036
-2023,Aerial robots / UAV,Reinforcement learning,41,341,12.023460410557185,0.9627718795252614
-2023,Aerial robots / UAV,LLM / VLM,2,341,0.5865102639296188,0.35049418920386666
-2023,Aerial robots / UAV,VLA / robot foundation models,0,341,0.0,0.0
-2023,Aerial robots / UAV,Diffusion / flow generative models,0,341,0.0,0.0
-2023,Aerial robots / UAV,World models / video prediction,0,341,0.0,0.0
-2023,Aerial robots / UAV,3D Gaussian splatting,0,341,0.0,
-2023,Aerial robots / UAV,NeRF / neural implicit fields,2,341,0.5865102639296188,0.4401554934188092
-2023,Aerial robots / UAV,Sim-to-real,8,341,2.346041055718475,0.9012707722385143
-2023,Aerial robots / UAV,Self-supervised / pretraining / representation,9,341,2.6392961876832843,0.3687016795521194
-2023,Aerial robots / UAV,Language grounding / open-vocabulary,2,341,0.5865102639296188,0.2592696742056
-2023,Aerial robots / UAV,Learning from human video / human-to-robot transfer,0,341,0.0,0.0
-2023,Aerial robots / UAV,Cross-embodiment,1,341,0.2932551319648094,1.0514825676115997
-2023,Autonomous driving,Imitation learning / LfD,23,344,6.686046511627907,0.7733287488538801
-2023,Autonomous driving,Reinforcement learning,38,344,11.046511627906977,0.8845432511974147
-2023,Autonomous driving,LLM / VLM,2,344,0.5813953488372093,0.3474375538329027
-2023,Autonomous driving,VLA / robot foundation models,0,344,0.0,0.0
-2023,Autonomous driving,Diffusion / flow generative models,2,344,0.5813953488372093,0.7216010733452594
-2023,Autonomous driving,World models / video prediction,1,344,0.29069767441860467,1.563468992248062
-2023,Autonomous driving,3D Gaussian splatting,0,344,0.0,
-2023,Autonomous driving,NeRF / neural implicit fields,2,344,0.5813953488372093,0.43631692806922656
-2023,Autonomous driving,Sim-to-real,2,344,0.5813953488372093,0.22335271317829458
-2023,Autonomous driving,Self-supervised / pretraining / representation,37,344,10.755813953488373,1.5025546159267087
-2023,Autonomous driving,Language grounding / open-vocabulary,5,344,1.4534883720930232,0.6425215036635872
-2023,Autonomous driving,Learning from human video / human-to-robot transfer,1,344,0.29069767441860467,0.6253875968992247
-2023,Autonomous driving,Cross-embodiment,0,344,0.0,0.0
-2023,Navigation,Imitation learning / LfD,34,437,7.780320366132723,0.8998958358964265
-2023,Navigation,Reinforcement learning,77,437,17.620137299771166,1.4109226567335373
-2023,Navigation,LLM / VLM,9,437,2.059496567505721,1.2307398932112892
-2023,Navigation,VLA / robot foundation models,0,437,0.0,0.0
-2023,Navigation,Diffusion / flow generative models,1,437,0.2288329519450801,0.2840168984333744
-2023,Navigation,World models / video prediction,0,437,0.0,0.0
-2023,Navigation,3D Gaussian splatting,0,437,0.0,
-2023,Navigation,NeRF / neural implicit fields,3,437,0.6864988558352403,0.5151934436698419
-2023,Navigation,Sim-to-real,17,437,3.8901601830663615,1.494469870327994
-2023,Navigation,Self-supervised / pretraining / representation,32,437,7.322654462242563,1.0229526385132792
-2023,Navigation,Language grounding / open-vocabulary,12,437,2.745995423340961,1.2138804426193537
-2023,Navigation,Learning from human video / human-to-robot transfer,0,437,0.0,0.0
-2023,Navigation,Cross-embodiment,2,437,0.4576659038901602,1.6409865242817188
-2023,SLAM / localization / state estimation,Imitation learning / LfD,16,367,4.359673024523161,0.5042532204349907
-2023,SLAM / localization / state estimation,Reinforcement learning,12,367,3.2697547683923704,0.26182378753355284
-2023,SLAM / localization / state estimation,LLM / VLM,2,367,0.5449591280653951,0.32566353819759813
-2023,SLAM / localization / state estimation,VLA / robot foundation models,0,367,0.0,0.0
-2023,SLAM / localization / state estimation,Diffusion / flow generative models,0,367,0.0,0.0
-2023,SLAM / localization / state estimation,World models / video prediction,0,367,0.0,0.0
-2023,SLAM / localization / state estimation,3D Gaussian splatting,0,367,0.0,
-2023,SLAM / localization / state estimation,NeRF / neural implicit fields,12,367,3.2697547683923704,2.453836892465623
-2023,SLAM / localization / state estimation,Sim-to-real,7,367,1.9073569482288828,0.7327429609445959
-2023,SLAM / localization / state estimation,Self-supervised / pretraining / representation,28,367,7.629427792915531,1.0658079431921392
-2023,SLAM / localization / state estimation,Language grounding / open-vocabulary,2,367,0.5449591280653951,0.2409017953790452
-2023,SLAM / localization / state estimation,Learning from human video / human-to-robot transfer,0,367,0.0,0.0
-2023,SLAM / localization / state estimation,Cross-embodiment,1,367,0.2724795640326976,0.9769906145927943
-2023,Multi-robot / multi-agent / swarms,Imitation learning / LfD,15,269,5.5762081784386615,0.6449614262301635
-2023,Multi-robot / multi-agent / swarms,Reinforcement learning,58,269,21.561338289962826,1.7265121256007454
-2023,Multi-robot / multi-agent / swarms,LLM / VLM,0,269,0.0,0.0
-2023,Multi-robot / multi-agent / swarms,VLA / robot foundation models,0,269,0.0,0.0
-2023,Multi-robot / multi-agent / swarms,Diffusion / flow generative models,1,269,0.37174721189591076,0.46139548184157847
-2023,Multi-robot / multi-agent / swarms,World models / video prediction,1,269,0.37174721189591076,1.9993804213135067
-2023,Multi-robot / multi-agent / swarms,3D Gaussian splatting,0,269,0.0,
-2023,Multi-robot / multi-agent / swarms,NeRF / neural implicit fields,1,269,0.37174721189591076,0.27898331460188464
-2023,Multi-robot / multi-agent / swarms,Sim-to-real,4,269,1.486988847583643,0.5712515489467163
-2023,Multi-robot / multi-agent / swarms,Self-supervised / pretraining / representation,5,269,1.858736059479554,0.2596597949757801
-2023,Multi-robot / multi-agent / swarms,Language grounding / open-vocabulary,0,269,0.0,0.0
-2023,Multi-robot / multi-agent / swarms,Learning from human video / human-to-robot transfer,0,269,0.0,0.0
-2023,Multi-robot / multi-agent / swarms,Cross-embodiment,0,269,0.0,0.0
-2023,Human-robot interaction,Imitation learning / LfD,16,242,6.6115702479338845,0.7647145946266182
-2023,Human-robot interaction,Reinforcement learning,25,242,10.330578512396695,0.8272153066874475
-2023,Human-robot interaction,LLM / VLM,4,242,1.6528925619834711,0.9877563513927151
-2023,Human-robot interaction,VLA / robot foundation models,0,242,0.0,0.0
-2023,Human-robot interaction,Diffusion / flow generative models,2,242,0.8264462809917356,1.0257469802924348
-2023,Human-robot interaction,World models / video prediction,1,242,0.4132231404958678,2.2224517906336088
-2023,Human-robot interaction,3D Gaussian splatting,0,242,0.0,
-2023,Human-robot interaction,NeRF / neural implicit fields,2,242,0.8264462809917356,0.6202191043628675
-2023,Human-robot interaction,Sim-to-real,1,242,0.4132231404958678,0.1587465564738292
-2023,Human-robot interaction,Self-supervised / pretraining / representation,7,242,2.8925619834710745,0.4040821437515652
-2023,Human-robot interaction,Language grounding / open-vocabulary,8,242,3.3057851239669422,1.4613381637042908
-2023,Human-robot interaction,Learning from human video / human-to-robot transfer,2,242,0.8264462809917356,1.777961432506887
-2023,Human-robot interaction,Cross-embodiment,0,242,0.0,0.0
-2023,Surgical / medical,Imitation learning / LfD,18,194,9.278350515463918,1.0731626205520453
-2023,Surgical / medical,Reinforcement learning,10,194,5.154639175257732,0.4127548540584789
-2023,Surgical / medical,LLM / VLM,0,194,0.0,0.0
-2023,Surgical / medical,VLA / robot foundation models,0,194,0.0,0.0
-2023,Surgical / medical,Diffusion / flow generative models,0,194,0.0,0.0
-2023,Surgical / medical,World models / video prediction,0,194,0.0,0.0
-2023,Surgical / medical,3D Gaussian splatting,0,194,0.0,
-2023,Surgical / medical,NeRF / neural implicit fields,1,194,0.5154639175257731,0.38683768880364416
-2023,Surgical / medical,Sim-to-real,1,194,0.5154639175257731,0.19802405498281786
-2023,Surgical / medical,Self-supervised / pretraining / representation,9,194,4.639175257731959,0.648078725398313
-2023,Surgical / medical,Language grounding / open-vocabulary,1,194,0.5154639175257731,0.22786329614461234
-2023,Surgical / medical,Learning from human video / human-to-robot transfer,0,194,0.0,0.0
-2023,Surgical / medical,Cross-embodiment,0,194,0.0,0.0
-2023,Wearable / exoskeleton / prosthesis / rehab,Imitation learning / LfD,13,135,9.62962962962963,1.1137926456922873
-2023,Wearable / exoskeleton / prosthesis / rehab,Reinforcement learning,5,135,3.7037037037037037,0.2965720062494256
-2023,Wearable / exoskeleton / prosthesis / rehab,LLM / VLM,0,135,0.0,0.0
-2023,Wearable / exoskeleton / prosthesis / rehab,VLA / robot foundation models,0,135,0.0,0.0
-2023,Wearable / exoskeleton / prosthesis / rehab,Diffusion / flow generative models,0,135,0.0,0.0
-2023,Wearable / exoskeleton / prosthesis / rehab,World models / video prediction,0,135,0.0,0.0
-2023,Wearable / exoskeleton / prosthesis / rehab,3D Gaussian splatting,0,135,0.0,
-2023,Wearable / exoskeleton / prosthesis / rehab,NeRF / neural implicit fields,0,135,0.0,0.0
-2023,Wearable / exoskeleton / prosthesis / rehab,Sim-to-real,0,135,0.0,0.0
-2023,Wearable / exoskeleton / prosthesis / rehab,Self-supervised / pretraining / representation,1,135,0.7407407407407407,0.10347923681257014
-2023,Wearable / exoskeleton / prosthesis / rehab,Language grounding / open-vocabulary,2,135,1.4814814814814814,0.6548959918822933
-2023,Wearable / exoskeleton / prosthesis / rehab,Learning from human video / human-to-robot transfer,1,135,0.7407407407407407,1.5935802469135802
-2023,Wearable / exoskeleton / prosthesis / rehab,Cross-embodiment,0,135,0.0,0.0
-2023,Soft robots,Imitation learning / LfD,12,182,6.593406593406593,0.7626137303556659
-2023,Soft robots,Reinforcement learning,6,182,3.2967032967032965,0.2639816758923459
-2023,Soft robots,LLM / VLM,0,182,0.0,0.0
-2023,Soft robots,VLA / robot foundation models,0,182,0.0,0.0
-2023,Soft robots,Diffusion / flow generative models,0,182,0.0,0.0
-2023,Soft robots,World models / video prediction,0,182,0.0,0.0
-2023,Soft robots,3D Gaussian splatting,0,182,0.0,
-2023,Soft robots,NeRF / neural implicit fields,0,182,0.0,0.0
-2023,Soft robots,Sim-to-real,5,182,2.7472527472527473,1.0554029304029304
-2023,Soft robots,Self-supervised / pretraining / representation,3,182,1.6483516483516483,0.23026973026973027
-2023,Soft robots,Language grounding / open-vocabulary,0,182,0.0,0.0
-2023,Soft robots,Learning from human video / human-to-robot transfer,0,182,0.0,0.0
-2023,Soft robots,Cross-embodiment,0,182,0.0,0.0
-2023,Micro / bio-inspired robots,Imitation learning / LfD,7,121,5.785123966942149,0.6691252702982908
-2023,Micro / bio-inspired robots,Reinforcement learning,11,121,9.090909090909092,0.7279494698849538
-2023,Micro / bio-inspired robots,LLM / VLM,1,121,0.8264462809917356,0.49387817569635756
-2023,Micro / bio-inspired robots,VLA / robot foundation models,0,121,0.0,0.0
-2023,Micro / bio-inspired robots,Diffusion / flow generative models,0,121,0.0,0.0
-2023,Micro / bio-inspired robots,World models / video prediction,0,121,0.0,0.0
-2023,Micro / bio-inspired robots,3D Gaussian splatting,0,121,0.0,
-2023,Micro / bio-inspired robots,NeRF / neural implicit fields,1,121,0.8264462809917356,0.6202191043628675
-2023,Micro / bio-inspired robots,Sim-to-real,1,121,0.8264462809917356,0.3174931129476584
-2023,Micro / bio-inspired robots,Self-supervised / pretraining / representation,1,121,0.8264462809917356,0.11545204107187577
-2023,Micro / bio-inspired robots,Language grounding / open-vocabulary,1,121,0.8264462809917356,0.3653345409260727
-2023,Micro / bio-inspired robots,Learning from human video / human-to-robot transfer,0,121,0.0,0.0
-2023,Micro / bio-inspired robots,Cross-embodiment,0,121,0.0,0.0
-2023,Agriculture / field,Imitation learning / LfD,5,68,7.352941176470588,0.8504638414505588
-2023,Agriculture / field,Reinforcement learning,4,68,5.882352941176471,0.47102612757261714
-2023,Agriculture / field,LLM / VLM,0,68,0.0,0.0
-2023,Agriculture / field,VLA / robot foundation models,0,68,0.0,0.0
-2023,Agriculture / field,Diffusion / flow generative models,0,68,0.0,0.0
-2023,Agriculture / field,World models / video prediction,0,68,0.0,0.0
-2023,Agriculture / field,3D Gaussian splatting,0,68,0.0,
-2023,Agriculture / field,NeRF / neural implicit fields,0,68,0.0,0.0
-2023,Agriculture / field,Sim-to-real,0,68,0.0,0.0
-2023,Agriculture / field,Self-supervised / pretraining / representation,6,68,8.823529411764707,1.232620320855615
-2023,Agriculture / field,Language grounding / open-vocabulary,0,68,0.0,0.0
-2023,Agriculture / field,Learning from human video / human-to-robot transfer,0,68,0.0,0.0
-2023,Agriculture / field,Cross-embodiment,0,68,0.0,0.0
-2023,Industrial / logistics / construction,Imitation learning / LfD,8,123,6.504065040650406,0.7522802109741529
-2023,Industrial / logistics / construction,Reinforcement learning,13,123,10.56910569105691,0.8463152373459218
-2023,Industrial / logistics / construction,LLM / VLM,0,123,0.0,0.0
-2023,Industrial / logistics / construction,VLA / robot foundation models,0,123,0.0,0.0
-2023,Industrial / logistics / construction,Diffusion / flow generative models,0,123,0.0,0.0
-2023,Industrial / logistics / construction,World models / video prediction,0,123,0.0,0.0
-2023,Industrial / logistics / construction,3D Gaussian splatting,0,123,0.0,
-2023,Industrial / logistics / construction,NeRF / neural implicit fields,0,123,0.0,0.0
-2023,Industrial / logistics / construction,Sim-to-real,3,123,2.4390243902439024,0.9369918699186992
-2023,Industrial / logistics / construction,Self-supervised / pretraining / representation,5,123,4.065040650406504,0.5678738605567873
-2023,Industrial / logistics / construction,Language grounding / open-vocabulary,0,123,0.0,0.0
-2023,Industrial / logistics / construction,Learning from human video / human-to-robot transfer,0,123,0.0,0.0
-2023,Industrial / logistics / construction,Cross-embodiment,0,123,0.0,0.0
-2023,Underwater / marine,Imitation learning / LfD,1,98,1.0204081632653061,0.11802355350742447
-2023,Underwater / marine,Reinforcement learning,5,98,5.1020408163265305,0.40854306983339245
+2021,(all papers),Learning from human video / human-to-robot transfer,29,2973,0.9754456777665658,1.0
+2021,(all papers),Cross-embodiment,19,2973,0.6390850992263707,1.0
+2023,Manipulation (any),Imitation learning / LfD,112,711,15.752461322081576,2.279515367101222
+2023,Manipulation (any),Reinforcement learning,128,711,18.0028129395218,1.478246243151065
+2023,Manipulation (any),LLM / VLM,33,711,4.641350210970464,2.139662447257384
+2023,Manipulation (any),VLA / robot foundation models,2,711,0.2812939521800281,1.8154711673699018
+2023,Manipulation (any),Diffusion / flow generative models,11,711,1.5471167369901546,1.920209888564319
+2023,Manipulation (any),World models / video prediction,32,711,4.50070323488045,2.4206282231598686
+2023,Manipulation (any),3D Gaussian splatting,0,711,0.0,
+2023,Manipulation (any),NeRF / neural implicit fields,13,711,1.8284106891701828,1.0926446840652186
+2023,Manipulation (any),Sim-to-real,102,711,14.345991561181435,2.0304611740321263
+2023,Manipulation (any),Self-supervised / pretraining / representation,62,711,8.720112517580873,1.3528751487612247
+2023,Manipulation (any),Language grounding / open-vocabulary,49,711,6.891701828410689,2.2239521800281294
+2023,Manipulation (any),Learning from human video / human-to-robot transfer,22,711,3.0942334739803092,3.5661040787623066
+2023,Manipulation (any),Cross-embodiment,12,711,1.6877637130801688,2.1785654008438815
+2023,Grasping,Imitation learning / LfD,13,204,6.372549019607843,0.92216213839796
+2023,Grasping,Reinforcement learning,23,204,11.27450980392157,0.9257720900064861
+2023,Grasping,LLM / VLM,10,204,4.901960784313726,2.2598039215686274
+2023,Grasping,VLA / robot foundation models,0,204,0.0,0.0
+2023,Grasping,Diffusion / flow generative models,1,204,0.49019607843137253,0.6084087481146304
+2023,Grasping,World models / video prediction,3,204,1.4705882352941178,0.7909313725490196
+2023,Grasping,3D Gaussian splatting,0,204,0.0,
+2023,Grasping,NeRF / neural implicit fields,5,204,2.450980392156863,1.464687726942629
+2023,Grasping,Sim-to-real,28,204,13.72549019607843,1.942638458892329
+2023,Grasping,Self-supervised / pretraining / representation,11,204,5.392156862745098,0.836562028657617
+2023,Grasping,Language grounding / open-vocabulary,15,204,7.352941176470588,2.372794117647059
+2023,Grasping,Learning from human video / human-to-robot transfer,6,204,2.9411764705882355,3.389705882352941
+2023,Grasping,Cross-embodiment,2,204,0.9803921568627451,1.2654901960784313
+2023,Dexterous / in-hand,Imitation learning / LfD,12,85,14.117647058823529,2.0429438142970193
+2023,Dexterous / in-hand,Reinforcement learning,25,85,29.41176470588235,2.4150576261038768
+2023,Dexterous / in-hand,LLM / VLM,1,85,1.1764705882352942,0.5423529411764706
+2023,Dexterous / in-hand,VLA / robot foundation models,0,85,0.0,0.0
+2023,Dexterous / in-hand,Diffusion / flow generative models,0,85,0.0,0.0
+2023,Dexterous / in-hand,World models / video prediction,3,85,3.5294117647058822,1.898235294117647
+2023,Dexterous / in-hand,3D Gaussian splatting,0,85,0.0,
+2023,Dexterous / in-hand,NeRF / neural implicit fields,0,85,0.0,0.0
+2023,Dexterous / in-hand,Sim-to-real,15,85,17.647058823529413,2.497678018575851
+2023,Dexterous / in-hand,Self-supervised / pretraining / representation,4,85,4.705882352941177,0.7300904977375565
+2023,Dexterous / in-hand,Language grounding / open-vocabulary,1,85,1.1764705882352942,0.3796470588235294
+2023,Dexterous / in-hand,Learning from human video / human-to-robot transfer,6,85,7.0588235294117645,8.135294117647058
+2023,Dexterous / in-hand,Cross-embodiment,3,85,3.5294117647058822,4.5557647058823525
+2023,Deformable objects,Imitation learning / LfD,8,96,8.333333333333334,1.2059043348281016
+2023,Deformable objects,Reinforcement learning,9,96,9.375,0.7697996183206107
+2023,Deformable objects,LLM / VLM,1,96,1.0416666666666667,0.4802083333333333
+2023,Deformable objects,VLA / robot foundation models,0,96,0.0,0.0
+2023,Deformable objects,Diffusion / flow generative models,0,96,0.0,0.0
+2023,Deformable objects,World models / video prediction,11,96,11.458333333333334,6.162673611111111
+2023,Deformable objects,3D Gaussian splatting,0,96,0.0,
+2023,Deformable objects,NeRF / neural implicit fields,1,96,1.0416666666666667,0.6224922839506173
+2023,Deformable objects,Sim-to-real,13,96,13.541666666666666,1.9166209795321634
+2023,Deformable objects,Self-supervised / pretraining / representation,12,96,12.5,1.9393028846153846
+2023,Deformable objects,Language grounding / open-vocabulary,0,96,0.0,0.0
+2023,Deformable objects,Learning from human video / human-to-robot transfer,3,96,3.125,3.6015625
+2023,Deformable objects,Cross-embodiment,1,96,1.0416666666666667,1.3445833333333332
+2023,Mobile manipulation,Imitation learning / LfD,6,70,8.571428571428571,1.240358744394619
+2023,Mobile manipulation,Reinforcement learning,12,70,17.142857142857142,1.4076335877862596
+2023,Mobile manipulation,LLM / VLM,6,70,8.571428571428571,3.9514285714285715
+2023,Mobile manipulation,VLA / robot foundation models,0,70,0.0,0.0
+2023,Mobile manipulation,Diffusion / flow generative models,0,70,0.0,0.0
+2023,Mobile manipulation,World models / video prediction,0,70,0.0,0.0
+2023,Mobile manipulation,3D Gaussian splatting,0,70,0.0,
+2023,Mobile manipulation,NeRF / neural implicit fields,0,70,0.0,0.0
+2023,Mobile manipulation,Sim-to-real,12,70,17.142857142857142,2.426315789473684
+2023,Mobile manipulation,Self-supervised / pretraining / representation,2,70,2.857142857142857,0.44326923076923075
+2023,Mobile manipulation,Language grounding / open-vocabulary,8,70,11.428571428571429,3.6879999999999997
+2023,Mobile manipulation,Learning from human video / human-to-robot transfer,0,70,0.0,0.0
+2023,Mobile manipulation,Cross-embodiment,0,70,0.0,0.0
+2023,Humanoid robots,Imitation learning / LfD,3,43,6.976744186046512,1.0095943268328293
+2023,Humanoid robots,Reinforcement learning,5,43,11.627906976744185,0.9547902242736257
+2023,Humanoid robots,LLM / VLM,0,43,0.0,0.0
+2023,Humanoid robots,VLA / robot foundation models,0,43,0.0,0.0
+2023,Humanoid robots,Diffusion / flow generative models,0,43,0.0,0.0
+2023,Humanoid robots,World models / video prediction,0,43,0.0,0.0
+2023,Humanoid robots,3D Gaussian splatting,0,43,0.0,
+2023,Humanoid robots,NeRF / neural implicit fields,1,43,2.3255813953488373,1.3897502153316108
+2023,Humanoid robots,Sim-to-real,2,43,4.651162790697675,0.6583027335781313
+2023,Humanoid robots,Self-supervised / pretraining / representation,1,43,2.3255813953488373,0.3608005366726297
+2023,Humanoid robots,Language grounding / open-vocabulary,1,43,2.3255813953488373,0.7504651162790698
+2023,Humanoid robots,Learning from human video / human-to-robot transfer,0,43,0.0,0.0
+2023,Humanoid robots,Cross-embodiment,0,43,0.0,0.0
+2023,Legged robots / locomotion,Imitation learning / LfD,13,215,6.046511627906977,0.8749817499217853
+2023,Legged robots / locomotion,Reinforcement learning,46,215,21.3953488372093,1.7568140126634713
+2023,Legged robots / locomotion,LLM / VLM,3,215,1.3953488372093024,0.6432558139534884
+2023,Legged robots / locomotion,VLA / robot foundation models,0,215,0.0,0.0
+2023,Legged robots / locomotion,Diffusion / flow generative models,0,215,0.0,0.0
+2023,Legged robots / locomotion,World models / video prediction,2,215,0.9302325581395349,0.5003100775193798
+2023,Legged robots / locomotion,3D Gaussian splatting,0,215,0.0,
+2023,Legged robots / locomotion,NeRF / neural implicit fields,1,215,0.46511627906976744,0.27795004306632215
+2023,Legged robots / locomotion,Sim-to-real,26,215,12.093023255813954,1.7115871073031415
+2023,Legged robots / locomotion,Self-supervised / pretraining / representation,10,215,4.651162790697675,0.7216010733452594
+2023,Legged robots / locomotion,Language grounding / open-vocabulary,3,215,1.3953488372093024,0.45027906976744186
+2023,Legged robots / locomotion,Learning from human video / human-to-robot transfer,0,215,0.0,0.0
+2023,Legged robots / locomotion,Cross-embodiment,5,215,2.3255813953488373,3.001860465116279
+2023,Aerial robots / UAV,Imitation learning / LfD,10,304,3.289473684210526,0.47601486901109274
+2023,Aerial robots / UAV,Reinforcement learning,37,304,12.171052631578947,0.9993889781706174
+2023,Aerial robots / UAV,LLM / VLM,2,304,0.6578947368421053,0.3032894736842105
+2023,Aerial robots / UAV,VLA / robot foundation models,1,304,0.32894736842105265,2.1230263157894735
+2023,Aerial robots / UAV,Diffusion / flow generative models,0,304,0.0,0.0
+2023,Aerial robots / UAV,World models / video prediction,2,304,0.6578947368421053,0.3538377192982456
+2023,Aerial robots / UAV,3D Gaussian splatting,0,304,0.0,
+2023,Aerial robots / UAV,NeRF / neural implicit fields,2,304,0.6578947368421053,0.39315302144249514
+2023,Aerial robots / UAV,Sim-to-real,19,304,6.25,0.884594298245614
+2023,Aerial robots / UAV,Self-supervised / pretraining / representation,5,304,1.644736842105263,0.2551714321862348
+2023,Aerial robots / UAV,Language grounding / open-vocabulary,3,304,0.9868421052631579,0.31845394736842103
+2023,Aerial robots / UAV,Learning from human video / human-to-robot transfer,0,304,0.0,0.0
+2023,Aerial robots / UAV,Cross-embodiment,3,304,0.9868421052631579,1.2738157894736841
+2023,Autonomous driving,Imitation learning / LfD,22,346,6.358381502890174,0.9201119780191296
+2023,Autonomous driving,Reinforcement learning,29,346,8.38150289017341,0.6882216240862492
+2023,Autonomous driving,LLM / VLM,4,346,1.1560693641618498,0.5329479768786127
+2023,Autonomous driving,VLA / robot foundation models,0,346,0.0,0.0
+2023,Autonomous driving,Diffusion / flow generative models,2,346,0.5780346820809249,0.7174299688750555
+2023,Autonomous driving,World models / video prediction,4,346,1.1560693641618498,0.6217726396917148
+2023,Autonomous driving,3D Gaussian splatting,0,346,0.0,
+2023,Autonomous driving,NeRF / neural implicit fields,5,346,1.4450867052023122,0.8635731106829373
+2023,Autonomous driving,Sim-to-real,12,346,3.468208092485549,0.49087313659872217
+2023,Autonomous driving,Self-supervised / pretraining / representation,33,346,9.53757225433526,1.479699310804802
+2023,Autonomous driving,Language grounding / open-vocabulary,6,346,1.7341040462427746,0.5595953757225433
+2023,Autonomous driving,Learning from human video / human-to-robot transfer,0,346,0.0,0.0
+2023,Autonomous driving,Cross-embodiment,1,346,0.28901734104046245,0.37306358381502885
+2023,Navigation,Imitation learning / LfD,16,373,4.289544235924933,0.6207335986246529
+2023,Navigation,Reinforcement learning,85,373,22.788203753351205,1.871184058831154
+2023,Navigation,LLM / VLM,12,373,3.2171581769436997,1.4831099195710455
+2023,Navigation,VLA / robot foundation models,2,373,0.5361930294906166,3.46058981233244
+2023,Navigation,Diffusion / flow generative models,1,373,0.2680965147453083,0.3327490204165807
+2023,Navigation,World models / video prediction,7,373,1.876675603217158,1.009338695263628
+2023,Navigation,3D Gaussian splatting,0,373,0.0,
+2023,Navigation,NeRF / neural implicit fields,5,373,1.3404825737265416,0.8010624565584352
+2023,Navigation,Sim-to-real,39,373,10.455764075067025,1.4798574855368984
+2023,Navigation,Self-supervised / pretraining / representation,27,373,7.238605898123325,1.12302794390596
+2023,Navigation,Language grounding / open-vocabulary,18,373,4.825737265415549,1.5572654155495977
+2023,Navigation,Learning from human video / human-to-robot transfer,1,373,0.2680965147453083,0.3089812332439678
+2023,Navigation,Cross-embodiment,6,373,1.6085790884718498,2.076353887399464
+2023,SLAM / localization / state estimation,Imitation learning / LfD,1,366,0.273224043715847,0.039537847043544315
+2023,SLAM / localization / state estimation,Reinforcement learning,4,366,1.092896174863388,0.08973984621588176
+2023,SLAM / localization / state estimation,LLM / VLM,2,366,0.546448087431694,0.25191256830601094
+2023,SLAM / localization / state estimation,VLA / robot foundation models,0,366,0.0,0.0
+2023,SLAM / localization / state estimation,Diffusion / flow generative models,0,366,0.0,0.0
+2023,SLAM / localization / state estimation,World models / video prediction,2,366,0.546448087431694,0.29389799635701275
+2023,SLAM / localization / state estimation,3D Gaussian splatting,0,366,0.0,
+2023,SLAM / localization / state estimation,NeRF / neural implicit fields,15,366,4.098360655737705,2.449149969641773
+2023,SLAM / localization / state estimation,Sim-to-real,10,366,2.73224043715847,0.3867078899434378
+2023,SLAM / localization / state estimation,Self-supervised / pretraining / representation,22,366,6.0109289617486334,0.9325609499789828
+2023,SLAM / localization / state estimation,Language grounding / open-vocabulary,3,366,0.819672131147541,0.2645081967213115
+2023,SLAM / localization / state estimation,Learning from human video / human-to-robot transfer,0,366,0.0,0.0
+2023,SLAM / localization / state estimation,Cross-embodiment,0,366,0.0,0.0
+2023,Multi-robot / multi-agent / swarms,Imitation learning / LfD,11,331,3.323262839879154,0.4809044477260104
+2023,Multi-robot / multi-agent / swarms,Reinforcement learning,56,331,16.91842900302115,1.38920535350507
+2023,Multi-robot / multi-agent / swarms,LLM / VLM,0,331,0.0,0.0
+2023,Multi-robot / multi-agent / swarms,VLA / robot foundation models,0,331,0.0,0.0
+2023,Multi-robot / multi-agent / swarms,Diffusion / flow generative models,0,331,0.0,0.0
+2023,Multi-robot / multi-agent / swarms,World models / video prediction,0,331,0.0,0.0
+2023,Multi-robot / multi-agent / swarms,3D Gaussian splatting,0,331,0.0,
+2023,Multi-robot / multi-agent / swarms,NeRF / neural implicit fields,1,331,0.3021148036253776,0.18054156875909144
+2023,Multi-robot / multi-agent / swarms,Sim-to-real,9,331,2.719033232628399,0.38483860709174744
+2023,Multi-robot / multi-agent / swarms,Self-supervised / pretraining / representation,2,331,0.6042296072507553,0.09374273762491285
+2023,Multi-robot / multi-agent / swarms,Language grounding / open-vocabulary,0,331,0.0,0.0
+2023,Multi-robot / multi-agent / swarms,Learning from human video / human-to-robot transfer,0,331,0.0,0.0
+2023,Multi-robot / multi-agent / swarms,Cross-embodiment,1,331,0.3021148036253776,0.3899697885196375
+2023,Human-robot interaction,Imitation learning / LfD,24,290,8.275862068965518,1.1975877532085974
+2023,Human-robot interaction,Reinforcement learning,29,290,10.0,0.8211195928753181
+2023,Human-robot interaction,LLM / VLM,9,290,3.103448275862069,1.4306896551724138
+2023,Human-robot interaction,VLA / robot foundation models,0,290,0.0,0.0
+2023,Human-robot interaction,Diffusion / flow generative models,1,290,0.3448275862068966,0.4279840848806366
+2023,Human-robot interaction,World models / video prediction,2,290,0.6896551724137931,0.37091954022988505
+2023,Human-robot interaction,3D Gaussian splatting,0,290,0.0,
+2023,Human-robot interaction,NeRF / neural implicit fields,1,290,0.3448275862068966,0.20606641123882505
+2023,Human-robot interaction,Sim-to-real,13,290,4.482758620689655,0.6344676346037507
+2023,Human-robot interaction,Self-supervised / pretraining / representation,7,290,2.413793103448276,0.374486074270557
+2023,Human-robot interaction,Language grounding / open-vocabulary,20,290,6.896551724137931,2.2255172413793103
+2023,Human-robot interaction,Learning from human video / human-to-robot transfer,2,290,0.6896551724137931,0.7948275862068965
+2023,Human-robot interaction,Cross-embodiment,2,290,0.6896551724137931,0.8902068965517241
+2023,Surgical / medical,Imitation learning / LfD,7,138,5.072463768115942,0.7340287255475402
+2023,Surgical / medical,Reinforcement learning,5,138,3.6231884057971016,0.29750709886786886
+2023,Surgical / medical,LLM / VLM,1,138,0.7246376811594203,0.33405797101449275
+2023,Surgical / medical,VLA / robot foundation models,0,138,0.0,0.0
+2023,Surgical / medical,Diffusion / flow generative models,0,138,0.0,0.0
+2023,Surgical / medical,World models / video prediction,2,138,1.4492753623188406,0.7794685990338164
+2023,Surgical / medical,3D Gaussian splatting,0,138,0.0,
+2023,Surgical / medical,NeRF / neural implicit fields,1,138,0.7246376811594203,0.4330381105743425
+2023,Surgical / medical,Sim-to-real,2,138,1.4492753623188406,0.20512331553521485
+2023,Surgical / medical,Self-supervised / pretraining / representation,2,138,1.4492753623188406,0.22484671125975475
+2023,Surgical / medical,Language grounding / open-vocabulary,1,138,0.7246376811594203,0.23384057971014494
+2023,Surgical / medical,Learning from human video / human-to-robot transfer,1,138,0.7246376811594203,0.8351449275362318
+2023,Surgical / medical,Cross-embodiment,0,138,0.0,0.0
+2023,Wearable / exoskeleton / prosthesis / rehab,Imitation learning / LfD,4,115,3.4782608695652173,0.5033339832325989
+2023,Wearable / exoskeleton / prosthesis / rehab,Reinforcement learning,7,115,6.086956521739131,0.4998119260980197
+2023,Wearable / exoskeleton / prosthesis / rehab,LLM / VLM,1,115,0.8695652173913043,0.4008695652173913
+2023,Wearable / exoskeleton / prosthesis / rehab,VLA / robot foundation models,0,115,0.0,0.0
+2023,Wearable / exoskeleton / prosthesis / rehab,Diffusion / flow generative models,0,115,0.0,0.0
+2023,Wearable / exoskeleton / prosthesis / rehab,World models / video prediction,1,115,0.8695652173913043,0.4676811594202898
+2023,Wearable / exoskeleton / prosthesis / rehab,3D Gaussian splatting,0,115,0.0,
+2023,Wearable / exoskeleton / prosthesis / rehab,NeRF / neural implicit fields,0,115,0.0,0.0
+2023,Wearable / exoskeleton / prosthesis / rehab,Sim-to-real,3,115,2.608695652173913,0.3692219679633867
+2023,Wearable / exoskeleton / prosthesis / rehab,Self-supervised / pretraining / representation,1,115,0.8695652173913043,0.13490802675585284
+2023,Wearable / exoskeleton / prosthesis / rehab,Language grounding / open-vocabulary,1,115,0.8695652173913043,0.2806086956521739
+2023,Wearable / exoskeleton / prosthesis / rehab,Learning from human video / human-to-robot transfer,1,115,0.8695652173913043,1.0021739130434781
+2023,Wearable / exoskeleton / prosthesis / rehab,Cross-embodiment,0,115,0.0,0.0
+2023,Soft robots,Imitation learning / LfD,1,196,0.5102040816326531,0.07383087764253683
+2023,Soft robots,Reinforcement learning,8,196,4.081632653061225,0.33515085423482366
+2023,Soft robots,LLM / VLM,0,196,0.0,0.0
+2023,Soft robots,VLA / robot foundation models,0,196,0.0,0.0
+2023,Soft robots,Diffusion / flow generative models,0,196,0.0,0.0
+2023,Soft robots,World models / video prediction,1,196,0.5102040816326531,0.2744047619047619
+2023,Soft robots,3D Gaussian splatting,0,196,0.0,
+2023,Soft robots,NeRF / neural implicit fields,0,196,0.0,0.0
+2023,Soft robots,Sim-to-real,6,196,3.061224489795918,0.43327067669172925
+2023,Soft robots,Self-supervised / pretraining / representation,5,196,2.5510204081632653,0.3957760989010989
+2023,Soft robots,Language grounding / open-vocabulary,0,196,0.0,0.0
+2023,Soft robots,Learning from human video / human-to-robot transfer,2,196,1.0204081632653061,1.1760204081632653
+2023,Soft robots,Cross-embodiment,0,196,0.0,0.0
+2023,Micro / bio-inspired robots,Imitation learning / LfD,1,129,0.7751937984496124,0.11217714742586993
+2023,Micro / bio-inspired robots,Reinforcement learning,7,129,5.426356589147287,0.44556877132769196
+2023,Micro / bio-inspired robots,LLM / VLM,0,129,0.0,0.0
+2023,Micro / bio-inspired robots,VLA / robot foundation models,0,129,0.0,0.0
+2023,Micro / bio-inspired robots,Diffusion / flow generative models,0,129,0.0,0.0
+2023,Micro / bio-inspired robots,World models / video prediction,0,129,0.0,0.0
+2023,Micro / bio-inspired robots,3D Gaussian splatting,0,129,0.0,
+2023,Micro / bio-inspired robots,NeRF / neural implicit fields,0,129,0.0,0.0
+2023,Micro / bio-inspired robots,Sim-to-real,2,129,1.550387596899225,0.21943424452604376
+2023,Micro / bio-inspired robots,Self-supervised / pretraining / representation,1,129,0.7751937984496124,0.12026684555754323
+2023,Micro / bio-inspired robots,Language grounding / open-vocabulary,0,129,0.0,0.0
+2023,Micro / bio-inspired robots,Learning from human video / human-to-robot transfer,0,129,0.0,0.0
+2023,Micro / bio-inspired robots,Cross-embodiment,0,129,0.0,0.0
+2023,Agriculture / field,Imitation learning / LfD,1,106,0.9433962264150944,0.13651747186733226
+2023,Agriculture / field,Reinforcement learning,4,106,3.7735849056603774,0.30985645014162944
+2023,Agriculture / field,LLM / VLM,0,106,0.0,0.0
+2023,Agriculture / field,VLA / robot foundation models,0,106,0.0,0.0
+2023,Agriculture / field,Diffusion / flow generative models,0,106,0.0,0.0
+2023,Agriculture / field,World models / video prediction,5,106,4.716981132075472,2.536949685534591
+2023,Agriculture / field,3D Gaussian splatting,0,106,0.0,
+2023,Agriculture / field,NeRF / neural implicit fields,1,106,0.9433962264150944,0.5637665967854647
+2023,Agriculture / field,Sim-to-real,3,106,2.830188679245283,0.40057100297914594
+2023,Agriculture / field,Self-supervised / pretraining / representation,12,106,11.320754716981131,1.7563497822931786
+2023,Agriculture / field,Language grounding / open-vocabulary,0,106,0.0,0.0
+2023,Agriculture / field,Learning from human video / human-to-robot transfer,0,106,0.0,0.0
+2023,Agriculture / field,Cross-embodiment,0,106,0.0,0.0
+2023,Industrial / logistics / construction,Imitation learning / LfD,6,131,4.580152671755725,0.6627871153253688
+2023,Industrial / logistics / construction,Reinforcement learning,12,131,9.16030534351145,0.7521706194277723
+2023,Industrial / logistics / construction,LLM / VLM,0,131,0.0,0.0
+2023,Industrial / logistics / construction,VLA / robot foundation models,0,131,0.0,0.0
+2023,Industrial / logistics / construction,Diffusion / flow generative models,0,131,0.0,0.0
+2023,Industrial / logistics / construction,World models / video prediction,1,131,0.7633587786259542,0.410559796437659
+2023,Industrial / logistics / construction,3D Gaussian splatting,0,131,0.0,
+2023,Industrial / logistics / construction,NeRF / neural implicit fields,0,131,0.0,0.0
+2023,Industrial / logistics / construction,Sim-to-real,10,131,7.633587786259542,1.080420516941208
+2023,Industrial / logistics / construction,Self-supervised / pretraining / representation,3,131,2.2900763358778624,0.35529213153258954
+2023,Industrial / logistics / construction,Language grounding / open-vocabulary,0,131,0.0,0.0
+2023,Industrial / logistics / construction,Learning from human video / human-to-robot transfer,0,131,0.0,0.0
+2023,Industrial / logistics / construction,Cross-embodiment,1,131,0.7633587786259542,0.9853435114503817
+2023,Underwater / marine,Imitation learning / LfD,0,98,0.0,0.0
+2023,Underwater / marine,Reinforcement learning,4,98,4.081632653061225,0.33515085423482366
 2023,Underwater / marine,LLM / VLM,0,98,0.0,0.0
 2023,Underwater / marine,VLA / robot foundation models,0,98,0.0,0.0
 2023,Underwater / marine,Diffusion / flow generative models,0,98,0.0,0.0
-2023,Underwater / marine,World models / video prediction,0,98,0.0,0.0
+2023,Underwater / marine,World models / video prediction,1,98,1.0204081632653061,0.5488095238095237
 2023,Underwater / marine,3D Gaussian splatting,0,98,0.0,
-2023,Underwater / marine,NeRF / neural implicit fields,1,98,1.0204081632653061,0.7657807308970099
-2023,Underwater / marine,Sim-to-real,1,98,1.0204081632653061,0.3920068027210884
-2023,Underwater / marine,Self-supervised / pretraining / representation,5,98,5.1020408163265305,0.7127396413110698
+2023,Underwater / marine,NeRF / neural implicit fields,1,98,1.0204081632653061,0.6097883597883598
+2023,Underwater / marine,Sim-to-real,8,98,8.16326530612245,1.1553884711779447
+2023,Underwater / marine,Self-supervised / pretraining / representation,5,98,5.1020408163265305,0.7915521978021978
 2023,Underwater / marine,Language grounding / open-vocabulary,0,98,0.0,0.0
 2023,Underwater / marine,Learning from human video / human-to-robot transfer,0,98,0.0,0.0
 2023,Underwater / marine,Cross-embodiment,0,98,0.0,0.0
-2023,Space robotics,Imitation learning / LfD,3,35,8.571428571428571,0.9913978494623656
-2023,Space robotics,Reinforcement learning,3,35,8.571428571428571,0.6863523573200992
+2023,Space robotics,Imitation learning / LfD,1,35,2.857142857142857,0.4134529147982063
+2023,Space robotics,Reinforcement learning,2,35,5.714285714285714,0.46921119592875316
 2023,Space robotics,LLM / VLM,0,35,0.0,0.0
 2023,Space robotics,VLA / robot foundation models,0,35,0.0,0.0
 2023,Space robotics,Diffusion / flow generative models,0,35,0.0,0.0
 2023,Space robotics,World models / video prediction,0,35,0.0,0.0
 2023,Space robotics,3D Gaussian splatting,0,35,0.0,
 2023,Space robotics,NeRF / neural implicit fields,0,35,0.0,0.0
-2023,Space robotics,Sim-to-real,0,35,0.0,0.0
-2023,Space robotics,Self-supervised / pretraining / representation,1,35,2.857142857142857,0.3991341991341991
+2023,Space robotics,Sim-to-real,1,35,2.857142857142857,0.4043859649122807
+2023,Space robotics,Self-supervised / pretraining / representation,1,35,2.857142857142857,0.44326923076923075
 2023,Space robotics,Language grounding / open-vocabulary,0,35,0.0,0.0
 2023,Space robotics,Learning from human video / human-to-robot transfer,0,35,0.0,0.0
 2023,Space robotics,Cross-embodiment,0,35,0.0,0.0
-2023,Tactile sensing,Imitation learning / LfD,6,108,5.555555555555555,0.6425726802070888
-2023,Tactile sensing,Reinforcement learning,8,108,7.407407407407407,0.5931440124988512
-2023,Tactile sensing,LLM / VLM,0,108,0.0,0.0
-2023,Tactile sensing,VLA / robot foundation models,0,108,0.0,0.0
-2023,Tactile sensing,Diffusion / flow generative models,0,108,0.0,0.0
-2023,Tactile sensing,World models / video prediction,0,108,0.0,0.0
-2023,Tactile sensing,3D Gaussian splatting,0,108,0.0,
-2023,Tactile sensing,NeRF / neural implicit fields,1,108,0.9259259259259259,0.6948751076658053
-2023,Tactile sensing,Sim-to-real,7,108,6.481481481481482,2.489969135802469
-2023,Tactile sensing,Self-supervised / pretraining / representation,8,108,7.407407407407407,1.0347923681257014
-2023,Tactile sensing,Language grounding / open-vocabulary,1,108,0.9259259259259259,0.4093099949264333
-2023,Tactile sensing,Learning from human video / human-to-robot transfer,0,108,0.0,0.0
-2023,Tactile sensing,Cross-embodiment,0,108,0.0,0.0
-2023,(all papers),Imitation learning / LfD,279,3227,8.645801053610164,1.0
-2023,(all papers),Reinforcement learning,403,3227,12.488379299659126,1.0
-2023,(all papers),LLM / VLM,54,3227,1.6733808490858382,1.0
-2023,(all papers),VLA / robot foundation models,3,3227,0.09296560272699102,1.0
+2023,Tactile sensing,Imitation learning / LfD,3,99,3.0303030303030303,0.4385106672102188
+2023,Tactile sensing,Reinforcement learning,5,99,5.05050505050505,0.4147068650885445
+2023,Tactile sensing,LLM / VLM,1,99,1.0101010101010102,0.4656565656565657
+2023,Tactile sensing,VLA / robot foundation models,0,99,0.0,0.0
+2023,Tactile sensing,Diffusion / flow generative models,0,99,0.0,0.0
+2023,Tactile sensing,World models / video prediction,3,99,3.0303030303030303,1.6297979797979798
+2023,Tactile sensing,3D Gaussian splatting,0,99,0.0,
+2023,Tactile sensing,NeRF / neural implicit fields,3,99,3.0303030303030303,1.8108866442199778
+2023,Tactile sensing,Sim-to-real,15,99,15.151515151515152,2.144471026049973
+2023,Tactile sensing,Self-supervised / pretraining / representation,11,99,11.11111111111111,1.7238247863247862
+2023,Tactile sensing,Language grounding / open-vocabulary,1,99,1.0101010101010102,0.325959595959596
+2023,Tactile sensing,Learning from human video / human-to-robot transfer,0,99,0.0,0.0
+2023,Tactile sensing,Cross-embodiment,1,99,1.0101010101010102,1.303838383838384
+2023,(all papers),Imitation learning / LfD,223,3227,6.910443136039666,1.0
+2023,(all papers),Reinforcement learning,393,3227,12.178493957235823,1.0
+2023,(all papers),LLM / VLM,70,3227,2.1691973969631237,1.0
+2023,(all papers),VLA / robot foundation models,5,3227,0.1549426712116517,1.0
 2023,(all papers),Diffusion / flow generative models,26,3227,0.8057018903005888,1.0
-2023,(all papers),World models / video prediction,6,3227,0.18593120545398203,1.0
+2023,(all papers),World models / video prediction,60,3227,1.8593120545398203,1.0
 2023,(all papers),3D Gaussian splatting,0,3227,0.0,
-2023,(all papers),NeRF / neural implicit fields,43,3227,1.3325069724202045,1.0
-2023,(all papers),Sim-to-real,84,3227,2.6030368763557483,1.0
-2023,(all papers),Self-supervised / pretraining / representation,231,3227,7.158351409978308,1.0
-2023,(all papers),Language grounding / open-vocabulary,73,3227,2.2621629996901147,1.0
-2023,(all papers),Learning from human video / human-to-robot transfer,15,3227,0.4648280136349551,1.0
-2023,(all papers),Cross-embodiment,9,3227,0.27889680818097307,1.0
-2025,Manipulation (any),Imitation learning / LfD,269,997,26.980942828485457,2.4096956222999704
-2025,Manipulation (any),Reinforcement learning,162,997,16.248746238716148,1.2495010455094095
-2025,Manipulation (any),LLM / VLM,106,997,10.631895687061183,1.266060649139018
-2025,Manipulation (any),VLA / robot foundation models,34,997,3.4102306920762286,2.3803410230692075
-2025,Manipulation (any),Diffusion / flow generative models,101,997,10.130391173520561,1.8311388348311868
-2025,Manipulation (any),World models / video prediction,19,997,1.9057171514543632,1.4907308131290422
-2025,Manipulation (any),3D Gaussian splatting,30,997,3.009027081243731,1.0264628471881811
-2025,Manipulation (any),NeRF / neural implicit fields,13,997,1.3039117352056169,0.7682918886529719
-2025,Manipulation (any),Sim-to-real,65,997,6.519558676028084,1.6163517876032467
-2025,Manipulation (any),Self-supervised / pretraining / representation,99,997,9.929789368104313,1.201372116349047
-2025,Manipulation (any),Language grounding / open-vocabulary,72,997,7.2216649949849545,1.4961047526140066
-2025,Manipulation (any),Learning from human video / human-to-robot transfer,32,997,3.20962888665998,2.6476520470502414
-2025,Manipulation (any),Cross-embodiment,29,997,2.908726178535607,2.999293334549102
-2025,Grasping,Imitation learning / LfD,50,310,16.129032258064516,1.440500381000762
-2025,Grasping,Reinforcement learning,34,310,10.96774193548387,0.8434007654455986
-2025,Grasping,LLM / VLM,25,310,8.064516129032258,0.9603335873338413
-2025,Grasping,VLA / robot foundation models,8,310,2.5806451612903225,1.8012903225806451
-2025,Grasping,Diffusion / flow generative models,21,310,6.774193548387097,1.2244827143040742
-2025,Grasping,World models / video prediction,1,310,0.3225806451612903,0.25233592880978867
-2025,Grasping,3D Gaussian splatting,8,310,2.5806451612903225,0.8803298569003153
-2025,Grasping,NeRF / neural implicit fields,5,310,1.6129032258064515,0.9503560955173859
-2025,Grasping,Sim-to-real,16,310,5.161290322580645,1.2796051471884364
-2025,Grasping,Self-supervised / pretraining / representation,19,310,6.129032258064516,0.7415311827956989
-2025,Grasping,Language grounding / open-vocabulary,17,310,5.483870967741935,1.1360877890705554
-2025,Grasping,Learning from human video / human-to-robot transfer,7,310,2.2580645161290325,1.862697947214076
-2025,Grasping,Cross-embodiment,5,310,1.6129032258064515,1.6631231671554252
-2025,Dexterous / in-hand,Imitation learning / LfD,74,260,28.46153846153846,2.5419291338582677
-2025,Dexterous / in-hand,Reinforcement learning,46,260,17.692307692307693,1.3605084745762712
-2025,Dexterous / in-hand,LLM / VLM,14,260,5.384615384615385,0.6412073490813649
-2025,Dexterous / in-hand,VLA / robot foundation models,7,260,2.6923076923076925,1.8792307692307693
-2025,Dexterous / in-hand,Diffusion / flow generative models,31,260,11.923076923076923,2.1551792828685263
-2025,Dexterous / in-hand,World models / video prediction,2,260,0.7692307692307693,0.6017241379310345
-2025,Dexterous / in-hand,3D Gaussian splatting,4,260,1.5384615384615385,0.5248120300751881
-2025,Dexterous / in-hand,NeRF / neural implicit fields,3,260,1.1538461538461537,0.67987012987013
-2025,Dexterous / in-hand,Sim-to-real,24,260,9.23076923076923,2.2885245901639344
-2025,Dexterous / in-hand,Self-supervised / pretraining / representation,21,260,8.076923076923077,0.9772
-2025,Dexterous / in-hand,Language grounding / open-vocabulary,9,260,3.4615384615384617,0.7171232876712329
-2025,Dexterous / in-hand,Learning from human video / human-to-robot transfer,8,260,3.076923076923077,2.538181818181818
-2025,Dexterous / in-hand,Cross-embodiment,9,260,3.4615384615384617,3.569318181818182
-2025,Deformable objects,Imitation learning / LfD,26,97,26.804123711340207,2.3939037259517817
-2025,Deformable objects,Reinforcement learning,11,97,11.34020618556701,0.8720426349816529
-2025,Deformable objects,LLM / VLM,8,97,8.24742268041237,0.9821143491084232
-2025,Deformable objects,VLA / robot foundation models,2,97,2.0618556701030926,1.4391752577319588
-2025,Deformable objects,Diffusion / flow generative models,11,97,11.34020618556701,2.049821333223806
-2025,Deformable objects,World models / video prediction,2,97,2.0618556701030926,1.6128688233202986
-2025,Deformable objects,3D Gaussian splatting,1,97,1.0309278350515463,0.35167816448337336
-2025,Deformable objects,NeRF / neural implicit fields,1,97,1.0309278350515463,0.6074441022894631
-2025,Deformable objects,Sim-to-real,6,97,6.185567010309279,1.533547405779956
-2025,Deformable objects,Self-supervised / pretraining / representation,7,97,7.216494845360825,0.8730996563573882
-2025,Deformable objects,Language grounding / open-vocabulary,5,97,5.154639175257732,1.0678811843901521
-2025,Deformable objects,Learning from human video / human-to-robot transfer,5,97,5.154639175257732,4.252108716026242
-2025,Deformable objects,Cross-embodiment,1,97,1.0309278350515463,1.0630271790065604
-2025,Mobile manipulation,Imitation learning / LfD,15,63,23.80952380952381,2.126452943382077
-2025,Mobile manipulation,Reinforcement learning,14,63,22.22222222222222,1.7088512241054612
-2025,Mobile manipulation,LLM / VLM,13,63,20.634920634920636,2.4572345123526222
-2025,Mobile manipulation,VLA / robot foundation models,3,63,4.761904761904762,3.3238095238095235
-2025,Mobile manipulation,Diffusion / flow generative models,2,63,3.1746031746031744,0.5738316574969962
-2025,Mobile manipulation,World models / video prediction,0,63,0.0,0.0
-2025,Mobile manipulation,3D Gaussian splatting,1,63,1.5873015873015872,0.5414727294426542
-2025,Mobile manipulation,NeRF / neural implicit fields,2,63,3.1746031746031744,1.870542156256442
-2025,Mobile manipulation,Sim-to-real,4,63,6.349206349206349,1.5741174429699019
-2025,Mobile manipulation,Self-supervised / pretraining / representation,9,63,14.285714285714286,1.7283809523809521
-2025,Mobile manipulation,Language grounding / open-vocabulary,8,63,12.698412698412698,2.6307168224976443
-2025,Mobile manipulation,Learning from human video / human-to-robot transfer,1,63,1.5873015873015872,1.3093795093795093
-2025,Mobile manipulation,Cross-embodiment,1,63,1.5873015873015872,1.6367243867243866
-2025,Humanoid robots,Imitation learning / LfD,25,134,18.65671641791045,1.6662504407098366
-2025,Humanoid robots,Reinforcement learning,38,134,28.35820895522388,2.180698203895775
-2025,Humanoid robots,LLM / VLM,4,134,2.985074626865672,0.3554667606847651
-2025,Humanoid robots,VLA / robot foundation models,4,134,2.985074626865672,2.083582089552239
-2025,Humanoid robots,Diffusion / flow generative models,4,134,2.985074626865672,0.539573051079265
-2025,Humanoid robots,World models / video prediction,3,134,2.2388059701492535,1.7512866700977867
-2025,Humanoid robots,3D Gaussian splatting,0,134,0.0,0.0
-2025,Humanoid robots,NeRF / neural implicit fields,0,134,0.0,0.0
-2025,Humanoid robots,Sim-to-real,21,134,15.671641791044776,3.8853682407633965
-2025,Humanoid robots,Self-supervised / pretraining / representation,3,134,2.2388059701492535,0.270865671641791
-2025,Humanoid robots,Language grounding / open-vocabulary,4,134,2.985074626865672,0.6184147754378791
-2025,Humanoid robots,Learning from human video / human-to-robot transfer,3,134,2.2388059701492535,1.846811397557666
-2025,Humanoid robots,Cross-embodiment,3,134,2.2388059701492535,2.3085142469470825
-2025,Legged robots / locomotion,Imitation learning / LfD,31,434,7.142857142857143,0.6379358830146231
-2025,Legged robots / locomotion,Reinforcement learning,129,434,29.723502304147466,2.2856869483714752
-2025,Legged robots / locomotion,LLM / VLM,18,434,4.147465437788019,0.49388584491454696
-2025,Legged robots / locomotion,VLA / robot foundation models,6,434,1.3824884792626728,0.9649769585253456
-2025,Legged robots / locomotion,Diffusion / flow generative models,9,434,2.0737327188940093,0.37484164723594104
-2025,Legged robots / locomotion,World models / video prediction,3,434,0.6912442396313364,0.5407198474495472
-2025,Legged robots / locomotion,3D Gaussian splatting,3,434,0.6912442396313364,0.2358026402411559
-2025,Legged robots / locomotion,NeRF / neural implicit fields,4,434,0.9216589861751152,0.5430606260099348
-2025,Legged robots / locomotion,Sim-to-real,37,434,8.525345622119815,2.1136335020523283
-2025,Legged robots / locomotion,Self-supervised / pretraining / representation,28,434,6.451612903225806,0.7805591397849462
-2025,Legged robots / locomotion,Language grounding / open-vocabulary,9,434,2.0737327188940093,0.4296130294804621
-2025,Legged robots / locomotion,Learning from human video / human-to-robot transfer,3,434,0.6912442396313364,0.5702136573104315
-2025,Legged robots / locomotion,Cross-embodiment,6,434,1.3824884792626728,1.4255341432760789
-2025,Aerial robots / UAV,Imitation learning / LfD,18,417,4.316546762589928,0.3855152098793406
-2025,Aerial robots / UAV,Reinforcement learning,50,417,11.990407673860911,0.922042027395033
-2025,Aerial robots / UAV,LLM / VLM,11,417,2.6378896882494005,0.3141235043461294
-2025,Aerial robots / UAV,VLA / robot foundation models,0,417,0.0,0.0
-2025,Aerial robots / UAV,Diffusion / flow generative models,10,417,2.3980815347721824,0.4334699571020475
-2025,Aerial robots / UAV,World models / video prediction,1,417,0.23980815347721823,0.18758786074588604
-2025,Aerial robots / UAV,3D Gaussian splatting,9,417,2.158273381294964,0.7362470925515228
-2025,Aerial robots / UAV,NeRF / neural implicit fields,9,417,2.158273381294964,1.2716995234980848
-2025,Aerial robots / UAV,Sim-to-real,15,417,3.597122302158273,0.8918111412509336
-2025,Aerial robots / UAV,Self-supervised / pretraining / representation,12,417,2.8776978417266186,0.3481630695443645
-2025,Aerial robots / UAV,Language grounding / open-vocabulary,6,417,1.4388489208633093,0.2980848198153806
-2025,Aerial robots / UAV,Learning from human video / human-to-robot transfer,0,417,0.0,0.0
-2025,Aerial robots / UAV,Cross-embodiment,2,417,0.47961630695443647,0.4945498146936995
-2025,Autonomous driving,Imitation learning / LfD,24,507,4.733727810650888,0.4227740763173834
-2025,Autonomous driving,Reinforcement learning,42,507,8.284023668639053,0.6370273794002608
-2025,Autonomous driving,LLM / VLM,42,507,8.284023668639053,0.9864728447405613
-2025,Autonomous driving,VLA / robot foundation models,1,507,0.19723865877712032,0.13767258382642997
-2025,Autonomous driving,Diffusion / flow generative models,32,507,6.31163708086785,1.1408724078046788
-2025,Autonomous driving,World models / video prediction,14,507,2.7613412228796843,2.1600353669319183
-2025,Autonomous driving,3D Gaussian splatting,17,507,3.353057199211045,1.1438210911895121
-2025,Autonomous driving,NeRF / neural implicit fields,8,507,1.5779092702169626,0.9297369297369298
-2025,Autonomous driving,Sim-to-real,6,507,1.183431952662722,0.2934005884825557
-2025,Autonomous driving,Self-supervised / pretraining / representation,66,507,13.017751479289942,1.5749743589743588
-2025,Autonomous driving,Language grounding / open-vocabulary,21,507,4.1420118343195265,0.8580962416578856
-2025,Autonomous driving,Learning from human video / human-to-robot transfer,0,507,0.0,0.0
-2025,Autonomous driving,Cross-embodiment,0,507,0.0,0.0
-2025,Navigation,Imitation learning / LfD,50,724,6.906077348066298,0.6167888371688346
-2025,Navigation,Reinforcement learning,95,724,13.121546961325967,1.0090247214158627
-2025,Navigation,LLM / VLM,74,724,10.220994475138122,1.217129972013167
-2025,Navigation,VLA / robot foundation models,4,724,0.5524861878453039,0.38563535911602204
-2025,Navigation,Diffusion / flow generative models,24,724,3.314917127071823,0.5991943826902335
-2025,Navigation,World models / video prediction,5,724,0.6906077348066298,0.5402219470375309
-2025,Navigation,3D Gaussian splatting,14,724,1.9337016574585635,0.6596394300668799
-2025,Navigation,NeRF / neural implicit fields,15,724,2.0718232044198897,1.220761282915979
-2025,Navigation,Sim-to-real,20,724,2.7624309392265194,0.6848715394137004
-2025,Navigation,Self-supervised / pretraining / representation,43,724,5.939226519337017,0.7185672191528545
-2025,Navigation,Language grounding / open-vocabulary,52,724,7.18232044198895,1.4879537828905876
-2025,Navigation,Learning from human video / human-to-robot transfer,6,724,0.8287292817679558,0.6836263184329482
-2025,Navigation,Cross-embodiment,4,724,0.5524861878453039,0.5696885986941235
-2025,SLAM / localization / state estimation,Imitation learning / LfD,13,520,2.5,0.22327755905511812
-2025,SLAM / localization / state estimation,Reinforcement learning,21,520,4.038461538461538,0.3105508474576271
-2025,SLAM / localization / state estimation,LLM / VLM,16,520,3.076923076923077,0.36640419947506564
-2025,SLAM / localization / state estimation,VLA / robot foundation models,0,520,0.0,0.0
-2025,SLAM / localization / state estimation,Diffusion / flow generative models,13,520,2.5,0.45189243027888454
-2025,SLAM / localization / state estimation,World models / video prediction,4,520,0.7692307692307693,0.6017241379310345
-2025,SLAM / localization / state estimation,3D Gaussian splatting,51,520,9.807692307692308,3.3456766917293232
-2025,SLAM / localization / state estimation,NeRF / neural implicit fields,23,520,4.423076923076923,2.6061688311688314
-2025,SLAM / localization / state estimation,Sim-to-real,9,520,1.7307692307692308,0.42909836065573775
-2025,SLAM / localization / state estimation,Self-supervised / pretraining / representation,36,520,6.923076923076923,0.8376
-2025,SLAM / localization / state estimation,Language grounding / open-vocabulary,14,520,2.6923076923076925,0.5577625570776256
-2025,SLAM / localization / state estimation,Learning from human video / human-to-robot transfer,3,520,0.5769230769230769,0.4759090909090909
-2025,SLAM / localization / state estimation,Cross-embodiment,2,520,0.38461538461538464,0.3965909090909091
-2025,Multi-robot / multi-agent / swarms,Imitation learning / LfD,20,338,5.9171597633136095,0.5284675953967292
-2025,Multi-robot / multi-agent / swarms,Reinforcement learning,78,338,23.076923076923077,1.7745762711864406
-2025,Multi-robot / multi-agent / swarms,LLM / VLM,28,338,8.284023668639053,0.9864728447405613
-2025,Multi-robot / multi-agent / swarms,VLA / robot foundation models,1,338,0.2958579881656805,0.20650887573964496
-2025,Multi-robot / multi-agent / swarms,Diffusion / flow generative models,6,338,1.7751479289940828,0.3208703646950659
-2025,Multi-robot / multi-agent / swarms,World models / video prediction,2,338,0.591715976331361,0.46286472148541113
-2025,Multi-robot / multi-agent / swarms,3D Gaussian splatting,1,338,0.2958579881656805,0.10092539039907461
-2025,Multi-robot / multi-agent / swarms,NeRF / neural implicit fields,1,338,0.2958579881656805,0.17432567432567433
-2025,Multi-robot / multi-agent / swarms,Sim-to-real,9,338,2.662721893491124,0.6601513240857503
-2025,Multi-robot / multi-agent / swarms,Self-supervised / pretraining / representation,14,338,4.1420118343195265,0.5011282051282051
-2025,Multi-robot / multi-agent / swarms,Language grounding / open-vocabulary,15,338,4.437869822485207,0.9193888303477344
-2025,Multi-robot / multi-agent / swarms,Learning from human video / human-to-robot transfer,1,338,0.2958579881656805,0.24405594405594402
-2025,Multi-robot / multi-agent / swarms,Cross-embodiment,0,338,0.0,0.0
-2025,Human-robot interaction,Imitation learning / LfD,32,326,9.815950920245399,0.8766726245108932
-2025,Human-robot interaction,Reinforcement learning,38,326,11.656441717791411,0.8963606114172817
-2025,Human-robot interaction,LLM / VLM,45,326,13.803680981595091,1.6437611709579247
-2025,Human-robot interaction,VLA / robot foundation models,1,326,0.3067484662576687,0.21411042944785275
-2025,Human-robot interaction,Diffusion / flow generative models,12,326,3.6809815950920246,0.665363087527192
-2025,Human-robot interaction,World models / video prediction,0,326,0.0,0.0
-2025,Human-robot interaction,3D Gaussian splatting,2,326,0.6134969325153374,0.20928087088887865
-2025,Human-robot interaction,NeRF / neural implicit fields,2,326,0.6134969325153374,0.3614851406262449
-2025,Human-robot interaction,Sim-to-real,6,326,1.8404907975460123,0.45630091521673544
-2025,Human-robot interaction,Self-supervised / pretraining / representation,14,326,4.294478527607362,0.5195746421267894
-2025,Human-robot interaction,Language grounding / open-vocabulary,22,326,6.748466257668712,1.3980726671709107
-2025,Human-robot interaction,Learning from human video / human-to-robot transfer,4,326,1.2269938650306749,1.0121583937534857
-2025,Human-robot interaction,Cross-embodiment,3,326,0.9202453987730062,0.9488984941438929
-2025,Surgical / medical,Imitation learning / LfD,18,319,5.6426332288401255,0.5039493495914892
-2025,Surgical / medical,Reinforcement learning,18,319,5.6426332288401255,0.433908931512672
-2025,Surgical / medical,LLM / VLM,2,319,0.6269592476489029,0.07465916290244283
-2025,Surgical / medical,VLA / robot foundation models,3,319,0.9404388714733543,0.6564263322884013
-2025,Surgical / medical,Diffusion / flow generative models,8,319,2.5078369905956115,0.4533090209694139
-2025,Surgical / medical,World models / video prediction,0,319,0.0,0.0
-2025,Surgical / medical,3D Gaussian splatting,6,319,1.8808777429467085,0.6416197232894149
-2025,Surgical / medical,NeRF / neural implicit fields,3,319,0.9404388714733543,0.5541261246590401
-2025,Surgical / medical,Sim-to-real,6,319,1.8808777429467085,0.46631378796443806
-2025,Surgical / medical,Self-supervised / pretraining / representation,12,319,3.761755485893417,0.4551222570532915
-2025,Surgical / medical,Language grounding / open-vocabulary,1,319,0.31347962382445144,0.0649432444425359
-2025,Surgical / medical,Learning from human video / human-to-robot transfer,1,319,0.31347962382445144,0.25859219150755197
-2025,Surgical / medical,Cross-embodiment,0,319,0.0,0.0
-2025,Wearable / exoskeleton / prosthesis / rehab,Imitation learning / LfD,15,168,8.928571428571429,0.797419853768279
-2025,Wearable / exoskeleton / prosthesis / rehab,Reinforcement learning,10,168,5.9523809523809526,0.45772800645681994
-2025,Wearable / exoskeleton / prosthesis / rehab,LLM / VLM,7,168,4.166666666666667,0.496172353455818
-2025,Wearable / exoskeleton / prosthesis / rehab,VLA / robot foundation models,0,168,0.0,0.0
-2025,Wearable / exoskeleton / prosthesis / rehab,Diffusion / flow generative models,4,168,2.380952380952381,0.4303737431227471
-2025,Wearable / exoskeleton / prosthesis / rehab,World models / video prediction,0,168,0.0,0.0
-2025,Wearable / exoskeleton / prosthesis / rehab,3D Gaussian splatting,0,168,0.0,0.0
-2025,Wearable / exoskeleton / prosthesis / rehab,NeRF / neural implicit fields,0,168,0.0,0.0
-2025,Wearable / exoskeleton / prosthesis / rehab,Sim-to-real,2,168,1.1904761904761905,0.2951470205568566
-2025,Wearable / exoskeleton / prosthesis / rehab,Self-supervised / pretraining / representation,13,168,7.738095238095238,0.9362063492063492
-2025,Wearable / exoskeleton / prosthesis / rehab,Language grounding / open-vocabulary,0,168,0.0,0.0
-2025,Wearable / exoskeleton / prosthesis / rehab,Learning from human video / human-to-robot transfer,1,168,0.5952380952380952,0.49101731601731596
-2025,Wearable / exoskeleton / prosthesis / rehab,Cross-embodiment,2,168,1.1904761904761905,1.2275432900432899
-2025,Soft robots,Imitation learning / LfD,6,243,2.4691358024691357,0.22052104598036354
-2025,Soft robots,Reinforcement learning,12,243,4.938271604938271,0.37974471646788027
-2025,Soft robots,LLM / VLM,0,243,0.0,0.0
-2025,Soft robots,VLA / robot foundation models,1,243,0.411522633744856,0.2872427983539095
-2025,Soft robots,Diffusion / flow generative models,1,243,0.411522633744856,0.07438558523109211
-2025,Soft robots,World models / video prediction,0,243,0.0,0.0
-2025,Soft robots,3D Gaussian splatting,0,243,0.0,0.0
-2025,Soft robots,NeRF / neural implicit fields,0,243,0.0,0.0
-2025,Soft robots,Sim-to-real,5,243,2.05761316872428,0.5101306528143201
-2025,Soft robots,Self-supervised / pretraining / representation,5,243,2.05761316872428,0.24894375857338819
-2025,Soft robots,Language grounding / open-vocabulary,0,243,0.0,0.0
-2025,Soft robots,Learning from human video / human-to-robot transfer,0,243,0.0,0.0
-2025,Soft robots,Cross-embodiment,0,243,0.0,0.0
-2025,Micro / bio-inspired robots,Imitation learning / LfD,10,182,5.4945054945054945,0.4907199100112486
-2025,Micro / bio-inspired robots,Reinforcement learning,23,182,12.637362637362637,0.9717917675544793
-2025,Micro / bio-inspired robots,LLM / VLM,1,182,0.5494505494505495,0.06542932133483315
-2025,Micro / bio-inspired robots,VLA / robot foundation models,1,182,0.5494505494505495,0.38351648351648354
-2025,Micro / bio-inspired robots,Diffusion / flow generative models,1,182,0.5494505494505495,0.09931701764371088
-2025,Micro / bio-inspired robots,World models / video prediction,1,182,0.5494505494505495,0.4298029556650247
-2025,Micro / bio-inspired robots,3D Gaussian splatting,1,182,0.5494505494505495,0.1874328678839957
-2025,Micro / bio-inspired robots,NeRF / neural implicit fields,0,182,0.0,0.0
-2025,Micro / bio-inspired robots,Sim-to-real,8,182,4.395604395604396,1.0897736143637784
-2025,Micro / bio-inspired robots,Self-supervised / pretraining / representation,2,182,1.098901098901099,0.13295238095238096
-2025,Micro / bio-inspired robots,Language grounding / open-vocabulary,1,182,0.5494505494505495,0.11382909328114808
-2025,Micro / bio-inspired robots,Learning from human video / human-to-robot transfer,0,182,0.0,0.0
-2025,Micro / bio-inspired robots,Cross-embodiment,0,182,0.0,0.0
-2025,Agriculture / field,Imitation learning / LfD,9,95,9.473684210526315,0.8461044343141318
-2025,Agriculture / field,Reinforcement learning,6,95,6.315789473684211,0.48567350579839424
-2025,Agriculture / field,LLM / VLM,5,95,5.2631578947368425,0.6267440254178753
-2025,Agriculture / field,VLA / robot foundation models,0,95,0.0,0.0
-2025,Agriculture / field,Diffusion / flow generative models,2,95,2.1052631578947367,0.3805409939190606
-2025,Agriculture / field,World models / video prediction,0,95,0.0,0.0
-2025,Agriculture / field,3D Gaussian splatting,1,95,1.0526315789473684,0.3590819153146023
-2025,Agriculture / field,NeRF / neural implicit fields,2,95,2.1052631578947367,1.2404647983595352
-2025,Agriculture / field,Sim-to-real,4,95,4.2105263157894735,1.0438884095484613
-2025,Agriculture / field,Self-supervised / pretraining / representation,7,95,7.368421052631579,0.8914807017543858
-2025,Agriculture / field,Language grounding / open-vocabulary,3,95,3.1578947368421053,0.6542177361211248
-2025,Agriculture / field,Learning from human video / human-to-robot transfer,0,95,0.0,0.0
-2025,Agriculture / field,Cross-embodiment,0,95,0.0,0.0
-2025,Industrial / logistics / construction,Imitation learning / LfD,16,173,9.248554913294798,0.8259979063310727
-2025,Industrial / logistics / construction,Reinforcement learning,16,173,9.248554913294798,0.7111981973155677
-2025,Industrial / logistics / construction,LLM / VLM,16,173,9.248554913294798,1.1013305417747636
-2025,Industrial / logistics / construction,VLA / robot foundation models,0,173,0.0,0.0
-2025,Industrial / logistics / construction,Diffusion / flow generative models,7,173,4.046242774566474,0.7313865923588883
-2025,Industrial / logistics / construction,World models / video prediction,0,173,0.0,0.0
-2025,Industrial / logistics / construction,3D Gaussian splatting,3,173,1.7341040462427746,0.5915511321656742
-2025,Industrial / logistics / construction,NeRF / neural implicit fields,3,173,1.7341040462427746,1.0217701373770738
-2025,Industrial / logistics / construction,Sim-to-real,6,173,3.468208092485549,0.8598502795413625
-2025,Industrial / logistics / construction,Self-supervised / pretraining / representation,12,173,6.936416184971098,0.8392138728323698
-2025,Industrial / logistics / construction,Language grounding / open-vocabulary,9,173,5.202312138728324,1.0777575421648586
-2025,Industrial / logistics / construction,Learning from human video / human-to-robot transfer,0,173,0.0,0.0
-2025,Industrial / logistics / construction,Cross-embodiment,1,173,0.5780346820809249,0.5960325801366263
-2025,Underwater / marine,Imitation learning / LfD,9,184,4.891304347826087,0.43684739815131807
-2025,Underwater / marine,Reinforcement learning,16,184,8.695652173913043,0.6686809137803978
-2025,Underwater / marine,LLM / VLM,7,184,3.8043478260869565,0.45302693141618167
-2025,Underwater / marine,VLA / robot foundation models,0,184,0.0,0.0
-2025,Underwater / marine,Diffusion / flow generative models,3,184,1.6304347826086956,0.2947124545297073
-2025,Underwater / marine,World models / video prediction,0,184,0.0,0.0
-2025,Underwater / marine,3D Gaussian splatting,1,184,0.5434782608695652,0.18539555410264794
-2025,Underwater / marine,NeRF / neural implicit fields,2,184,1.0869565217391304,0.6404573687182382
-2025,Underwater / marine,Sim-to-real,9,184,4.891304347826087,1.2126692801140413
-2025,Underwater / marine,Self-supervised / pretraining / representation,4,184,2.1739130434782608,0.26301449275362315
-2025,Underwater / marine,Language grounding / open-vocabulary,3,184,1.6304347826086956,0.33777546158427635
-2025,Underwater / marine,Learning from human video / human-to-robot transfer,0,184,0.0,0.0
-2025,Underwater / marine,Cross-embodiment,0,184,0.0,0.0
-2025,Space robotics,Imitation learning / LfD,1,39,2.5641025641025643,0.229002624671916
-2025,Space robotics,Reinforcement learning,5,39,12.820512820512821,0.9858757062146891
-2025,Space robotics,LLM / VLM,1,39,2.5641025641025643,0.305336832895888
-2025,Space robotics,VLA / robot foundation models,0,39,0.0,0.0
-2025,Space robotics,Diffusion / flow generative models,0,39,0.0,0.0
-2025,Space robotics,World models / video prediction,0,39,0.0,0.0
-2025,Space robotics,3D Gaussian splatting,0,39,0.0,0.0
-2025,Space robotics,NeRF / neural implicit fields,0,39,0.0,0.0
-2025,Space robotics,Sim-to-real,1,39,2.5641025641025643,0.6357012750455373
-2025,Space robotics,Self-supervised / pretraining / representation,2,39,5.128205128205129,0.6204444444444444
-2025,Space robotics,Language grounding / open-vocabulary,0,39,0.0,0.0
-2025,Space robotics,Learning from human video / human-to-robot transfer,0,39,0.0,0.0
-2025,Space robotics,Cross-embodiment,0,39,0.0,0.0
-2025,Tactile sensing,Imitation learning / LfD,25,203,12.31527093596059,1.0998894534734882
-2025,Tactile sensing,Reinforcement learning,15,203,7.389162561576355,0.56821407698088
-2025,Tactile sensing,LLM / VLM,4,203,1.9704433497536946,0.23464308340767748
-2025,Tactile sensing,VLA / robot foundation models,1,203,0.49261083743842365,0.34384236453201966
-2025,Tactile sensing,Diffusion / flow generative models,11,203,5.41871921182266,0.9794712774517694
-2025,Tactile sensing,World models / video prediction,1,203,0.49261083743842365,0.38534058094105655
-2025,Tactile sensing,3D Gaussian splatting,2,203,0.9852216748768473,0.3360865217230268
-2025,Tactile sensing,NeRF / neural implicit fields,4,203,1.9704433497536946,1.1610261659522743
-2025,Tactile sensing,Sim-to-real,15,203,7.389162561576355,1.8319470241460067
-2025,Tactile sensing,Self-supervised / pretraining / representation,17,203,8.374384236453203,1.0131888341543513
-2025,Tactile sensing,Language grounding / open-vocabulary,2,203,0.9852216748768473,0.20410733967654138
-2025,Tactile sensing,Learning from human video / human-to-robot transfer,2,203,0.9852216748768473,0.812718316166592
-2025,Tactile sensing,Cross-embodiment,2,203,0.9852216748768473,1.01589789520824
-2025,(all papers),Imitation learning / LfD,508,4537,11.196826096539564,1.0
-2025,(all papers),Reinforcement learning,590,4537,13.004187789288077,1.0
-2025,(all papers),LLM / VLM,381,4537,8.397619572404672,1.0
-2025,(all papers),VLA / robot foundation models,65,4537,1.4326647564469914,1.0
-2025,(all papers),Diffusion / flow generative models,251,4537,5.53229005951069,1.0
-2025,(all papers),World models / video prediction,58,4537,1.278377782675777,1.0
-2025,(all papers),3D Gaussian splatting,133,4537,2.931452501653075,1.0
-2025,(all papers),NeRF / neural implicit fields,77,4537,1.697156711483359,1.0
-2025,(all papers),Sim-to-real,183,4537,4.033502314304607,1.0
-2025,(all papers),Self-supervised / pretraining / representation,375,4537,8.265373594886489,1.0
-2025,(all papers),Language grounding / open-vocabulary,219,4537,4.826978179413709,1.0
-2025,(all papers),Learning from human video / human-to-robot transfer,55,4537,1.212254793916685,1.0
-2025,(all papers),Cross-embodiment,44,4537,0.969803835133348,1.0
+2023,(all papers),NeRF / neural implicit fields,54,3227,1.6733808490858382,1.0
+2023,(all papers),Sim-to-real,228,3227,7.065385807251317,1.0
+2023,(all papers),Self-supervised / pretraining / representation,208,3227,6.4456151224047105,1.0
+2023,(all papers),Language grounding / open-vocabulary,100,3227,3.0988534242330337,1.0
+2023,(all papers),Learning from human video / human-to-robot transfer,28,3227,0.8676789587852495,1.0
+2023,(all papers),Cross-embodiment,25,3227,0.7747133560582584,1.0
+2025,Manipulation (any),Imitation learning / LfD,297,1057,28.098391674550616,2.6782017442738684
+2025,Manipulation (any),Reinforcement learning,166,1057,15.704824976348155,1.2435042044972353
+2025,Manipulation (any),LLM / VLM,167,1057,15.799432355723747,1.5616998823075958
+2025,Manipulation (any),VLA / robot foundation models,46,1057,4.351939451277199,2.8615578681803844
+2025,Manipulation (any),Diffusion / flow generative models,99,1057,9.366130558183539,1.8316437216585653
+2025,Manipulation (any),World models / video prediction,43,1057,4.068117313150426,1.6779134772512256
+2025,Manipulation (any),3D Gaussian splatting,23,1057,2.1759697256385997,0.7773523342694746
+2025,Manipulation (any),NeRF / neural implicit fields,13,1057,1.2298959318826868,0.8454602792351138
+2025,Manipulation (any),Sim-to-real,153,1057,14.474929044465469,1.7466157732643572
+2025,Manipulation (any),Self-supervised / pretraining / representation,74,1057,7.000946073793756,1.1986148051623498
+2025,Manipulation (any),Language grounding / open-vocabulary,128,1057,12.109744560075686,1.7223169614126455
+2025,Manipulation (any),Learning from human video / human-to-robot transfer,69,1057,6.5279091769157995,2.8754489257929112
+2025,Manipulation (any),Cross-embodiment,42,1057,3.9735099337748343,2.3720808644126876
+2025,Grasping,Imitation learning / LfD,36,272,13.235294117647058,1.261523727137914
+2025,Grasping,Reinforcement learning,35,272,12.867647058823529,1.0188571501899188
+2025,Grasping,LLM / VLM,37,272,13.602941176470589,1.3445870178136614
+2025,Grasping,VLA / robot foundation models,4,272,1.4705882352941178,0.9669650468883205
+2025,Grasping,Diffusion / flow generative models,15,272,5.514705882352941,1.0784577839756593
+2025,Grasping,World models / video prediction,1,272,0.36764705882352944,0.15163770053475933
+2025,Grasping,3D Gaussian splatting,6,272,2.2058823529411766,0.7880384437239463
+2025,Grasping,NeRF / neural implicit fields,6,272,2.2058823529411766,1.5163770053475938
+2025,Grasping,Sim-to-real,38,272,13.970588235294118,1.6857595431789738
+2025,Grasping,Self-supervised / pretraining / representation,17,272,6.25,1.0700471698113208
+2025,Grasping,Language grounding / open-vocabulary,35,272,12.867647058823529,1.8301101788677852
+2025,Grasping,Learning from human video / human-to-robot transfer,12,272,4.411764705882353,1.9433181039406056
+2025,Grasping,Cross-embodiment,6,272,2.2058823529411766,1.3168537151702788
+2025,Dexterous / in-hand,Imitation learning / LfD,46,151,30.4635761589404,2.9036396015359784
+2025,Dexterous / in-hand,Reinforcement learning,39,151,25.827814569536425,2.0450400471550916
+2025,Dexterous / in-hand,LLM / VLM,13,151,8.609271523178808,0.8509861634131209
+2025,Dexterous / in-hand,VLA / robot foundation models,3,151,1.9867549668874172,1.3063633746040888
+2025,Dexterous / in-hand,Diffusion / flow generative models,16,151,10.596026490066226,2.072162594199589
+2025,Dexterous / in-hand,World models / video prediction,0,151,0.0,0.0
+2025,Dexterous / in-hand,3D Gaussian splatting,1,151,0.6622516556291391,0.23658549303853574
+2025,Dexterous / in-hand,NeRF / neural implicit fields,2,151,1.3245033112582782,0.9104956853301225
+2025,Dexterous / in-hand,Sim-to-real,36,151,23.841059602649008,2.876778920670706
+2025,Dexterous / in-hand,Self-supervised / pretraining / representation,17,151,11.258278145695364,1.927502186679995
+2025,Dexterous / in-hand,Language grounding / open-vocabulary,10,151,6.622516556291391,0.9418920882725405
+2025,Dexterous / in-hand,Learning from human video / human-to-robot transfer,20,151,13.245033112582782,5.834244197260979
+2025,Dexterous / in-hand,Cross-embodiment,13,151,8.609271523178808,5.139508539560823
+2025,Deformable objects,Imitation learning / LfD,30,142,21.12676056338028,2.013699846135637
+2025,Deformable objects,Reinforcement learning,10,142,7.042253521126761,0.5576039131824103
+2025,Deformable objects,LLM / VLM,12,142,8.450704225352112,0.8353125287673755
+2025,Deformable objects,VLA / robot foundation models,5,142,3.5211267605633805,2.3152684221269646
+2025,Deformable objects,Diffusion / flow generative models,13,142,9.154929577464788,1.7903411850412823
+2025,Deformable objects,World models / video prediction,11,142,7.746478873239437,3.1950704225352107
+2025,Deformable objects,3D Gaussian splatting,5,142,3.5211267605633805,1.257901741155595
+2025,Deformable objects,NeRF / neural implicit fields,4,142,2.816901408450704,1.936406316688007
+2025,Deformable objects,Sim-to-real,16,142,11.267605633802816,1.3596044351213665
+2025,Deformable objects,Self-supervised / pretraining / representation,12,142,8.450704225352112,1.4468243422800955
+2025,Deformable objects,Language grounding / open-vocabulary,10,142,7.042253521126761,1.001589474148969
+2025,Deformable objects,Learning from human video / human-to-robot transfer,7,142,4.929577464788732,2.1714070832763572
+2025,Deformable objects,Cross-embodiment,4,142,2.816901408450704,1.6816160118606376
+2025,Mobile manipulation,Imitation learning / LfD,17,108,15.74074074074074,1.500330687830688
+2025,Mobile manipulation,Reinforcement learning,28,108,25.925925925925927,2.052808480382651
+2025,Mobile manipulation,LLM / VLM,19,108,17.59259259259259,1.7389453723876382
+2025,Mobile manipulation,VLA / robot foundation models,4,108,3.7037037037037037,2.4353193773483626
+2025,Mobile manipulation,Diffusion / flow generative models,2,108,1.8518518518518519,0.3621487867177522
+2025,Mobile manipulation,World models / video prediction,0,108,0.0,0.0
+2025,Mobile manipulation,3D Gaussian splatting,1,108,0.9259259259259259,0.33078156897054534
+2025,Mobile manipulation,NeRF / neural implicit fields,3,108,2.7777777777777777,1.9095117845117844
+2025,Mobile manipulation,Sim-to-real,24,108,22.22222222222222,2.6814420803782504
+2025,Mobile manipulation,Self-supervised / pretraining / representation,3,108,2.7777777777777777,0.4755765199161425
+2025,Mobile manipulation,Language grounding / open-vocabulary,17,108,15.74074074074074,2.2387379542551957
+2025,Mobile manipulation,Learning from human video / human-to-robot transfer,4,108,3.7037037037037037,1.6314275440489032
+2025,Mobile manipulation,Cross-embodiment,3,108,2.7777777777777777,1.6582602339181285
+2025,Humanoid robots,Imitation learning / LfD,32,124,25.806451612903224,2.4597451883979398
+2025,Humanoid robots,Reinforcement learning,42,124,33.87096774193548,2.681894950177335
+2025,Humanoid robots,LLM / VLM,6,124,4.838709677419355,0.47828378663293275
+2025,Humanoid robots,VLA / robot foundation models,3,124,2.4193548387096775,1.590813464235624
+2025,Humanoid robots,Diffusion / flow generative models,4,124,3.225806451612903,0.6308398220244716
+2025,Humanoid robots,World models / video prediction,3,124,2.4193548387096775,0.9978739002932551
+2025,Humanoid robots,3D Gaussian splatting,0,124,0.0,0.0
+2025,Humanoid robots,NeRF / neural implicit fields,0,124,0.0,0.0
+2025,Humanoid robots,Sim-to-real,38,124,30.64516129032258,3.697795126973233
+2025,Humanoid robots,Self-supervised / pretraining / representation,4,124,3.225806451612903,0.5522824102251978
+2025,Humanoid robots,Language grounding / open-vocabulary,4,124,3.225806451612903,0.45879259783597937
+2025,Humanoid robots,Learning from human video / human-to-robot transfer,16,124,12.903225806451612,5.683683056686502
+2025,Humanoid robots,Cross-embodiment,5,124,4.032258064516129,2.4071519524617995
+2025,Legged robots / locomotion,Imitation learning / LfD,31,365,8.493150684931507,0.8095257280994589
+2025,Legged robots / locomotion,Reinforcement learning,135,365,36.986301369863014,2.9285663056730975
+2025,Legged robots / locomotion,LLM / VLM,25,365,6.8493150684931505,0.6770227116721879
+2025,Legged robots / locomotion,VLA / robot foundation models,5,365,1.36986301369863,0.9007345642247369
+2025,Legged robots / locomotion,Diffusion / flow generative models,8,365,2.191780821917808,0.4286254133207369
+2025,Legged robots / locomotion,World models / video prediction,12,365,3.287671232876712,1.3560149439601492
+2025,Legged robots / locomotion,3D Gaussian splatting,2,365,0.547945205479452,0.19575018876065148
+2025,Legged robots / locomotion,NeRF / neural implicit fields,3,365,0.821917808219178,0.5650062266500623
+2025,Legged robots / locomotion,Sim-to-real,93,365,25.47945205479452,3.074475371611775
+2025,Legged robots / locomotion,Self-supervised / pretraining / representation,17,365,4.657534246575342,0.7974050142155596
+2025,Legged robots / locomotion,Language grounding / open-vocabulary,18,365,4.931506849315069,0.7013870399793877
+2025,Legged robots / locomotion,Learning from human video / human-to-robot transfer,9,365,2.4657534246575343,1.0861284745311877
+2025,Legged robots / locomotion,Cross-embodiment,13,365,3.5616438356164384,2.1262076423936556
+2025,Aerial robots / UAV,Imitation learning / LfD,12,358,3.35195530726257,0.3194920426271067
+2025,Aerial robots / UAV,Reinforcement learning,46,358,12.849162011173185,1.0173935086333812
+2025,Aerial robots / UAV,LLM / VLM,13,358,3.631284916201117,0.358935504679836
+2025,Aerial robots / UAV,VLA / robot foundation models,0,358,0.0,0.0
+2025,Aerial robots / UAV,Diffusion / flow generative models,7,358,1.9553072625698324,0.38238056251204006
+2025,Aerial robots / UAV,World models / video prediction,2,358,0.5586592178770949,0.23042153377348906
+2025,Aerial robots / UAV,3D Gaussian splatting,7,358,1.9553072625698324,0.6985219724629393
+2025,Aerial robots / UAV,NeRF / neural implicit fields,3,358,0.8379888268156425,0.5760538344337227
+2025,Aerial robots / UAV,Sim-to-real,32,358,8.938547486033519,1.0785688814929277
+2025,Aerial robots / UAV,Self-supervised / pretraining / representation,6,358,1.675977653631285,0.2869400231896279
+2025,Aerial robots / UAV,Language grounding / open-vocabulary,11,358,3.0726256983240225,0.4370063571566172
+2025,Aerial robots / UAV,Learning from human video / human-to-robot transfer,0,358,0.0,0.0
+2025,Aerial robots / UAV,Cross-embodiment,6,358,1.675977653631285,1.0005145545427816
+2025,Autonomous driving,Imitation learning / LfD,22,472,4.661016949152542,0.4442654180316194
+2025,Autonomous driving,Reinforcement learning,34,472,7.203389830508475,0.5703626467891265
+2025,Autonomous driving,LLM / VLM,51,472,10.805084745762711,1.0680320150659135
+2025,Autonomous driving,VLA / robot foundation models,2,472,0.423728813559322,0.27861704740849913
+2025,Autonomous driving,Diffusion / flow generative models,32,472,6.779661016949152,1.3258328462887201
+2025,Autonomous driving,World models / video prediction,20,472,4.237288135593221,1.7476887519260398
+2025,Autonomous driving,3D Gaussian splatting,14,472,2.9661016949152543,1.0596223141598826
+2025,Autonomous driving,NeRF / neural implicit fields,2,472,0.423728813559322,0.29128145865434
+2025,Autonomous driving,Sim-to-real,13,472,2.7542372881355934,0.3323397493689145
+2025,Autonomous driving,Self-supervised / pretraining / representation,53,472,11.228813559322035,1.9224576271186442
+2025,Autonomous driving,Language grounding / open-vocabulary,19,472,4.02542372881356,0.57251872907922
+2025,Autonomous driving,Learning from human video / human-to-robot transfer,0,472,0.0,0.0
+2025,Autonomous driving,Cross-embodiment,1,472,0.211864406779661,0.12647747546833185
+2025,Navigation,Imitation learning / LfD,36,524,6.870229007633588,0.6548367438578485
+2025,Navigation,Reinforcement learning,92,524,17.557251908396946,1.39017891637691
+2025,Navigation,LLM / VLM,90,524,17.17557251908397,1.697724891483311
+2025,Navigation,VLA / robot foundation models,8,524,1.5267175572519085,1.0038721097466534
+2025,Navigation,Diffusion / flow generative models,22,524,4.198473282442748,0.8210548828639116
+2025,Navigation,World models / video prediction,11,524,2.099236641221374,0.8658396946564885
+2025,Navigation,3D Gaussian splatting,9,524,1.717557251908397,0.6135871851896376
+2025,Navigation,NeRF / neural implicit fields,9,524,1.717557251908397,1.1806904927133937
+2025,Navigation,Sim-to-real,56,524,10.687022900763358,1.289548481403281
+2025,Navigation,Self-supervised / pretraining / representation,29,524,5.534351145038168,0.9475226847184214
+2025,Navigation,Language grounding / open-vocabulary,83,524,15.83969465648855,2.2528117447175093
+2025,Navigation,Learning from human video / human-to-robot transfer,5,524,0.9541984732824428,0.420310531386645
+2025,Navigation,Cross-embodiment,5,524,0.9541984732824428,0.5696313780634793
+2025,SLAM / localization / state estimation,Imitation learning / LfD,3,505,0.594059405940594,0.056622847158665446
+2025,SLAM / localization / state estimation,Reinforcement learning,13,505,2.5742574257425743,0.2038290740068771
+2025,SLAM / localization / state estimation,LLM / VLM,14,505,2.772277227722772,0.2740266183481093
+2025,SLAM / localization / state estimation,VLA / robot foundation models,0,505,0.0,0.0
+2025,SLAM / localization / state estimation,Diffusion / flow generative models,8,505,1.5841584158415842,0.3097985660635029
+2025,SLAM / localization / state estimation,World models / video prediction,5,505,0.9900990099009901,0.40837083708370836
+2025,SLAM / localization / state estimation,3D Gaussian splatting,47,505,9.306930693069306,3.3248460279098775
+2025,SLAM / localization / state estimation,NeRF / neural implicit fields,16,505,3.1683168316831685,2.177977797779778
+2025,SLAM / localization / state estimation,Sim-to-real,15,505,2.9702970297029703,0.3584105751000632
+2025,SLAM / localization / state estimation,Self-supervised / pretraining / representation,18,505,3.5643564356435644,0.610244722585466
+2025,SLAM / localization / state estimation,Language grounding / open-vocabulary,13,505,2.5742574257425743,0.36612557807504886
+2025,SLAM / localization / state estimation,Learning from human video / human-to-robot transfer,0,505,0.0,0.0
+2025,SLAM / localization / state estimation,Cross-embodiment,4,505,0.7920792079207921,0.4728504429390308
+2025,Multi-robot / multi-agent / swarms,Imitation learning / LfD,20,437,4.576659038901602,0.43622483318270094
+2025,Multi-robot / multi-agent / swarms,Reinforcement learning,85,437,19.450800915331808,1.5401096640987857
+2025,Multi-robot / multi-agent / swarms,LLM / VLM,29,437,6.636155606407323,0.6559528973043578
+2025,Multi-robot / multi-agent / swarms,VLA / robot foundation models,0,437,0.0,0.0
+2025,Multi-robot / multi-agent / swarms,Diffusion / flow generative models,6,437,1.3729977116704806,0.26850390594176593
+2025,Multi-robot / multi-agent / swarms,World models / video prediction,3,437,0.6864988558352403,0.28314957353858955
+2025,Multi-robot / multi-agent / swarms,3D Gaussian splatting,2,437,0.4576659038901602,0.16349844141335879
+2025,Multi-robot / multi-agent / swarms,NeRF / neural implicit fields,1,437,0.2288329519450801,0.15730531863254976
+2025,Multi-robot / multi-agent / swarms,Sim-to-real,28,437,6.407322654462242,0.7731389064706169
+2025,Multi-robot / multi-agent / swarms,Self-supervised / pretraining / representation,11,437,2.517162471395881,0.4309572125555891
+2025,Multi-robot / multi-agent / swarms,Language grounding / open-vocabulary,14,437,3.203661327231121,0.45564299190117863
+2025,Multi-robot / multi-agent / swarms,Learning from human video / human-to-robot transfer,0,437,0.0,0.0
+2025,Multi-robot / multi-agent / swarms,Cross-embodiment,1,437,0.2288329519450801,0.1366072503914248
+2025,Human-robot interaction,Imitation learning / LfD,44,369,11.924119241192411,1.1365489285144952
+2025,Human-robot interaction,Reinforcement learning,35,369,9.48509485094851,0.7510274928229212
+2025,Human-robot interaction,LLM / VLM,55,369,14.905149051490515,1.4733041665928643
+2025,Human-robot interaction,VLA / robot foundation models,3,369,0.8130081300813008,0.5345823023447626
+2025,Human-robot interaction,Diffusion / flow generative models,9,369,2.4390243902439024,0.47697645079899076
+2025,Human-robot interaction,World models / video prediction,1,369,0.27100271002710025,0.11177629958117763
+2025,Human-robot interaction,3D Gaussian splatting,1,369,0.27100271002710025,0.09681411774747668
+2025,Human-robot interaction,NeRF / neural implicit fields,2,369,0.5420054200542005,0.3725876652705921
+2025,Human-robot interaction,Sim-to-real,9,369,2.4390243902439024,0.2943046185781007
+2025,Human-robot interaction,Self-supervised / pretraining / representation,13,369,3.5230352303523036,0.6031702203814491
+2025,Human-robot interaction,Language grounding / open-vocabulary,46,369,12.466124661246612,1.7730033726669554
+2025,Human-robot interaction,Learning from human video / human-to-robot transfer,9,369,2.4390243902439024,1.0743547241297657
+2025,Human-robot interaction,Cross-embodiment,1,369,0.27100271002710025,0.16178148623591498
+2025,Surgical / medical,Imitation learning / LfD,13,235,5.531914893617022,0.527275165385303
+2025,Surgical / medical,Reinforcement learning,12,235,5.1063829787234045,0.40432215662247967
+2025,Surgical / medical,LLM / VLM,3,235,1.2765957446808511,0.12618550966485886
+2025,Surgical / medical,VLA / robot foundation models,3,235,1.2765957446808511,0.8394079555966697
+2025,Surgical / medical,Diffusion / flow generative models,6,235,2.5531914893617023,0.4993030080704328
+2025,Surgical / medical,World models / video prediction,0,235,0.0,0.0
+2025,Surgical / medical,3D Gaussian splatting,5,235,2.127659574468085,0.7600938180599766
+2025,Surgical / medical,NeRF / neural implicit fields,3,235,1.2765957446808511,0.8775628626692457
+2025,Surgical / medical,Sim-to-real,7,235,2.978723404255319,0.35942734268899956
+2025,Surgical / medical,Self-supervised / pretraining / representation,9,235,3.8297872340425534,0.6556884785226816
+2025,Surgical / medical,Language grounding / open-vocabulary,4,235,1.702127659574468,0.24208630694324018
+2025,Surgical / medical,Learning from human video / human-to-robot transfer,0,235,0.0,0.0
+2025,Surgical / medical,Cross-embodiment,0,235,0.0,0.0
+2025,Wearable / exoskeleton / prosthesis / rehab,Imitation learning / LfD,13,156,8.333333333333334,0.7942927170868347
+2025,Wearable / exoskeleton / prosthesis / rehab,Reinforcement learning,14,156,8.974358974358974,0.710587550901687
+2025,Wearable / exoskeleton / prosthesis / rehab,LLM / VLM,11,156,7.051282051282051,0.6969862018881627
+2025,Wearable / exoskeleton / prosthesis / rehab,VLA / robot foundation models,0,156,0.0,0.0
+2025,Wearable / exoskeleton / prosthesis / rehab,Diffusion / flow generative models,2,156,1.2820512820512822,0.2507183908045977
+2025,Wearable / exoskeleton / prosthesis / rehab,World models / video prediction,0,156,0.0,0.0
+2025,Wearable / exoskeleton / prosthesis / rehab,3D Gaussian splatting,0,156,0.0,0.0
+2025,Wearable / exoskeleton / prosthesis / rehab,NeRF / neural implicit fields,0,156,0.0,0.0
+2025,Wearable / exoskeleton / prosthesis / rehab,Sim-to-real,5,156,3.2051282051282053,0.3867464539007092
+2025,Wearable / exoskeleton / prosthesis / rehab,Self-supervised / pretraining / representation,6,156,3.8461538461538463,0.6584905660377358
+2025,Wearable / exoskeleton / prosthesis / rehab,Language grounding / open-vocabulary,6,156,3.8461538461538463,0.5470219435736677
+2025,Wearable / exoskeleton / prosthesis / rehab,Learning from human video / human-to-robot transfer,2,156,1.2820512820512822,0.5647249190938511
+2025,Wearable / exoskeleton / prosthesis / rehab,Cross-embodiment,2,156,1.2820512820512822,0.7653508771929824
+2025,Soft robots,Imitation learning / LfD,5,276,1.8115942028985508,0.1726723298014858
+2025,Soft robots,Reinforcement learning,17,276,6.159420289855072,0.4877013936312821
+2025,Soft robots,LLM / VLM,1,276,0.36231884057971014,0.03581352025512299
+2025,Soft robots,VLA / robot foundation models,1,276,0.36231884057971014,0.2382377651753833
+2025,Soft robots,Diffusion / flow generative models,1,276,0.36231884057971014,0.07085519740129935
+2025,Soft robots,World models / video prediction,1,276,0.36231884057971014,0.14944005270092225
+2025,Soft robots,3D Gaussian splatting,0,276,0.0,0.0
+2025,Soft robots,NeRF / neural implicit fields,1,276,0.36231884057971014,0.24906675450153712
+2025,Soft robots,Sim-to-real,3,276,1.0869565217391304,0.13115749306197966
+2025,Soft robots,Self-supervised / pretraining / representation,4,276,1.4492753623188406,0.2481268799562483
+2025,Soft robots,Language grounding / open-vocabulary,1,276,0.36231884057971014,0.051531052655490434
+2025,Soft robots,Learning from human video / human-to-robot transfer,1,276,0.36231884057971014,0.15959617278739271
+2025,Soft robots,Cross-embodiment,0,276,0.0,0.0
+2025,Micro / bio-inspired robots,Imitation learning / LfD,4,230,1.7391304347826086,0.1657654366094264
+2025,Micro / bio-inspired robots,Reinforcement learning,16,230,6.956521739130435,0.5508156916306245
+2025,Micro / bio-inspired robots,LLM / VLM,2,230,0.8695652173913043,0.08595244861229516
+2025,Micro / bio-inspired robots,VLA / robot foundation models,1,230,0.43478260869565216,0.28588531821046
+2025,Micro / bio-inspired robots,Diffusion / flow generative models,1,230,0.43478260869565216,0.08502623688155922
+2025,Micro / bio-inspired robots,World models / video prediction,2,230,0.8695652173913043,0.3586561264822134
+2025,Micro / bio-inspired robots,3D Gaussian splatting,0,230,0.0,0.0
+2025,Micro / bio-inspired robots,NeRF / neural implicit fields,0,230,0.0,0.0
+2025,Micro / bio-inspired robots,Sim-to-real,5,230,2.1739130434782608,0.2623149861239593
+2025,Micro / bio-inspired robots,Self-supervised / pretraining / representation,0,230,0.0,0.0
+2025,Micro / bio-inspired robots,Language grounding / open-vocabulary,2,230,0.8695652173913043,0.12367452637317705
+2025,Micro / bio-inspired robots,Learning from human video / human-to-robot transfer,0,230,0.0,0.0
+2025,Micro / bio-inspired robots,Cross-embodiment,1,230,0.43478260869565216,0.2595537757437071
+2025,Agriculture / field,Imitation learning / LfD,4,156,2.5641025641025643,0.24439775910364145
+2025,Agriculture / field,Reinforcement learning,8,156,5.128205128205129,0.40605002908667825
+2025,Agriculture / field,LLM / VLM,7,156,4.487179487179487,0.44353667392883084
+2025,Agriculture / field,VLA / robot foundation models,0,156,0.0,0.0
+2025,Agriculture / field,Diffusion / flow generative models,2,156,1.2820512820512822,0.2507183908045977
+2025,Agriculture / field,World models / video prediction,7,156,4.487179487179487,1.8507575757575756
+2025,Agriculture / field,3D Gaussian splatting,2,156,1.2820512820512822,0.458005249343832
+2025,Agriculture / field,NeRF / neural implicit fields,2,156,1.2820512820512822,0.8813131313131313
+2025,Agriculture / field,Sim-to-real,14,156,8.974358974358974,1.082890070921986
+2025,Agriculture / field,Self-supervised / pretraining / representation,11,156,7.051282051282051,1.2072327044025157
+2025,Agriculture / field,Language grounding / open-vocabulary,5,156,3.2051282051282053,0.45585161964472304
+2025,Agriculture / field,Learning from human video / human-to-robot transfer,0,156,0.0,0.0
+2025,Agriculture / field,Cross-embodiment,0,156,0.0,0.0
+2025,Industrial / logistics / construction,Imitation learning / LfD,11,156,7.051282051282051,0.672093837535014
+2025,Industrial / logistics / construction,Reinforcement learning,21,156,13.461538461538462,1.0658813263525304
+2025,Industrial / logistics / construction,LLM / VLM,9,156,5.769230769230769,0.5702614379084968
+2025,Industrial / logistics / construction,VLA / robot foundation models,0,156,0.0,0.0
+2025,Industrial / logistics / construction,Diffusion / flow generative models,5,156,3.2051282051282053,0.6267959770114941
+2025,Industrial / logistics / construction,World models / video prediction,1,156,0.6410256410256411,0.26439393939393935
+2025,Industrial / logistics / construction,3D Gaussian splatting,0,156,0.0,0.0
+2025,Industrial / logistics / construction,NeRF / neural implicit fields,1,156,0.6410256410256411,0.44065656565656564
+2025,Industrial / logistics / construction,Sim-to-real,12,156,7.6923076923076925,0.9281914893617023
+2025,Industrial / logistics / construction,Self-supervised / pretraining / representation,4,156,2.5641025641025643,0.43899371069182386
+2025,Industrial / logistics / construction,Language grounding / open-vocabulary,5,156,3.2051282051282053,0.45585161964472304
+2025,Industrial / logistics / construction,Learning from human video / human-to-robot transfer,2,156,1.2820512820512822,0.5647249190938511
+2025,Industrial / logistics / construction,Cross-embodiment,1,156,0.6410256410256411,0.3826754385964912
+2025,Underwater / marine,Imitation learning / LfD,4,191,2.094240837696335,0.1996128294249637
+2025,Underwater / marine,Reinforcement learning,19,191,9.947643979057592,0.7876520197728497
+2025,Underwater / marine,LLM / VLM,10,191,5.2356020942408374,0.5175147429536097
+2025,Underwater / marine,VLA / robot foundation models,0,191,0.0,0.0
+2025,Underwater / marine,Diffusion / flow generative models,2,191,1.0471204188481675,0.20477523018595414
+2025,Underwater / marine,World models / video prediction,3,191,1.5706806282722514,0.6478343645882912
+2025,Underwater / marine,3D Gaussian splatting,1,191,0.5235602094240838,0.1870387929257534
+2025,Underwater / marine,NeRF / neural implicit fields,1,191,0.5235602094240838,0.3599079803268285
+2025,Underwater / marine,Sim-to-real,13,191,6.806282722513089,0.8212793806394119
+2025,Underwater / marine,Self-supervised / pretraining / representation,2,191,1.0471204188481675,0.17927491850242025
+2025,Underwater / marine,Language grounding / open-vocabulary,5,191,2.6178010471204187,0.37231860033809844
+2025,Underwater / marine,Learning from human video / human-to-robot transfer,0,191,0.0,0.0
+2025,Underwater / marine,Cross-embodiment,1,191,0.5235602094240838,0.31255166712593
+2025,Space robotics,Imitation learning / LfD,1,35,2.857142857142857,0.27232893157262905
+2025,Space robotics,Reinforcement learning,5,35,14.285714285714286,1.1311393667414609
+2025,Space robotics,LLM / VLM,1,35,2.857142857142857,0.28241518829754125
+2025,Space robotics,VLA / robot foundation models,0,35,0.0,0.0
+2025,Space robotics,Diffusion / flow generative models,0,35,0.0,0.0
+2025,Space robotics,World models / video prediction,0,35,0.0,0.0
+2025,Space robotics,3D Gaussian splatting,0,35,0.0,0.0
+2025,Space robotics,NeRF / neural implicit fields,0,35,0.0,0.0
+2025,Space robotics,Sim-to-real,1,35,2.857142857142857,0.3447568389057751
+2025,Space robotics,Self-supervised / pretraining / representation,1,35,2.857142857142857,0.48916442048517517
+2025,Space robotics,Language grounding / open-vocabulary,0,35,0.0,0.0
+2025,Space robotics,Learning from human video / human-to-robot transfer,0,35,0.0,0.0
+2025,Space robotics,Cross-embodiment,0,35,0.0,0.0
+2025,Tactile sensing,Imitation learning / LfD,25,179,13.966480446927374,1.331216844279611
+2025,Tactile sensing,Reinforcement learning,13,179,7.262569832402234,0.5750485048797372
+2025,Tactile sensing,LLM / VLM,8,179,4.4692737430167595,0.4417667749905673
+2025,Tactile sensing,VLA / robot foundation models,1,179,0.5586592178770949,0.36733867703019996
+2025,Tactile sensing,Diffusion / flow generative models,8,179,4.4692737430167595,0.8740127143132345
+2025,Tactile sensing,World models / video prediction,3,179,1.675977653631285,0.6912646013204672
+2025,Tactile sensing,3D Gaussian splatting,2,179,1.1173184357541899,0.39915541283596534
+2025,Tactile sensing,NeRF / neural implicit fields,5,179,2.793296089385475,1.920179448112409
+2025,Tactile sensing,Sim-to-real,18,179,10.05586592178771,1.2133899916795436
+2025,Tactile sensing,Self-supervised / pretraining / representation,20,179,11.1731843575419,1.9129334879308526
+2025,Tactile sensing,Language grounding / open-vocabulary,3,179,1.675977653631285,0.23836710390360938
+2025,Tactile sensing,Learning from human video / human-to-robot transfer,7,179,3.910614525139665,1.7225687476270544
+2025,Tactile sensing,Cross-embodiment,3,179,1.675977653631285,1.0005145545427816
+2025,(all papers),Imitation learning / LfD,476,4537,10.491514216442583,1.0
+2025,(all papers),Reinforcement learning,573,4537,12.629490852986555,1.0
+2025,(all papers),LLM / VLM,459,4537,10.116817280141062,1.0
+2025,(all papers),VLA / robot foundation models,69,4537,1.520828741459114,1.0
+2025,(all papers),Diffusion / flow generative models,232,4537,5.113511130703108,1.0
+2025,(all papers),World models / video prediction,110,4537,2.42450958783337,1.0
+2025,(all papers),3D Gaussian splatting,127,4537,2.799206524134891,1.0
+2025,(all papers),NeRF / neural implicit fields,66,4537,1.454705752700022,1.0
+2025,(all papers),Sim-to-real,376,4537,8.28741459113952,1.0
+2025,(all papers),Self-supervised / pretraining / representation,265,4537,5.840864007053119,1.0
+2025,(all papers),Language grounding / open-vocabulary,319,4537,7.031077804716773,1.0
+2025,(all papers),Learning from human video / human-to-robot transfer,103,4537,2.2702226140621558,1.0
+2025,(all papers),Cross-embodiment,76,4537,1.6751157152303284,1.0

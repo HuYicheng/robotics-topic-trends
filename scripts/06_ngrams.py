@@ -59,7 +59,7 @@ def compare(papers, venues, y_new, y_old, min_df=12):
         z = d / math.sqrt(1 / (y1 + aw) + 1 / (y2 + aw))
         rows.append({"ngram": g, "z": z, "log_odds": d, f"share_{y_new}": 100 * y1 / N1, f"share_{y_old}": 100 * y2 / N2,
                      "titles": df})
-    rows.sort(key=lambda r: -r["z"])
+    rows.sort(key=lambda r: (-r["z"], r["ngram"]))   # fixed order for ties (set order varies with the hash seed)
     return rows
 
 

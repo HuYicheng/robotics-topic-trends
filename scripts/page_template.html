@@ -258,19 +258,19 @@ tbody tr.totals:hover { background: var(--bg); }
       <p>Research articles only: accepted papers of ICRA, IROS, RSS and CoRL, and research articles of T-RO, IJRR and Science Robotics, <span id="m-range">2020</span> to October 2026, with an abstract (<span id="m-n">–</span>). Editorials, commentaries, Focus and highlight pieces, errata, special-issue introductions and reviews or surveys are left out; for Science Robotics the article type comes from PubMed. Sources: the dblp XML dump of 2026-10-13 (IROS, journals), OpenAlex (ICRA), the RSS proceedings site, PMLR (CoRL 2020–2025), the CoRL 2026 accepted-papers list on corl.org (its PMLR volume is not out yet), PubMed (Science Robotics types and abstracts, and its newest 2026 articles that dblp does not list yet). Each source was checked against dblp on a year both cover; the CoRL site list against PMLR on 2025 (263 = 263 papers). CoRL 2026 abstracts are those of the papers' arXiv versions, found for 575 of 687 (532 by an identical title, 43 by reading pairs whose titles differ slightly; OpenReview has all of them but turns away automated access); the other 112 are not counted. Abstracts missing from these sources were taken from Crossref, Semantic Scholar or the arXiv version, only when the title is identical.</p>
       <div class="tablewrap" style="max-width:520px"><table id="coverage"></table></div>
       <h2>Topics</h2>
-      <p>Each topic is a written rule (keywords and phrases). A paper counts for a topic when the rule matches its title or its abstract. Words that are generic inside abstracts (dataset, safety, mapping, detection, uncertainty, mechanism, reasoning) have stricter abstract rules. For every topic, random papers matched only through the abstract were read to check that the word is used in the topic's sense; rules were corrected until the samples held up.</p>
+      <p>Each paper's title and abstract were read by a language model (Claude Opus 5.5) against a written codebook of 59 topics that says what counts and what does not. A paper counts for a topic when its own work &mdash; its method, system, task, platform, data or evaluation &mdash; involves the topic; a topic named only as background, motivation, contrast or future work does not count. Several topics per paper are normal. These labels replaced keyword rules on 28 October 2026: the rules had missed papers that describe a topic in other words and counted words used in passing or in another sense. A random 10% of the papers was labelled a second time by other agents in other batches; the two readings agree closely (median kappa across topics 0.97, lowest 0.90). Codebook, labels, prompts and checks are in the repository.</p>
       <h2>Shares and trends</h2>
       <p>Shares are standardised to the 2025 mix of the seven venues, so the years compare. 2026 has no IROS yet; its share applies the within-venue 2026 change seen at ICRA, RSS, CoRL and the journals, with a 95% interval. The trend is a logistic regression of topic on venue and year over the whole period; a topic is called rising or declining only when significant after Benjamini–Hochberg correction across the 59 topics. "2024 onwards" repeats the test on 2024–2026 alone. Per venue, the trend is a likelihood-ratio test, which stays valid when a topic is absent in some years of a small venue.</p>
       <h2>Limits</h2>
       <ul>
-        <li>A share counts papers that name a topic, including in passing; it is not a count of papers whose main contribution is that topic.</li>
-        <li>Keyword rules miss papers that describe a topic without its usual words.</li>
+        <li>A share counts papers whose own work involves a topic; it is not a count of papers whose main contribution is that topic.</li>
+        <li>The labels are one model's reading. Their correctness was checked only by the same model judging the papers where the labels and the old keyword rules disagree, which is not an independent check; no human check has been made yet.</li>
         <li id="m-small">RSS and CoRL are small venues, so their numbers move in steps of about half a point or more.</li>
-        <li id="m-length">Abstracts got slightly longer over the years, so a topic has slightly more chances to be named in later years.</li>
+        <li id="m-length">Abstracts got slightly longer over the years, and later papers involve slightly more topics on average, so part of a small rise can come from that.</li>
         <li>Conference years follow submission by six to nine months; arXiv runs ahead of all of this.</li>
       </ul>
       <h2>Code and tables</h2>
-      <p>Scripts, topic rules, result tables and figures: <a href="https://github.com/HuYicheng/robotics-topic-trends" target="_blank" rel="noopener">github.com/HuYicheng/robotics-topic-trends</a>.
+      <p>Scripts, topic codebook and labels, result tables and figures: <a href="https://github.com/HuYicheng/robotics-topic-trends" target="_blank" rel="noopener">github.com/HuYicheng/robotics-topic-trends</a>.
         Abstract texts are not redistributed; the scripts fetch them from the original sources.</p>
       <p class="note" id="built"></p>
     </div>
@@ -639,7 +639,7 @@ tbody tr.totals:hover { background: var(--bg); }
     for (const b of document.querySelectorAll("#modeseg button")) b.setAttribute("aria-pressed", String(b.dataset.mode === state.mode));
     $("#mx-range").textContent = `${y0}–${y1}`;
     if (d.abs_words) $("#m-length").textContent = "Abstracts got longer (median words: " + d.years.map((y) => `${y} ${d.abs_words[y]}`).join(", ") +
-      "). Counting any mention, a longer abstract has more chances to name a topic, so part of a small rise can come from length alone.";
+      "), and later papers involve slightly more topics on average, so part of a small rise can come from that.";
     const ns = ["RSS", "CoRL"].flatMap((v) => d.scopes[v].rows[0].n.filter((n) => n > 0));
     const nmin = Math.min(...ns), nmax = Math.max(...ns);
     $("#m-small").textContent = `RSS and CoRL publish ${nmin}–${nmax} papers a year, so one paper moves their shares by ${fmt((100 / nmax), 1)}–${fmt((100 / nmin), 1)} points.`;

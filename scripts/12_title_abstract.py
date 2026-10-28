@@ -1,7 +1,9 @@
-"""Single measure used from here on: a paper belongs to a topic if the title rule matches the title or the abstract
-rule matches the abstract (any occurrence). All papers with an abstract (years from scripts/config.py).
+"""Keyword measure: a paper belongs to a topic if the title rule matches the title or the abstract rule matches the
+abstract (any occurrence). All papers with an abstract (years from scripts/config.py). This was the final measure until
+2026-10-28; since then the final matrix comes from semantic labels (scripts/12b_semantic_matrix.py), and this one is kept
+for comparison and for the 8 "[term]" columns (word counts by design).
 
-Output: data/topic_matrix_ta.csv
+Output: data/topic_matrix_ta_keyword.csv
         results/audit_abstract_matches.txt   most frequent matched words per rule inside abstracts (all years)
         results/audit_abstract_matches_by_period.txt   the same for 2020-2023 and 2024-2026 side by side (sense drift)
         results/precision_ta_samples/<topic>.txt  random 2024-2026 papers matched by the abstract only, with the matching
@@ -61,7 +63,7 @@ def main():
             if hits and not in_title:
                 abstract_only[n].append(uid)
         rows.append(row)
-    with open(os.path.join(ROOT, "data", "topic_matrix_ta.csv"), "w", newline="") as f:
+    with open(os.path.join(ROOT, "data", "topic_matrix_ta_keyword.csv"), "w", newline="") as f:
         w = csv.writer(f); w.writerow(["uid", "venue", "year"] + names); w.writerows(rows)
     with open(os.path.join(ROOT, "results", "audit_abstract_matches.txt"), "w") as f:
         for n in names:
@@ -90,7 +92,7 @@ def main():
                     sent = next((s for s in re.split(r"(?<=[.!?])\s+", a) if abs_rx[n].search(s)), "")
                     f.write(f'{papers[uid]["venue"]} {papers[uid]["year"]} | {papers[uid]["title"][:100]}\n'
                             f'    > {re.sub(abs_rx[n], lambda m: "[[" + m.group(0) + "]]", sent)[:220]}\n')
-    print(f"{len(rows)} papers, {len(names)} topics -> data/topic_matrix_ta.csv")
+    print(f"{len(rows)} papers, {len(names)} topics -> data/topic_matrix_ta_keyword.csv")
 
 
 if __name__ == "__main__":
