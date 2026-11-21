@@ -215,7 +215,7 @@ tbody tr.totals:hover { background: var(--bg); }
       </table>
     </div>
     <p class="note" style="margin-top:10px" id="scopenote"></p>
-    <p class="note">Share = percentage of papers whose title or abstract names the topic; Papers = the number of those papers.
+    <p class="note">Share = percentage of papers whose own work involves the topic, as read from the title and abstract; Papers = the number of those papers.
       A paper can count for several topics. The first row gives all papers in the data.
       "Change" is first to last year in percentage points of share; "per year" is the change in the topic's odds per year.
       Trend is called only when significant after correction for testing 59 topics (q &lt; 0.05); small venues rarely reach that.
@@ -225,7 +225,7 @@ tbody tr.totals:hover { background: var(--bg); }
   <section id="view-charts" role="tabpanel" aria-labelledby="tab-charts" hidden>
     <p class="note" id="chartnote" style="margin-bottom:10px"></p>
     <div class="smgrid" id="smgrid"></div>
-    <p class="note" style="margin-top:10px">Each chart is one topic, by year. Papers: bars, the number of papers whose title or abstract names the topic.
+    <p class="note" style="margin-top:10px">Each chart is one topic, by year. Papers: bars, the number of papers whose own work involves the topic.
       Share %: line, the same share as in the Topics table, with its 95% interval as a band. Each chart has its own scale unless
       "Same scale" is ticked. Hover a year for its numbers; click a chart to see its papers.</p>
   </section>
@@ -273,7 +273,7 @@ tbody tr.totals:hover { background: var(--bg); }
       <h2>Limits</h2>
       <ul>
         <li>A share counts papers whose own work involves a topic; it is not a count of papers whose main contribution is that topic.</li>
-        <li>The labels are one model's reading. Their correctness was checked only by the same model judging the papers where the labels and the old keyword rules disagree, which is not an independent check; no human check has been made yet.</li>
+        <li>The labels are one model's reading. Their correctness was checked only by the same model judging the papers where the labels and the old keyword rules disagree, which is not an independent check (that judge says "yes" more often than a second labelling does); no human check has been made yet.</li>
         <li id="m-small">RSS and CoRL are small venues, so their numbers move in steps of about half a point or more.</li>
         <li id="m-length">Abstracts got slightly longer over the years, and later papers involve slightly more topics on average, so part of a small rise can come from that.</li>
         <li>Conference years follow submission by six to nine months; arXiv runs ahead of all of this.</li>
@@ -427,7 +427,7 @@ tbody tr.totals:hover { background: var(--bg); }
       <td class="num" title="2024 onwards">${t.ror == null ? "–" : "×" + fmt(t.ror, 2)}${mark[t.rcall]}</td>
       <td><span class="call ${t.call}">${arrow[t.call]}</span></td><td>${mode === "count" ? sparkBars(t, new Set(sc.partial)) : spark2(t)}</td></tr>`).join("");
     const lab = scopeLabel(scope);
-    const what = mode === "count" ? `${lab}: number of papers per year whose title or abstract names the topic (`
+    const what = mode === "count" ? `${lab}: number of papers per year whose own work involves the topic (`
       : sc.single ? `${lab}: raw shares of its papers, in % (` : `${lab}: shares in %, standardised to the ${D.ref} venue mix of the selection (`;
     $("#scopenote").textContent = [what + yrs.map((y, j) => `${y}: ${n[j].toLocaleString("en")}`).join(", ") + " papers).", lastYearNote(scope, mode)].filter(Boolean).join(" ");
     $("#sparklegend").textContent = mode === "count" ? `bars: papers per year, ${Y[0]}–${Y[Y.length - 1]} (own scale per row)`
@@ -496,7 +496,7 @@ tbody tr.totals:hover { background: var(--bg); }
     html += rows.map(([t, S]) => card(t.i, t.name, `<span class="call ${t.call}">${arrow[t.call]}</span>`, S, same ?? niceMax(peak(S)))).join("");
     $("#smgrid").innerHTML = rows.length ? html : `<p class="note">No topic matches these filters.</p>`;
     $("#chartnote").textContent = (mode === "count"
-      ? [`${scopeLabel(scope)}: number of papers per year whose title or abstract names the topic.`, sc.partial.length ? "Lighter bars: year not complete." : ""]
+      ? [`${scopeLabel(scope)}: number of papers per year whose own work involves the topic.`, sc.partial.length ? "Lighter bars: year not complete." : ""]
       : [`${scopeLabel(scope)}: share of papers per year, in %${sc.single ? "" : `, standardised to the ${D.ref} venue mix of the selection`}.`, sc.estimated.length ? "Hollow dot: estimated." : ""])
       .concat(lastYearNote(scope, mode)).filter(Boolean).join(" ");
   }

@@ -167,7 +167,7 @@ and the journals run to mid-October, so 2026 counts are not comparable with earl
 - RSS and CoRL have 74–575 papers a year; ICRA and IROS dominate the totals.
 - The labels are one model's reading. A second labelling of a random 10% agrees closely (results/semantic_validation.md),
   but that shows consistency, not correctness; the only check of correctness so far is a re-judgement by the same model,
-  which is not independent, and no human check has been made.
+  which is not independent (it says "yes" more often than a second labelling does), and no human check has been made.
 - Topics per paper rise over the years (2020: 3.05, 2021: 3.06, 2022: 3.17, 2023: 3.27, 2024: 3.43, 2025: 3.64, 2026: 4.24), and abstracts got
   longer (median 2020: 164, 2021: 169, 2022: 170, 2023: 174, 2024: 173, 2025: 173, 2026: 178 words): part of a small rise can come from
   papers describing more of their work; this does not explain the large risers (LLM/VLM, diffusion, VLA, imitation learning).

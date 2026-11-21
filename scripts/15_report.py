@@ -73,7 +73,7 @@ L = [f"# Robotics topics at top venues, {Y[0]}–{Y[-1]}: share and change (titl
      f"- RSS and CoRL have {int(cov.loc[['RSS', 'CoRL']].replace(0, pd.NA).min().min())}–{int(cov.loc[['RSS', 'CoRL']].max().max())} papers a year; ICRA and IROS dominate the totals.",
      "- The labels are one model's reading. A second labelling of a random 10% agrees closely (results/semantic_validation.md),",
      "  but that shows consistency, not correctness; the only check of correctness so far is a re-judgement by the same model,",
-     "  which is not independent, and no human check has been made.",
+     "  which is not independent (it says \"yes\" more often than a second labelling does), and no human check has been made.",
      "- Topics per paper rise over the years (" + ", ".join(f"{y}: {v:.2f}" for y, v in TOPICS_PER_PAPER.items()) + "), and abstracts got",
      "  longer (median " + ", ".join(f"{y}: {int(w)}" for y, w in ABS_WORDS.items()) + " words): part of a small rise can come from",
      "  papers describing more of their work; this does not explain the large risers (LLM/VLM, diffusion, VLA, imitation learning).", ""]

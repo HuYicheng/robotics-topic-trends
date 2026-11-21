@@ -26,13 +26,15 @@ topics, each linked to the original.
   agents of about 125 papers each) against a written codebook of 59 topics that says what counts and what does not
   (`data/semantic_codebook_v2.md`). A paper counts for a topic when its own work (method, system, task, platform, data or
   evaluation) involves the topic; a topic named only as background, motivation, contrast or future work does not count.
-  Labels: `data/semantic_labels.csv` ("involves", the measure used, and separately the 1-3 topics of the main
+  Labels: `data/semantic_labels.csv` ("involves", the measure used, and separately the 0-3 topics of the main
   contribution); how they were made, with the prompts: `data/semantic_labelling_prompt.md`. Checks
   (`results/semantic_validation.md`): a random 10% labelled a second time agrees with a median kappa of 0.97 across topics
-  (lowest 0.90). Before 2026-10-28 each topic was a keyword rule; a blind re-judgement of 1,070 cells where the rules and the
-  labels disagree found that about 20% of the rules' matches did not fit the definitions and that the rules missed about
-  29% of members. That re-judgement was made by the same model with the same codebook, so it is not an independent check,
-  and no human check has been made yet. With the labels, 10 of the 59 whole-period trend calls change (none from rising to
+  (lowest 0.90). Before 2026-10-28 each topic was a keyword rule, and a share counted papers that named a topic, including
+  in passing; the labels count only papers whose own work involves it. A blind re-judgement of 1,070 cells where the rules
+  and the labels disagree found, by the labels' definition, that about 20% of the rules' matches did not fit and that the
+  rules missed about 29% of members (by the rules' own definition, with passing mentions counted: 12% and 27%). That
+  re-judgement was made by the same model with the same codebook and says "yes" more often than a second labelling does,
+  so it is not an independent check, and no human check has been made yet. With the labels, 10 of the 59 whole-period trend calls change (none from rising to
   declining or back) and 16% of the per-venue calls. The keyword-rule version is kept: `data/topic_matrix_ta_keyword.csv`,
   `results/shares_and_change_ta_keyword.csv`, rule reviews in `results/precision_review.md`.
 - **Shares**: percentage of papers, standardised to the 2025 venue mix so the years compare; 2026 uses the within-venue

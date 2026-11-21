@@ -1,0 +1,15 @@
+{
+ "repeat_swap": {
+  "papers": 2320,
+  "whole": [],
+  "recent": [
+   {
+    "topic": "Agriculture / field",
+    "from": "declining",
+    "to": "unclear",
+    "q_from": 0.0396563767396716,
+    "q_to": 0.0739289197800121
+   }
+  ]
+ }
+}
