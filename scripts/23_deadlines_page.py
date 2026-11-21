@@ -13,8 +13,8 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), 
 SITE = "Robotics Topic Trends"
 TITLE = "Robotics Deadlines"
 SCOPE = "the seven venues this site covers (ICRA, IROS, RSS, CoRL, T-RO, IJRR and Science Robotics)"
-CHECKED = dt.date(2026, 10, 20)
-UNTIL = dt.date(2027, 10, 20)
+CHECKED = dt.date(2026, 11, 21)
+UNTIL = dt.date(2027, 11, 21)
 OFFSET = {"AoE": -12, "HST": -10, "UTC": 0, "PST": -8}  # hours from UTC
 
 # steps: (what, date, time or None, time zone or None); a venue without steps has not announced its deadline
@@ -44,7 +44,7 @@ VENUES = [
     dict(name="ICRA 2028",
          steps=[("Paper", "2027-09-15", None, None)],
          remark="Date from the IEEE RAS event listing, which gives no time or time zone; the conference site "
-                "(2028.ieee-icra.org) did not load on 20 October 2026.",
+                "(2028.ieee-icra.org) did not load on 20 October or 21 November 2026.",
          conf=("15–19 May 2028", "Rio de Janeiro, Brazil (Riocentro)"),
          links=[("IEEE RAS listing", "https://www.ieee-ras.org/event/2028-ieee-international-conference-on-robotics-"
                                      "and-automation-icra-74101/")]),
